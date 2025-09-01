@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2017 Vector Creations Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -67,6 +68,12 @@
     // Tag the recents table with the its recents data source mode.
     // This will be used by the shared RecentsDataSource instance for sanity checks (see UITableViewDataSource methods).
     self.recentsTableView.tag = RecentsDataSourceModePeople;
+    
+#if QUALICHAT
+    if(QualiChatBuildSettings.enableCreateOnlyDirectChat) {
+        return;
+    }
+#endif
     
     UIImage *fabImage = self.dataSource.currentSpace == nil ? AssetImages.peopleFloatingAction.image : AssetImages.addMemberFloatingAction.image;
     // Add the (+) button programmatically

@@ -1,6 +1,7 @@
 // File created from ScreenTemplate
 // $ createScreen.sh Room2/RoomInfo RoomInfoList
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2020 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -231,9 +232,13 @@ final class RoomInfoListViewController: UIViewController {
     private func update(theme: Theme) {
         self.theme = theme
         
-        self.view.backgroundColor = theme.headerBackgroundColor
-        self.mainTableView.backgroundColor = theme.headerBackgroundColor
-        
+        #if QUALICHAT
+            self.view.backgroundColor = theme.backgroundColor
+            self.mainTableView.backgroundColor = theme.backgroundColor
+        #else
+            self.view.backgroundColor = theme.headerBackgroundColor
+            self.mainTableView.backgroundColor = theme.headerBackgroundColor
+        #endif
         if let navigationBar = self.navigationController?.navigationBar {
             theme.applyStyle(onNavigationBar: navigationBar)
         }
@@ -337,7 +342,11 @@ extension RoomInfoListViewController: UITableViewDataSource {
             }
             if let icon = row.icon {
                 if row.type == .default {
+                    #if QUALICHAT
+                    cell.imageView?.image = MXKTools.resize(icon, to: CGSize(width: 20, height: 20))?.vc_tintedImage(usingColor: theme.tintColor)
+                    #else
                     cell.imageView?.image = MXKTools.resize(icon, to: CGSize(width: 20, height: 20))?.vc_tintedImage(usingColor: theme.textSecondaryColor)
+                    #endif
                 } else if row.type == .destructive {
                     cell.imageView?.image = MXKTools.resize(icon, to: CGSize(width: 20, height: 20))?.vc_tintedImage(usingColor: theme.noticeColor)
                 }

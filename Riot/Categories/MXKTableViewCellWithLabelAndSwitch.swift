@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2020 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +26,11 @@ extension MXKTableViewCellWithLabelAndSwitch: Themable {
         mxkLabel.textColor = theme.textPrimaryColor
         backgroundColor = theme.backgroundColor
         contentView.backgroundColor = .clear
-        mxkSwitch.onTintColor = theme.tintColor
+    #if QUALICHAT
+        mxkSwitch.onTintColor = theme.colors.accent;
+    #else
+        mxkSwitch.onTintColor = theme.tintColor;
+    #endif
    }
 
 }

@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2016 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  
@@ -340,16 +341,36 @@
 
 - (BOOL)canAddParticipant: (MXKContact*) contact
 {
+    
     if (!contact)
     {
         return YES;
     }
+    
+#if QUALICHAT
+    if (participants.count >= (QualiChatBuildSettings.limitPersonCreateOnlyDirectChat - 1)) {
+        return NO;
+    }
+#endif
 
     // The following rules will be applied only if the resulting room is going to be encrypted
     if (![self.mainSession vc_homeserverConfiguration].encryption.isE2EEByDefaultEnabled)
     {
         return YES;
     }
+    
+#if QUALICHAT
+    
+    if (!QualiChatBuildSettings.enableEmailUserCreateDirectChat && [MXTools isEmailAddress:contact.displayName]) {
+        return NO;
+    }
+    
+    if (!QualiChatBuildSettings.enableEmailUserCreateDirectChat && contact.emailAddresses != nil) {
+        return NO;
+    }
+    
+#endif
+    
 
     // If we have already invited an email, we cannot add another participant
     if ([self participantsAlreadyContainAnEmail])
@@ -362,6 +383,8 @@
     {
         return NO;
     }
+    
+
         
     // Otherwise, we should be able to add this participant
     return YES;
@@ -710,8 +733,15 @@
         }
         
         // Is it a direct chat?
-        BOOL isDirect = ((inviteArray.count + invite3PIDArray.count == 1) ? YES : NO);
        
+        BOOL isDirect = ((inviteArray.count + invite3PIDArray.count == 1) ? YES : NO);
+        
+#if QUALICHAT
+        if(QualiChatBuildSettings.enableCreateOnlyDirectChat) {
+            isDirect = true;
+        }
+#endif
+        
         // In case of a direct chat with only one user id, we open the first available direct chat
         // or creates a new one (if it doesn't exist).
         if (isDirect && inviteArray.count)
@@ -922,6 +952,11 @@
     if ([self canAddParticipant:contact])
     {
         // Update here the mutable list of participants
+#if QUALICHAT
+        if(QualiChatBuildSettings.enableCreateOnlyDirectChat) {
+            [participants removeAllObjects];
+        }
+#endif
         [participants addObject:contact];
         
         // Refresh display by leaving search session

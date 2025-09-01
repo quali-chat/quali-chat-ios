@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2017 Aram Sargsyan
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -85,7 +86,12 @@
                                             displayName:roomCellData.roomDisplayname
                                            mediaManager:roomCellData.roomSummary.mxSession.mediaManager];
         
+        
+#if QUALICHAT
+        self.roomTitleLabel.attributedText = [roomCellData.roomDisplayname fixDisplayNameInRoomTitleWithCapHeight: self.roomTitleLabel.font.capHeight];
+#else
         self.roomTitleLabel.text = roomCellData.roomDisplayname;
+#endif
         if (!self.roomTitleLabel.text.length)
         {
             self.roomTitleLabel.text = [VectorL10n roomDisplaynameEmptyRoom];

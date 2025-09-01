@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2017 Vector Creations Ltd
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -58,6 +59,8 @@ typedef enum : NSUInteger
  */
 @property (nonatomic) BOOL showLocalContacts;
 
+// MARK: - QualiChat modified
+@property (nonatomic, assign) int memberCount;
 /**
  Get the contact at the given index path.
  

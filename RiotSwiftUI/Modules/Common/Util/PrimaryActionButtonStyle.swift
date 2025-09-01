@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,14 +28,31 @@ struct PrimaryActionButtonStyle: ButtonStyle {
     
     private var fontColor: Color {
         // Always white unless disabled with a dark theme.
+        #if QUALICHAT
+        .black
+        #else
         .white.opacity(theme.isDark && !isEnabled ? 0.3 : 1.0)
+        #endif
     }
     
     private var backgroundColor: Color {
+        #if QUALICHAT
+        customColor ?? theme.colors.primaryContent
+        #else
         customColor ?? theme.colors.accent
+        #endif
     }
     
     func makeBody(configuration: Self.Configuration) -> some View {
+        #if QUALICHAT
+        configuration.label
+            .padding(12.0)
+            .frame(maxWidth: .infinity)
+            .foregroundColor(fontColor)
+            .font(font ?? theme.fonts.body)
+            .background(backgroundColor.opacity(backgroundOpacity(when: configuration.isPressed)))
+            .cornerRadius(25.0)
+        #else
         configuration.label
             .padding(12.0)
             .frame(maxWidth: .infinity)
@@ -42,6 +60,7 @@ struct PrimaryActionButtonStyle: ButtonStyle {
             .font(font ?? theme.fonts.body)
             .background(backgroundColor.opacity(backgroundOpacity(when: configuration.isPressed)))
             .cornerRadius(8.0)
+        #endif
     }
     
     func backgroundOpacity(when isPressed: Bool) -> CGFloat {

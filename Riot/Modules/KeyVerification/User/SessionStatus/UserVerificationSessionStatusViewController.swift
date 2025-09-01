@@ -1,6 +1,7 @@
 // File created from ScreenTemplate
 // $ createScreen.sh SessionStatus UserVerificationSessionStatus
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2020 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -103,8 +104,11 @@ final class UserVerificationSessionStatusViewController: UIViewController {
             theme.applyStyle(onNavigationBar: navigationBar)
         }
         
+        #if QUALICHAT
+        self.view.backgroundColor = theme.backgroundColor
+        #else
         self.view.backgroundColor = theme.headerBackgroundColor
-        
+        #endif
         self.titleLabel.textColor = theme.textPrimaryColor
         self.closeButton.vc_setBackgroundColor(theme.headerTextSecondaryColor, for: .normal)
         
@@ -112,6 +116,10 @@ final class UserVerificationSessionStatusViewController: UIViewController {
         
         self.untrustedSessionInformationLabel.textColor = theme.textPrimaryColor
         self.verifyButton.vc_setBackgroundColor(theme.tintColor, for: .normal)
+        
+    #if QUALICHAT
+        self.verifyButton.setTitleColor(theme.tintBackgroundColor, for: .normal)
+    #endif
         
         theme.applyStyle(onButton: self.manuallyVerifyButton)
     }

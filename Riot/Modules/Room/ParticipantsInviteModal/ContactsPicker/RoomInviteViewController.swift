@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,11 +26,15 @@ class RoomInviteViewController: ContactsTableViewController {
     private lazy var shareLinkPresenter: ShareInviteLinkPresenter = ShareInviteLinkPresenter()
     
     override func viewDidLoad() {
+        #if QUALICHAT
+        self.memberCount = Int32(room?.summary.membersCount.members ?? 0)
+        #endif
         super.viewDidLoad()
         
         roomAlias = room?.summary?.aliases?.first
         joinRule = MXRoomJoinRule(identifier: room?.summary?.joinRule)
         setupShareInviteLinkHeader()
+       
     }
     
     private func setupShareInviteLinkHeader() {

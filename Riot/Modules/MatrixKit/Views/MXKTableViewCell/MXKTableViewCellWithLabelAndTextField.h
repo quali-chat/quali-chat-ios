@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2015 OpenMarket Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +29,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *mxkLabel;
 @property (strong, nonatomic) IBOutlet UITextField *mxkTextField;
-
+@property (strong, nonatomic) IBOutlet UILabel *qualiTitleLabel; // MARK: QualiChat modified
 /**
  The custom accessory view associated with the text field. This view is
  actually used to retrieve the keyboard view. Indeed the keyboard view is the superview of

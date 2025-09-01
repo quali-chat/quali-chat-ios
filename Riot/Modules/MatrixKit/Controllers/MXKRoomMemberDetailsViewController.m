@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2015 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  Copyright 2018 New Vector Ltd
@@ -88,6 +89,12 @@
     {
         [self initObservers];
     }
+    
+#if QUALICHAT
+    if(QualiChatBuildSettings.enableVideoAudioCall) {
+        [self setEnableVoipCall: NO];
+    }
+#endif
 }
 
 - (void)viewWillAppear:(BOOL)animated

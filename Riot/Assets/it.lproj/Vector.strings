@@ -3,7 +3,7 @@
 "title_favourites" = "Preferiti";
 "title_people" = "Chat dirette";
 "title_rooms" = "Stanze";
-"store_full_description" = "Element è un nuovo tipo di app di messaggistica e collaborazione che:\n\n1. Ti dà il controllo per preservare la tua privacy\n2. Ti permette di comunicare con chiunque nella rete Matrix e anche oltre, integrandosi con app come Slack\n3. Ti protegge da pubblicità, datamining, backdoor ed ecosistemi chiusi\n4. Ti protegge tramite crittografia end-to-end, con la firma incrociata per verificare gli altri\n\nElement è completamente diverso dalle altre app di messaggistica e collaborazione perchè è decentralizzato e open source.\n\nElement può essere auto-ospitato - o puoi scegliere un host - in modo da avere privacy, proprietà e controllo dei tuoi dati e delle conversazioni. Ti dà l'accesso a una rete aperta, perciò non sei limitato a parlare solo con gli altri utenti Element. È anche molto sicuro.\n\nElement può fare tutto questo perchè opera su Matrix - lo standard per le comunicazioni aperte e decentralizzate. \n\nElement ti dà il controllo lasciandoti scegliere chi ospita le tue conversazioni. Dall'app Element, puoi scegliere l'host in diversi modi:\n\n1. Ottieni un account gratuito sul server pubblico matrix.org\n2. Auto-ospita il tuo account gestendo un server su tuo hardware personale\n3. Registra un account su un server personalizzato sottoscrivendoti alla piattaforma di hosting Element Matrix Services\n\nPerché scegliere Element?\n\nPOSSIEDI I TUOI DATI: decidi tu dove tenere i tuoi dati e messaggi. Sei tu che li possiedi e li controlli, non una MEGADITTA che estrae i tuoi dati o ne dà l'accesso a terze parti.\n\nMESSAGGISTICA APERTA E COLLABORAZIONE: puoi parlare con chiunque nella rete Matrix, sia che usino Element o un'altra app Matrix, e addirittura anche se usano un altro sistema di messaggistica come Slack, IRC o XMPP.\n\nSUPER SICURO: vera crittografia end-to-end (solo chi è nella conversazione può decifrare i messaggi) e firma incrociata per verificare i dispositivi dei partecipanti alla conversazione.\n\nCOMUNICAZIONE COMPLETA: messaggi, telefonate e videochiamate, condivisione file, condivisione schermo e un sacco di integrazioni, bot e widget. Crea stanze, comunità, resta in contatto e porta a termine le cose.\n\nOVUNQUE TU SIA: resta in contatto ovunque tu sia con la cronologia dei messaggi totalmente sincronizzata tra i tuoi dispositivi e sul web su https://element.io/app.";
+"store_full_description" = "quali.chat è un nuovo tipo di app di messaggistica e collaborazione che:\n\n1. Ti dà il controllo per preservare la tua privacy\n2. Ti permette di comunicare con chiunque nella rete quali.chat e anche oltre, integrandosi con app come Slack\n3. Ti protegge da pubblicità, datamining, backdoor ed ecosistemi chiusi\n4. Ti protegge tramite crittografia end-to-end, con la firma incrociata per verificare gli altri\n\nquali.chat è completamente diverso dalle altre app di messaggistica e collaborazione perchè è decentralizzato e open source.\n\nquali.chat può essere auto-ospitato - o puoi scegliere un host - in modo da avere privacy, proprietà e controllo dei tuoi dati e delle conversazioni. Ti dà l'accesso a una rete aperta, perciò non sei limitato a parlare solo con gli altri utenti quali.chat. È anche molto sicuro.\n\nquali.chat può fare tutto questo perchè opera su quali.chat - lo standard per le comunicazioni aperte e decentralizzate. \n\nquali.chat ti dà il controllo lasciandoti scegliere chi ospita le tue conversazioni. Dall'app quali.chat, puoi scegliere l'host in diversi modi:\n\n1. Ottieni un account gratuito sul server pubblico quali.chat\n2. Auto-ospita il tuo account gestendo un server su tuo hardware personale\n3. Registra un account su un server personalizzato sottoscrivendoti alla piattaforma di hosting quali.chat\n\nPerché scegliere quali.chat?\n\nPOSSIEDI I TUOI DATI: decidi tu dove tenere i tuoi dati e messaggi. Sei tu che li possiedi e li controlli, non una MEGADITTA che estrae i tuoi dati o ne dà l'accesso a terze parti.\n\nMESSAGGISTICA APERTA E COLLABORAZIONE: puoi parlare con chiunque nella rete quali.chat, sia che usino quali.chat o un'altra app quali.chat, e addirittura anche se usano un altro sistema di messaggistica come Slack, IRC o XMPP.\n\nSUPER SICURO: vera crittografia end-to-end (solo chi è nella conversazione può decifrare i messaggi) e firma incrociata per verificare i dispositivi dei partecipanti alla conversazione.\n\nCOMUNICAZIONE COMPLETA: messaggi, telefonate e videochiamate, condivisione file, condivisione schermo e un sacco di integrazioni, bot e widget. Crea stanze, comunità, resta in contatto e porta a termine le cose.\n\nOVUNQUE TU SIA: resta in contatto ovunque tu sia con la cronologia dei messaggi totalmente sincronizzata tra i tuoi dispositivi e sul web su https://element.io/app.";
 "title_groups" = "Comunità";
 "warning" = "Attenzione";
 "next" = "Prossimo";
@@ -34,8 +34,8 @@
 "auth_optional_phone_placeholder" = "Numero di telefono (opzionale)";
 "auth_phone_placeholder" = "Numero di telefono";
 "auth_repeat_password_placeholder" = "Ripeti la password";
-"auth_repeat_new_password_placeholder" = "Conferma la nuova password dell'account Matrix";
-"auth_home_server_placeholder" = "URL (es. https://matrix.org)";
+"auth_repeat_new_password_placeholder" = "Conferma la nuova password dell'account quali.chat";
+"auth_home_server_placeholder" = "URL (es. https://quali.chat)";
 "auth_identity_server_placeholder" = "URL (es. https://vector.im)";
 "auth_invalid_login_param" = "Nome utente e/o password non corretti";
 "auth_invalid_user_name" = "Il nome utente può contenere solo lettere, numeri, punti, trattini e linee basse";
@@ -52,12 +52,12 @@
 "auth_missing_email_or_phone" = "Indirizzo email o numero di telefono mancante";
 "auth_email_in_use" = "Questo indirizzo email è già in uso";
 "auth_phone_in_use" = "Questo numero di telefono è già in uso";
-"auth_forgot_password" = "Password dell'account Matrix dimenticata?";
+"auth_forgot_password" = "Password dell'account quali.chat dimenticata?";
 "auth_email_validation_message" = "Per favore controlla la tua email per proseguire la registrazione";
 "auth_msisdn_validation_title" = "In attesa di verifica";
 "auth_msisdn_validation_message" = "Ti è stato spedito un SMS con il codice di attivazione. Per favore inserisci il codice qui sotto.";
 "auth_msisdn_validation_error" = "Impossibile verificare il numero di telefono.";
-"auth_reset_password_message" = "Per ripristinare la password dell'account Matrix inserisci l'indirizzo email associato al tuo account:";
+"auth_reset_password_message" = "Per ripristinare la password dell'account quali.chat inserisci l'indirizzo email associato al tuo account:";
 // String for App Store
 "store_short_description" = "Conversazioni sicure e decentralizzate";
 // Actions
@@ -90,7 +90,7 @@
 "auth_reset_password_next_step_button" = "Ho verificato il mio indirizzo email";
 "auth_reset_password_error_unauthorized" = "Verifica indirizzo email fallita: assicurati di aver cliccato sul link contenuto nell'email";
 "auth_reset_password_error_not_found" = "Il tuo indirizzo email non sembra associato a nessun ID utente registrato su questo Home Server.";
-"auth_reset_password_success_message" = "La password del tuo account Matrix è stata ripristinata.\n\nSei stato disconnesso da tutte le sessioni e non riceverai più alcuna notifica. Per riabilitare le notifiche, riconnettiti su ciascun dispositivo.";
+"auth_reset_password_success_message" = "La password del tuo account quali.chat è stata ripristinata.\n\nSei stato disconnesso da tutte le sessioni e non riceverai più alcuna notifica. Per riabilitare le notifiche, riconnettiti su ciascun dispositivo.";
 "auth_add_email_and_phone_warning" = "Al momento non è ancora possibile registrarsi contemporaneamente con indirizzo email e numero di telefono e quindi verrà utilizzato solo il numero di telefono. Puoi aggiungere la tua email al tuo profilo dall menù Impostazioni.";
 "auth_accept_policies" = "Per favore, rileggi e accetta i termini di servizio di questo Home Server:";
 "auth_autodiscover_invalid_response" = "Risposta Home Server non valida";
@@ -109,7 +109,7 @@
 "room_creation_keep_private" = "Mantieni privata";
 "room_creation_make_private" = "Rendi privata";
 "room_creation_wait_for_creation" = "Una stanza è già in fase di creazione. Per favore attendi.";
-"room_creation_invite_another_user" = "ID utente, nome o email";
+"room_creation_invite_another_user" = "ID utente o nome";
 // Room recents
 "room_recents_directory_section" = "ELENCO STANZE";
 "room_recents_favourites_section" = "PREFERITI";
@@ -152,7 +152,7 @@
 "directory_search_fail" = "La ricerca di informazioni è fallita";
 // Contacts
 "contacts_address_book_section" = "CONTATTI LOCALI";
-"contacts_address_book_matrix_users_toggle" = "Solo utenti Matrix";
+"contacts_address_book_matrix_users_toggle" = "Solo utenti quali.chat";
 "contacts_address_book_no_contact" = "Nessun contatto locale";
 "contacts_address_book_permission_denied" = "Non hai autorizzato %@ ad accedere alla rubrica locale";
 "contacts_user_directory_section" = "ELENCO UTENTI";
@@ -208,7 +208,7 @@
 "room_message_placeholder" = "Invia un messaggio (non cifrato)…";
 "room_message_reply_to_placeholder" = "Invia una risposta (non cifrata)…";
 "room_message_unable_open_link_error_message" = "Impossibile aprire il link.";
-"room_do_not_have_permission_to_post" = "Non hai il permesso di pubblicare in questa stanza";
+"room_do_not_have_permission_to_post" = "You need to have the room token in your wallet to post to this room.";
 "encrypted_room_message_placeholder" = "Invia un messaggio cifrato…";
 "encrypted_room_message_reply_to_placeholder" = "Invia una risposta cifrata…";
 "room_message_short_placeholder" = "Invia un messaggio…";
@@ -243,7 +243,7 @@
 "room_event_action_cancel_send" = "Annulla invio";
 "room_event_action_cancel_download" = "Annulla download";
 "room_event_action_view_encryption" = "Informazioni sulla crittografia";
-"room_warning_about_encryption" = "La crittografia E2E è in fase sperimentale e potrebbe non esser ancora affidabile.\n\nNon dovesti ancora farci affidamento per proteggere i tuoi dati.\n\nI dispositivi non potranno decifrare i messaggi precedenti alla tua entrata nella stanza.\n\nI messaggi cifrati non saranno visibili dalle applicazioni per Matrix che non hanno ancora implementato la crittografia.";
+"room_warning_about_encryption" = "La crittografia E2E è in fase sperimentale e potrebbe non esser ancora affidabile.\n\nNon dovesti ancora farci affidamento per proteggere i tuoi dati.\n\nI dispositivi non potranno decifrare i messaggi precedenti alla tua entrata nella stanza.\n\nI messaggi cifrati non saranno visibili dalle applicazioni per quali.chat che non hanno ancora implementato la crittografia.";
 "room_event_failed_to_send" = "Invio fallito";
 "room_action_send_photo_or_video" = "Invia foto o video";
 "room_action_send_sticker" = "Invia sticker";
@@ -355,8 +355,8 @@
 "settings_old_password" = "Vecchia password";
 "settings_new_password" = "Nuova password";
 "settings_confirm_password" = "Conferma password";
-"settings_fail_to_update_password" = "Aggiornamento password dell'account Matrix fallito";
-"settings_password_updated" = "La password del tuo account Matrix è stata aggiornata";
+"settings_fail_to_update_password" = "Aggiornamento password dell'account quali.chat fallito";
+"settings_password_updated" = "La password del tuo account quali.chat è stata aggiornata";
 "settings_crypto_device_name" = "Nome sessione: ";
 "settings_crypto_device_id" = "\nID sessione: ";
 "settings_crypto_device_key" = "\nChiave sessione:\n";
@@ -469,7 +469,7 @@
 "group_participants_filter_members" = "Filtra i membri della comunità";
 "group_participants_invite_another_user" = "Cerca / invita per ID utente o nome";
 "group_participants_invite_malformed_id_title" = "Invito fallito";
-"group_participants_invite_malformed_id" = "ID malformato. Dovrebbe essere ID Matrix come '@localpart:domain'";
+"group_participants_invite_malformed_id" = "ID malformato. Dovrebbe essere ID quali.chat come '@localpart:domain'";
 "group_participants_invited_section" = "INVITATI";
 // Group rooms
 "group_rooms_filter_rooms" = "Filtra le stanze della comunità";
@@ -483,9 +483,9 @@
 "directory_title" = "Elenco";
 "directory_server_picker_title" = "Seleziona un elenco";
 "directory_server_all_rooms" = "Tutte le stanze sul server %@";
-"directory_server_all_native_rooms" = "Tutte le stanze Matrix native";
+"directory_server_all_native_rooms" = "Tutte le stanze quali.chat native";
 "directory_server_type_homeserver" = "Digita un Homeserver per vedere l'elenco delle sue stanze pubbliche";
-"directory_server_placeholder" = "matrix.org";
+"directory_server_placeholder" = "quali.chat";
 // Events formatter
 "event_formatter_member_updates" = "%tu cambi d'appartenenza";
 "event_formatter_widget_added" = "%@ widget aggiunto da %@";
@@ -571,13 +571,13 @@
 "deactivate_account_informations_part2_emphasize" = "Questa azione è irreversibile.";
 "deactivate_account_informations_part3" = "\n\nDisattivare il tuo account ";
 "deactivate_account_informations_part4_emphasize" = "non eliminerà in modo automatico i messaggi che hai inviato. ";
-"deactivate_account_informations_part5" = "Se vuoi che i tuoi messaggi siano dimenticati, seleziona la casella qui sotto\n\nLa visibilità dei messaggi in Matrix è simile alle email: \"dimenticare i tuoi messaggi\" significa che quelli che hai già inviato non verranno condivisi con nessun utente nuovo o non registrato, ma gli utenti registrati che già hanno avuto accesso ai tuoi messaggi potranno ancora accedere alla loro copia.";
+"deactivate_account_informations_part5" = "Se vuoi che i tuoi messaggi siano dimenticati, seleziona la casella qui sotto\n\nLa visibilità dei messaggi in quali.chat è simile alle email: \"dimenticare i tuoi messaggi\" significa che quelli che hai già inviato non verranno condivisi con nessun utente nuovo o non registrato, ma gli utenti registrati che già hanno avuto accesso ai tuoi messaggi potranno ancora accedere alla loro copia.";
 "deactivate_account_forget_messages_information_part1" = "Dal momento in cui disattivo il mio account dimentica tutti i messaggi che ho inviato in precedenza (";
 "deactivate_account_forget_messages_information_part2_emphasize" = "Attenzione";
 "deactivate_account_forget_messages_information_part3" = ": gli utenti futuri vedranno un elenco incompleto di conversazioni)";
 "deactivate_account_validate_action" = "Disattiva account";
 "deactivate_account_password_alert_title" = "Disattiva account";
-"deactivate_account_password_alert_message" = "Per continuare, inserisci la password del tuo account Matrix";
+"deactivate_account_password_alert_message" = "Per continuare, inserisci la password del tuo account quali.chat";
 // Re-request confirmation dialog
 "rerequest_keys_alert_title" = "Richiesta inviata";
 "rerequest_keys_alert_message" = "Avvia %@ su un altro dispositivo che possa decifrare il messaggio, in modo da poter inviare le chiavi a questa sessione.";
@@ -591,7 +591,7 @@
 "key_backup_setup_intro_manual_export_info" = "(Avanzato)";
 "key_backup_setup_intro_manual_export_action" = "Esporta manualmente le chiavi";
 "key_backup_setup_passphrase_title" = "Proteggi il tuo backup con una frase di sicurezza";
-"key_backup_setup_passphrase_info" = "Conserveremo una copia cifrata delle tue chiavi sul nostro server. Proteggi il tuo backup con una frase di sicurezza per tenerlo sicuro.\n \nPer la massima sicurezza, dovrebbe essere diversa dalla password del tuo account Matrix.";
+"key_backup_setup_passphrase_info" = "Conserveremo una copia cifrata delle tue chiavi sul nostro server. Proteggi il tuo backup con una frase di sicurezza per tenerlo sicuro.\n \nPer la massima sicurezza, dovrebbe essere diversa dalla password del tuo account quali.chat.";
 "key_backup_setup_passphrase_passphrase_title" = "Inserisci";
 "key_backup_setup_passphrase_passphrase_placeholder" = "Inserisci frase";
 "key_backup_setup_passphrase_passphrase_valid" = "Bene!";
@@ -648,7 +648,7 @@
 "sign_out_key_backup_in_progress_alert_discard_key_backup_action" = "Non voglio i miei messaggi cifrati";
 "sign_out_key_backup_in_progress_alert_cancel_action" = "Attendo";
 "close" = "Chiudi";
-"auth_forgot_password_error_no_configured_identity_server" = "Non è stato configurato alcun server d'identità: aggiungine uno per ripristinare la password dell'account Matrix.";
+"auth_forgot_password_error_no_configured_identity_server" = "Non è stato configurato alcun server d'identità: aggiungine uno per ripristinare la password dell'account quali.chat.";
 "auth_softlogout_signed_out" = "Sei disconnesso/a";
 "auth_softlogout_sign_in" = "Accedi";
 "auth_softlogout_reason" = "L'amministratore dell'Home Server (%1$@) ti ha disconnesso dal tuo account %2$@ (%3$@).";
@@ -816,9 +816,9 @@
 "auth_add_email_message_2" = "Imposta un'email per il ripristino dell'account in caso di problemi e, se vuoi, anche per farti trovare da chi conosce quell'indirizzo email.";
 "auth_add_phone_message_2" = "Aggiungi un numero di telefono se vuoi farti trovare da chi lo conosce.";
 "auth_add_email_phone_message_2" = "Imposta un'email per il ripristino dell'account in caso di problemi. Email e telefono potranno essere usati anche per farti trovare dagli altri utenti.";
-"auth_email_is_required" = "Non è stato configurato alcun server d'identità, perciò non puoi aggiungere un indirizzo email per ripristinare la tua password dell'account Matrix in futuro.";
-"auth_phone_is_required" = "Non è stato configurato alcun server d'identità, perciò non puoi aggiungere un numero di telefono per ripristinare la tua password dell'account Matrix in futuro.";
-"auth_reset_password_error_is_required" = "Non è stato configurato alcun server d'identità: aggiungine uno nelle opzioni server per ripristinare la password dell'account Matrix.";
+"auth_email_is_required" = "Non è stato configurato alcun server d'identità, perciò non puoi aggiungere un indirizzo email per ripristinare la tua password dell'account quali.chat in futuro.";
+"auth_phone_is_required" = "Non è stato configurato alcun server d'identità, perciò non puoi aggiungere un numero di telefono per ripristinare la tua password dell'account quali.chat in futuro.";
+"auth_reset_password_error_is_required" = "Non è stato configurato alcun server d'identità: aggiungine uno nelle opzioni server per ripristinare la password dell'account quali.chat.";
 "contacts_address_book_no_identity_server" = "Nessun server d'identità configurato";
 "settings_discovery_settings" = "SCOPRI";
 "settings_identity_server_settings" = "SERVER D'IDENTITÀ";
@@ -878,7 +878,7 @@
 "error_invite_3pid_with_no_identity_server" = "Aggiungi un server d'identità nelle impostazioni per poter invitare utenti tramite email.";
 "settings_add_3pid_password_title_email" = "Aggiungi indirizzo email";
 "settings_add_3pid_password_title_msidsn" = "Aggiungi numero di telefono";
-"settings_add_3pid_password_message" = "Per continuare, inserisci la password del tuo account Matrix";
+"settings_add_3pid_password_message" = "Per continuare, inserisci la password del tuo account quali.chat";
 "settings_add_3pid_invalid_password_message" = "Credenziali non valide";
 "error_not_supported_on_mobile" = "Non puoi farlo da %@ mobile.";
 "widget_menu_refresh" = "Ricarica";
@@ -1021,9 +1021,9 @@
 "security_settings_crosssigning_complete_security" = "Completa la sicurezza";
 "security_settings_complete_security_alert_title" = "Completa la sicurezza";
 "security_settings_complete_security_alert_message" = "Dovresti completare la sicurezza prima sulla tua sessione attuale.";
-"security_settings_coming_soon" = "Spiacenti. Questa azione non è ancora disponibile su %@ iOS. Prova ad usare un altro client Matrix per farlo. %@ iOS lo userà.";
+"security_settings_coming_soon" = "Spiacenti. Questa azione non è ancora disponibile su %@ iOS. Prova ad usare un altro client quali.chat per farlo. %@ iOS lo userà.";
 "device_verification_self_verify_wait_new_sign_in_title" = "Verifica questo accesso";
-"device_verification_self_verify_wait_additional_information" = "Funziona con %@ ed altri client Matrix che supportino la firma incrociata.";
+"device_verification_self_verify_wait_additional_information" = "Funziona con %@ ed altri client quali.chat che supportino la firma incrociata.";
 // MARK: - Device Verification
 "key_verification_other_session_title" = "Verifica sessione";
 "key_verification_new_session_title" = "Verifica la tua nuova sessione";
@@ -1099,7 +1099,7 @@
 "secrets_setup_recovery_key_storage_alert_message" = "✓ Stampala e conservala in un posto sicuro\n✓ Salvala in una chiave USB o disco di backup\n✓ Copiala nel tuo archivio cloud pesonale";
 "secrets_setup_recovery_passphrase_title" = "Imposta una frase di sicurezza";
 "secrets_setup_recovery_passphrase_information" = "Inserisci una frase di sicurezza che conosci solo tu, usata per proteggere i segreti nel tuo server.";
-"secrets_setup_recovery_passphrase_additional_information" = "Non usare la password del tuo account Matrix.";
+"secrets_setup_recovery_passphrase_additional_information" = "Non usare la password del tuo account quali.chat.";
 "secrets_setup_recovery_passphrase_validate_action" = "Fatto";
 "secrets_setup_recovery_passphrase_confirm_information" = "Inserisci la frase di sicurezza di nuovo per confermarla.";
 "secrets_setup_recovery_passphrase_confirm_passphrase_title" = "Conferma";
@@ -1108,13 +1108,13 @@
 "authenticated_session_flow_not_supported" = "Questa app non supporta il metodo di autenticazione del tuo homeserver.";
 "secure_backup_setup_banner_title" = "Backup Sicuro";
 "secure_backup_setup_banner_subtitle" = "Proteggiti dalla perdita dei messaggi e dati crittografati";
-"security_settings_crypto_sessions_description_2" = "Se non riconosci un accesso, modifica la password dell'account Matrix e reimposta il Backup Sicuro.";
+"security_settings_crypto_sessions_description_2" = "Se non riconosci un accesso, modifica la password dell'account quali.chat e reimposta il Backup Sicuro.";
 "security_settings_secure_backup" = "BACKUP SICURO";
 "security_settings_secure_backup_description" = "Fai un backup delle chiavi crittografiche con i dati del tuo account in caso tu perda l'accesso alle tue sessioni. Le chiavi saranno protette con una chiave di sicurezza univoca.";
 "security_settings_secure_backup_setup" = "Configura";
 "security_settings_secure_backup_synchronise" = "Sincronizza";
 "security_settings_secure_backup_delete" = "Elimina backup";
-"security_settings_user_password_description" = "Conferma la tua identità inserendo la password dell'account Matrix";
+"security_settings_user_password_description" = "Conferma la tua identità inserendo la password dell'account quali.chat";
 // Events formatter with you
 "event_formatter_widget_added_by_you" = "Hai aggiunto il widget: %@";
 "event_formatter_widget_removed_by_you" = "Hai rimosso il widget: %@";
@@ -1188,7 +1188,7 @@
 "create_room_section_footer_type" = "Le persone entrano in una stanza privata solo su invito.";
 "create_room_show_in_directory" = "Mostra nell'elenco stanze";
 "create_room_section_header_address" = "INDIRIZZO";
-"create_room_placeholder_address" = "#stanzatest:matrix.org";
+"create_room_placeholder_address" = "#stanzatest:quali.chat";
 "room_info_list_room_encrypted" = "I messaggi in questa stanza sono cifrati end-to-end";
 "room_info_list_one_member" = "1 membro";
 "room_info_list_several_members" = "%@ membri";
@@ -1210,7 +1210,7 @@
 "room_details_advanced_e2e_encryption_enabled_for_dm" = "La crittografia è attiva";
 "room_details_advanced_e2e_encryption_disabled_for_dm" = "La crittografia non è attiva.";
 "pin_protection_kick_user_alert_message" = "Troppi errori, sei stato disconnesso";
-"secrets_reset_authentication_message" = "Inserisci la password del tuo account Matrix per confermare";
+"secrets_reset_authentication_message" = "Inserisci la password del tuo account quali.chat per confermare";
 "secrets_reset_reset_action" = "Reimposta";
 "secrets_reset_warning_message" = "Ricomincerai senza cronologia, messaggi, dispositivi o utenti fidati.";
 "secrets_reset_warning_title" = "Se reimposti tutto";
@@ -1573,15 +1573,15 @@
 "location_sharing_title" = "Posizione";
 "ok" = "OK";
 "settings_enable_room_message_bubbles" = "Messaggi";
-"onboarding_splash_page_4_message" = "Element è ottimo anche per i luoghi di lavoro. È considerato affidabile dalle più sicure organizzazioni del mondo.";
+"onboarding_splash_page_4_message" = "quali.chat è ottimo anche per i luoghi di lavoro. È considerato affidabile dalle più sicure organizzazioni del mondo.";
 "onboarding_splash_page_4_title_no_pun" = "Messaggistica per la tua squadra.";
-"onboarding_splash_page_3_message" = "Crittografia end-to-end e nessun numero di telefono richiesto. Niente pubblicità o raccolta di dati.";
-"onboarding_splash_page_3_title" = "Messaggistica sicura.";
-"onboarding_splash_page_2_message" = "Scegli dove vengono tenute le tue conversazioni, dandoti controllo e indipendenza. Connesso via Matrix.";
-"onboarding_splash_page_2_title" = "Tu hai il controllo.";
-"onboarding_splash_page_1_message" = "Comunicazioni sicure e indipendenti che ti danno lo stesso livello di riservatezza di una conversazione faccia a faccia in casa tua.";
-"onboarding_splash_page_1_title" = "Prendi il controllo delle tue conversazioni.";
-"onboarding_splash_login_button_title" = "Ho già un account";
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
 
 // Onboarding
 "onboarding_splash_register_button_title" = "Crea account";
@@ -1638,22 +1638,22 @@
 "onboarding_use_case_title" = "Con chi parlerai di più?";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
-"matrix" = "Matrix";
+"matrix" = "quali.chat";
 // Login Screen
 "login_create_account" = "Nuovo utente:";
-"login_server_url_placeholder" = "URL (es. https://matrix.org)";
+"login_server_url_placeholder" = "URL (es. https://quali.chat)";
 "login_home_server_title" = "URL homeserver:";
 "login_home_server_info" = "Lo storico delle conversazioni e i dati utente sono salvati sul tuo homeserver";
 "login_identity_server_title" = "URL del server d'identità:";
-"login_identity_server_info" = "Matrix fornisce dei server d'identità per associare i tuoi recapiti (es. l'indirizzo email) al tuo ID Matrix. Attualmente esiste solo il server https://matrix.org.";
-"login_user_id_placeholder" = "ID Matrix (es. @gianni:matrix.org o gianni)";
+"login_identity_server_info" = "quali.chat fornisce dei server d'identità per associare i tuoi recapiti (es. l'indirizzo email) al tuo ID quali.chat. Attualmente esiste solo il server https://quali.chat.";
+"login_user_id_placeholder" = "ID quali.chat (es. @gianni:quali.chat o gianni)";
 "login_password_placeholder" = "Password";
 "login_optional_field" = "opzionale";
 "login_display_name_placeholder" = "Nome completo (es. Gianni Rossi)";
-"login_email_info" = "Indicare un indirizzo email consente ad altri utenti di trovarti facilmente in Matrix, e ti da modo di resettare la password in caso di necessità.";
+"login_email_info" = "Indicare un indirizzo email consente ad altri utenti di trovarti facilmente in quali.chat, e ti da modo di resettare la password in caso di necessità.";
 "login_email_placeholder" = "Indirizzo email";
 "login_prompt_email_token" = "Inserisci il token di validazione della tua email:";
 "login_error_title" = "Accesso fallito";
@@ -1674,7 +1674,7 @@
 "login_error_forgot_password_is_not_supported" = "Le password dimenticate non sono supportate";
 "notice_room_join_rule" = "Regole per accedere: %@";
 // contacts list screen 
-"invitation_message" = "Vorrei comunicare con te usando Matrix. Visita il sito web http://matrix.org per avere maggiori informazioni.";
+"invitation_message" = "Vorrei comunicare con te usando quali.chat. Visita il sito web http://quali.chat per avere maggiori informazioni.";
 "login_mobile_device" = "Mobile";
 "login_tablet_device" = "Tablet";
 "login_desktop_device" = "Desktop";
@@ -1703,7 +1703,7 @@
 "select_account" = "Seleziona un utente";
 "attach_media" = "Allega contenuto multimediale";
 "capture_media" = "Riprendi foto/video";
-"invite_user" = "Invita un utente Matrix";
+"invite_user" = "Invita un utente quali.chat";
 "reset_to_default" = "Ripristina predefinito";
 "resend_message" = "Reinvia messaggio";
 "select_all" = "Seleziona tutto";
@@ -1809,7 +1809,7 @@
 "account_msisdn_validation_error" = "Impossibile verificare il numero di telefono.";
 "account_error_display_name_change_failed" = "Cambio del nome completo fallito";
 "account_error_picture_change_failed" = "Cambio dell'immagine fallito";
-"account_error_matrix_session_is_not_opened" = "La sessione Matrix non è attiva";
+"account_error_matrix_session_is_not_opened" = "La sessione quali.chat non è attiva";
 "account_error_email_wrong_title" = "Indirizzo email non valido";
 "account_error_email_wrong_description" = "Questo non sembra essere un indirizzo email valido";
 "account_error_msisdn_wrong_title" = "Numero di telefono non valido";
@@ -1854,10 +1854,10 @@
 "attachment_cancel_upload" = "Interrompi caricamento?";
 "attachment_multiselection_size_prompt" = "Vuoi inviare le immagini come:";
 "attachment_multiselection_original" = "Originali";
-"attachment_e2e_keys_file_prompt" = "Questo file contiene le chiavi crittografiche esportate da un client Matrix.\nVuoi visualizzarlo o importare le chiavi che contiene?";
+"attachment_e2e_keys_file_prompt" = "Questo file contiene le chiavi crittografiche esportate da un client quali.chat.\nVuoi visualizzarlo o importare le chiavi che contiene?";
 "attachment_e2e_keys_import" = "Importa...";
 // Contacts
-"contact_mx_users" = "Utenti Matrix";
+"contact_mx_users" = "Utenti quali.chat";
 "contact_local_contacts" = "Contatti locali";
 // Groups
 // Search
@@ -1870,12 +1870,12 @@
 "format_time_d" = "d";
 // E2E import
 "e2e_import_room_keys" = "Importa le chiavi del canale";
-"e2e_import_prompt" = "Questo processo ti consente di importare le chiavi di crittografia che hai precedentemente esportato da un altro client Matrix. Sarai quindi in grado di decifrare gli stessi messaggi leggibili dall'altro client.\nIl file esportato è protetto da password. Devi inserirla qui per decifrare il file.";
+"e2e_import_prompt" = "Questo processo ti consente di importare le chiavi di crittografia che hai precedentemente esportato da un altro client quali.chat. Sarai quindi in grado di decifrare gli stessi messaggi leggibili dall'altro client.\nIl file esportato è protetto da password. Devi inserirla qui per decifrare il file.";
 "e2e_import" = "Importa";
 "e2e_passphrase_enter" = "Inserisci password";
 // E2E export
 "e2e_export_room_keys" = "Esporta chiavi del canale";
-"e2e_export_prompt" = "Questo processo consente di esportare in un file locale le chiavi per leggere i messaggi ricevuti in canali criptati. Sarai quindi in grado di importare il file in un altro client Matrix, in modo da rendergli possibile decriptare quei messaggi in futuro.\nIl file esportato consentirà a chiunque di decriptare tutti i messaggi che puoi leggere, quindi dovresti tenerlo al sicuro.";
+"e2e_export_prompt" = "Questo processo consente di esportare in un file locale le chiavi per leggere i messaggi ricevuti in canali criptati. Sarai quindi in grado di importare il file in un altro client quali.chat, in modo da rendergli possibile decriptare quei messaggi in futuro.\nIl file esportato consentirà a chiunque di decriptare tutti i messaggi che puoi leggere, quindi dovresti tenerlo al sicuro.";
 "e2e_export" = "Esporta";
 "e2e_passphrase_confirm" = "Conferma password di accesso";
 "e2e_passphrase_empty" = "La password di accesso non può essere vuota";
@@ -1900,7 +1900,7 @@
 "microphone_access_not_granted_for_call" = "Le telefonate necessitano l'accesso al microfono, ma %@ non ha il permesso di usarlo";
 "local_contacts_access_not_granted" = "La ricerca degli utenti fra i contatti locali necessita l'accesso alla rubrica, ma %@ non ha il permesso di usarla";
 "local_contacts_access_discovery_warning_title" = "Ricerca utenti";
-"local_contacts_access_discovery_warning" = "Per scoprire chi fra i tuoi contatti sta già usando Matrix, %@ può inviare gli indirizzi email e i numeri telefonici della tua rubrica al tuo server d'identità Matrix. Se possibile, i dati personali vengono codificati prima di essere inviati - controlla la politica di riservatezza del tuo server d'identità per maggiori dettagli.";
+"local_contacts_access_discovery_warning" = "Per scoprire chi fra i tuoi contatti sta già usando quali.chat, %@ può inviare gli indirizzi email e i numeri telefonici della tua rubrica al tuo server d'identità quali.chat. Se possibile, i dati personali vengono codificati prima di essere inviati - controlla la politica di riservatezza del tuo server d'identità per maggiori dettagli.";
 // Country picker
 "country_picker_title" = "Scegli un paese";
 // Language picker
@@ -2236,7 +2236,7 @@
 "threads_beta_information" = "Tieni le discussioni organizzate in conversazioni.\n\nLe conversazioni aiutano a tenere le discussioni in tema e rintracciabili. ";
 "threads_beta_title" = "Conversazioni";
 "threads_notice_done" = "Capito";
-"threads_notice_information" = "Tutte le conversazioni create durante il periodo sperimentale verranno <b>visualizzate come normali risposte</b>.<br/><br/>Sarà una transizione una-tantum, dato che le conversazioni ora fanno parte delle specifiche Matrix.";
+"threads_notice_information" = "Tutte le conversazioni create durante il periodo sperimentale verranno <b>visualizzate come normali risposte</b>.<br/><br/>Sarà una transizione una-tantum, dato che le conversazioni ora fanno parte delle specifiche quali.chat.";
 "threads_notice_title" = "I messaggi in conversazioni non sono più sperimentali! 🎉";
 "room_participants_invite_prompt_to_msg" = "Vuoi davvero invitare %@ in %@?";
 "onboarding_celebration_button" = "Andiamo";
@@ -2300,7 +2300,7 @@
 "confirm" = "Conferma";
 "location_sharing_allow_background_location_cancel_action" = "Non ora";
 "location_sharing_allow_background_location_validate_action" = "Impostazioni";
-"location_sharing_allow_background_location_message" = "Se vuoi condividere la posizione in tempo reale, Element deve accedere alla posizione quando l'app è in secondo piano. Per attivarla, tocca Impostazioni > Posizione e seleziona Sempre";
+"location_sharing_allow_background_location_message" = "Se vuoi condividere la posizione in tempo reale, quali.chat deve accedere alla posizione quando l'app è in secondo piano. Per attivarla, tocca Impostazioni > Posizione e seleziona Sempre";
 "location_sharing_allow_background_location_title" = "Permetti accesso";
 "settings_labs_enable_live_location_sharing" = "Condivisione posizione in tempo reale - condividi la posizione attuale (in sviluppo attivo e, per ora, le posizioni restano nella cronologia della stanza)";
 "settings_ui_show_redactions_in_room_history" = "Mostra un segnaposto per i messaggi rimossi";
@@ -2387,7 +2387,7 @@
 "authentication_login_username" = "Nome utente / Email / Telefono";
 "authentication_login_title" = "Bentornato/a!";
 "authentication_registration_password_footer" = "Deve essere di almeno 8 caratteri";
-/* The placeholder will show the full Matrix ID that has been entered. */
+/* The placeholder will show the full quali.chat ID that has been entered. */
 "authentication_registration_username_footer_available" = "Gli altri ti possono trovare come %@";
 "authentication_registration_username_footer" = "Non puoi cambiarlo in seguito";
 "authentication_registration_username" = "Nome utente";
@@ -2543,7 +2543,7 @@
 "authentication_qr_login_scan_subtitle" = "Posiziona il codice QR nel riquadro sotto";
 "authentication_qr_login_scan_title" = "Scansiona codice QR";
 "authentication_qr_login_display_step2" = "Seleziona ‘Accedi con codice QR’";
-"authentication_qr_login_display_step1" = "Apri Element sull'altro dispositivo";
+"authentication_qr_login_display_step1" = "Apri quali.chat sull'altro dispositivo";
 "authentication_qr_login_display_subtitle" = "Scansiona il codice QR sottostante con il dispositivo che è disconnesso.";
 "authentication_qr_login_display_title" = "Collega un dispositivo";
 "authentication_qr_login_start_display_qr" = "Mostra codice QR in questo dispositivo";
@@ -2551,7 +2551,7 @@
 "authentication_qr_login_start_step4" = "Seleziona ‘Mostra codice QR in questo dispositivo’";
 "authentication_qr_login_start_step3" = "Seleziona ‘Collega un dispositivo’";
 "authentication_qr_login_start_step2" = "Vai in Impostazioni -> Sicurezza & Privacy";
-"authentication_qr_login_start_step1" = "Apri Element sull'altro dispositivo";
+"authentication_qr_login_start_step1" = "Apri quali.chat sull'altro dispositivo";
 "authentication_qr_login_start_subtitle" = "Usa la fotocamera di questo dispositivo per scansionare il codice QR mostrato nell'altro dispositivo:";
 "authentication_qr_login_start_title" = "Scansiona codice QR";
 "authentication_login_with_qr" = "Accedi con codice QR";
@@ -2618,7 +2618,7 @@
 "user_session_inactive_session_title" = "Sessioni inattive";
 "user_session_unverified_session_description" = "Le sessioni non verificate sono quelle in cui è stato fatto l'accesso con le tue credenziali, ma che non sono state verificate.\n\nDovresti essere particolarmente sicuro di riconoscere queste sessioni dato che potrebbero rappresentare un uso non autorizzato del tuo account.";
 "user_session_unverified_session_title" = "Sessione non verificata";
-"user_session_verified_session_description" = "Le sessioni verificate sono ovunque usi Element dopo l'inserimento della password o la conferma della tua identità con un'altra sessione verificata.\n\nCiò significa che hai tutte le chiavi necessarie per sbloccare i tuoi messaggi cifrati e per confermare agli altri utenti che ti fidi di questa sessione.";
+"user_session_verified_session_description" = "Le sessioni verificate sono ovunque usi quali.chat dopo l'inserimento della password o la conferma della tua identità con un'altra sessione verificata.\n\nCiò significa che hai tutte le chiavi necessarie per sbloccare i tuoi messaggi cifrati e per confermare agli altri utenti che ti fidi di questa sessione.";
 "user_session_verified_session_title" = "Sessioni verificate";
 "user_session_got_it" = "Capito";
 "voice_broadcast_tile" = "Trasmissione vocale";
@@ -2638,7 +2638,7 @@
 
 // MARK: Password policy errors
 "password_policy_too_short_pwd_error" = "Password troppo corta";
-"user_session_permanently_unverified_session_description" = "Questa sessione non supporta la crittografia, perciò non può essere verificata.\n\nNon potrai partecipare in stanze dove la crittografia è attiva mentre usi questa sessione.\n\nPer maggiore sicurezza e privacy, è consigliabile usare i client di Matrix che supportano la crittografia.";
+"user_session_permanently_unverified_session_description" = "Questa sessione non supporta la crittografia, perciò non può essere verificata.\n\nNon potrai partecipare in stanze dove la crittografia è attiva mentre usi questa sessione.\n\nPer maggiore sicurezza e privacy, è consigliabile usare i client di quali.chat che supportano la crittografia.";
 "wysiwyg_composer_link_action_edit_title" = "Modifica collegamento";
 "wysiwyg_composer_link_action_create_title" = "Crea un collegamento";
 "wysiwyg_composer_link_action_link" = "Collegamento";
@@ -2700,7 +2700,7 @@
 "key_verification_scan_qr_code_information_other_user" = "Punta la fotocamera verso il codice QR mostrato sul suo dispositivo per verificare sua la sessione";
 "key_verification_scan_qr_code_title" = "Scansiona codice QR";
 "device_verification_self_verify_wait_recover_secrets_additional_help" = "Non riesci ad accedere a una sessione esistente di %@?";
-"device_verification_self_verify_open_on_other_device_information" = "Devi verificare questa sessione per potere leggere la cronologia dei messaggi sicuri.\n\nApri Element su uno degli altri tuoi dispositivi e segui le istruzioni.";
+"device_verification_self_verify_open_on_other_device_information" = "Devi verificare questa sessione per potere leggere la cronologia dei messaggi sicuri.\n\nApri quali.chat su uno degli altri tuoi dispositivi e segui le istruzioni.";
 "device_verification_self_verify_open_on_other_device_title" = "Apri %@ sull'altro tuo dispositivo";
 "room_creation_only_one_email_invite" = "Puoi invitare una sola email alla volta";
 "launch_loading_delay_warning" = "Potrebbe volerci un po' più tempo.\nGrazie per la pazienza.";
@@ -2740,10 +2740,23 @@
 "room_creation_user_not_found_prompt_title" = "Conferma";
 "room_creation_user_not_found_prompt_invite_action" = "Inizia il messaggio lo stesso";
 "room_participants_invite_anyway" = "Invita lo stesso";
-"room_participants_invite_unknown_participant_prompt_to_msg" = "Impossibile trovare profili con questo ID Matrix. Vuoi davvero invitare %@ in %@?";
-"room_creation_user_not_found_prompt_message" = "Impossibile trovare profili con questo ID Matrix. Vuoi comunque iniziare un messaggio diretto?";
+"room_participants_invite_unknown_participant_prompt_to_msg" = "Impossibile trovare profili con questo ID quali.chat. Vuoi davvero invitare %@ in %@?";
+"room_creation_user_not_found_prompt_message" = "Impossibile trovare profili con questo ID quali.chat. Vuoi comunque iniziare un messaggio diretto?";
 "settings_manage_account_title" = "Account";
 "settings_manage_account_action" = "Gestisci account";
 "settings_manage_account_description" = "Gestisci il tuo account su %@";
 "manage_session_redirect" = "Verrai reindirizzato al fornitore di autenticazione del tuo server per completare la disconnessione.";
 "manage_session_redirect_error" = "Funzionalità attualmente non disponibile. Contatta l'amministratore del tuo homeserver";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified
+"demo_login_placeholder" = "Username"; // QUALICHAT modified

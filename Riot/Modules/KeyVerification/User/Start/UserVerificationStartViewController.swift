@@ -1,6 +1,7 @@
 // File created from ScreenTemplate
 // $ createScreen.sh Start UserVerificationStart
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2020 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -84,7 +85,11 @@ final class UserVerificationStartViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+        #if QUALICHAT
+        self.startVerificationButton.layer.cornerRadius = self.startVerificationButton.frame.height / 2
+        #else
         self.startVerificationButton.layer.cornerRadius = Constants.verifyButtonCornerRadius
+        #endif
     }
     
     // MARK: - Private
@@ -92,7 +97,11 @@ final class UserVerificationStartViewController: UIViewController {
     private func update(theme: Theme) {
         self.theme = theme
         
+        #if QUALICHAT
+        self.view.backgroundColor = theme.backgroundColor
+        #else
         self.view.backgroundColor = theme.headerBackgroundColor
+        #endif
         
         if let navigationBar = self.navigationController?.navigationBar {
             theme.applyStyle(onNavigationBar: navigationBar)
@@ -100,6 +109,11 @@ final class UserVerificationStartViewController: UIViewController {
         
         self.informationLabel.textColor = theme.textPrimaryColor
         self.startVerificationButton.vc_setBackgroundColor(theme.tintColor, for: .normal)
+        
+        #if QUALICHAT
+        self.startVerificationButton.setTitleColor(theme.tintBackgroundColor, for: .normal)
+        #endif
+        
         self.verificationWaitingLabel.textColor = theme.textSecondaryColor
         self.additionalInformationLabel.textColor = theme.textSecondaryColor
     }

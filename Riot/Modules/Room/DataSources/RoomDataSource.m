@@ -1,4 +1,6 @@
 /*
+ Copyright 2025 Keypair Establishment
+ Copyright 2025 Keypair Establishment
  Copyright 2015 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  
@@ -91,7 +93,9 @@ const CGFloat kTypingCellHeight = 24;
         
         self.showBubbleDateTimeOnSelection = YES;
         self.showReactions = YES;
-        
+#if QUALICHAT
+        self.isWritePermissions = RoomSharedData.shared.writePermissionRoom;
+#endif
         // Observe user interface theme change.
         kThemeServiceDidChangeThemeNotificationObserver = [[NSNotificationCenter defaultCenter] addObserverForName:kThemeServiceDidChangeThemeNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *notif) {
             
@@ -668,7 +672,11 @@ const CGFloat kTypingCellHeight = 24;
 - (void)updateCellLayoutIfNeeded:(MXKRoomBubbleTableViewCell*)cell withCellData:(MXKRoomBubbleCellData*)cellData {
     
     RoomTimelineConfiguration *timelineConfiguration = [RoomTimelineConfiguration shared];
-    
+#if QUALICHAT
+    if([cell isKindOfClass:PollPlainCell.class]) {
+        [(PollPlainCell*)cell setPermissionVote:self.isWritePermissions];
+    }
+#endif
     [timelineConfiguration.currentStyle.cellLayoutUpdater updateLayoutIfNeededFor:cell andCellData:cellData];
 }
 

@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -119,6 +120,19 @@ class CompletionSuggestionService: CompletionSuggestionServiceProtocol {
             currentTextTriggerSubject.send(nil)
             return
         }
+        
+#if QUALICHAT
+        if(!QualiChatBuildSettings.enableCommandDirectChatInput) {
+            if suggestionPattern.key == .at {
+                currentTextTriggerSubject.send(TextTrigger(key: .at, text: suggestionPattern.text))
+                return;
+            } else {
+                items.send([])
+                currentTextTriggerSubject.send(nil)
+                return;
+            }
+        }
+#endif
 
         switch suggestionPattern.key {
         case .at:
@@ -158,6 +172,12 @@ class CompletionSuggestionService: CompletionSuggestionServiceProtocol {
                 })
             }
         case .slash:
+            #if QUALICHAT
+            if(!QualiChatBuildSettings.enableCommandDirectChatInput) {
+                return
+            }
+            #endif
+            
             commandProvider.fetchCommands { [weak self] commands in
                 guard let self else { return }
 

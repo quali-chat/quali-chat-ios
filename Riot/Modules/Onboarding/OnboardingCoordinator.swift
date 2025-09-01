@@ -1,6 +1,7 @@
 // File created from FlowTemplate
 // $ createRootCoordinator.sh Onboarding/SplashScreen Onboarding OnboardingSplashScreen
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2021 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -160,6 +161,12 @@ final class OnboardingCoordinator: NSObject, OnboardingCoordinatorProtocol {
         
         switch result {
         case .register:
+            // MARK: - QualiChat modified
+            guard QualiChatBuildSettings.registerUseCaseScreenEnabled else {
+                useCaseSelectionCoordinator(coordinator, didCompleteWith: .skipped)
+                return
+            }
+            
             showUseCaseSelectionScreen()
         case .login:
             if BuildSettings.onboardingEnableNewAuthenticationFlow {
@@ -196,7 +203,8 @@ final class OnboardingCoordinator: NSObject, OnboardingCoordinatorProtocol {
     }
     
     /// Displays the next view in the flow after the use case screen.
-    private func useCaseSelectionCoordinator(_ coordinator: OnboardingUseCaseSelectionCoordinator, didCompleteWith result: OnboardingUseCaseViewModelResult) {
+    // MARK: - QualiChat modified
+    private func useCaseSelectionCoordinator(_ coordinator: Coordinator, didCompleteWith result: OnboardingUseCaseViewModelResult) {
         useCaseResult = result
         
         guard BuildSettings.onboardingEnableNewAuthenticationFlow else {
@@ -284,6 +292,12 @@ final class OnboardingCoordinator: NSObject, OnboardingCoordinatorProtocol {
             navigationRouter.popAllModules(animated: false)
             
             showSplashScreen()
+            // MARK: - QualiChat modified
+            guard QualiChatBuildSettings.registerUseCaseScreenEnabled else {
+                useCaseSelectionCoordinator(self, didCompleteWith: .skipped)
+                return
+            }
+            
             showUseCaseSelectionScreen(animated: false)
         case .login:
             navigationRouter.popAllModules(animated: false)

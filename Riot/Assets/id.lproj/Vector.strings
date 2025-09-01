@@ -2,8 +2,8 @@
 
 "auth_invalid_login_param" = "Nama pengguna dan/atau kata sandi tidak benar";
 "auth_identity_server_placeholder" = "URL (contoh https://vector.im)";
-"auth_home_server_placeholder" = "URL (contoh https://matrix.org)";
-"auth_repeat_new_password_placeholder" = "Konfirmasi kata sandi akun Matrix baru Anda";
+"auth_home_server_placeholder" = "URL (contoh https://quali.chat)";
+"auth_repeat_new_password_placeholder" = "Konfirmasi kata sandi akun quali.chat baru Anda";
 "auth_repeat_password_placeholder" = "Ulangi kata sandi";
 "auth_phone_placeholder" = "Nomor telepon";
 "auth_optional_phone_placeholder" = "Nomor telepon (opsional)";
@@ -73,13 +73,13 @@
 "auth_email_validation_message" = "Silakan periksa email Anda untuk melanjutkan pendaftaran";
 "auth_use_server_options" = "Gunakan opsi server khusus (lanjutan)";
 "auth_email_not_found" = "Gagal mengirim surel: Alamat email ini tidak ditemukan";
-"auth_forgot_password_error_no_configured_identity_server" = "Tidak ada server identitas yang dikonfigurasikan: tambahkan satu untuk mengatur ulang kata sandi akun Matrix Anda.";
-"auth_forgot_password" = "Lupa kata sandi akun Matrix?";
+"auth_forgot_password_error_no_configured_identity_server" = "Tidak ada server identitas yang dikonfigurasikan: tambahkan satu untuk mengatur ulang kata sandi akun quali.chat Anda.";
+"auth_forgot_password" = "Lupa kata sandi akun quali.chat?";
 "auth_username_in_use" = "Nama pengguna telah dipakai";
 "auth_password_dont_match" = "Kata sandi tidak cocok";
 "auth_untrusted_id_server" = "Server identitas tidak dipercaya";
-"auth_phone_is_required" = "Tidak ada server identitas yang dikonfigurasi sehingga Anda tidak dapat menambahkan nomor telepon untuk mengatur ulang kata sandi akun Matrix Anda di masa depan.";
-"auth_email_is_required" = "Tidak ada server identitas yang dikonfigurasi sehingga Anda tidak dapat menambahkan alamat email untuk mengatur ulang kata sandi akun Matrix Anda di masa depan.";
+"auth_phone_is_required" = "Tidak ada server identitas yang dikonfigurasi sehingga Anda tidak dapat menambahkan nomor telepon untuk mengatur ulang kata sandi akun quali.chat Anda di masa depan.";
+"auth_email_is_required" = "Tidak ada server identitas yang dikonfigurasi sehingga Anda tidak dapat menambahkan alamat email untuk mengatur ulang kata sandi akun quali.chat Anda di masa depan.";
 "auth_phone_in_use" = "Nomor telepon ini sudah dipakai";
 "auth_email_in_use" = "Surel ini sudah dipakai";
 "auth_missing_email_or_phone" = "Tidak ada surel atau nomor telepon";
@@ -102,7 +102,7 @@
 "joined" = "Bergabung";
 "collapse" = "tutup";
 "store_promotional_text" = "Aplikasi perpesanan dan kolaborasi yang menjaga privasi, pada jaringan terbuka. Terdesentralisasi untuk Anda kendali. Tidak ada penambangan data, tidak ada pintu belakang dan tidak ada akses pihak ketiga.";
-"store_full_description" = "Element adalah aplikasi perpesanan dan kolaborasi baru yang:\n\n1. Menempatkan Anda dalam kendali untuk mempertahankan privasi Anda\n2. Memungkinkan Anda berkomunikasi dengan siapa pun di jaringan Matrix, dan bahkan di luar dengan mengintegrasikan dengan aplikasi seperti Slack\n3. Melindungi Anda dari iklan, menambangan data, pintu belakang, dan taman berdinding\n4. Mengamankan Anda melalui enkripsi ujung ke ujung, dengan penandatanganan silang untuk memverifikasi orang lain\n\nElement benar-benar berbeda dari aplikasi perpesanan dan kolaborasi lain karena Element terdesentralisasi dan sumber terbuka.\n\nElement memungkinkan Anda host sendiri — atau memilih host — sehingga Anda memiliki privasi, kepemilikan, dan kontrol data dan obrolan Anda. Ini memberi Anda akses ke jaringan terbuka, jadi Anda tidak hanya terjebak berbicara dengan pengguna Element. Itu sangat aman.\n\nElement dapat melakukan semua ini karena beroperasi pada Matrix — standar untuk komunikasi terdesentralisasi terbuka.\n\nElement menempatkan Anda dalam kendali dengan membiarkan Anda memilih siapa yang menghost percakapan Anda. Dari aplikasi Element, Anda dapat memilih untuk menghost dengan cara yang berbeda:\n\n1. Dapatkan akun gratis pada server publik matrix.org\n2. Host sendiri akun Anda dengan menjalankan server pada perangkat keras Anda sendiri\n3. Mendaftar untuk akun di server khusus dengan hanya berlangganan platform hosting Element Matrix Services\n\nMengapa memilih Element?\n\nMILIKI DATA ANDA: Anda memutuskan di mana untuk menyimpan data dan pesan Anda. Anda memilikinya dan mengendalikannya, bukan perusahaan besar yang menambang data Anda atau memberikan akses ke pihak ketiga.\n\nPESAN DAN KOLABORASI TERBUKA: Anda dapat mengobrol dengan orang lain di jaringan Matrix, jika mereka menggunakan Element atau aplikasi Matrix lain, dan bahkan jika mereka menggunakan sistem perpesanan seperti Slack, IRC atau XMPP.\n\nSANGAT AMAN: Enkripsi ujung ke ujung yang nyata (hanya mereka yang dalam percakapan dapat mendekripsi pesan), dan penandatanganan silang untuk memverifikasi perangkat anggota obrolan.\n\nKOMUNIKASI LENGKAP: Perpesanan, panggilan suara dan video, pembagian file, pembagian layar dan banyak integrasi, bot dan widget. Buat ruangan, komunitas, tetap terhubung dan selesaikan hal-hal.\n\nDI MANA PUN ANDA BERADA: Tetap berkomunikasi di mana pun Anda berada dengan riwayat pesan yang sepenuhnya disinkronkan di semua perangkat Anda dan di web di https://app.element.io/.";
+"store_full_description" = "quali.chat adalah aplikasi perpesanan dan kolaborasi baru yang:\n\n1. Menempatkan Anda dalam kendali untuk mempertahankan privasi Anda\n2. Memungkinkan Anda berkomunikasi dengan siapa pun di jaringan quali.chat, dan bahkan di luar dengan mengintegrasikan dengan aplikasi seperti Slack\n3. Melindungi Anda dari iklan, menambangan data, pintu belakang, dan taman berdinding\n4. Mengamankan Anda melalui enkripsi ujung ke ujung, dengan penandatanganan silang untuk memverifikasi orang lain\n\nquali.chat benar-benar berbeda dari aplikasi perpesanan dan kolaborasi lain karena quali.chat terdesentralisasi dan sumber terbuka.\n\nquali.chat memungkinkan Anda host sendiri — atau memilih host — sehingga Anda memiliki privasi, kepemilikan, dan kontrol data dan obrolan Anda. Ini memberi Anda akses ke jaringan terbuka, jadi Anda tidak hanya terjebak berbicara dengan pengguna quali.chat. Itu sangat aman.\n\nquali.chat dapat melakukan semua ini karena beroperasi pada quali.chat — standar untuk komunikasi terdesentralisasi terbuka.\n\nquali.chat menempatkan Anda dalam kendali dengan membiarkan Anda memilih siapa yang menghost percakapan Anda. Dari aplikasi quali.chat, Anda dapat memilih untuk menghost dengan cara yang berbeda:\n\n1. Dapatkan akun gratis pada server publik quali.chat\n2. Host sendiri akun Anda dengan menjalankan server pada perangkat keras Anda sendiri\n3. Mendaftar untuk akun di server khusus dengan hanya berlangganan platform hosting quali.chat\n\nMengapa memilih quali.chat?\n\nMILIKI DATA ANDA: Anda memutuskan di mana untuk menyimpan data dan pesan Anda. Anda memilikinya dan mengendalikannya, bukan perusahaan besar yang menambang data Anda atau memberikan akses ke pihak ketiga.\n\nPESAN DAN KOLABORASI TERBUKA: Anda dapat mengobrol dengan orang lain di jaringan quali.chat, jika mereka menggunakan quali.chat atau aplikasi quali.chat lain, dan bahkan jika mereka menggunakan sistem perpesanan seperti Slack, IRC atau XMPP.\n\nSANGAT AMAN: Enkripsi ujung ke ujung yang nyata (hanya mereka yang dalam percakapan dapat mendekripsi pesan), dan penandatanganan silang untuk memverifikasi perangkat anggota obrolan.\n\nKOMUNIKASI LENGKAP: Perpesanan, panggilan suara dan video, pembagian file, pembagian layar dan banyak integrasi, bot dan widget. Buat ruangan, komunitas, tetap terhubung dan selesaikan hal-hal.\n\nDI MANA PUN ANDA BERADA: Tetap berkomunikasi di mana pun Anda berada dengan riwayat pesan yang sepenuhnya disinkronkan di semua perangkat Anda dan di web di https://app.element.io/.";
 // String for App Store
 "store_short_description" = "Obrolan/VoIP terdesentralisasi aman";
 
@@ -257,7 +257,7 @@
 // MARK: - Call Transfer
 "call_transfer_title" = "Pindahkan";
 "room_info_list_section_other" = "Lainnya";
-"create_room_placeholder_address" = "#ruangantest:matrix.org";
+"create_room_placeholder_address" = "#ruangantest:quali.chat";
 "create_room_placeholder_topic" = "Tentang apa ruangan ini?";
 "create_room_placeholder_name" = "Nama";
 "biometrics_cant_unlocked_alert_message_retry" = "Coba lagi";
@@ -415,7 +415,7 @@
 "event_formatter_call_answer" = "Jawab";
 "event_formatter_call_decline" = "Tolak";
 "event_formatter_message_edited_mention" = "(diedit)";
-"directory_server_placeholder" = "matrix.org";
+"directory_server_placeholder" = "quali.chat";
 
 // Directory
 "directory_title" = "Direktori";
@@ -595,14 +595,14 @@
 "room_creation_account" = "Akun";
 "social_login_list_title_sign_up" = "Atau";
 "social_login_list_title_sign_in" = "Atau";
-"auth_reset_password_error_is_required" = "Tidak ada server identitas yang diatur: tambahkan di pengaturan server untuk mengatur ulang kata sandi akun Matrix Anda.";
-"auth_reset_password_error_not_found" = "Alamat email Anda terlihat tidak diasosiasikan dengan sebuah ID Matrix di homeserver ini.";
+"auth_reset_password_error_is_required" = "Tidak ada server identitas yang diatur: tambahkan di pengaturan server untuk mengatur ulang kata sandi akun quali.chat Anda.";
+"auth_reset_password_error_not_found" = "Alamat email Anda terlihat tidak diasosiasikan dengan sebuah ID quali.chat di homeserver ini.";
 "auth_reset_password_error_unauthorized" = "Gagal untuk memverifikasi alamat email: pastikan Anda membuka tautan yang ada di email";
 "auth_reset_password_next_step_button" = "Saya telah memverifikasi alamat email saya";
 "auth_reset_password_email_validation_message" = "Sebuah email telah dikirim ke %@. Setelah Anda membuka tautan yang ada, klik di bawah.";
 "auth_reset_password_missing_password" = "Sebuah kata sandi baru harus dimasukkan.";
 "auth_reset_password_missing_email" = "Alamat email yang tertaut dengan akun Anda harus dimasukkan.";
-"auth_reset_password_message" = "Untuk mengatur ulang kata sandi akun Matrix Anda, masukkan alamat email yang tertaut ke akun Anda:";
+"auth_reset_password_message" = "Untuk mengatur ulang kata sandi akun quali.chat Anda, masukkan alamat email yang tertaut ke akun Anda:";
 "auth_recaptcha_message" = "Homeserver ini ingin memastikan bahwa Anda bukan sebuah robot";
 "auth_msisdn_validation_error" = "Tidak dapat memverifikasi nomor telepon.";
 "auth_msisdn_validation_message" = "Kami telah mengirim sebuah SMS dengan kode aktivasi. Silakan masukkan kodenya di bawah.";
@@ -691,11 +691,11 @@
 
 // AuthenticatedSessionViewControllerFactory
 "authenticated_session_flow_not_supported" = "Aplikasi ini tidak mendukung mekanisme autentikasi di homeserver Anda.";
-"security_settings_coming_soon" = "Maaf. Aksi ini belum tersedia di %@ iOS. Mohon gunakan klien Matrix yang lain untuk menyiapkannya. %@ iOS akan menggunakannya.";
+"security_settings_coming_soon" = "Maaf. Aksi ini belum tersedia di %@ iOS. Mohon gunakan klien quali.chat yang lain untuk menyiapkannya. %@ iOS akan menggunakannya.";
 "security_settings_blacklist_unverified_devices_description" = "Verifikasi semua sesi pengguna untuk menandainya sebagai terpercaya dan kirim pesan ke mereka.";
 "security_settings_crosssigning_info_exists" = "Akun Anda memiliki identitas penandatanganan silang, tetapi belum dipercayai oleh sesi ini. Selesaikan keamanan sesi ini.";
 "security_settings_secure_backup_description" = "Cadangkan kunci enkripsi Anda dengan data akun Anda untuk berjaga-jaga jika Anda kehilangan akses ke sesi Anda. Kunci Anda akan diamankan dengan Kunci Keamanan yang unik.";
-"security_settings_crypto_sessions_description_2" = "Jika Anda tidak tahu sebuah login, ubah kata sandi akun Matrix Anda dan atur ulang Cadangan Aman.";
+"security_settings_crypto_sessions_description_2" = "Jika Anda tidak tahu sebuah login, ubah kata sandi akun quali.chat Anda dan atur ulang Cadangan Aman.";
 "settings_identity_server_no_is_description" = "Anda saat ini tidak menggunakan sebuah server identitas. Untuk menemukan dan dapat ditemukan oleh kontak yang Anda tahu, tambahkan satu di atas.";
 "settings_identity_server_description" = "Dengan menggunakan set server identitas di atas, Anda dapat menemukan dan dapat ditemukan oleh kontak yang ada yang Anda kenal.";
 "settings_discovery_three_pid_details_information_phone_number" = "Kelola preferensi untuk nomor telepon ini, yang dapat digunakan pengguna lain untuk menemukan Anda dan digunakan untuk mengundang Anda ke ruangan. Tambahkan atau hapus nomor telepon di Akun.";
@@ -728,7 +728,7 @@
 
 // Generic errors
 "error_invite_3pid_with_no_identity_server" = "Tambahkan sebuah server identitas di pengaturan Anda untuk mengundang dengan email.";
-"device_verification_self_verify_wait_additional_information" = "Ini bekerja dengan %@ dan klien Matrix lainnya yang mampu melakukan penandatanganan silang.";
+"device_verification_self_verify_wait_additional_information" = "Ini bekerja dengan %@ dan klien quali.chat lainnya yang mampu melakukan penandatanganan silang.";
 "device_verification_security_advice_number" = "Bandingkan nomornya, memastikannya muncul dengan urutan yang sama.";
 "sign_out_non_existing_key_backup_alert_title" = "Anda akan kehilangan akses ke pesan terenkripsi jika Anda keluar";
 
@@ -752,7 +752,7 @@
 "widget_no_power_to_manage" = "Anda perlu izin untuk mengelola widget di ruangan ini";
 "photo_library_access_not_granted" = "%@ tidak memiliki izin untuk mengakses perpustakaan foto, mohon ubah pengaturan privasi";
 "camera_access_not_granted" = "%@ tidak memiliki izin untuk menggunakan Kamera, mohon ubah pengaturan privasi";
-"group_participants_invite_malformed_id" = "ID yang cacat. Seharusnya sebuah ID Matrix seperti '@pengguna:domain'";
+"group_participants_invite_malformed_id" = "ID yang cacat. Seharusnya sebuah ID quali.chat seperti '@pengguna:domain'";
 "group_participants_invite_prompt_msg" = "Apakah Anda yakin untuk mengundang %@ ke grup ini?";
 "group_participants_remove_prompt_msg" = "Apakah Anda yakin untuk mengeluarkan %@ dari grup ini?";
 "group_participants_leave_prompt_msg" = "Apakah Anda yakin untuk meninggalkan grup ini?";
@@ -822,7 +822,7 @@
 "room_details_access_section_anyone_apart_from_guest_for_dm" = "Siapa saja yang tahu linknya, selain dari tamu";
 "identity_server_settings_alert_error_invalid_identity_server" = "%@ bukan server identitas yang absah.";
 "identity_server_settings_alert_no_terms_title" = "Server identitas tidak mempunyai kebijakan layanan";
-"security_settings_user_password_description" = "Konfirmasi identitas Anda dengan memasukkan kata sandi akun Matrix Anda";
+"security_settings_user_password_description" = "Konfirmasi identitas Anda dengan memasukkan kata sandi akun quali.chat Anda";
 "security_settings_secure_backup_info_valid" = "Sesi ini mencadangkan kunci Anda.";
 "version_check_modal_title_deprecated" = "Kami tidak mendukung iOS %@ lagi";
 "version_check_modal_title_supported" = "Kami mengakhiri dukungan untuk iOS %@";
@@ -837,7 +837,7 @@
 "voice_message_release_to_send" = "Tahan untuk merekam, lepaskan untuk mengirim";
 "spaces_empty_space_title" = "Space ini belum ada ruangan";
 "create_room_show_in_directory" = "Tampilkan di direktori ruangan";
-"secrets_reset_authentication_message" = "Masukkan kata sandi akun Matrix Anda untuk mengkonfirmasi";
+"secrets_reset_authentication_message" = "Masukkan kata sandi akun quali.chat Anda untuk mengkonfirmasi";
 "secrets_recovery_with_key_information_unlock_secure_backup_with_key" = "Masukkan Kunci Keamanan Anda untuk melanjutkan.";
 "secrets_recovery_with_key_information_unlock_secure_backup_with_phrase" = "Masukkan Frasa Keamanan Anda untuk melanjutkan.";
 
@@ -887,7 +887,7 @@
 "room_message_unable_open_link_error_message" = "Tidak dapat membuka tautan ini.";
 "directory_search_results_more_than" = ">%1$tu hasil ditemukan untuk %2$@";
 "directory_search_results" = "%1$tu hasil ditemukan untuk %2$@";
-"room_creation_invite_another_user" = "ID Pengguna, nama atau email";
+"room_creation_invite_another_user" = "ID Pengguna atau nama";
 "space_participants_action_ban" = "Cekal dari space ini";
 "space_participants_action_remove" = "Keluarkan dari space ini";
 "leave_space_only_action" = "Jangan tinggalkan ruangan apa pun";
@@ -971,7 +971,7 @@
 "event_formatter_jitsi_widget_removed_by_you" = "Anda menghilangkan konferensi VoIP";
 "event_formatter_jitsi_widget_added_by_you" = "Anda menambahkan konferensi VoIP";
 "event_formatter_rerequest_keys_part2" = " dari sesi Anda lainnya.";
-"directory_server_all_native_rooms" = "Semua ruangan Matrix asli";
+"directory_server_all_native_rooms" = "Semua ruangan quali.chat asli";
 "room_details_unset_main_address" = "Atur Ulang sebagai Alamat Utama";
 "room_details_set_main_address" = "Atur sebagai Alamat Utama";
 "room_details_advanced_e2e_encryption_enabled_for_dm" = "Enkripsi diaktifkan di sini";
@@ -987,7 +987,7 @@
 "settings_key_backup_info_progress_done" = "Semua kunci telah dicadangkan";
 "settings_key_backup_info_progress" = "Mencadangkan %@ kunci…";
 "settings_key_backup_info_version" = "Versi Cadangan Kunci: %@";
-"settings_fail_to_update_password" = "Gagal untuk memperbarui kata sandi akun Matrix";
+"settings_fail_to_update_password" = "Gagal untuk memperbarui kata sandi akun quali.chat";
 "settings_labs_enable_ringing_for_group_calls" = "Dering untuk panggilan grup";
 "settings_enable_push_notif" = "Notifikasi di perangkat ini";
 "settings_fail_to_update_profile" = "Gagal untuk memperbarui profil";
@@ -1226,7 +1226,7 @@
 "contacts_user_directory_offline_section" = "DIREKTORI PENGGUNA (luring)";
 "contacts_address_book_permission_denied_alert_title" = "Kontak dinonaktifkan";
 "contacts_address_book_no_contact" = "Tidak ada kontak lokal";
-"contacts_address_book_matrix_users_toggle" = "Hanya pengguna Matrix";
+"contacts_address_book_matrix_users_toggle" = "Hanya pengguna quali.chat";
 "directory_search_results_title" = "Jelajahi hasil direktori";
 "room_recents_join_room_title" = "Bergabung ke sebuah ruangan";
 "room_recents_suggested_rooms_section" = "RUANGAN YANG DISARANKAN";
@@ -1417,7 +1417,7 @@
 
 // Bug report
 "bug_report_title" = "Laporan Bug";
-"deactivate_account_password_alert_message" = "Untuk melanjutkan, mohon masukkan kata sandi akun Matrix Anda";
+"deactivate_account_password_alert_message" = "Untuk melanjutkan, mohon masukkan kata sandi akun quali.chat Anda";
 "widget_integration_must_be_in_room" = "Anda tidak berada di ruangan ini.";
 "settings_devices_description" = "Nama publik sesi dapat dilihat oleh orang yang berkomunikasi dengan Anda";
 "settings_key_backup_delete_confirmation_prompt_msg" = "Apakah Anda yakin? Anda akan kehilangan pesan terenkripsi jika kunci Anda tidak dicadangkan secara benar.";
@@ -1463,13 +1463,13 @@
 "room_unsent_messages_cancel_message" = "Apakah Anda yakin untuk menghapus semua pesan yang tidak terkirim di ruangan ini?";
 "room_unsent_messages_unknown_devices_notification" = "Pesan gagal dikirim karena sesi yang tidak dikenal yang ada.";
 "room_offline_notification" = "Koneksi ke server telah hilang.";
-"room_do_not_have_permission_to_post" = "Anda tidak memiliki izin untuk mengirim ke ruangan ini";
+"room_do_not_have_permission_to_post" = "You need to have the room token in your wallet to post to this room.";
 
 // Chat
 "room_slide_to_end_group_call" = "Geser untuk mengakhiri panggilan untuk semuanya";
 "room_participants_security_information_room_not_encrypted" = "Pesan di ruangan ini tidak dienkripsi secara ujung ke ujung.";
 "room_participants_start_new_chat_error_using_user_email_without_identity_server" = "Tidak ada server identitas yang diatur, jadi Anda tidak dapat mengobrol dengan sebuah kontak menggunakan email.";
-"room_participants_invite_malformed_id" = "ID cacat. Seharusnya sebuah alamat email atau ID Matrix seperti '@pengguna:domain'";
+"room_participants_invite_malformed_id" = "ID cacat. Seharusnya sebuah alamat email atau ID quali.chat seperti '@pengguna:domain'";
 "room_participants_invite_another_user" = "Cari/Undang dengan ID Pengguna, Nama atau email";
 "room_participants_invite_prompt_msg" = "Apakah Anda yakin untuk mengundang %@ ke obrolan ini?";
 "room_participants_remove_third_party_invite_prompt_msg" = "Apakah Anda yakin untuk menghapus undangan ini?";
@@ -1522,7 +1522,7 @@
 "security_settings_crosssigning_info_not_bootstrapped" = "Penandatanganan silang belum disiapkan.";
 "settings_key_backup_button_connect" = "Hubungkan sesi ini ke Cadangan Kunci";
 "settings_key_backup_info_trust_signature_valid_device_unverified" = "Cadangan memiliki tanda tangan dari %@";
-"settings_add_3pid_password_message" = "Untuk melanjutkan, mohon masukkan kata sandi akun Matrix Anda";
+"settings_add_3pid_password_message" = "Untuk melanjutkan, mohon masukkan kata sandi akun quali.chat Anda";
 "settings_send_crash_report" = "Kirim crash & data penggunaan anonim";
 "secure_key_backup_setup_cancel_alert_message" = "Jika Anda membatalkan sekarang, Anda mungkin kehilangan pesan & data terenkripsi jika Anda kehilangan akses ke login Anda.\n\nAnda juga dapat mengatur Cadangan Aman & kelola kunci Anda di Pengaturan.";
 "room_participants_security_information_room_encrypted" = "Pesan di ruangan ini dienkripsi secara ujung ke ujung.\n\nPesan Anda diamankan dengan kunci dan hanya Anda dan penerima punya kunci uniknya untuk membukanya.";
@@ -1538,9 +1538,9 @@
 
 // Success from passphrase
 "key_backup_setup_success_from_passphrase_info" = "Kunci Anda sedang dicadangkan.\n\nKunci Keamanan Anda adalah jaring pengaman — Anda dapat menggunakannya untuk memulihkan akses ke pesan terenkripsi jika Anda lupa frasa sandi.\n\nSimpan Kunci Keamanan Anda di suatu tempat yang sangat aman, seperti pengelola kata sandi (atau brankas).";
-"key_backup_setup_passphrase_info" = "Kami akan menyimpan salinan terenkripsi dari kunci Anda di server kami. Lindungi cadangan Anda dengan frasa agar tetap aman.\n\nUntuk keamanan maksimum, ini harus berbeda dari kata sandi akun Matrix Anda.";
+"key_backup_setup_passphrase_info" = "Kami akan menyimpan salinan terenkripsi dari kunci Anda di server kami. Lindungi cadangan Anda dengan frasa agar tetap aman.\n\nUntuk keamanan maksimum, ini harus berbeda dari kata sandi akun quali.chat Anda.";
 "key_backup_setup_intro_info" = "Pesan di ruang terenkripsi diamankan dengan enkripsi ujung ke ujung. Hanya Anda dan penerima yang memiliki kunci untuk membaca pesan ini.\n\nCadangkan kunci Anda dengan aman untuk menghindari kehilangannya.";
-"deactivate_account_informations_part5" = "Jika Anda ingin kami melupakan pesan Anda, silakan centang kotak di bawah ini\n\nVisibilitas pesan di Matrix mirip dengan email. Kami melupakan pesan Anda berarti bahwa pesan yang telah Anda kirim tidak akan dibagikan dengan pengguna baru atau tidak terdaftar, tetapi pengguna terdaftar yang sudah memiliki akses ke pesan ini akan tetap memiliki akses ke salinannya.";
+"deactivate_account_informations_part5" = "Jika Anda ingin kami melupakan pesan Anda, silakan centang kotak di bawah ini\n\nVisibilitas pesan di quali.chat mirip dengan email. Kami melupakan pesan Anda berarti bahwa pesan yang telah Anda kirim tidak akan dibagikan dengan pengguna baru atau tidak terdaftar, tetapi pengguna terdaftar yang sudah memiliki akses ke pesan ini akan tetap memiliki akses ke salinannya.";
 "deactivate_account_informations_part1" = "Ini akan membuat akun Anda tidak dapat digunakan secara permanen. Anda tidak akan dapat masuk, dan tidak seorang pun dapat mendaftarkan ulang ID pengguna yang sama. Ini akan menyebabkan akun Anda meninggalkan semua ruangan yang diikutinya, dan akan menghapus detail akun Anda dari server identitas Anda. ";
 "e2e_need_log_in_again" = "Anda harus masuk kembali untuk membuat kunci enkripsi ujung ke ujung untuk sesi ini dan mengirimkan kunci publik ke homeserver Anda.\nIni hanya dilakukan sekali saja; maaf untuk ketidaknyamanan.";
 "call_no_stun_server_error_message_2" = "Atau, Anda dapat mencoba menggunakan server publik di %@, tetapi ini tidak akan dapat diandalkan, dan alamat IP Anda akan dibagikan dengan server tersebut. Anda juga dapat mengelola ini di Pengaturan";
@@ -1551,7 +1551,7 @@
 "unknown_devices_alert" = "Ruangan ini berisi sesi tidak dikenal yang belum diverifikasi.\nIni berarti tidak ada jaminan bahwa sesi tersebut adalah milik pengguna yang mereka klaim.\nKami menyarankan Anda memverifikasinya untuk setiap sesi sebelum melanjutkan, tetapi Anda dapat mengirim ulang pesan tanpa memverifikasi jika Anda ingin.";
 "room_warning_about_encryption" = "Enkripsi ujung ke ujung masih dalam beta dan mungkin tidak dapat diandalkan.\n\nAnda seharusnya tidak mempercayainya dahulu untuk mengamankan data.\n\nPerangkat masih belum dapat mendekripsi riwayat sebelum mereka bergabung ke ruangannya.\n\nPesan terenkripsi masih belum terlihat di klien yang belum mengimplementasikan enkripsi.";
 "auth_add_email_and_phone_warning" = "Pendaftaran dengan email dan nomor telepon sekaligus belum didukung sampai API-nya sudah ada. Hanya nomor telepon yang akan diperhitungkan. Anda dapat menambahkan email Anda di profil Anda di pengaturan.";
-"auth_reset_password_success_message" = "Kata sandi akun Matrix Anda telah diatur ulang.\n\nAnda telah dikeluarkan dari semua sesi dan tidak akan menerima lagi notifikasi push. Untuk mengaktifkan ulang notifikasi, masuk ulang di setiap perangkat.";
+"auth_reset_password_success_message" = "Kata sandi akun quali.chat Anda telah diatur ulang.\n\nAnda telah dikeluarkan dari semua sesi dan tidak akan menerima lagi notifikasi push. Untuk mengaktifkan ulang notifikasi, masuk ulang di setiap perangkat.";
 "spaces_add_rooms_coming_soon_title" = "Penambahan ruangan akan segera datang";
 "leave_space_and_all_rooms_action" = "Tinggalkan semua ruangan dan space";
 "space_beta_announce_subtitle" = "Versi baru dari komunitas";
@@ -1561,7 +1561,7 @@
 "pin_protection_confirm_pin_to_disable" = "Konfirmasi PIN untuk menonaktifkan PIN";
 "pin_protection_choose_pin" = "Buat sebuah PIN untuk keamanan";
 "cross_signing_setup_banner_subtitle" = "Verifikasi perangkat Anda yang lain dengan mudah";
-"secrets_setup_recovery_passphrase_additional_information" = "Jangan menggunakan kata sandi akun Matrix Anda.";
+"secrets_setup_recovery_passphrase_additional_information" = "Jangan menggunakan kata sandi akun quali.chat Anda.";
 "secrets_recovery_with_key_invalid_recovery_key_title" = "Tidak dapat mengakses penyimpanan rahasia";
 "secrets_recovery_with_passphrase_invalid_passphrase_title" = "Tidak dapat mengakses penyimpanan rahasia";
 
@@ -1615,7 +1615,7 @@
 "security_settings_crosssigning_info_ok" = "Penandatanganan silang siap dipakai.";
 "settings_discovery_error_message" = "Sebuah kesalahan terjadi. Mohon coba lagi.";
 "settings_crypto_blacklist_unverified_devices" = "Enkripsi ke sesi terverifikasi saja";
-"settings_password_updated" = "Kata sandi akun Matrix Anda telah diperbarui";
+"settings_password_updated" = "Kata sandi akun quali.chat Anda telah diperbarui";
 "settings_enable_rageshake" = "Rage shake untuk melaporkan bug";
 
 // No VoIP support
@@ -1722,15 +1722,15 @@
 "location_sharing_title" = "Lokasi";
 "ok" = "OKE";
 "settings_enable_room_message_bubbles" = "Gelembung pesan";
-"onboarding_splash_page_4_message" = "Element juga bagus untuk tempat kerja. Terpercayai oleh organisasi paling aman di dunia.";
+"onboarding_splash_page_4_message" = "quali.chat juga bagus untuk tempat kerja. Terpercayai oleh organisasi paling aman di dunia.";
 "onboarding_splash_page_4_title_no_pun" = "Perpesanan untuk tim Anda.";
-"onboarding_splash_page_3_message" = "Terenkripsi secara ujung ke ujung dan tidak memerlukan nomor telepon. Tanpa iklan atau penambangan data.";
-"onboarding_splash_page_3_title" = "Perpesanan aman.";
-"onboarding_splash_page_2_message" = "Pilihlah di mana percakapan Anda disimpan, memberikan Anda kendali dan kebebasan. Terhubung via Matrix.";
-"onboarding_splash_page_2_title" = "Anda dalam kendali.";
-"onboarding_splash_page_1_message" = "Komunikasi aman dan independen yang memberikan tingkat privasi yang sama seperti percakapan tatap muka di rumah Anda sendiri.";
-"onboarding_splash_page_1_title" = "Miliki percakapan Anda.";
-"onboarding_splash_login_button_title" = "Saya sudah punya akun";
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
 
 // Onboarding
 "onboarding_splash_register_button_title" = "Buat akun";
@@ -1787,7 +1787,7 @@
 "location_sharing_open_open_street_maps" = "Buka di OpenStreetMap";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
 
@@ -1829,7 +1829,7 @@
 "select_all" = "Pilih Semua";
 "resend_message" = "Kirim ulang pesan";
 "reset_to_default" = "Atur ulang ke bawaan";
-"invite_user" = "Undang pengguna Matrix";
+"invite_user" = "Undang pengguna quali.chat";
 "capture_media" = "Ambil Foto/Video";
 "attach_media" = "Lampirkan Media dari Library";
 "select_account" = "Pilih sebuah akun";
@@ -1877,16 +1877,16 @@
 "login_error_title" = "Login Gagal";
 "login_prompt_email_token" = "Harap masukkan token validasi email Anda:";
 "login_email_placeholder" = "Alamat email";
-"login_email_info" = "Menentukan alamat email memungkinkan pengguna lain untuk menemukan Anda di Matrix dengan lebih mudah, dan akan memberi Anda cara untuk menyetel ulang sandi di masa mendatang.";
+"login_email_info" = "Menentukan alamat email memungkinkan pengguna lain untuk menemukan Anda di quali.chat dengan lebih mudah, dan akan memberi Anda cara untuk menyetel ulang sandi di masa mendatang.";
 "login_display_name_placeholder" = "Nama tampilan (mis. Bob Obson)";
 "login_optional_field" = "opsional";
 "login_password_placeholder" = "Kata sandi";
-"login_user_id_placeholder" = "ID Matrix (mis. @bob:matrix.org atau bob)";
-"login_identity_server_info" = "Matrix menyediakan server identitas untuk melacak email mana, dll., milik ID Matrix mana. Hanya https://matrix.org yang saat ini ada.";
+"login_user_id_placeholder" = "ID quali.chat (mis. @bob:quali.chat atau bob)";
+"login_identity_server_info" = "quali.chat menyediakan server identitas untuk melacak email mana, dll., milik ID quali.chat mana. Hanya https://quali.chat yang saat ini ada.";
 "login_identity_server_title" = "URL server identitas:";
 "login_home_server_info" = "Homeserver Anda menyimpan semua pesan Anda dan data akun";
 "login_home_server_title" = "URL Homeserver:";
-"login_server_url_placeholder" = "URL (mis. https://matrix.org)";
+"login_server_url_placeholder" = "URL (mis. https://quali.chat)";
 
 // Login Screen
 "login_create_account" = "Buat akun:";
@@ -1894,7 +1894,7 @@
 /*      iOS specific       */
 /* *********************** */
 
-"matrix" = "Matrix";
+"matrix" = "quali.chat";
 "ssl_only_accept" = "HANYA terima sertifikat jika administrator server telah mempublikasikan sidik jari yang cocok dengan sidik jari di atas.";
 "ssl_expected_existing_expl" = "Sertifikat ini telah berubah dari yang sebelumnya tepercaya menjadi yang tidak tepercaya. Servernya mungkin telah memperbarui sertifikatnya. Hubungi administrator server untuk sidik jari yang diharapkan.";
 "ssl_unexpected_existing_expl" = "Sertifikat ini telah berubah dari yang dipercaya oleh ponsel Anda. Ini SANGAT TIDAK BIASA. Anda disarankan untuk TIDAK MENERIMA sertifikat baru ini.";
@@ -2031,7 +2031,7 @@
 "account_email_validation_error" = "Tidak dapat memverifikasi alamat email. Silakan cek email Anda dan tekan tautannya yang ada. Setelah selesai, tekan lanjut";
 
 // contacts list screen 
-"invitation_message" = "Saya ingin berkomunikasi dengan Anda dengan Matrix. Silakan kunjungi ke websitenya di https://matrix.org untuk informasi selanjutnya.";
+"invitation_message" = "Saya ingin berkomunikasi dengan Anda dengan quali.chat. Silakan kunjungi ke websitenya di https://quali.chat untuk informasi selanjutnya.";
 "notice_room_history_visible_to_members_from_invited_point_by_you_for_dm" = "Anda membuat sejarah pesan di masa mendatang dapat dilihat oleh semuanya, sejak mereka diundang.";
 "notice_room_history_visible_to_members_from_invited_point_by_you" = "Anda membuat sejarah ruangan di masa mendatang dapat dilihat oleh semua anggota ruangan, sejak mereka diundang.";
 "notice_room_history_visible_to_members_by_you_for_dm" = "Anda membuat pesan di masa depan dapat dilihat oleh semua anggota ruangan.";
@@ -2117,7 +2117,7 @@
 // Country picker
 "country_picker_title" = "Pilih sebuah negara";
 "microphone_access_not_granted_for_voice_message" = "Pesan suara membutuhkan akses ke Mikrofon tetapi %@ tidak memiliki izin untuk menggunakannya";
-"local_contacts_access_discovery_warning" = "Untuk menemukan kontak Anda yang sudah menggunakan Matrix, %@ dapat mengirim alamat email dan nomor telepon di kontak Anda ke server identitas Matrix yang Anda pilih. Di mana saja yang didukung, data personal akan di-hash sebelum dikirim — mohon cek kebijakan privasi identitas server Anda untuk detail lainnya.";
+"local_contacts_access_discovery_warning" = "Untuk menemukan kontak Anda yang sudah menggunakan quali.chat, %@ dapat mengirim alamat email dan nomor telepon di kontak Anda ke server identitas quali.chat yang Anda pilih. Di mana saja yang didukung, data personal akan di-hash sebelum dikirim — mohon cek kebijakan privasi identitas server Anda untuk detail lainnya.";
 "local_contacts_access_discovery_warning_title" = "Penemuan pengguna";
 "local_contacts_access_not_granted" = "Penemuan pengguna dari kontak lokal membutuhkan akses ke kontak Anda tetapi %@ tidak memiliki izin untuk menggunakannya";
 "microphone_access_not_granted_for_call" = "Panggilan membutuhkan akses ke Mikrofon tetapi %@ tidak memiliki izin untuk menggunakannya";
@@ -2145,13 +2145,13 @@
 "e2e_passphrase_empty" = "Frasa sandi tidak boleh kosong";
 "e2e_passphrase_confirm" = "Konfirmasi frasa sandi";
 "e2e_export" = "Ekspor";
-"e2e_export_prompt" = "Proses ini memungkinkan Anda untuk mengekspor kunci untuk pesan yang Anda telah terima di ruangan terenkripsi ke file lokal. Anda nanti akan dapat mengimpor filenya ke client Matrix lainnya di masa mendatang, supaya client itu juga bisa mendekripsi pesan yang terenkripsi.\nFile yang diekspor akan memungkinan siapa saja yang dapat membaca untuk mendekripsikan pesan terenkripsi apa saja yang Anda bisa lihat, jadi Anda harus berhati-hati untuk menyimpannya secara aman.";
+"e2e_export_prompt" = "Proses ini memungkinkan Anda untuk mengekspor kunci untuk pesan yang Anda telah terima di ruangan terenkripsi ke file lokal. Anda nanti akan dapat mengimpor filenya ke client quali.chat lainnya di masa mendatang, supaya client itu juga bisa mendekripsi pesan yang terenkripsi.\nFile yang diekspor akan memungkinan siapa saja yang dapat membaca untuk mendekripsikan pesan terenkripsi apa saja yang Anda bisa lihat, jadi Anda harus berhati-hati untuk menyimpannya secara aman.";
 
 // E2E export
 "e2e_export_room_keys" = "Ekspor kunci ruangan";
 "e2e_passphrase_enter" = "Masukkan frasa sandi";
 "e2e_import" = "Impor";
-"e2e_import_prompt" = "Proses ini memungkinkan Anda untuk mengimpor kunci enkripsi yang Anda punya sebelumnya yang diekspor dari client Matrix lain. Anda nanti akan dapat mendekripsi pesan apa saja yang client lain dapat mendekripsinya.\nFile yang diekspor dilindungi dengan frasa sandi. Anda seharusnya masukkan frasa sandinya di sini, untuk mendekripsi filenya.";
+"e2e_import_prompt" = "Proses ini memungkinkan Anda untuk mengimpor kunci enkripsi yang Anda punya sebelumnya yang diekspor dari client quali.chat lain. Anda nanti akan dapat mendekripsi pesan apa saja yang client lain dapat mendekripsinya.\nFile yang diekspor dilindungi dengan frasa sandi. Anda seharusnya masukkan frasa sandinya di sini, untuk mendekripsi filenya.";
 
 // E2E import
 "e2e_import_room_keys" = "Impor kunci ruangan";
@@ -2170,9 +2170,9 @@
 "contact_local_contacts" = "Kontak Local";
 
 // Contacts
-"contact_mx_users" = "Pengguna Matrix";
+"contact_mx_users" = "Pengguna quali.chat";
 "attachment_e2e_keys_import" = "Impor...";
-"attachment_e2e_keys_file_prompt" = "File ini berisi kunci enkripsi yang diimpor dari client Matrix lain.\nApakah Anda ingin menampilkan konten file atau impor kunci yang berisi?";
+"attachment_e2e_keys_file_prompt" = "File ini berisi kunci enkripsi yang diimpor dari client quali.chat lain.\nApakah Anda ingin menampilkan konten file atau impor kunci yang berisi?";
 "attachment_multiselection_original" = "Ukuran Sebenarnya";
 "attachment_multiselection_size_prompt" = "Apakah Anda ingin mengirim gambarnya sebagai:";
 "attachment_cancel_upload" = "Batalkan unggahannya?";
@@ -2229,7 +2229,7 @@
 "account_error_msisdn_wrong_title" = "Nomor Telepon Tidak Absah";
 "account_error_email_wrong_description" = "Ini sepertinya bukan alamat email yang absah";
 "account_error_email_wrong_title" = "Alamat Email Tidak Absah";
-"account_error_matrix_session_is_not_opened" = "Sesi Matrix tidak dibuka";
+"account_error_matrix_session_is_not_opened" = "Sesi quali.chat tidak dibuka";
 "account_error_picture_change_failed" = "Penggantian gambar gagal";
 "account_error_display_name_change_failed" = "Penggantian nama tampilan gagal";
 "account_msisdn_validation_error" = "Tidak dapat memverifikasi nomor telepon.";
@@ -2464,7 +2464,7 @@
 "threads_beta_information" = "Buat diskusi terorganisasi dengan utasan.\n\nUtasan membantu Anda membuat percakapan Anda sesuai topik dan mudah untuk dilacak. ";
 "threads_beta_title" = "Utasan";
 "threads_notice_done" = "Mengerti";
-"threads_notice_information" = "Semua utasan yang dibuat selama periode eksperimental akan <b>ditampilkan sebagai balasan biasa</b>.<br/><br/>Ini adalah transisi sekali, utasan sekarang menjadi bagian dari spesifikasi Matrix.";
+"threads_notice_information" = "Semua utasan yang dibuat selama periode eksperimental akan <b>ditampilkan sebagai balasan biasa</b>.<br/><br/>Ini adalah transisi sekali, utasan sekarang menjadi bagian dari spesifikasi quali.chat.";
 "threads_notice_title" = "Utasan tidak lagi eksperimental 🎉";
 "room_participants_invite_prompt_to_msg" = "Apakah Anda yakin ingin mengundang %@ ke %@?";
 "onboarding_celebration_button" = "Ayo";
@@ -2527,7 +2527,7 @@
 "confirm" = "Konfirmasi";
 "location_sharing_allow_background_location_cancel_action" = "Jangan sekarang";
 "location_sharing_allow_background_location_validate_action" = "Pengaturan";
-"location_sharing_allow_background_location_message" = "Jika Anda ingin membagikan lokasi langsung Anda, Element membutuhkan akses lokasi ketika aplikasi berada di latar belakang.Untuk memberikan akses, ketuk Pengaturan> Lokasi dan pilih Selalu";
+"location_sharing_allow_background_location_message" = "Jika Anda ingin membagikan lokasi langsung Anda, quali.chat membutuhkan akses lokasi ketika aplikasi berada di latar belakang.Untuk memberikan akses, ketuk Pengaturan> Lokasi dan pilih Selalu";
 "location_sharing_allow_background_location_title" = "Perbolehkan akses";
 "settings_labs_enable_live_location_sharing" = "Pembagian lokasi langsung — bagikan lokasi saat ini (dalam pengembangan aktif, dan sementara, lokasi tetap di riwayat ruangan)";
 
@@ -2614,7 +2614,7 @@
 "authentication_login_username" = "Nama Pengguna / Email / Telepon";
 "authentication_login_title" = "Selamat datang kembali!";
 "authentication_registration_password_footer" = "Harus 8 karakter atau lebih";
-/* The placeholder will show the full Matrix ID that has been entered. */
+/* The placeholder will show the full quali.chat ID that has been entered. */
 "authentication_registration_username_footer_available" = "Lainnya dapat menemukan Anda %@";
 "authentication_registration_username_footer" = "Anda tidak dapat mengubahnya nanti";
 "authentication_registration_username" = "Nama pengguna";
@@ -2771,14 +2771,14 @@
 "authentication_qr_login_scan_subtitle" = "Tempatkan kode QR di dalam kotak di bawah";
 "authentication_qr_login_scan_title" = "Pindai kode QR";
 "authentication_qr_login_display_step2" = "Pilih ‘Masuk dengan kode QR’";
-"authentication_qr_login_display_step1" = "Buka Element di perangkat Anda yang lain";
+"authentication_qr_login_display_step1" = "Buka quali.chat di perangkat Anda yang lain";
 "authentication_qr_login_display_title" = "Tautkan sebuah perangkat";
 "authentication_qr_login_start_display_qr" = "Tampilkan kode QR di perangkat ini";
 "authentication_qr_login_start_need_alternative" = "Butuh metode yang lain?";
 "authentication_qr_login_start_step4" = "Pilih ‘Tampilkan kode QR di perangkat ini’";
 "authentication_qr_login_start_step3" = "Pilih ‘Tautkan sebuah perangkat’";
 "authentication_qr_login_start_step2" = "Pergi ke Pengaturan → Keamanan & Privasi";
-"authentication_qr_login_start_step1" = "Buka Element di perangkat Anda yang lain";
+"authentication_qr_login_start_step1" = "Buka quali.chat di perangkat Anda yang lain";
 "authentication_qr_login_start_subtitle" = "Gunakan kamera pada perangkat ini untuk memindai kode QR yang ditampilkan di perangkat Anda yang lain:";
 "authentication_qr_login_start_title" = "Pindai kode QR";
 "authentication_login_with_qr" = "Masuk dengan kode QR";
@@ -2848,7 +2848,7 @@
 "user_session_unverified_session_description" = "Sesi yang belum diverifikasi adalah sesi yang telah masuk dengan kredensial Anda tetapi belum diverifikasi secara silang.\n\nAnda seharusnya yakin bahwa Anda mengenal sesi ini karena mereka bisa saja berarti seseorang menggunakan akun Anda.";
 "user_session_unverified_session_title" = "Sesi belum diverifikasi";
 "user_session_verified_session_title" = "Sesi terverifikasi";
-"user_session_verified_session_description" = "Sesi terverifikasi ada di mana pun Anda menggunakan Element setelah memasukkan frasa sandi atau mengonfirmasi identitas Anda dengan sesi terverifikasi lainnya.\n\nIni berarti Anda memiliki semua kunci yang diperlukan untuk membuka kunci pesan terenkripsi dan mengonfirmasi kepada pengguna lain bahwa Anda memercayai sesi ini.";
+"user_session_verified_session_description" = "Sesi terverifikasi ada di mana pun Anda menggunakan quali.chat setelah memasukkan frasa sandi atau mengonfirmasi identitas Anda dengan sesi terverifikasi lainnya.\n\nIni berarti Anda memiliki semua kunci yang diperlukan untuk membuka kunci pesan terenkripsi dan mengonfirmasi kepada pengguna lain bahwa Anda memercayai sesi ini.";
 "user_session_got_it" = "Mengerti";
 "key_verification_alert_body" = "Periksa untuk memastikan akun Anda aman.";
 
@@ -2865,7 +2865,7 @@
 
 // MARK: Password policy errors
 "password_policy_too_short_pwd_error" = "Kata sandi terlalu pendek";
-"user_session_permanently_unverified_session_description" = "Sesi ini tidak mendukung enkripsi, sehingga tidak dapat diverifikasi.\n\nAnda tidak akan dapat berpartisipasi dalan ruangan di mana enkripsi diaktifkan saat menggunakan sesi ini.\n\nUntuk keamanan dan privasi terbaik, disarankan untuk menggunakan klien Matrix yang mendukung enkripsi.";
+"user_session_permanently_unverified_session_description" = "Sesi ini tidak mendukung enkripsi, sehingga tidak dapat diverifikasi.\n\nAnda tidak akan dapat berpartisipasi dalan ruangan di mana enkripsi diaktifkan saat menggunakan sesi ini.\n\nUntuk keamanan dan privasi terbaik, disarankan untuk menggunakan klien quali.chat yang mendukung enkripsi.";
 "wysiwyg_composer_link_action_edit_title" = "Suntiing tautan";
 "wysiwyg_composer_link_action_create_title" = "Buat sebuah tautan";
 "wysiwyg_composer_link_action_link" = "Tautan";
@@ -2932,7 +2932,7 @@
 "key_verification_scan_qr_code_information_other_user" = "Arahkan kamera Anda ke kode QR yang ditampilkan di perangkatnya untuk memverifikasi sesi";
 "key_verification_scan_qr_code_title" = "Pindai kode QR";
 "device_verification_self_verify_wait_recover_secrets_additional_help" = "Tidak dapat mengakses sesi %@ yang sudah ada?";
-"device_verification_self_verify_open_on_other_device_information" = "Anda harus memverifikasi sesi ini supaya dapat membaca riwayat pesan aman Anda.\n\nBuka Element di salah satu perangkat Anda yang lain dan ikuti petunjuknya.";
+"device_verification_self_verify_open_on_other_device_information" = "Anda harus memverifikasi sesi ini supaya dapat membaca riwayat pesan aman Anda.\n\nBuka quali.chat di salah satu perangkat Anda yang lain dan ikuti petunjuknya.";
 "device_verification_self_verify_open_on_other_device_title" = "Buka %@ di perangkat Anda yang lain";
 "room_creation_only_one_email_invite" = "Amda hanya dapat mengundang satu surel satu-satu";
 "pill_message_in" = "Pesan di %@";
@@ -2964,13 +2964,26 @@
 "room_command_change_display_name_description" = "Mengubah nama tampilan Anda";
 "notice_display_name_changed_to" = "%@ mengubah nama tampilannya menjadi %@";
 "poll_timeline_loading" = "Memuat...";
-"room_creation_user_not_found_prompt_message" = "Tidak dapat mencari profil untuk ID Matrix ini. Apakah Anda masih ingin membuat percakapan langsung?";
+"room_creation_user_not_found_prompt_message" = "Tidak dapat mencari profil untuk ID quali.chat ini. Apakah Anda masih ingin membuat percakapan langsung?";
 "room_creation_user_not_found_prompt_title" = "Konfirmasi";
 "room_creation_user_not_found_prompt_invite_action" = "Tetap buat percakapan langsung";
-"room_participants_invite_unknown_participant_prompt_to_msg" = "Tidak dapat mencari profil untuk ID Matrix ini. Apakah Anda masih ingin mengundang %@ ke %@?";
+"room_participants_invite_unknown_participant_prompt_to_msg" = "Tidak dapat mencari profil untuk ID quali.chat ini. Apakah Anda masih ingin mengundang %@ ke %@?";
 "room_participants_invite_anyway" = "Tetap undang";
 "settings_manage_account_title" = "Akun";
 "settings_manage_account_action" = "Kelola akun";
 "settings_manage_account_description" = "Kelola akun Anda di %@";
 "manage_session_redirect" = "Anda akan dialihkan ke penyedia autentikasi server Anda untuk menyelesaikan proses keluar.";
 "manage_session_redirect_error" = "Fungsi saat ini tidak tersedia. Silakan hubungi admin homeserver Anda";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified
+"demo_login_placeholder" = "Username"; // QUALICHAT modified

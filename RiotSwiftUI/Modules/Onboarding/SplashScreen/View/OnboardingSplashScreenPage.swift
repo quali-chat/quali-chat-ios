@@ -42,12 +42,23 @@ struct OnboardingSplashScreenPage: View {
                 .accessibilityHidden(true)
             
             VStack(spacing: 8) {
-                OnboardingTintedFullStopText(content.title)
+                #if QUALICHAT
+                Text(content.title.uppercased())
+                    .font(theme.fonts.title2B)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(theme.colors.accent)
+                #else
+                OnboardingTintedFullStopText(content.title.uppercased())
                     .font(theme.fonts.title2B)
                     .foregroundColor(theme.colors.primaryContent)
+                #endif
                 Text(content.message)
                     .font(theme.fonts.body)
+                #if QUALICHAT
+                    .foregroundColor(theme.colors.primaryContent)
+                #else
                     .foregroundColor(theme.colors.secondaryContent)
+                #endif
                     .multilineTextAlignment(.center)
             }
             .fixedSize(horizontal: false, vertical: true)

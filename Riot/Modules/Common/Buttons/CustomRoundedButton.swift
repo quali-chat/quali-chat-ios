@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2020 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,7 +40,13 @@ class CustomRoundedButton: UIButton {
     
     private func commonInit() {
         self.layer.masksToBounds = true
-        self.titleLabel?.font = UIFont.systemFont(ofSize: Constants.fontSize)        
+        self.titleLabel?.font = UIFont.systemFont(ofSize: Constants.fontSize)    
+        self.titleLabel?.textColor = UIColor.red
+        self.setTitleColor(UIColor.red, for: .normal)
+        #if QUALICHAT
+        self.layer.cornerRadius = 25.0
+        #else
         self.layer.cornerRadius = Constants.cornerRadius
+        #endif
     }
 }

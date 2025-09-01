@@ -1,6 +1,7 @@
 // File created from ScreenTemplate
 // $ createScreen.sh SetPinCode/EnterPinCode EnterPinCode
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2020 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -113,9 +114,11 @@ final class EnterPinCodeViewController: UIViewController {
     
     private func update(theme: Theme) {
         self.theme = theme
-        
+        #if QUALICHAT
+        self.view.backgroundColor = theme.backgroundColor
+        #else
         self.view.backgroundColor = theme.headerBackgroundColor
-        
+        #endif
         if let navigationBar = self.navigationController?.navigationBar {
             theme.applyStyle(onNavigationBar: navigationBar)
         }
@@ -356,7 +359,11 @@ final class EnterPinCodeViewController: UIViewController {
                     if error {
                         imageView.image = Asset.Images.placeholder.image.vc_tintedImage(usingColor: self.theme.noticeColor)
                     } else {
+                        #if QUALICHAT
+                        imageView.image = Asset.Images.placeholder.image.vc_tintedImage(usingColor: self.theme.noticeSecondaryColor)
+                        #else
                         imageView.image = Asset.Images.placeholder.image
+                        #endif
                     }
                 } else {
                     imageView.image = Asset.Images.selectionUntick.image

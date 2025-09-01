@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2022 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +18,7 @@
 import UIKit
 
 /// Base view class for mention Pills.
-@available (iOS 15.0, *)
+@available(iOS 15.0, *)
 @objcMembers
 class PillAttachmentView: UIView {
     // MARK: - Internal Structs
@@ -68,7 +69,11 @@ class PillAttachmentView: UIView {
                 let label = UILabel(frame: .zero)
                 label.text = string
                 label.font = pillData.font
+                #if QUALICHAT
+                label.textColor = pillData.isHighlighted ? theme.baseTextPrimaryColor : theme.tintBackgroundColor
+                #else
                 label.textColor = pillData.isHighlighted ? theme.baseTextPrimaryColor : theme.textPrimaryColor
+                #endif
                 label.translatesAutoresizingMaskIntoConstraints = false
                 stack.addArrangedSubview(label)
                 

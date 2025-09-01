@@ -46,7 +46,7 @@
 "auth_optional_phone_placeholder" = "手机号码（可选）";
 "auth_phone_placeholder" = "手机号码";
 "auth_repeat_password_placeholder" = "重复密码";
-"auth_repeat_new_password_placeholder" = "确认您的新Matrix账户密码";
+"auth_repeat_new_password_placeholder" = "确认您的新quali.chat账户密码";
 "auth_invalid_login_param" = "用户名和/或密码无效";
 "auth_invalid_user_name" = "用户名只能包含字母、数字、短横（-）与下划线（_）";
 "auth_invalid_password" = "密码太短（至少 6 个字符）";
@@ -62,21 +62,21 @@
 "auth_missing_email_or_phone" = "缺少电子邮箱地址或电话号码";
 "auth_password_dont_match" = "密码不匹配";
 "auth_username_in_use" = "用户名被占用";
-"auth_forgot_password" = "忘记了Matrix账户密码？";
+"auth_forgot_password" = "忘记了quali.chat账户密码？";
 "auth_use_server_options" = "使用自定义服务器选项（高级）";
 "auth_email_validation_message" = "请检查我们发给您的电子邮件以继续注册";
 "auth_msisdn_validation_title" = "等待验证中";
 "auth_msisdn_validation_message" = "我们通过短信向您发送了一条验证码，请在下方输入它。";
 "auth_msisdn_validation_error" = "无法验证此手机号。";
 "auth_recaptcha_message" = "此家服务器想确定您不是机器人";
-"auth_reset_password_message" = "为了重置您的Matrix账户密码，请输入与您账户关联的邮箱地址：";
+"auth_reset_password_message" = "为了重置您的quali.chat账户密码，请输入与您账户关联的邮箱地址：";
 "auth_reset_password_missing_email" = "必须输入与您的账户关联的邮箱地址。";
 "auth_reset_password_missing_password" = "必须输入新的密码。";
 "auth_reset_password_email_validation_message" = "一封邮件已经发送到 %@。当您已经按照其中的链接操作以后，请点下面。";
 "auth_reset_password_next_step_button" = "我已经验证了我的邮箱地址";
 "auth_reset_password_error_unauthorized" = "验证邮箱地址失败：请确认您已经点击了邮件里的链接";
-"auth_reset_password_error_not_found" = "您的邮箱地址可能没有与此家服务器上的 Matrix ID 绑定。";
-"auth_reset_password_success_message" = "您的Matrix账户密码已重置。\n\n您的所有会话都会被登出并且不会收到推送通知。要想重新收到通知，请在每个设备上重新登录。";
+"auth_reset_password_error_not_found" = "您的邮箱地址可能没有与此家服务器上的 quali.chat ID 绑定。";
+"auth_reset_password_success_message" = "您的quali.chat账户密码已重置。\n\n您的所有会话都会被登出并且不会收到推送通知。要想重新收到通知，请在每个设备上重新登录。";
 "auth_add_email_and_phone_warning" = "在 API 出现之前，还不支持使用邮箱地址或手机号码直接注册。只有手机号码会和此账户绑定。您可以在设置中添加邮箱地址。";
 // Chat creation
 "room_creation_title" = "新的聊天";
@@ -93,7 +93,7 @@
 "room_creation_keep_private" = "保持私密";
 "room_creation_make_private" = "使其变成私密";
 "room_creation_wait_for_creation" = "房间已创建。请稍候。";
-"room_creation_invite_another_user" = "用户 ID、名称或电子邮件";
+"room_creation_invite_another_user" = "用户 ID 或名称";
 // Room recents
 "room_recents_directory_section" = "房间目录";
 "room_recents_favourites_section" = "收藏夹";
@@ -130,7 +130,7 @@
 "directory_search_fail" = "获取数据失败";
 // Contacts
 "contacts_address_book_section" = "本地联系人";
-"contacts_address_book_matrix_users_toggle" = "只有 Matrix 用户";
+"contacts_address_book_matrix_users_toggle" = "只有 quali.chat 用户";
 "contacts_address_book_no_contact" = "没有本地联系人";
 "contacts_address_book_permission_required" = "需要权限以便访问本地联系人";
 "contacts_address_book_permission_denied" = "你没有允许 %@ 访问本地联系人";
@@ -150,7 +150,7 @@
 "room_participants_filter_room_members" = "筛选房间成员";
 "room_participants_invite_another_user" = "通过用户 ID、名称或电子邮件搜索 / 邀请";
 "room_participants_invite_malformed_id_title" = "邀请错误";
-"room_participants_invite_malformed_id" = "ID 格式错误。必须是一个电子邮件或者 Matrix ID 类似“@本地部分:域名”";
+"room_participants_invite_malformed_id" = "ID 格式错误。必须是一个电子邮件或者 quali.chat ID 类似“@本地部分:域名”";
 "room_participants_invited_section" = "已邀请";
 "room_participants_online" = "在线";
 "room_participants_offline" = "离线";
@@ -287,8 +287,8 @@
 "settings_old_password" = "旧密码";
 "settings_new_password" = "新密码";
 "settings_confirm_password" = "确认密码";
-"settings_fail_to_update_password" = "更新Matrix账户密码失败";
-"settings_password_updated" = "您的Matrix账户密码已经更新";
+"settings_fail_to_update_password" = "更新quali.chat账户密码失败";
+"settings_password_updated" = "您的quali.chat账户密码已经更新";
 "settings_crypto_device_name" = "会话名称： ";
 "settings_crypto_device_id" = "\n会话ID： ";
 "settings_crypto_device_key" = "\n会话密钥:\n";
@@ -361,9 +361,9 @@
 "directory_title" = "目录";
 "directory_server_picker_title" = "选择一个目录";
 "directory_server_all_rooms" = "%@ 服务器上的所有房间";
-"directory_server_all_native_rooms" = "所有本地 Matrix 房间";
+"directory_server_all_native_rooms" = "所有本地 quali.chat 房间";
 "directory_server_type_homeserver" = "输入一个家服务器来列出公共房间";
-"directory_server_placeholder" = "matrix.org";
+"directory_server_placeholder" = "quali.chat";
 // Others
 "or" = "或";
 "you" = "您";
@@ -407,7 +407,7 @@
 "settings_ui_dark_theme" = "暗色主题";
 // Events formatter
 "event_formatter_member_updates" = "%tu 的成员身份变化";
-"auth_home_server_placeholder" = "URL（例如 https://matrix.org）";
+"auth_home_server_placeholder" = "URL（例如 https://quali.chat）";
 "auth_identity_server_placeholder" = "URL（例如 https://vector.im）";
 "contacts_user_directory_section" = "用户目录";
 "contacts_user_directory_offline_section" = "用户目录（离线）";
@@ -434,7 +434,7 @@
 // Groups tab
 "group_invite_section" = "邀请";
 "group_section" = "社区";
-"room_do_not_have_permission_to_post" = "你无权在此房间发送消息";
+"room_do_not_have_permission_to_post" = "You need to have the room token in your wallet to post to this room.";
 "settings_enable_rageshake" = "摇一摇报告 bug";
 "room_details_direct_chat" = "私聊";
 // Group Details
@@ -482,7 +482,7 @@
 "room_details_flair_invalid_id_prompt_msg" = "%@ 不是有效的社区 ID";
 "room_details_fail_to_update_room_communities" = "相关社区更新失败";
 "group_invitation_format" = "%@ 邀请您加入此社区";
-"group_participants_invite_malformed_id" = "ID 格式错误。一个 Matrix ID 看起来应该像是 “@localpart:domain”";
+"group_participants_invite_malformed_id" = "ID 格式错误。一个 quali.chat ID 看起来应该像是 “@localpart:domain”";
 // Widget
 "widget_no_power_to_manage" = "你需要相关权限以管理此房间的挂件";
 "widget_creation_failure" = "挂件创建失败";
@@ -522,7 +522,7 @@
 "room_resource_usage_limit_reached_message_contact_3" = " 以提高限制。";
 // String for App Store
 "store_short_description" = "安全、去中心化的聊天/VoIP";
-"store_full_description" = "Element 是一种新型的通讯与协作应用：\n\n1. 使您可以掌控您的隐私\n2. 使您与 Matrix 网络中的任何人交流，甚至可以通过集成功能与如 Slack 之类的其他应用通讯\n3. 保护您免受广告，大数据挖掘和封闭服务的侵害\n4. 通过端到端加密保证安全，通过交叉签名验证其他人\n\nElement 与其他通讯与协作应用完全不同，因为它是去中心化且开源的。\n\nElement 允许您自托管——或者选择托管商——因此，您能拥有数据和会话的隐私权，所有权和控制权。它允许您访问开放网络；因此，您可以与 Element 用户以外的人交流。并且它非常安全。\n\nElement 之所以可以做到这些，是因为它在 Matrix 上运行——开放，去中心化通讯的标准。\n\n通过让您选择由谁来托管您的会话，Element 让您掌控一切。在 Element 应用中，您可以选择不同的托管方式：\n\n1. 在由 Matrix 开发者托管的 matrix.org 公共服务器上获取免费账户，或从志愿者托管的上千个公共服务器中选择\n2. 在您自己的硬件上运行服务器，自托管您的会话\n3. 通过订阅 Element Matrix Services 托管平台，简单地在自定义服务器上注册账户\n\n为什么选择 Element？\n\n掌控您的数据：您来决定存放您的数据和消息的位置。拥有并控制它的是您，而不是挖掘您的数据或与第三方分享的巨型企业。\n\n开放通讯与协作：您可以与 Matrix 网络中的任何人聊天，不论他们使用 Element 还是其他 Matrix 应用，甚至/即使他们在使用不同的通讯系统，例如 Slack、IRC 或 XMPP。\n\n超级安全：支持真正的端到端加密（仅有会话中的人可以解密消息），还有能够验证会话参与方的设备的交叉签名。\n\n完善的通讯方式：消息，语音和视频通话，文件共享，屏幕共享和大量集成功能，机器人和挂件。建立房间与社区，保持联系并完成工作。\n\n随时随地：消息历史可在您的全部设备和 https://app.element.io 网页端之间完全同步，无论您在哪里，都可以保持联系。";
+"store_full_description" = "quali.chat 是一种新型的通讯与协作应用：\n\n1. 使您可以掌控您的隐私\n2. 使您与 quali.chat 网络中的任何人交流，甚至可以通过集成功能与如 Slack 之类的其他应用通讯\n3. 保护您免受广告，大数据挖掘和封闭服务的侵害\n4. 通过端到端加密保证安全，通过交叉签名验证其他人\n\nquali.chat 与其他通讯与协作应用完全不同，因为它是去中心化且开源的。\n\nquali.chat 允许您自托管——或者选择托管商——因此，您能拥有数据和会话的隐私权，所有权和控制权。它允许您访问开放网络；因此，您可以与 quali.chat 用户以外的人交流。并且它非常安全。\n\nElement 之所以可以做到这些，是因为它在 quali.chat 上运行——开放，去中心化通讯的标准。\n\n通过让您选择由谁来托管您的会话，quali.chat 让您掌控一切。在 quali.chat 应用中，您可以选择不同的托管方式：\n\n1. 在由 quali.chat 开发者托管的 quali.chat 公共服务器上获取免费账户，或从志愿者托管的上千个公共服务器中选择\n2. 在您自己的硬件上运行服务器，自托管您的会话\n3. 通过订阅 quali.chat 托管平台，简单地在自定义服务器上注册账户\n\n为什么选择 quali.chat？\n\n掌控您的数据：您来决定存放您的数据和消息的位置。拥有并控制它的是您，而不是挖掘您的数据或与第三方分享的巨型企业。\n\n开放通讯与协作：您可以与 quali.chat 网络中的任何人聊天，不论他们使用 quali.chat 还是其他 quali.chat 应用，甚至/即使他们在使用不同的通讯系统，例如 Slack、IRC 或 XMPP。\n\n超级安全：支持真正的端到端加密（仅有会话中的人可以解密消息），还有能够验证会话参与方的设备的交叉签名。\n\n完善的通讯方式：消息，语音和视频通话，文件共享，屏幕共享和大量集成功能，机器人和挂件。建立房间与社区，保持联系并完成工作。\n\n随时随地：消息历史可在您的全部设备和 https://app.element.io 网页端之间完全同步，无论您在哪里，都可以保持联系。";
 "auth_accept_policies" = "请查看并接受此主页服务器的服务条款：";
 "room_replacement_information" = "这个房间已被替换，不再有效。";
 "settings_flair" = "在允许的地方显示个性徽章";
@@ -579,10 +579,10 @@
 "deactivate_account_informations_part2_emphasize" = "此项操作无法逆转。";
 "deactivate_account_informations_part3" = "\n\n正在停用您的账户 ";
 "deactivate_account_informations_part4_emphasize" = "默认情况下不会导致我们忘记您发送的消息。 ";
-"deactivate_account_informations_part5" = "如果您希望我们忘记您的消息，请勾选下面的框\n\nMatrix中的消息可见性与电子邮件类似。 我们忘记您的消息意味着您已发送的消息将不会再与任何新用户或未注册用户共享，但已有权访问这些消息的注册用户仍可访问其副本。";
+"deactivate_account_informations_part5" = "如果您希望我们忘记您的消息，请勾选下面的框\n\nquali.chat中的消息可见性与电子邮件类似。 我们忘记您的消息意味着您已发送的消息将不会再与任何新用户或未注册用户共享，但已有权访问这些消息的注册用户仍可访问其副本。";
 "deactivate_account_forget_messages_information_part1" = "当我的账户被停用时，请忘记我发送的所有消息（";
 "deactivate_account_forget_messages_information_part3" = ": 这会导致将来加入的用户看到的是一段不完整的对话）";
-"deactivate_account_password_alert_message" = "要继续，请输入你的Matrix账户密码";
+"deactivate_account_password_alert_message" = "要继续，请输入你的quali.chat账户密码";
 "rerequest_keys_alert_message" = "请在另一台可以解密消息的设备上启动%@，这样它就可以将密钥发送到此会话。";
 "key_backup_setup_title" = "密钥备份";
 "key_backup_setup_skip_alert_title" = "您确定吗？";
@@ -595,7 +595,7 @@
 "key_backup_setup_intro_manual_export_info" = "（高级）";
 "key_backup_setup_intro_manual_export_action" = "手动导出密钥";
 "key_backup_setup_passphrase_title" = "使用一段安全词组保护您的备份";
-"key_backup_setup_passphrase_info" = "我们将会在家服务器上保存一份您的密钥的加密拷贝。设置一个词组来保护您的备份的安全。\n\n为了最大的安全性，它应当与您的Matrix账户密码不同。";
+"key_backup_setup_passphrase_info" = "我们将会在家服务器上保存一份您的密钥的加密拷贝。设置一个词组来保护您的备份的安全。\n\n为了最大的安全性，它应当与您的quali.chat账户密码不同。";
 "key_backup_setup_passphrase_passphrase_title" = "输入";
 "key_backup_setup_passphrase_passphrase_placeholder" = "输入词组";
 "key_backup_setup_passphrase_passphrase_valid" = "太棒了！";
@@ -661,10 +661,10 @@
 "auth_add_email_message_2" = "设置邮箱以便恢复账户，并且之后可选让认识的人找到你。";
 "auth_add_phone_message_2" = "设置电话号码，并且之后可选让认识的人找到你。";
 "auth_add_email_phone_message_2" = "设置邮箱以便恢复账户。之后可选用邮箱或者电话号码让认识的人找到你。";
-"auth_email_is_required" = "未配置身份服务器，所以你无法添加电子邮件地址以在以后重设你的Matrix账户密码。";
-"auth_phone_is_required" = "未配置身份服务器，所以你无法添加电话号码以在以后重设你的Matrix账户密码。";
-"auth_forgot_password_error_no_configured_identity_server" = "未配置身份服务器：添加一个以重设你的Matrix账户密码。";
-"auth_reset_password_error_is_required" = "未配置身份服务器：在服务器选项中添加以便重设你的Matrix账户密码。";
+"auth_email_is_required" = "未配置身份服务器，所以你无法添加电子邮件地址以在以后重设你的quali.chat账户密码。";
+"auth_phone_is_required" = "未配置身份服务器，所以你无法添加电话号码以在以后重设你的quali.chat账户密码。";
+"auth_forgot_password_error_no_configured_identity_server" = "未配置身份服务器：添加一个以重设你的quali.chat账户密码。";
+"auth_reset_password_error_is_required" = "未配置身份服务器：在服务器选项中添加以便重设你的quali.chat账户密码。";
 "auth_softlogout_signed_out" = "你已登出";
 "auth_softlogout_sign_in" = "登录";
 "auth_softlogout_reason" = "你的家服务器（%1$@）管理员已将你的账户%2$@（%3$@）登出。";
@@ -725,7 +725,7 @@
 "settings_labs_enable_cross_signing" = "开启交叉签名按用户验证而不是按设备验证（开发中）";
 "settings_add_3pid_password_title_email" = "添加邮箱地址";
 "settings_add_3pid_password_title_msidsn" = "添加电话号码";
-"settings_add_3pid_password_message" = "请填写你的Matrix账户的密码以继续";
+"settings_add_3pid_password_message" = "请填写你的quali.chat账户的密码以继续";
 "settings_add_3pid_invalid_password_message" = "验证信息无效";
 "settings_key_backup_button_connect" = "关联此会话到密钥备份";
 "settings_devices_description" = "会话的公开名字会对你联络的人可见";
@@ -1020,7 +1020,7 @@
 "device_verification_self_verify_wait_title" = "绝对安全";
 "device_verification_self_verify_wait_new_sign_in_title" = "验证此登录名";
 "device_verification_self_verify_wait_information" = "从您的其他会话之一验证此会话，授予它访问加密消息的权限。\n\n在您的其他设备上使用最新版的%@:";
-"device_verification_self_verify_wait_additional_information" = "这适用于%@和其他支持交叉签名的Matrix客户端。";
+"device_verification_self_verify_wait_additional_information" = "这适用于%@和其他支持交叉签名的quali.chat客户端。";
 "device_verification_self_verify_wait_recover_secrets_without_passphrase" = "使用安全密钥";
 "device_verification_self_verify_wait_recover_secrets_with_passphrase" = "使用安全词组或密钥";
 "device_verification_self_verify_wait_recover_secrets_additional_information" = "如果您无法访问一个现有会话";
@@ -1082,7 +1082,7 @@
 "secrets_recovery_with_key_invalid_recovery_key_title" = "无法访问机密存储";
 "secrets_recovery_with_key_invalid_recovery_key_message" = "请验证您输入的安全密钥是否正确。";
 "rooms_empty_view_information" = "房间非常适合任何群聊，无论是私人的还是公共的。点击+以查找现有房间，或新建房间。";
-"security_settings_user_password_description" = "通过输入您的Matrix账户密码确认您的身份";
+"security_settings_user_password_description" = "通过输入您的quali.chat账户密码确认您的身份";
 "rooms_empty_view_title" = "房间";
 "people_empty_view_information" = "与任何人安全聊天。点击+开始添加人员。";
 "people_empty_view_title" = "用户";
@@ -1104,7 +1104,7 @@
 "security_settings_secure_backup_synchronise" = "同步";
 "security_settings_secure_backup_setup" = "设置";
 "security_settings_secure_backup_description" = "备份你的账户数据备份和加密密钥，以防你无法访问会话。 你的密钥将受到唯一的安全密钥保护。";
-"security_settings_crypto_sessions_description_2" = "如果您未曾发起登录，请更改Matrix账户的密码并重置安全备份。";
+"security_settings_crypto_sessions_description_2" = "如果您未曾发起登录，请更改quali.chat账户的密码并重置安全备份。";
 "settings_show_NSFW_public_rooms" = "显示 NSFW 公共房间";
 "external_link_confirmation_message" = "此链接 %@ 会将您带至另一个网站：%@\n\n是否前往？";
 "external_link_confirmation_title" = "双击此链接";
@@ -1166,7 +1166,7 @@
 "dialpad_title" = "拨号键盘";
 "room_info_list_section_other" = "其他";
 "create_room_section_footer_encryption" = "加密一经启用，便无法禁用。";
-"create_room_placeholder_address" = "#testroom:matrix.org";
+"create_room_placeholder_address" = "#testroom:quali.chat";
 "create_room_section_header_address" = "地址";
 "create_room_section_header_type" = "谁可以加入";
 "create_room_enable_encryption" = "启用加密";
@@ -1212,7 +1212,7 @@
 "secrets_setup_recovery_passphrase_summary_title" = "保存您的安全词组";
 "secrets_setup_recovery_passphrase_confirm_passphrase_placeholder" = "确认词组";
 "secrets_setup_recovery_passphrase_confirm_passphrase_title" = "确认";
-"secrets_setup_recovery_passphrase_additional_information" = "不要使用你的Matrix账户密码。";
+"secrets_setup_recovery_passphrase_additional_information" = "不要使用你的quali.chat账户密码。";
 "secrets_setup_recovery_passphrase_validate_action" = "完成";
 
 // Recovery passphrase
@@ -1288,7 +1288,7 @@
 // Banner
 
 "cross_signing_setup_banner_title" = "设置加密";
-"secrets_reset_authentication_message" = "请输入你的Matrix账户密码进行确认";
+"secrets_reset_authentication_message" = "请输入你的quali.chat账户密码进行确认";
 "secrets_reset_warning_message" = "您将重新启动，没有历史记录，消息，受信任的设备或受信任的用户。";
 "secrets_reset_warning_title" = "如果你选择全部重置";
 "secrets_reset_information" = "仅当没有其他设备可用来验证此设备时，才执行此操作。";
@@ -1597,26 +1597,30 @@
 "settings_analytics_and_crash_data" = "发送崩溃和分析数据";
 "accessibility_button_label" = "按钮";
 "enable" = "启用";
-"onboarding_splash_page_1_message" = "独立安全的通信，为您提供与家中面谈相同的私密性。";
-"onboarding_splash_page_1_title" = "掌控你的对话。";
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified
 
 // Onboarding
 "onboarding_splash_register_button_title" = "注册";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
 // room details dialog screen
-"matrix" = "Matrix";
+"matrix" = "quali.chat";
 // Login Screen
 "login_create_account" = "创建账户：";
-"login_server_url_placeholder" = "网址（例如 https://matrix.org）";
+"login_server_url_placeholder" = "网址（例如 https://quali.chat）";
 "login_home_server_title" = "家服务器网址：";
 "login_home_server_info" = "您的家服务器存储了您所有的对话和账户数据";
 "login_identity_server_title" = "身份认证服务器网址：";
-"login_identity_server_info" = "Matrix 提供了身份认证服务器以验证邮箱地址等是否属于某个 Matrix ID。目前只有 https://matrix.org 支持。";
-"login_user_id_placeholder" = "Matrix ID（例如 @bob:matrix.org 或 bob）";
+"login_identity_server_info" = "quali.chat 提供了身份认证服务器以验证邮箱地址等是否属于某个 quali.chat ID。目前只有 https://quali.chat 支持。";
+"login_user_id_placeholder" = "quali.chat ID（例如 @bob:quali.chat 或 bob）";
 "login_password_placeholder" = "密码";
 "login_optional_field" = "可选";
 "login_display_name_placeholder" = "显示名（例如 Bob Obson）";
@@ -1655,7 +1659,7 @@
 "select_account" = "选择一个账户";
 "attach_media" = "从库附加媒体";
 "capture_media" = "拍照片/视频";
-"invite_user" = "邀请 Matrix 用户";
+"invite_user" = "邀请 quali.chat 用户";
 "reset_to_default" = "重置到默认";
 "resend_message" = "重新发送此消息";
 "select_all" = "选择全部";
@@ -1689,7 +1693,7 @@
 "notice_file_attachment" = "文件附件";
 "notice_invalid_attachment" = "无效附件";
 "notice_unsupported_attachment" = "不支持的附件：%@";
-"login_email_info" = "指定邮箱地址可以让其他 Matrix 用户更容易找到您，并允许您可以在未来重置密码。";
+"login_email_info" = "指定邮箱地址可以让其他 quali.chat 用户更容易找到您，并允许您可以在未来重置密码。";
 "login_error_no_login_flow" = "我们未能从此家服务器获取认证信息";
 "login_error_do_not_support_login_flows" = "当前我们不支持此家服务器定义的任何或者所有登录流";
 "notice_feedback" = "反馈事件 (id: %@)：%@";
@@ -1839,8 +1843,8 @@
 "settings_title_config" = "选项";
 "settings_title_notifications" = "通知";
 // contacts list screen 
-"invitation_message" = "我想使用 Matrix 和你聊天。请访问 https://martix.org 以了解更多信息。";
-"account_error_matrix_session_is_not_opened" = "没有打开 Matrix 会话";
+"invitation_message" = "我想使用 quali.chat 和你聊天。请访问 https://martix.org 以了解更多信息。";
+"account_error_matrix_session_is_not_opened" = "没有打开 quali.chat 会话";
 "account_error_email_wrong_description" = "此邮箱地址似乎是无效的";
 "account_error_msisdn_wrong_description" = "此手机号码似乎是无效的";
 "room_creation_participants_placeholder" = "（例如：@bob:homeserver1; @john:homeserver2…）";
@@ -1853,7 +1857,7 @@
 // Room members
 "room_member_ignore_prompt" = "你确定要隐藏所有此用户发送的消息吗？";
 // Contacts
-"contact_mx_users" = "Matrix 用户";
+"contact_mx_users" = "quali.chat 用户";
 "contact_local_contacts" = "本地联系人";
 // Groups
 "e2e_passphrase_confirm" = "确认口令词组";
@@ -1933,19 +1937,19 @@
 "attachment_original" = "实际大小 (%@)";
 "attachment_multiselection_size_prompt" = "发送图片为：";
 "attachment_multiselection_original" = "实际大小";
-"attachment_e2e_keys_file_prompt" = "此文件含有 Matrix 客户端导出的密钥。\n您想要查看文件内容还是导入密钥？";
+"attachment_e2e_keys_file_prompt" = "此文件含有 quali.chat 客户端导出的密钥。\n您想要查看文件内容还是导入密钥？";
 "message_reply_to_sender_sent_a_video" = "发送了一段视频。";
 "call_invite_expired" = "通话邀请已过期";
 "ssl_fingerprint_hash" = "指纹（%@）：";
-"e2e_import_prompt" = "此操作允许您导入此前从其他 Matrix 客户端上导出的加密密钥。您将能够解密任何该客户端能解密的消息。\n该导出文件受口令词组保护。您应在此处输入口令词组以解密该文件。";
-"e2e_export_prompt" = "此操作允许您将加密房间中接收到的消息导出为一个本地文件。您将来可以将此文件导入到其他 Matrix 客户端中去解密这些消息。\n导出的文件将允许任何能够读取它的人解密您可以看到的任何加密消息，因此您应该小心保证其安全。";
+"e2e_import_prompt" = "此操作允许您导入此前从其他 quali.chat 客户端上导出的加密密钥。您将能够解密任何该客户端能解密的消息。\n该导出文件受口令词组保护。您应在此处输入口令词组以解密该文件。";
+"e2e_export_prompt" = "此操作允许您将加密房间中接收到的消息导出为一个本地文件。您将来可以将此文件导入到其他 quali.chat 客户端中去解密这些消息。\n导出的文件将允许任何能够读取它的人解密您可以看到的任何加密消息，因此您应该小心保证其安全。";
 "e2e_passphrase_create" = "创建口令词组";
 "error_common_message" = "出现错误。请稍后再试。";
 // Permissions
 "camera_access_not_granted_for_call" = "视频通话需要摄像头使用权限，但 %@ 无此权限";
 "microphone_access_not_granted_for_call" = "通话需要麦克风使用权限，但 %@ 无此权限";
 "local_contacts_access_not_granted" = "本地通讯录用户查找功能需要通讯录权限，但 %@ 无此权限";
-"local_contacts_access_discovery_warning" = "为了发现已经使用 Matrix 的联系人，%@ 可以把你地址簿里的邮箱地址和电话号码发送给你选定的 Matrix 身份认证服务器。如果支持的话，个人数据会在发送前被哈希——请检查你的身份认证服务器的隐私条款获知更多细节。";
+"local_contacts_access_discovery_warning" = "为了发现已经使用 quali.chat 的联系人，%@ 可以把你地址簿里的邮箱地址和电话号码发送给你选定的 quali.chat 身份认证服务器。如果支持的话，个人数据会在发送前被哈希——请检查你的身份认证服务器的隐私条款获知更多细节。";
 "notification_settings_global_info" = "通知设置已保存在您的账户中并在所有支持的客户端中共享（包括桌面通知）。\n\n规则会按顺序应用；第一条匹配的规则定义了消息的输出结果。\n因此：按字符规则的通知比按房间规则的通知级别更高，而这两者都比按发送者规则的通知级别更高。\n对于同一类型的多条规则，匹配列表中的第一条优先级最高。";
 "notification_settings_per_word_notifications" = "按字符通知";
 "notification_settings_per_word_info" = "单词不区分大小写，并且可能包含 * 通配符。 所以：\nfoo 匹配由单词分隔符包围的字符串 foo（例如标点符号和空格，或一行的开头/结尾）。\nfoo* 匹配任何以 foo 开头的单词。\n*foo* 匹配任何包含3个字母 foo 的单词。";
@@ -2067,8 +2071,7 @@
 "attachment_unsupported_preview_message" = "文件类型不受支持。";
 "attachment_unsupported_preview_title" = "无法预览";
 "onboarding_use_case_personal_messaging" = "朋友和家人";
-"onboarding_splash_page_3_title" = "安全的信息传输。";
-"onboarding_splash_login_button_title" = "我已拥有一个账户";
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
 "saving" = "保存中";
 
 // Activities
@@ -2082,11 +2085,10 @@
 "stop" = "停止";
 "joining" = "加入中";
 "spaces_add_room" = "添加房间";
-"security_settings_coming_soon" = "对不起。这个操作在%@ iOS上还不可用。请使用另一个Matrix客户端来设置。%@ iOS会沿用其他客户端的设置。";
+"security_settings_coming_soon" = "对不起。这个操作在%@ iOS上还不可用。请使用另一个quali.chat客户端来设置。%@ iOS会沿用其他客户端的设置。";
 "room_many_users_are_typing" = "%@、%@和其他人正在输入……";
 /* The placeholder %1$tu will be replaced with a number and %2$@ with the user's search terms. */
 "directory_search_results" = "为%2$@找到%1$tu个结果";
-"onboarding_splash_page_2_title" = "一切都在你的掌控中。";
 "onboarding_congratulations_personalize_button" = "个性化用户资料";
 /* The placeholder string contains the user's matrix ID */
 "onboarding_congratulations_message" = "你的账户%@已创建";
@@ -2099,9 +2101,7 @@
 "onboarding_use_case_community_messaging" = "社群";
 "onboarding_use_case_work_messaging" = "团队";
 "onboarding_use_case_title" = "你会和谁聊得最多？";
-"onboarding_splash_page_4_message" = "Element也很适合工作场所。受世界最安全的组织的信任。";
-"onboarding_splash_page_3_message" = "端到端加密且不要求电话号码。无广告或数据挖掘。";
-"onboarding_splash_page_2_message" = "选择在哪里保存你的对话，给你控制和独立。通过Matrix连接。";
+"onboarding_splash_page_4_message" = "quali.chat也很适合工作场所。受世界最安全的组织的信任。";
 
 // MARK: Reactions
 
@@ -2146,7 +2146,7 @@
 "authentication_login_title" = "欢迎回来！";
 "authentication_server_info_title" = "你的对话发生的地方";
 "authentication_registration_password_footer" = "必须是8个或以上的字符";
-/* The placeholder will show the full Matrix ID that has been entered. */
+/* The placeholder will show the full quali.chat ID that has been entered. */
 "authentication_registration_username_footer_available" = "别人可通过%@发现你";
 "authentication_registration_username_footer" = "你可在以后更改";
 "authentication_registration_username" = "用户名";
@@ -2223,7 +2223,7 @@
 "authentication_qr_login_display_title" = "关联设备";
 "authentication_qr_login_start_step3" = "选择“关联设备”";
 "authentication_qr_login_start_step2" = "前往设置->安全与隐私";
-"authentication_qr_login_start_step1" = "打开你的其他设备上的Element";
+"authentication_qr_login_start_step1" = "打开你的其他设备上的quali.chat";
 "authentication_qr_login_start_subtitle" = "用此设备的相机扫描显示在你的其他设备上的QR码：";
 "authentication_qr_login_start_title" = "扫描QR码";
 "authentication_choose_password_signout_all_devices" = "登出全部设备";
@@ -2270,7 +2270,7 @@
 "authentication_qr_login_scan_subtitle" = "将QR码放置在下面的方框中";
 "authentication_qr_login_scan_title" = "扫描QR码";
 "authentication_qr_login_display_step2" = "选择“以QR码登入”";
-"authentication_qr_login_display_step1" = "在您的其它设备中打开Element";
+"authentication_qr_login_display_step1" = "在您的其它设备中打开quali.chat";
 "onboarding_splash_page_4_title_no_pun" = "为您的团队发送消息。";
 "user_session_learn_more" = "了解更多";
 "manage_session_name_info_link" = "了解更多";
@@ -2289,7 +2289,7 @@
 "threads_beta_enable" = "尝试一下";
 "threads_beta_information" = "使用消息列使讨论保持有序。\n\n消息列帮助你保持聊天不跑题，且易于回溯。 ";
 "threads_beta_title" = "消息列";
-"threads_notice_information" = "实验期间创建的所有消息列会被 <b>显示为普通回复</b>。<br/><br/>这是个一次性的转变，因为消息列现在是Matrix标准的一部分了。";
+"threads_notice_information" = "实验期间创建的所有消息列会被 <b>显示为普通回复</b>。<br/><br/>这是个一次性的转变，因为消息列现在是quali.chat标准的一部分了。";
 "threads_notice_title" = "消息列不再是实验性功能了🎉";
 "threads_empty_show_all_threads" = "显示所有消息列";
 "threads_empty_tip" = "提示：点击一条消息然后点击“消息列”来新建一个消息列。";
@@ -2338,7 +2338,7 @@
 // MARK: Live location sharing
 
 "location_sharing_live_share_title" = "共享实时位置";
-"location_sharing_allow_background_location_message" = "如果你想要实时共享你的位置，Element需要在后台访问你的位置信息。要允许访问，点击设置>位置，然后选择“总是”";
+"location_sharing_allow_background_location_message" = "如果你想要实时共享你的位置，quali.chat需要在后台访问你的位置信息。要允许访问，点击设置>位置，然后选择“总是”";
 "location_sharing_invalid_power_level_message" = "要在此房间中实时共享位置，你需要有对应的权限。";
 "settings_labs_enable_live_location_sharing" = "实时位置共享——共享当前位置（活跃开发中，位置暂时还会留在房间历史记录中）";
 "poll_timeline_decryption_error" = "因为解密错误，有的投票可能没有被算进去";
@@ -2350,7 +2350,7 @@
 "user_sessions_settings" = "管理登陆会话";
 "settings_presence_offline_mode_description" = "如果开启此选项，对其他用户来说，你看起来就会像下线了一样，即使你正在使用此软件。";
 "room_creation_user_not_found_prompt_title" = "确认";
-"room_creation_user_not_found_prompt_message" = "无法找到此Matrix ID的profiles。你仍然想开始私信吗？";
+"room_creation_user_not_found_prompt_message" = "无法找到此quali.chat ID的profiles。你仍然想开始私信吗？";
 "room_creation_user_not_found_prompt_invite_action" = "无论如何都要开始私信";
 "room_participants_invite_anyway" = "无论如何，邀请";
 "threads_discourage_information_1" = "你的家服务器目前不支持消息列，所以此功能可能不可靠。有的消息列消息不一定可用。 ";
@@ -2370,7 +2370,7 @@
 "room_details_access_row_title" = "访问";
 "room_access_settings_screen_restricted_message" = "让空间中的任何人都能找到并加入。\n将要求你确认哪些空间。";
 "room_access_settings_screen_upgrade_required" = "需要升级";
-"room_participants_invite_unknown_participant_prompt_to_msg" = "未找到该 Matrix ID 的配置文件。您确定要邀请 %@ 到 %@？";
+"room_participants_invite_unknown_participant_prompt_to_msg" = "未找到该 quali.chat ID 的配置文件。您确定要邀请 %@ 到 %@？";
 "room_access_settings_screen_upgrade_alert_auto_invite_switch" = "自动邀请成员到新房间";
 "room_preview_decline_invitation_options" = "您想拒绝邀请还是忽略该用户？";
 "room_access_settings_screen_title" = "谁能进入此房间？";
@@ -2421,8 +2421,21 @@
 "key_verification_self_verify_security_upgrade_alert_title" = "应用已更新";
 "sign_out_confirmation_message" = "您确定要登出吗？";
 "device_verification_self_verify_open_on_other_device_title" = "在您的另一台设备上打开 %@";
-"device_verification_self_verify_open_on_other_device_information" = "您需要先验证此会话才能读取加密信息。\n\n在您的其他设备上打开 Element 并按照说明进行操作。";
+"device_verification_self_verify_open_on_other_device_information" = "您需要先验证此会话才能读取加密信息。\n\n在您的其他设备上打开 quali.chat 并按照说明进行操作。";
 "device_verification_self_verify_wait_recover_secrets_additional_help" = "已无法访问 %@ 会话？";
 "network_offline_message" = "您已离线，请检查您的网络链接。";
 "key_verification_alert_body" = "重新检查以确保您的账户安全。";
 "key_verification_scan_qr_code_title" = "扫描 QR Code";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified
+"demo_login_placeholder" = "Username"; // QUALICHAT modified

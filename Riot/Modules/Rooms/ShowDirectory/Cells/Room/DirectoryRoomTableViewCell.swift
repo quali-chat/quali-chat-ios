@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2020 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -50,9 +51,11 @@ class DirectoryRoomTableViewCell: UITableViewCell {
     func configure(withViewModel viewModel: DirectoryRoomTableViewCellVM) {
         //  keep viewModel
         self.viewModel = viewModel
-        
+        #if QUALICHAT
+        displaynameLabel.attributedText = viewModel.title?.fixDisplayNameInRoomTitle(capHeight: displaynameLabel.font.capHeight)
+        #else
         displaynameLabel.text = viewModel.title
-        
+        #endif
         let canShowNumberOfUsers = viewModel.numberOfUsers > 0
         
         numberOfUsersLabel.text = canShowNumberOfUsers ? String(viewModel.numberOfUsers) : nil
@@ -103,9 +106,17 @@ extension DirectoryRoomTableViewCell: Themable {
             joinButton.tintColor = theme.textSecondaryColor
             joinButton.layer.borderWidth = 1.0
             joinButton.layer.borderColor = theme.textSecondaryColor.cgColor
+            #if QUALICHAT
+            joinButton.layer.cornerRadius = ceil(joinButton.frame.height / 2)
+            #endif
         } else {
             joinButton.backgroundColor = theme.tintColor
+            #if QUALICHAT
+            joinButton.tintColor = theme.tintBackgroundColor
+            joinButton.layer.cornerRadius = ceil(joinButton.frame.height / 2)
+            #else
             joinButton.tintColor = .white
+            #endif
             joinButton.layer.borderWidth = 0.0
             joinButton.layer.borderColor = nil
         }

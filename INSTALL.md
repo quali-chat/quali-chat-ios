@@ -2,7 +2,7 @@
 
 ## Install build tools
 
-To build Element iOS project you need:
+To build quali.chat iOS project you need:
 
 - Xcode 12.1+.
 - [Ruby](https://www.ruby-lang.org/), a dynamic programming language used by several build tools.
@@ -55,19 +55,19 @@ To select which `$matrixSDKVersion` value to use you have to determine your need
 
 To build the last published App Store code you just need to checkout master branch. If you want to build an older App Store version just checkout the tag of the corresponding version. You have nothing to modify in the `Podfile`. In this case `$matrixSDKVersion` will be set to a specific version of the MatrixSDK already published on CocoaPods repository.
 
-- **Build last development code and modify Element project only**
+- **Build last development code and modify quali.chat project only**
 
 If you want to build last development code you have to checkout the `develop` branch and use `$matrixSDKVersion = {:branch => 'develop'}` in the `Podfile`. This will also use MatrixSDK develop branch.
 
-- **Build specific branch of SDK and modify Element project only**
+- **Build specific branch of SDK and modify quali.chat project only**
 
 If you want to build a specific branch for the MatrixSDK you have to indicate it using a dictionary like this: `$matrixSDKVersion = {:branch => 'sdk_branch_name'}`.
 
 - **Build any branch and be able to modify MatrixSDK locally**
 
-If you want to modify MatrixSDK locally and see the result in Element project you have to uncommment `$matrixSDKVersion = :local` in the `Podfile`.
-But before you have to checkout [MatrixSDK](https://github.com/matrix-org/matrix-ios-sdk) in `../matrix-ios-sdk` locally relatively to your Element iOS project folder.
-Be sure to use compatible branches for Element iOS and MatrixSDK. For example, if you want to modify Element iOS from develop branch, use MatrixSDK develop branch and then make your modifications.
+If you want to modify MatrixSDK locally and see the result in quali.chat project you have to uncommment `$matrixSDKVersion = :local` in the `Podfile`.
+But before you have to checkout [MatrixSDK](https://github.com/matrix-org/matrix-ios-sdk) in `../matrix-ios-sdk` locally relatively to your quali.chat iOS project folder.
+Be sure to use compatible branches for quali.chat iOS and MatrixSDK. For example, if you want to modify quali.chat iOS from develop branch, use MatrixSDK develop branch and then make your modifications.
 
 **Important**: By working with [XcodeGen](https://github.com/yonaskolb/XcodeGen) you will need to use the _New Build System_ in Xcode, to have your some of the xcconfig variables taken into account. It should be enabled by default on the latest Xcode versions, but if you need to enable it go to Xcode menu and select `File > Workspace Settings… > Build System` and then choose `New Build System`.
 
@@ -115,7 +115,7 @@ $ xcodegen
 
 ### Install dependencies
 
-Then, before opening the Element Xcode workspace, you need to install dependencies via CocoaPods.
+Then, before opening the quali.chat Xcode workspace, you need to install dependencies via CocoaPods.
 
 To be sure to use the right CocoaPods version you can use `bundler`:
 
@@ -130,7 +130,7 @@ Or if you prefer to use directly CocoaPods:
 $ pod install
 ```
 
-This will load all dependencies for the Element source code, including [MatrixSDK](https://github.com/matrix-org/matrix-ios-sdk).
+This will load all dependencies for the quali.chat source code, including [MatrixSDK](https://github.com/matrix-org/matrix-ios-sdk).
 
 
 ### Open workspace

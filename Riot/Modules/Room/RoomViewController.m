@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2014 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  Copyright 2018 New Vector Ltd
@@ -453,8 +454,11 @@ static CGSize kThreadListBarButtonItemImageSize;
     self.jumpToLastUnreadImageView.tintColor = ThemeService.shared.theme.tintColor;
     self.jumpToLastUnreadLabel.textColor = ThemeService.shared.theme.textPrimaryColor;
     
+#if QUALICHAT
+    self.previewHeaderContainer.backgroundColor = ThemeService.shared.theme.backgroundColor;
+#else
     self.previewHeaderContainer.backgroundColor = ThemeService.shared.theme.headerBackgroundColor;
-    
+#endif
     // Check the table view style to select its bg color.
     self.bubblesTableView.backgroundColor = ((self.bubblesTableView.style == UITableViewStylePlain) ? ThemeService.shared.theme.backgroundColor : ThemeService.shared.theme.headerBackgroundColor);
     self.bubblesTableView.separatorColor = ThemeService.shared.theme.lineBreakColor;
@@ -683,10 +687,16 @@ static CGSize kThreadListBarButtonItemImageSize;
     }
     
     self.showSettingsInitially = NO;
-
+    
     if (!RiotSettings.shared.threadsNoticeDisplayed && RiotSettings.shared.enableThreads)
     {
+    #if QUALICHAT
+        if(QualiChatBuildSettings.enableThreadsNotice) {
+            [self showThreadsNotice];
+        }
+    #else
         [self showThreadsNotice];
+    #endif
     }
 
     if (self.saveProgressTextInput && self.roomDataSource)
@@ -1219,11 +1229,19 @@ static CGSize kThreadListBarButtonItemImageSize;
         {
             roomInputToolbarViewClass = nil;
             shouldDismissContextualMenu = YES;
+#if QUALICHAT
+            [self setWritePermission: NO];
+#endif
         }
         else if (!canSend)
         {
             roomInputToolbarViewClass = DisabledRoomInputToolbarView.class;
             shouldDismissContextualMenu = YES;
+#if QUALICHAT
+            [self setWritePermission: NO];
+#endif
+        } else {
+            [self setWritePermission: YES];
         }
     }
     
@@ -1269,7 +1287,15 @@ static CGSize kThreadListBarButtonItemImageSize;
     
     return height;
 }
-
+#if QUALICHAT
+- (void)setWritePermission:(BOOL)isWritePermissions {
+    if([self.roomDataSource isKindOfClass:RoomDataSource.class])
+    {
+        RoomSharedData.shared.writePermissionRoom = isWritePermissions;
+        ((RoomDataSource*) self.roomDataSource).isWritePermissions = isWritePermissions;
+    }
+}
+#endif
 - (void)setRoomActivitiesViewClass:(Class)roomActivitiesViewClass
 {
     // Do not show room activities in case of preview (FIXME: show it when live events will be supported during peeking)
@@ -1288,6 +1314,12 @@ static CGSize kThreadListBarButtonItemImageSize;
 
 - (BOOL)sendAsIRCStyleCommandIfPossible:(NSString*)string
 {
+#if QUALICHAT
+    if (!QualiChatBuildSettings.enableCommandDirectChatInput) {
+        return NO;
+    }
+#endif
+    
     // Override the default behavior for `/join` command in order to open automatically the joined room
 
     NSString* kMXKSlashCmdJoinRoom = [MXKSlashCommandsHelper commandNameFor:MXKSlashCommandJoinRoom];
@@ -1955,13 +1987,18 @@ static CGSize kThreadListBarButtonItemImageSize;
                     itemVoice.enabled = !self.isCallActive;
                     [rightBarButtonItems addObject:itemVoice];
                     
-                    //  video call button for Matrix call
-                    UIBarButtonItem *itemVideo = [self videoCallBarButtonItem];
-                    itemVideo.enabled = !self.isCallActive;
-                    [rightBarButtonItems addObject:itemVideo];
+                    // MARK: - QUALICHAT modified
+                    if(QualiChatBuildSettings.enableVideoCall) {
+                        //  video call button for Matrix call
+                        UIBarButtonItem *itemVideo = [self videoCallBarButtonItem];
+                        itemVideo.enabled = !self.isCallActive;
+                        [rightBarButtonItems addObject:itemVideo];
+                    }
+                    
                 }
                 else
                 {
+                    #if !QUALICHAT
                     //  video call button for Jitsi call
                     if (self.isCallActive)
                     {
@@ -1989,8 +2026,12 @@ static CGSize kThreadListBarButtonItemImageSize;
                         {
                             item.image = [AssetImages.videoCall.image vc_withAlpha:0.3];
                         }
+
+                        
                         [rightBarButtonItems addObject:item];
+                       
                     }
+                    #endif
                 }
             }
             
@@ -5148,7 +5189,13 @@ static CGSize kThreadListBarButtonItemImageSize;
 
 - (void)didDetectTextPattern:(SuggestionPatternWrapper *)suggestionPattern
 {
+#if QUALICHAT
+    if (QualiChatBuildSettings.enableCommandDirectChatInput) {
+        [self.completionSuggestionCoordinator processSuggestionPattern:suggestionPattern];
+    }
+#else
     [self.completionSuggestionCoordinator processSuggestionPattern:suggestionPattern];
+#endif
 }
 
 - (CompletionSuggestionViewModelContextWrapper *)completionSuggestionContext
@@ -5293,7 +5340,13 @@ static CGSize kThreadListBarButtonItemImageSize;
 
 - (void)roomMemberDetailsViewController:(MXKRoomMemberDetailsViewController *)roomMemberDetailsViewController mention:(MXRoomMember*)member
 {
+#if QUALICHAT
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self mention:member];
+    });
+#else
     [self mention:member];
+#endif
 }
 
 #pragma mark - Action
@@ -5602,6 +5655,9 @@ static CGSize kThreadListBarButtonItemImageSize;
                         
                         [self refreshRoomTitle];
                         [self refreshRoomInputToolbar];
+                    #if QUALICHAT
+                        [self updateRoomInputToolbarViewClassIfNeeded];
+                    #endif
                     }
                     break;
                 }
@@ -5672,6 +5728,16 @@ static CGSize kThreadListBarButtonItemImageSize;
 {
     [self startActivityIndicator];
     MXWeakify(self);
+    
+#if QUALICHAT
+    if(self.roomDataSource.room == nil) {
+        MXStrongifyAndReturnIfNil(self);
+        [self stopActivityIndicator];
+        [self popToHomeViewController];
+        return;
+    }
+#endif
+    
     [self.roomDataSource.room ignoreInviteSender:^{
         MXStrongifyAndReturnIfNil(self);
         
@@ -7617,8 +7683,14 @@ static CGSize kThreadListBarButtonItemImageSize;
         badgeLabel.translatesAutoresizingMaskIntoConstraints = NO;
         [badgeLabel.centerYAnchor constraintEqualToAnchor:button.centerYAnchor
                                                 constant:badgeLabel.bounds.size.height - buttonIcon.size.height / 2].active = YES;
+#if QUALICHAT
+        [badgeLabel.centerXAnchor constraintEqualToAnchor:button.centerXAnchor
+                                                 constant:(badgeLabel.bounds.size.width + buttonIcon.size.width / 2) - 12].active = YES;
+        
+#else
         [badgeLabel.centerXAnchor constraintEqualToAnchor:button.centerXAnchor
                                                  constant:badgeLabel.bounds.size.width + buttonIcon.size.width / 2].active = YES;
+#endif
     }
 
     if (replaceIndex == NSNotFound)

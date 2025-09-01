@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2020 Vector Creations Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +18,9 @@
 import UIKit
 import PushKit
 
+#if !QUALICHAT
 @UIApplicationMain
+#endif
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Properties

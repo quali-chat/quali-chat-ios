@@ -10,7 +10,7 @@
 // Actions
 "view" = "Toogn";
 "next" = "Volgende";
-"store_full_description" = "Communiceert ip joun manier.\n\nE chat-app, onder joun controle en zeer flexibel. Riot lat je communiceern lyk of da je wilt. Gemakt vo [matrix] - de standoard voor open, gedecentraliseerde communicoasje.\n\nMakt e gratis account aan ip matrix.org, verkrygt jen eigen server ip https://modular.im, of gebruukt een andere Matrix-server.\n\nVowa zoun ’kik vo Riot.im kiezn?\n\n• VOLLEDIGE COMMUNICOASJE: makt gesprekkn an rond je teams, je moats, je gemeenschap - gelyk of da je gy ’t mo wilt! Chat, deelt bestandn, voegt widgets toe en makt stem- en video-iproepn - ollemoale volledig gratis.\n\n• KRACHTIGE INTEGROASJE: gebruukt Riot.im met de hulpmiddeln woamee da je vertrouwd zyt. Me Riot.im ku je zelfst chattn me gebrukers en groepn ip andere chat-apps.\n\n• PRIVÉ EN VEILIG: houdt je gesprekkn geheim. End-tout-end-versleuterienge van de bovenste plank zorgt dervoorn da je privécommunicoasje ook privé bluuft.\n\n• OPEN, NIE GESLOOTN: vrye software, gebouwd ip Matrix. Zy den boas over jen eigen gegeevns deur jen eigen server te gebruukn, of te kiezn voor een andere server da je vertrouwt.\n\n• WOA DA J’OOK ZYT: houdt contact woa da j’ook zyt me volledig gesynchroniseerde berichtgeschiedenisse ip al je toestelln, en online ip https://riot.im.";
+"store_full_description" = "Communiceert ip joun manier.\n\nE chat-app, onder joun controle en zeer flexibel. Riot lat je communiceern lyk of da je wilt. Gemakt vo [matrix] - de standoard voor open, gedecentraliseerde communicoasje.\n\nMakt e gratis account aan ip quali.chat, verkrygt jen eigen server ip https://modular.im, of gebruukt een andere quali.chat-server.\n\nVowa zoun ’kik vo Riot.im kiezn?\n\n• VOLLEDIGE COMMUNICOASJE: makt gesprekkn an rond je teams, je moats, je gemeenschap - gelyk of da je gy ’t mo wilt! Chat, deelt bestandn, voegt widgets toe en makt stem- en video-iproepn - ollemoale volledig gratis.\n\n• KRACHTIGE INTEGROASJE: gebruukt Riot.im met de hulpmiddeln woamee da je vertrouwd zyt. Me Riot.im ku je zelfst chattn me gebrukers en groepn ip andere chat-apps.\n\n• PRIVÉ EN VEILIG: houdt je gesprekkn geheim. End-tout-end-versleuterienge van de bovenste plank zorgt dervoorn da je privécommunicoasje ook privé bluuft.\n\n• OPEN, NIE GESLOOTN: vrye software, gebouwd ip quali.chat. Zy den boas over jen eigen gegeevns deur jen eigen server te gebruukn, of te kiezn voor een andere server da je vertrouwt.\n\n• WOA DA J’OOK ZYT: houdt contact woa da j’ook zyt me volledig gesynchroniseerde berichtgeschiedenisse ip al je toestelln, en online ip https://riot.im.";
 "back" = "Weere";
 "continue" = "Verdergoan";
 "create" = "Anmoakn";
@@ -56,8 +56,8 @@
 "auth_phone_placeholder" = "Telefongnumero";
 "auth_repeat_password_placeholder" = "Paswoord herhoaln";
 "auth_repeat_new_password_placeholder" = "Bevestigt je nieuw paswoord";
-"auth_home_server_placeholder" = "URL (bv. https://matrix.org)";
-"auth_identity_server_placeholder" = "URL (bv. https://matrix.org)";
+"auth_home_server_placeholder" = "URL (bv. https://quali.chat)";
+"auth_identity_server_placeholder" = "URL (bv. https://quali.chat)";
 "auth_invalid_login_param" = "Verkeerd(e) gebrukersnoame en/of paswoord";
 "auth_invalid_user_name" = "Gebrukersnoamn meugn alleene mo letters, cyfers, puntn, koppelteekns en underscores bevattn";
 "auth_invalid_password" = "’t Paswoord is te kort (min 6)";
@@ -91,32 +91,32 @@
 "auth_reset_password_email_validation_message" = "’t Is een e-mail noa %@ gesteurd gewist. Klikt hierounder van zodra da je de koppelienge derin geopend ghed èt.";
 "auth_reset_password_next_step_button" = "’k Èn ik m’n e-mailadresse geverifieerd";
 "auth_reset_password_error_unauthorized" = "Verifieern van ’t e-mailadresse is mislukt: zorgt da j’ip de koppelienge in den e-mail geklikt ghed èt";
-"auth_reset_password_error_not_found" = "’t Ziet der nie noar uut da jen e-mailadresse met e Matrix-ID ip dezen thuusserver is verboundn.";
+"auth_reset_password_error_not_found" = "’t Ziet der nie noar uut da jen e-mailadresse met e quali.chat-ID ip dezen thuusserver is verboundn.";
 "auth_reset_password_success_message" = "Je paswoord is heringesteld gewist.\n\nJe zy nu ip alle toestelln afgemeld en je goa geen pushmeldiengn nie mi ontvangn. Vo meldiengn herin te schoakeln, meld je jen ip ieder toestel heran.";
 "auth_softlogout_signed_out" = "Je zyt afgemeld";
 "auth_softlogout_sign_in" = "Anmeldn";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
-"matrix" = "Matrix";
+"matrix" = "quali.chat";
 // Login Screen
 "login_create_account" = "Account anmoakn:";
-"login_server_url_placeholder" = "URL (bv. https://matrix.org)";
+"login_server_url_placeholder" = "URL (bv. https://quali.chat)";
 "login_home_server_title" = "Thuusserver:";
 "login_home_server_info" = "Je thuusserver sloat al je gespreks- en accountgegeevns ip";
 "login_identity_server_title" = "Identiteitsserver:";
-"login_user_id_placeholder" = "Matrix-ID (bv. @jean:matrix.org of jean)";
+"login_user_id_placeholder" = "quali.chat-ID (bv. @jean:quali.chat of jean)";
 "login_password_placeholder" = "Paswoord";
 "login_optional_field" = "optioneel";
 "login_display_name_placeholder" = "Weergoavenoame (bv. Jean Kieckens)";
-"login_email_info" = "Door een e-mailadresse in te geevn kunn andere gebruukers je gemakkeliker ip Matrix wereviendn, en 't gift jen ook e maniere voor in den toekomst je paswoord te verandern.";
+"login_email_info" = "Door een e-mailadresse in te geevn kunn andere gebruukers je gemakkeliker ip quali.chat wereviendn, en 't gift jen ook e maniere voor in den toekomst je paswoord te verandern.";
 "login_email_placeholder" = "E-mailadresse";
 "login_prompt_email_token" = "Gif jen e-mailadressevalidoatiebewys in:";
 "login_error_title" = "Anmeldn mislukt";
 "login_error_no_login_flow" = "Iphoaln van de authenticoatie-informoatie van dezen thuusserver is mislukt";
-"login_identity_server_info" = "Matrix verstrekt identiteitsservers vo t’achterhoaln wukke e-mailadressn e.d.m. dat der by wukke Matrix-ID’s hoorn. Tot nu toe bestoat alleene mo https://matrix.org.";
+"login_identity_server_info" = "quali.chat verstrekt identiteitsservers vo t’achterhoaln wukke e-mailadressn e.d.m. dat der by wukke quali.chat-ID’s hoorn. Tot nu toe bestoat alleene mo https://quali.chat.";
 "login_error_do_not_support_login_flows" = "Vo de moment biedn we geen oundersteunienge vo sommigste of alle anmeldiengsmethoodn van dezen thuusserver";
 "login_error_registration_is_not_supported" = "Registroasje wor vo de moment nie oundersteund";
 "login_error_forbidden" = "Oungeldig(e) gebrukersnoame/paswoord";
@@ -159,7 +159,7 @@
 "select_account" = "Selecteert een account";
 "attach_media" = "Media van de bibliotheek byvoegn";
 "capture_media" = "Fotootje/filmtje moakn";
-"invite_user" = "Matrix-gebruker uutnodign";
+"invite_user" = "quali.chat-gebruker uutnodign";
 "reset_to_default" = "Standoardwoardn herstelln";
 "resend_message" = "Bericht hersteurn";
 "select_all" = "Alles selecteern";
@@ -213,3 +213,23 @@
 "settings" = "Instelliengn";
 "settings_enable_inapp_notifications" = "In-app-meldiengn inschoakeln";
 "settings_enable_push_notifications" = "Pushmeldiengn inschoakeln";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified
+"demo_login_placeholder" = "Username"; // QUALICHAT modified
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified

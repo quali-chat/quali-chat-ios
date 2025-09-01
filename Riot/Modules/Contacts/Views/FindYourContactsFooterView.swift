@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -52,7 +53,12 @@ class FindYourContactsFooterView: UIView, NibLoadable, Themable {
         super.awakeFromNib()
         
         containerView.layer.cornerRadius = 8
+        
+        #if QUALICHAT
+        button.layer.cornerRadius = QualiChatBuildSettings.cornerRadiusButton
+        #else
         button.layer.cornerRadius = 8
+        #endif
         
         titleLabel.text = VectorL10n.findYourContactsTitle
         messageLabel.text = VectorL10n.findYourContactsMessage(AppInfo.current.displayName)
@@ -72,9 +78,13 @@ class FindYourContactsFooterView: UIView, NibLoadable, Themable {
         messageLabel.textColor = theme.colors.secondaryContent
         
         button.titleLabel?.font = theme.fonts.body
+        #if QUALICHAT
+        button.backgroundColor = theme.tintColor
+        button.setTitleColor(theme.tintBackgroundColor, for: .normal)
+        #else
         button.backgroundColor = theme.colors.accent
         button.setTitleColor(theme.colors.background, for: .normal)
-        
+        #endif
         footerLabel.font = theme.fonts.footnote.withSize(13)
         footerLabel.textColor = theme.colors.tertiaryContent
     }

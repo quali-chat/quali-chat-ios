@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2022 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +18,7 @@
 import Foundation
 import UIKit
 
-@available (iOS 15.0, *)
+@available(iOS 15.0, *)
 struct PillAssetColor: Codable {
     var red: CGFloat = 0.0, green: CGFloat = 0.0, blue: CGFloat = 0.0, alpha: CGFloat = 0.0
     
@@ -30,7 +31,7 @@ struct PillAssetColor: Codable {
     }
 }
 
-@available (iOS 15.0, *)
+@available(iOS 15.0, *)
 struct PillAssetParameter: Codable {
     var tintColor: PillAssetColor?
     var backgroundColor: PillAssetColor?
@@ -38,7 +39,7 @@ struct PillAssetParameter: Codable {
     var padding: CGFloat = 2.0
 }
 
-@available (iOS 15.0, *)
+@available(iOS 15.0, *)
 enum PillTextAttachmentItem: Codable {
     case text(String)
     case avatar(url: String?, string: String?, matrixId: String)
@@ -46,7 +47,7 @@ enum PillTextAttachmentItem: Codable {
     case asset(named: String, parameters: PillAssetParameter)
 }
 
-@available (iOS 15.0, *)
+@available(iOS 15.0, *)
 extension PillTextAttachmentItem {
     var string: String? {
         switch self {
@@ -59,7 +60,7 @@ extension PillTextAttachmentItem {
 }
 
 /// Data associated with a Pill text attachment.
-@available (iOS 15.0, *)
+@available(iOS 15.0, *)
 struct PillTextAttachmentData: Codable {
     // MARK: - Properties
     /// Pill type
@@ -125,11 +126,19 @@ struct PillTextAttachmentData: Codable {
         isHighlighted = try container.decode(Bool.self, forKey: .isHighlighted)
         alpha = try container.decode(CGFloat.self, forKey: .alpha)
         let fontData = try container.decode(Data.self, forKey: .font)
+    #if QUALICHAT
+        if let font = try? NSKeyedUnarchiver.unarchivedObject(ofClass: UIFont.self, from: fontData) {
+            self.font = font
+        } else {
+            self.font = UIFont.pillFont
+        }
+    #else
         if let font = try NSKeyedUnarchiver.unarchivedObject(ofClass: UIFont.self, from: fontData) {
             self.font = font
         } else {
             throw PillTextAttachmentDataError.noFontData
         }
+    #endif
         maxWidth = .greatestFiniteMagnitude
     }
 

@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2020 Vector Creations Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,3 +20,5 @@
 
 #include "Common.xcconfig"
 #include "Pods/Target Support Files/Pods-RiotPods-RiotShareExtension/Pods-RiotPods-RiotShareExtension.debug.xcconfig"
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) IS_SHARE_EXTENSION=1 QUALICHAT=1

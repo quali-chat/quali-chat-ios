@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,6 +16,7 @@
 //
 
 import SwiftUI
+import DSBottomSheet
 
 struct AuthenticationLoginScreen: View {
     // MARK: - Properties
@@ -31,52 +33,94 @@ struct AuthenticationLoginScreen: View {
     
     @ObservedObject var viewModel: AuthenticationLoginViewModel.Context
     
+    @State private var isExpanded = false
+    
+    var screenHeight: CGFloat {
+        UIScreen.main.bounds.height
+    }
+    
     var body: some View {
-        ScrollView {
-            VStack(spacing: 0) {
-                header
-                    .padding(.top, OnboardingMetrics.topPaddingToNavigationBar)
-                    .padding(.bottom, 28)
-                
-                serverInfo
-                    .padding(.leading, 12)
+        BottomSheet(isExpanded: $isExpanded, minHeight: .points(screenHeight * 0.5), maxHeight: .points(screenHeight * 0.5), style: BottomSheetStyle(color: Color.clear, cornerRadius: 0, snapRatio: 0.25, handleStyle: BottomSheetHandleStyle(handleColor: Color.clear, backgroundColor: Color.clear, dividerColor: Color.clear, width: 0, height: 0))) {
+            VStack{
+                #if QUALICHAT
+                SeparatorLine()
+                    .shadow(color: theme.colors.quinaryContent.opacity(0.5), radius: 2, x: 0, y: -2)
+                HStack {
+                    Spacer()
+                    closeButton
+                }
+                #endif
+                ScrollView {
+                    VStack(spacing: 0) {
+                        #if QUALICHAT
+                        headerBlockChain
+                        #else
+                        header
+                            .padding(.top, OnboardingMetrics.topPaddingToNavigationBar)
+                            .padding(.bottom, 28)
+                        #endif
+                        // MARK: - QualiChat modified
+                        if QualiChatBuildSettings.serverChangingOptionEnabled {
+                            serverInfo
+                                .padding(.leading, 12)
+                                .padding(.bottom, 16)
+                            
+                            Rectangle()
+                                .fill(theme.colors.quinaryContent)
+                                .frame(height: 1)
+                                .padding(.bottom, 22)
+                        }
+                        
+                    #if !QUALICHAT
+                        if viewModel.viewState.homeserver.showLoginForm {
+                            loginForm
+                        }
+                    #endif
+                        if viewModel.viewState.homeserver.showQRLogin {
+                            qrLoginButton
+                        }
+                        #if !QUALICHAT
+                        if viewModel.viewState.homeserver.showLoginForm, viewModel.viewState.showSSOButtons {
+                            Text(VectorL10n.or)
+                                .foregroundColor(theme.colors.secondaryContent)
+                                .padding(.top, 16)
+                        }
+                        #endif
+                        
+                        if viewModel.viewState.showSSOButtons {
+                            ssoButtons
+                                #if !QUALICHAT
+                                .padding(.top, 16)
+                                #endif
+                                .padding(.top, 24)
+                        }
+                        
+                        if !viewModel.viewState.homeserver.showLoginForm, !viewModel.viewState.showSSOButtons {
+                            fallbackButton
+                        }
+                        
+                        #if QUALICHAT
+                        commingSoon
+                            .padding(.vertical, 32)
+                            .padding(.horizontal, 16)
+
+                        if viewModel.viewState.homeserver.showLoginForm {
+                            demoButton
+                        }
+                        #endif
+                    }
+                    .readableFrame()
+                    #if !QUALICHAT
+                    .padding(.horizontal, 16)
+                    #endif
                     .padding(.bottom, 16)
-                
-                Rectangle()
-                    .fill(theme.colors.quinaryContent)
-                    .frame(height: 1)
-                    .padding(.bottom, 22)
-                
-                if viewModel.viewState.homeserver.showLoginForm {
-                    loginForm
                 }
-
-                if viewModel.viewState.homeserver.showQRLogin {
-                    qrLoginButton
-                }
-                
-                if viewModel.viewState.homeserver.showLoginForm, viewModel.viewState.showSSOButtons {
-                    Text(VectorL10n.or)
-                        .foregroundColor(theme.colors.secondaryContent)
-                        .padding(.top, 16)
-                }
-                
-                if viewModel.viewState.showSSOButtons {
-                    ssoButtons
-                        .padding(.top, 16)
-                }
-
-                if !viewModel.viewState.homeserver.showLoginForm, !viewModel.viewState.showSSOButtons {
-                    fallbackButton
-                }
+                .background(theme.colors.background.ignoresSafeArea())
+                .alert(item: $viewModel.alertInfo) { $0.alert }
+                .accentColor(theme.colors.accent)
             }
-            .readableFrame()
-            .padding(.horizontal, 16)
-            .padding(.bottom, 16)
+            .background(theme.colors.background.ignoresSafeArea())
         }
-        .background(theme.colors.background.ignoresSafeArea())
-        .alert(item: $viewModel.alertInfo) { $0.alert }
-        .accentColor(theme.colors.accent)
     }
     
     /// The header containing a Welcome Back title.
@@ -85,6 +129,13 @@ struct AuthenticationLoginScreen: View {
             .font(theme.fonts.title2B)
             .multilineTextAlignment(.center)
             .foregroundColor(theme.colors.primaryContent)
+    }
+    
+    var headerBlockChain: some View {
+        Text(VectorL10n.chooseYourBlockchain.uppercased())
+            .font(theme.fonts.title2B)
+            .multilineTextAlignment(.center)
+            .foregroundColor(theme.colors.accent)
     }
     
     /// The sever information section that includes a button to select a different server.
@@ -144,6 +195,26 @@ struct AuthenticationLoginScreen: View {
         .accessibilityIdentifier("qrLoginButton")
     }
     
+    var closeButton: some View {
+        Button(action: {
+            viewModel.send(viewAction: .fallback)
+                }) {
+                    Image(uiImage: Asset.Images.closeButton.image.withRenderingMode(.alwaysTemplate).withTintColor(UIColor(theme.colors.primaryContent)))
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 24, height: 24)
+                        .foregroundColor(theme.colors.primaryContent)
+                }
+                .padding(.trailing, 10).padding(.top, 5)
+    }
+    
+    var commingSoon: some View {
+        Text(VectorL10n.moreIntegrationBlockchain)
+            .font(theme.fonts.caption2)
+            .foregroundColor(theme.colors.secondaryContent)
+            .multilineTextAlignment(.center)
+    }
+    
     /// A list of SSO buttons that can be used for login.
     var ssoButtons: some View {
         VStack(spacing: 16) {
@@ -163,6 +234,15 @@ struct AuthenticationLoginScreen: View {
         }
         .buttonStyle(PrimaryActionButtonStyle())
         .accessibilityIdentifier("fallbackButton")
+    }
+    
+    var demoButton: some View {
+        Button(action: demo) {
+            Text(VectorL10n.demoLoginTitle.uppercased())
+                .foregroundColor(theme.colors.accent)
+                .font(theme.fonts.caption1)
+        }
+        .accessibilityIdentifier("demoButton")
     }
     
     /// Parses the username for a homeserver.
@@ -192,6 +272,10 @@ struct AuthenticationLoginScreen: View {
     /// Sends the `qrLogin` view action.
     func qrLogin() {
         viewModel.send(viewAction: .qrLogin)
+    }
+    
+    func demo() {
+        viewModel.send(viewAction: .demo)
     }
 }
 

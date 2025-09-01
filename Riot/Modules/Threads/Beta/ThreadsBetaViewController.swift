@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2022 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -146,7 +147,12 @@ extension ThreadsBetaViewController: Themable {
         self.informationTextView.textColor = theme.textPrimaryColor
 
         self.enableButton.vc_setBackgroundColor(theme.tintColor, for: .normal)
+        #if QUALICHAT
+        self.enableButton.setTitleColor(theme.tintBackgroundColor, for: .normal)
+        self.enableButton.layer.cornerRadius = QualiChatBuildSettings.cornerRadiusButton
+        #else
         self.enableButton.setTitleColor(theme.baseTextPrimaryColor, for: .normal)
+        #endif
         self.cancelButton.vc_setBackgroundColor(.clear, for: .normal)
         self.cancelButton.setTitleColor(theme.tintColor, for: .normal)
     }

@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2015 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  Copyright 2018 New Vector Ltd
@@ -1270,6 +1271,12 @@ static const CGFloat kCellVisibilityMinimumHeight = 8.0;
 
 - (BOOL)sendAsIRCStyleCommandIfPossible:(NSString*)string
 {
+#if QUALICHAT
+    if (!QualiChatBuildSettings.enableCommandDirectChatInput) {
+        return NO;
+    }
+#endif
+    
     // Check whether the provided text may be an IRC-style command
     if ([string hasPrefix:@"/"] == NO || [string hasPrefix:@"//"] == YES)
     {

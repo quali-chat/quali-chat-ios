@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2020 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,8 +18,6 @@
 #import "SecurityViewController.h"
 
 #import "ManageSessionViewController.h"
-
-#import <OLMKit/OLMKit.h>
 
 #import "AvatarGenerator.h"
 
@@ -208,8 +207,14 @@ TableViewSectionsDelegate>
 
     self.activityIndicator.backgroundColor = ThemeService.shared.theme.overlayBackgroundColor;
     
+#if QUALICHAT
+    self.tableView.backgroundColor = ThemeService.shared.theme.backgroundColor;
+#else
+    
     // Check the table view style to select its bg color.
     self.tableView.backgroundColor = ((self.tableView.style == UITableViewStylePlain) ? ThemeService.shared.theme.backgroundColor : ThemeService.shared.theme.headerBackgroundColor);
+#endif
+
     self.view.backgroundColor = self.tableView.backgroundColor;
     self.tableView.separatorColor = ThemeService.shared.theme.lineBreakColor;
     
@@ -594,10 +599,24 @@ TableViewSectionsDelegate>
 {
     NSDictionary *usersDevices = notification.userInfo;
     
+#if QUALICHAT
+    // Refresh the current device information in parallel
+    // Refresh display
+    [self reloadData];
+
+    // Refresh the current device information in parallel
+    [self loadCurrentDeviceInformation];
+
+    // Refresh devices in parallel
+    [self loadDevices];
+    
+    [self loadCrossSigning];
+#else
     if ([usersDevices.allKeys containsObject:self.mainSession.myUserId])
     {
         [self loadDevices];
     }
+#endif
 }
 
 - (void)onDeviceInfoTrustLevelDidChangeNotification:(NSNotification*)notification
@@ -1185,6 +1204,9 @@ TableViewSectionsDelegate>
                 MXKTableViewCellWithLabelAndSwitch *switchCell = [self getLabelAndSwitchCell:tableView forIndexPath:indexPath];
                 
                 switchCell.mxkLabel.text = [VectorL10n pinProtectionSettingsEnablePin];
+                #if QUALICHAT
+                    switchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+                #endif
                 switchCell.mxkSwitch.on = [PinCodePreferences shared].isPinSet;
                 [switchCell.mxkSwitch addTarget:self action:@selector(enablePinCodeSwitchValueChanged:) forControlEvents:UIControlEventValueChanged];
                 
@@ -1202,6 +1224,9 @@ TableViewSectionsDelegate>
             MXKTableViewCellWithLabelAndSwitch *switchCell = [self getLabelAndSwitchCell:tableView forIndexPath:indexPath];
             
             switchCell.mxkLabel.text = [VectorL10n biometricsSettingsEnableX:[PinCodePreferences shared].localizedBiometricsName];
+        #if QUALICHAT
+            switchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #endif
             switchCell.mxkSwitch.on = [PinCodePreferences shared].isBiometricsSet;
             switchCell.mxkSwitch.enabled = [PinCodePreferences shared].isBiometricsAvailable;
             [switchCell.mxkSwitch addTarget:self action:@selector(enableBiometricsSwitchValueChanged:) forControlEvents:UIControlEventValueChanged];
@@ -1274,7 +1299,11 @@ TableViewSectionsDelegate>
                 
                 labelAndSwitchCell.mxkLabel.text = [VectorL10n securitySettingsBlacklistUnverifiedDevices];
                 labelAndSwitchCell.mxkSwitch.on = session.crypto.globalBlacklistUnverifiedDevices;
+            #if QUALICHAT
+                labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+            #else
                 labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+            #endif
                 labelAndSwitchCell.mxkSwitch.enabled = YES;
                 [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleBlacklistUnverifiedDevices:) forControlEvents:UIControlEventValueChanged];
                 
@@ -1548,6 +1577,11 @@ TableViewSectionsDelegate>
     if (indexPath)
     {
         cell = [self textViewCellForTableView:self.tableView atIndexPath:indexPath];
+        
+#if QUALICHAT
+        cell.mxkTextView.textAlignment = NSTextAlignmentCenter;
+#endif
+        
     }
     
     return cell;

@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2018 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -116,7 +117,11 @@ static CGFloat const kTextFontSize = 15.0;
 {
     [super viewDidLayoutSubviews];
     
+#if QUALICHAT
+    [self.deactivateAcccountButton.layer setCornerRadius:self.deactivateAcccountButton.frame.size.height / 2];
+#else
     [self.deactivateAcccountButton.layer setCornerRadius:kButtonCornerRadius];
+#endif
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
@@ -188,7 +193,12 @@ static CGFloat const kTextFontSize = 15.0;
 - (void)updateDeactivateAcccountButton
 {
     self.deactivateAcccountButton.backgroundColor = ThemeService.shared.theme.tintColor;
+#if QUALICHAT
+    [self.deactivateAcccountButton setTitleColor:ThemeService.shared.theme.tintBackgroundColor forState:UIControlStateDisabled];
+    [self.deactivateAcccountButton setTitleColor:ThemeService.shared.theme.tintBackgroundColor forState:UIControlStateNormal];
+#else
     [self.deactivateAcccountButton setTitleColor:ThemeService.shared.theme.headerTextSecondaryColor forState:UIControlStateDisabled];
+#endif
 }
 
 - (void)updateDeactivateAccountInfosLabel

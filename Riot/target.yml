@@ -94,3 +94,13 @@ targets:
     - path: Modules/MatrixKit
       excludes:
         - "**/*.md" # excludes all files with the .md extension
+    - path: ../QualiChat/Config/QualiChatBuildSettings.swift #QualiChat modified
+    - path: ../QualiChat/Assets/Fonts #QualiChat modified
+    - path: ../QualiChat/Extensions
+      excludes:
+        - "UIFont+Extensions.swift"
+    - path: ../QualiChat/Modules/Login #QualiChat modified
+    - path: ../DesignKit/Source/Colors.swift
+    - path: ../DesignKit/Source/ColorsUIkit.swift
+    - path: ../DesignKit/Source/ColorsSwiftUI.swift
+    - path: ../DesignKit/Source/ColorValues.swift

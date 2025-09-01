@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,6 +22,8 @@ class BadgedBarButtonItem: UIBarButtonItem {
     
     var baseButton: UIButton
     private var badgeLabel: UILabel
+    // MARK: QualiChat modified
+    private let iconColor: Bool
     
     private var theme: Theme
     
@@ -56,10 +59,11 @@ class BadgedBarButtonItem: UIBarButtonItem {
         }
         return text.isEmpty || text == "0" || text == "nil" || text == "null"
     }
-    
-    init(withBaseButton baseButton: UIButton, theme: Theme) {
+    // MARK: QualiChat modified
+    init(withBaseButton baseButton: UIButton, theme: Theme, iconColor: Bool = false) {
         self.baseButton = baseButton
         self.theme = theme
+        self.iconColor = iconColor // MARK: QualiChat modified
         badgeBackgroundColor = .gray
         badgeTextColor = .white
         badgeFont = .systemFont(ofSize: 12, weight: .semibold)
@@ -114,9 +118,15 @@ extension BadgedBarButtonItem: Themable {
     
     func update(theme: Theme) {
         self.theme = theme
+        // MARK: QualiChat modified
+        guard iconColor else {
+            tintColor = theme.colors.accent
+            baseButton.tintColor = theme.colors.accent
+            return
+        }
         
-        tintColor = theme.colors.accent
-        baseButton.tintColor = theme.colors.accent
+        tintColor = theme.colors.primaryContent
+        baseButton.tintColor = theme.colors.primaryContent
     }
     
 }

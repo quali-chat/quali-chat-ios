@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2022 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -50,6 +51,15 @@ class AllChatsEditActionProvider {
     // MARK: - RoomActionProviderProtocol
     
     var menu: UIMenu {
+#if QUALICHAT
+        var createActions = [
+            self.exploreRoomsAction,
+            self.startChatAction
+        ]
+        return UIMenu(title: "", children:
+            createActions
+        )
+#else
         guard parentSpace != nil else {
             var createActions = [
                 self.createRoomAction,
@@ -73,6 +83,7 @@ class AllChatsEditActionProvider {
                 self.createRoomAction
             ])
         ])
+#endif
     }
     
     // MARK: - Public

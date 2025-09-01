@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -71,8 +72,13 @@ class CallTileActionButton: UIButton {
         contentEdgeInsets = Constants.contentEdgeInsets
         layer.masksToBounds = true
         titleLabel?.font = UIFont.systemFont(ofSize: Constants.fontSize)
+        #if QUALICHAT
+        layer.cornerRadius = ceil(frame.height / 2)
+        #else
         layer.cornerRadius = Constants.cornerRadius
+        #endif
         setImage(image(for: .normal)?.vc_resized(with: Constants.imageSize)?.withRenderingMode(.alwaysTemplate), for: .normal)
+        
         updateStyle()
     }
     
@@ -80,7 +86,12 @@ class CallTileActionButton: UIButton {
         switch style {
         case .positive:
             vc_setBackgroundColor(theme.tintColor, for: .normal)
+            #if QUALICHAT
+            tintColor = theme.tintBackgroundColor
+            setTitleColor(theme.tintBackgroundColor, for: .normal)
+            #else
             tintColor = theme.baseTextPrimaryColor
+            #endif
         case .negative:
             vc_setBackgroundColor(theme.noticeColor, for: .normal)
             tintColor = theme.baseTextPrimaryColor

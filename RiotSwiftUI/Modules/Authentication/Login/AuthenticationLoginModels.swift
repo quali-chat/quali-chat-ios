@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,6 +34,11 @@ enum AuthenticationLoginViewModelResult: CustomStringConvertible {
     case fallback
     /// Continue with QR login
     case qrLogin
+    // MARK: QUALICHAT modified
+    case demo
+    // MARK: QUALICHAT modified
+    case blockchainLogin
+    
     
     /// A string representation of the result, ignoring any associated values that could leak PII.
     var description: String {
@@ -51,6 +57,12 @@ enum AuthenticationLoginViewModelResult: CustomStringConvertible {
             return "fallback"
         case .qrLogin:
             return "qrLogin"
+        // MARK: QUALICHAT modified
+        case .demo:
+            return "demo"
+        // MARK: QUALICHAT modified
+        case .blockchainLogin:
+            return "blockchainLogin"
         }
     }
 }
@@ -105,6 +117,10 @@ enum AuthenticationLoginViewAction {
     case continueWithSSO(SSOIdentityProvider)
     /// Continue using QR login
     case qrLogin
+    // MARK: QualiChat modified
+    case demo
+    // MARK: QualiChat modified
+    case blockchainLogin
 }
 
 enum AuthenticationLoginErrorType: Hashable {

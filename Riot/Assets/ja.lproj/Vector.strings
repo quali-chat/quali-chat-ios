@@ -49,8 +49,8 @@
 "auth_optional_phone_placeholder" = "電話番号（任意）";
 "auth_phone_placeholder" = "電話番号";
 "auth_repeat_password_placeholder" = "パスワードを再確認";
-"auth_repeat_new_password_placeholder" = "Matrixアカウントの新しいパスワードを確認";
-"auth_home_server_placeholder" = "URL (例 https://matrix.org)";
+"auth_repeat_new_password_placeholder" = "quali.chatアカウントの新しいパスワードを確認";
+"auth_home_server_placeholder" = "URL (例 https://quali.chat)";
 "auth_identity_server_placeholder" = "URL (例 https://vector.im)";
 "auth_invalid_login_param" = "ユーザー名とパスワードの一方あるいは両方が正しくありません";
 "auth_invalid_user_name" = "ユーザー名には半角英数字、ドット、ハイフン、アンダースコアのみを使用してください";
@@ -70,7 +70,7 @@
 "auth_untrusted_id_server" = "この認証サーバーは信頼されていません";
 "auth_password_dont_match" = "パスワードが一致しません";
 "auth_username_in_use" = "ユーザー名は既に使用されています";
-"auth_forgot_password" = "Matrixのアカウントのパスワードを忘れましたか？";
+"auth_forgot_password" = "quali.chatのアカウントのパスワードを忘れましたか？";
 "auth_email_not_found" = "電子メールの送信に失敗しました：メールアドレスが見つかりません";
 "auth_use_server_options" = "接続先サーバーを指定（高度）";
 "auth_email_validation_message" = "登録を続行するには電子メールを確認してください";
@@ -78,14 +78,14 @@
 "auth_msisdn_validation_message" = "SMSで認証コードを送りました。以下にコードを入力してください。";
 "auth_msisdn_validation_error" = "電話番号を認証できません。";
 "auth_recaptcha_message" = "このホームサーバーは、あなたがロボットではないことの確認を求めています";
-"auth_reset_password_message" = "Matrixのアカウントのパスワードを再設定するには、アカウントに登録されているメールアドレスを入力してください：";
+"auth_reset_password_message" = "quali.chatのアカウントのパスワードを再設定するには、アカウントに登録されているメールアドレスを入力してください：";
 "auth_reset_password_missing_email" = "あなたのアカウントに登録されたメールアドレスの入力が必要です。";
 "auth_reset_password_missing_password" = "新しいパスワードの入力が必要です。";
 "auth_reset_password_email_validation_message" = "%@ へ電子メールを送信しました。電子メール内のリンクを開いた後、以下をクリックしてください。";
 "auth_reset_password_next_step_button" = "メールアドレスを確認しました";
 "auth_reset_password_error_unauthorized" = "メールアドレスの認証に失敗しました。電子メール内のリンクを開いたことを確認してください";
-"auth_reset_password_error_not_found" = "あなたのメールアドレスは、このホームサーバー上のMatrix IDと関連付けられていないようです。";
-"auth_reset_password_success_message" = "あなたのMatrixのアカウントのパスワードは初期化されました。\n\n全てのセッションからログアウトしたため、プッシュ通知は送信されません。通知を再度有効にするには、各端末で再度ログインしてください。";
+"auth_reset_password_error_not_found" = "あなたのメールアドレスは、このホームサーバー上のquali.chat IDと関連付けられていないようです。";
+"auth_reset_password_success_message" = "あなたのquali.chatのアカウントのパスワードは初期化されました。\n\n全てのセッションからログアウトしたため、プッシュ通知は送信されません。通知を再度有効にするには、各端末で再度ログインしてください。";
 "auth_add_email_and_phone_warning" = "電子メールと電話番号の両方による登録は、まだサポートしていません。電話番号のみでの登録を受け付けています。メールアドレスは、設定内のプロフィールから後ほど追加できます。";
 // Chat creation
 "room_creation_title" = "チャットを開始";
@@ -102,7 +102,7 @@
 "room_creation_keep_private" = "非公開に保つ";
 "room_creation_make_private" = "非公開にする";
 "room_creation_wait_for_creation" = "ルームは既に作成されています。お待ちください。";
-"room_creation_invite_another_user" = "ユーザーID、表示名、電子メール";
+"room_creation_invite_another_user" = "ユーザーIDまたは表示名";
 // Room recents
 "room_recents_directory_section" = "ルーム一覧";
 "room_recents_favourites_section" = "お気に入り";
@@ -139,7 +139,7 @@
 "directory_search_fail" = "一覧を取得できませんでした";
 // Contacts
 "contacts_address_book_section" = "端末の電話帳";
-"contacts_address_book_matrix_users_toggle" = "Matrixのユーザーのみ";
+"contacts_address_book_matrix_users_toggle" = "quali.chatのユーザーのみ";
 "contacts_address_book_no_contact" = "端末の電話帳に連絡先がありません";
 "contacts_address_book_permission_required" = "端末の電話帳へのアクセス権限が必要です";
 "contacts_user_directory_section" = "ユーザー一覧";
@@ -159,7 +159,7 @@
 "room_participants_filter_room_members" = "ルームのメンバーを検索";
 "room_participants_invite_another_user" = "ユーザーID、名前、電子メールで検索、招待";
 "room_participants_invite_malformed_id_title" = "招待エラー";
-"room_participants_invite_malformed_id" = "不正なIDです。メールアドレスを用いるか、'@localpart:domain'の形式のMatrix IDを使用してください";
+"room_participants_invite_malformed_id" = "不正なIDです。メールアドレスを用いるか、'@localpart:domain'の形式のquali.chat IDを使用してください";
 "room_participants_invited_section" = "招待中";
 "room_participants_online" = "オンライン";
 "room_participants_offline" = "オフライン";
@@ -298,7 +298,7 @@
 "settings_contacts_phonebook_country" = "電話帳の国番号";
 "settings_labs_e2e_encryption" = "エンドツーエンド暗号化";
 "settings_labs_e2e_encryption_prompt_message" = "暗号化の設定を完了するには、再度ログインしてください。";
-"settings_labs_matrix_apps" = "Matrixアプリ";
+"settings_labs_matrix_apps" = "quali.chatアプリ";
 "settings_labs_create_conference_with_jitsi" = "Jitsiで会議通話を作成";
 "settings_version" = "バージョン %@";
 "settings_olm_version" = "Olmのバージョン %@";
@@ -313,8 +313,8 @@
 "settings_old_password" = "以前のパスワード";
 "settings_new_password" = "新しいパスワード";
 "settings_confirm_password" = "パスワードを確認";
-"settings_fail_to_update_password" = "Matrixのアカウントのパスワードの更新に失敗しました";
-"settings_password_updated" = "Matrixのアカウントのパスワードを更新しました";
+"settings_fail_to_update_password" = "quali.chatのアカウントのパスワードの更新に失敗しました";
+"settings_password_updated" = "quali.chatのアカウントのパスワードを更新しました";
 "settings_crypto_device_name" = "セッション名： ";
 "settings_crypto_device_id" = "\nセッションID： ";
 "settings_crypto_device_key" = "\nセッションキー：\n";
@@ -388,9 +388,9 @@
 "directory_title" = "ルーム一覧";
 "directory_server_picker_title" = "ルームディレクトリーを選択";
 "directory_server_all_rooms" = "%@サーバー上の全てのルーム";
-"directory_server_all_native_rooms" = "全てのMatrix連携ルーム";
+"directory_server_all_native_rooms" = "全てのquali.chat連携ルーム";
 "directory_server_type_homeserver" = "公開ルームの一覧を表示するホームサーバーを入力してください";
-"directory_server_placeholder" = "matrix.org";
+"directory_server_placeholder" = "quali.chat";
 // Events formatter
 "event_formatter_member_updates" = "%tu個のメンバーシップの変更";
 "event_formatter_widget_added" = "%@のウィジェットが%@により追加されました";
@@ -431,7 +431,7 @@
 "bug_report_description" = "不具合の内容と状況の説明をお願いします。何をしましたか？何が起こるべきでしたか？実際に起こった事象は何でしょうか？";
 "bug_crash_report_title" = "クラッシュレポート";
 "bug_crash_report_description" = "クラッシュする前にあなたがしていたことを記してください：";
-"bug_report_logs_description" = "開発者が問題を診断するために、このElementのログがバグレポートと一緒に送信されます。上記の文章のみを送信したい場合は、以下のチェックを解除してください：";
+"bug_report_logs_description" = "開発者が問題を診断するために、このquali.chatのログがバグレポートと一緒に送信されます。上記の文章のみを送信したい場合は、以下のチェックを解除してください：";
 "bug_report_send_logs" = "ログを送信";
 "bug_report_send_screenshot" = "スクリーンショットの画像を送信";
 "bug_report_progress_zipping" = "ログを収集しています";
@@ -463,7 +463,7 @@
 "group_invite_section" = "招待";
 "group_section" = "コミュニティー";
 "room_message_reply_to_placeholder" = "返信を送る（暗号化されていません）…";
-"room_do_not_have_permission_to_post" = "このルームに投稿する権限がありません";
+"room_do_not_have_permission_to_post" = "You need to have the room token in your wallet to post to this room.";
 "encrypted_room_message_reply_to_placeholder" = "暗号化された返信を送る…";
 "room_message_reply_to_short_placeholder" = "返信を送る…";
 "room_event_action_view_decrypted_source" = "復号化されたソースコードを表示";
@@ -511,7 +511,7 @@
 "group_participants_filter_members" = "コミュニティーメンバーを検索";
 "group_participants_invite_another_user" = "ユーザーIDまたは名前による検索/招待";
 "group_participants_invite_malformed_id_title" = "招待エラー";
-"group_participants_invite_malformed_id" = "不正なID。'@localpart:domain'のようなMatrix IDでなければなりません";
+"group_participants_invite_malformed_id" = "不正なID。'@localpart:domain'のようなquali.chat IDでなければなりません";
 "group_participants_invited_section" = "招待中";
 // Group rooms
 "group_rooms_filter_rooms" = "コミュニティーのルームを絞り込む";
@@ -535,13 +535,13 @@
 "deactivate_account_informations_part2_emphasize" = "この操作は取り消せません。";
 "deactivate_account_informations_part3" = "\n\nアカウントを無効化しても、 ";
 "deactivate_account_informations_part4_emphasize" = "デフォルトではあなたが送信したメッセージの履歴は消去されません。 ";
-"deactivate_account_informations_part5" = "メッセージの履歴を消去する場合は、以下のボックスにチェックを入れてください。\n\nMatrixのメッセージの見え方は、電子メールと同様のものです。メッセージの履歴を消去すると、あなたがこれまで送信したメッセージは、新規または未登録のユーザーに共有されることはありませんが、既にメッセージを取得している登録ユーザーは、今後もそのコピーにアクセスできます。";
+"deactivate_account_informations_part5" = "メッセージの履歴を消去する場合は、以下のボックスにチェックを入れてください。\n\nquali.chatのメッセージの見え方は、電子メールと同様のものです。メッセージの履歴を消去すると、あなたがこれまで送信したメッセージは、新規または未登録のユーザーに共有されることはありませんが、既にメッセージを取得している登録ユーザーは、今後もそのコピーにアクセスできます。";
 "deactivate_account_forget_messages_information_part1" = "アカウントを無効化する際、全ての送信済のメッセージを消去（";
 "deactivate_account_forget_messages_information_part2_emphasize" = "警告";
 "deactivate_account_forget_messages_information_part3" = "：今後のユーザーには、不完全な会話が表示されます）";
 "deactivate_account_validate_action" = "アカウントを無効化";
 "deactivate_account_password_alert_title" = "アカウントの無効化";
-"deactivate_account_password_alert_message" = "続行するには、Matrixのアカウントのパスワードを入力してください";
+"deactivate_account_password_alert_message" = "続行するには、quali.chatのアカウントのパスワードを入力してください";
 // Re-request confirmation dialog
 "rerequest_keys_alert_title" = "要求を送信しました";
 "rerequest_keys_alert_message" = "鍵をこのセッションに送信できるように、メッセージを復号化できる他の端末で%@を起動してください。";
@@ -564,7 +564,7 @@
 // MARK: - Room Info
 
 "room_info_list_one_member" = "1人のメンバー";
-"create_room_placeholder_address" = "#testroom:matrix.org";
+"create_room_placeholder_address" = "#testroom:quali.chat";
 "create_room_section_header_address" = "アドレス";
 "create_room_show_in_directory" = "ルーム一覧に掲載";
 "create_room_section_footer_type" = "非公開のルームは、ルームに招待された人のみ参加できます。";
@@ -707,7 +707,7 @@
 "settings_key_backup_info_version" = "鍵のバックアップのバージョン：%@";
 "settings_key_backup_info_none" = "鍵はこのセッションからバックアップされていません。";
 "settings_key_backup_info_checking" = "確認しています…";
-"settings_add_3pid_password_message" = "続行するには、Matrixのアカウントのパスワードを入力してください";
+"settings_add_3pid_password_message" = "続行するには、quali.chatのアカウントのパスワードを入力してください";
 "settings_add_3pid_invalid_password_message" = "認証情報が正しくありません";
 "settings_add_3pid_password_title_email" = "メールアドレスを追加";
 "settings_integrations_allow_description" = "インテグレーションマネージャー %@ を使用すると、ボット、ブリッジ、ウィジェット、ステッカーパックを管理できます。\n\n設定データを受信し、ユーザーに代わってウィジェットの変更、ルームへの招待の送信、権限レベルの設定を行うことができます。";
@@ -777,10 +777,10 @@
 "auth_softlogout_signed_out" = "サインアウトしました";
 "auth_autodiscover_invalid_response" = "ホームサーバーのディスカバリー（発見）に関する不正な応答です";
 "auth_accept_policies" = "このホームサーバーの運営方針を確認し、同意してください：";
-"auth_reset_password_error_is_required" = "IDサーバーが設定されていません：Matrixのアカウントのパスワードを再設定するためにサーバーオプションに追加してください。";
+"auth_reset_password_error_is_required" = "IDサーバーが設定されていません：quali.chatのアカウントのパスワードを再設定するためにサーバーオプションに追加してください。";
 "auth_forgot_password_error_no_configured_identity_server" = "IDサーバーが設定されていません：パスワードを再設定するためにIDサーバーを追加してください。";
-"auth_phone_is_required" = "IDサーバーが設定されていないため、Matrixアカウントのパスワードの再設定に使用する電話番号を追加することができません。";
-"auth_email_is_required" = "IDサーバーが設定されていないため、Matrixアカウントのパスワードを再設定する際に使用するメールアドレスを追加することができません。";
+"auth_phone_is_required" = "IDサーバーが設定されていないため、quali.chatアカウントのパスワードの再設定に使用する電話番号を追加することができません。";
+"auth_email_is_required" = "IDサーバーが設定されていないため、quali.chatアカウントのパスワードを再設定する際に使用するメールアドレスを追加することができません。";
 "auth_add_email_phone_message_2" = "アカウント復旧用のメールアドレスを設定します。後からオプションでメールアドレスや電話番号を使用して知人に見つけてもらえるようにできます。";
 "auth_add_phone_message_2" = "電話番号を設定します。後からオプションで知人に見つけてもらえるようにできます。";
 "auth_add_email_message_2" = "アカウント復旧用のメールアドレスを設定します。後からオプションで知人に見つけてもらえるようにできます。";
@@ -803,7 +803,7 @@
 
 // Manage session
 "manage_session_title" = "セッションを管理";
-"security_settings_user_password_description" = "Matrixのアカウントのパスワードを入力して本人確認を行ってください";
+"security_settings_user_password_description" = "quali.chatのアカウントのパスワードを入力して本人確認を行ってください";
 "security_settings_complete_security_alert_message" = "現在のセッションのセキュリティーを完了させる必要があります。";
 "security_settings_blacklist_unverified_devices_description" = "全てのセッションを認証し、信頼済としてマークしてメッセージを送信します。";
 "security_settings_blacklist_unverified_devices" = "信頼していないセッションにはメッセージを送信しない";
@@ -822,7 +822,7 @@
 "security_settings_secure_backup_setup" = "設定";
 "security_settings_secure_backup_description" = "セッションにアクセスできなくなる場合に備えて、アカウントデータと暗号鍵をバックアップしましょう。鍵は一意のセキュリティーキーで保護されます。";
 "security_settings_secure_backup" = "安全なバックアップ";
-"security_settings_crypto_sessions_description_2" = "見覚えのないログインがある場合は、Matrixのアカウントのパスワードを変更し、バックアップをリセットしてください。";
+"security_settings_crypto_sessions_description_2" = "見覚えのないログインがある場合は、quali.chatのアカウントのパスワードを変更し、バックアップをリセットしてください。";
 "security_settings_crypto_sessions_loading" = "セッションを読み込んでいます…";
 "security_settings_crypto_sessions" = "セッション";
 
@@ -866,7 +866,7 @@
 "settings_security" = "セキュリティー";
 "settings_three_pids_management_information_part3" = "で設定しましょう。";
 "settings_three_pids_management_information_part2" = "ディスカバリー（発見）";
-"store_full_description" = "Elementは画期的なメッセンジャーアプリです。\n\n1. あなた自身が、プライバシーをコントロールできます。\n2. Matrixネットワークにいる誰とでもコミュニケーションできます。Slackなどのアプリと連携すれば、他のネットワークのユーザーともコミュニケーションを行うことができます。\n3. 広告やデータマイニング、バックドア、ユーザーの囲い込みから、あなたを守ります。\n4. エンドツーエンド暗号化と、クロス署名による認証で、コミュニケーションの安全性を確保します。\n\nElementは分散型（非中央集権型）でオープンソースのメッセンジャーアプリです。他のメッセンジャーアプリとは全く性質が異なります。\n\nElementでは、あなた自身がサーバーを運営することも、サーバーを選ぶこともできます。あなたのデータや会話に関するプライバシーや、誰があなたのデータを所有するかは、あなた自身で定められます。さらに、Elementがアクセスするネットワークは、誰でも参加できるオープンなネットワークなので、Elementのユーザー以外ともコミュニケーションを行うことができます。しかもきわめて安全です。\n\nこれら全ては、ElementがMatrix――オープンな分散型通信の標準規格――で動作するために可能になっています。\n\nElementでは、どのサーバーを使用するかを、ご自身でElementのアプリから決めることができます。\n\n1. 開発者がホストする matrix.org のパブリックサーバーで無料アカウントを取得。\n2. あなた自身がサーバーを運営し、アカウントを管理。\n3. Element Matrix Servicesのホスティングプラットフォームに加入し、カスタムサーバー上でアカウントを作成。\n\nElementを選ぶべき理由：\n\n自分のデータを、自分で所有：データやメッセージを保管する場所を自分で決めることができます。データを所有しコントロールするのは、あなた自身です。データを解析したり、第三者にデータを渡したりする巨大IT企業ではありません。\n\nオープンなメッセージングと、コラボレーション：Matrixネットワーク上の誰とでも、メッセージのやり取りを行うことができます。Elementや他のMatrixアプリだけでなく、Slack、IRC、XMPPのような他のメッセージングシステムのユーザーとも、チャットをすることができます。\n\n非常に安全：本物のエンド・ツー・エンドの暗号化（会話に参加している人だけがメッセージを読み取ることができます）を備えています。また、クロス署名を行えば、会話に参加しているユーザーの端末が、本当にそのユーザーのものであるかを認証することができます。\n\n包括的なコミュニケーション：メッセージのやり取り、音声・ビデオ通話、ファイル共有、画面共有、その他多くの機能、ボット、ウィジェットを提供します。ルームやコミュニティーを立ち上げて連絡を取り合い、タスクをスムーズに成し遂げましょう。\n\nいつでも、どこにいても：アプリをインストールしている全ての端末とウェブ https://app.element.io でメッセージの履歴が同期されるため、どこにいても連絡を取ることができます。";
+"store_full_description" = "quali.chatは画期的なメッセンジャーアプリです。\n\n1. あなた自身が、プライバシーをコントロールできます。\n2. quali.chatネットワークにいる誰とでもコミュニケーションできます。Slackなどのアプリと連携すれば、他のネットワークのユーザーともコミュニケーションを行うことができます。\n3. 広告やデータマイニング、バックドア、ユーザーの囲い込みから、あなたを守ります。\n4. エンドツーエンド暗号化と、クロス署名による認証で、コミュニケーションの安全性を確保します。\n\nquali.chatは分散型（非中央集権型）でオープンソースのメッセンジャーアプリです。他のメッセンジャーアプリとは全く性質が異なります。\n\nquali.chatでは、あなた自身がサーバーを運営することも、サーバーを選ぶこともできます。あなたのデータや会話に関するプライバシーや、誰があなたのデータを所有するかは、あなた自身で定められます。さらに、quali.chatがアクセスするネットワークは、誰でも参加できるオープンなネットワークなので、quali.chatのユーザー以外ともコミュニケーションを行うことができます。しかもきわめて安全です。\n\nこれら全ては、quali.chatがquali.chat――オープンな分散型通信の標準規格――で動作するために可能になっています。\n\nquali.chatでは、どのサーバーを使用するかを、ご自身でquali.chatのアプリから決めることができます。\n\n1. 開発者がホストする quali.chat のパブリックサーバーで無料アカウントを取得。\n2. あなた自身がサーバーを運営し、アカウントを管理。\n3. quali.chatのホスティングプラットフォームに加入し、カスタムサーバー上でアカウントを作成。\n\nquali.chatを選ぶべき理由：\n\n自分のデータを、自分で所有：データやメッセージを保管する場所を自分で決めることができます。データを所有しコントロールするのは、あなた自身です。データを解析したり、第三者にデータを渡したりする巨大IT企業ではありません。\n\nオープンなメッセージングと、コラボレーション：quali.chatネットワーク上の誰とでも、メッセージのやり取りを行うことができます。quali.chatや他のquali.chatアプリだけでなく、Slack、IRC、XMPPのような他のメッセージングシステムのユーザーとも、チャットをすることができます。\n\n非常に安全：本物のエンド・ツー・エンドの暗号化（会話に参加している人だけがメッセージを読み取ることができます）を備えています。また、クロス署名を行えば、会話に参加しているユーザーの端末が、本当にそのユーザーのものであるかを認証することができます。\n\n包括的なコミュニケーション：メッセージのやり取り、音声・ビデオ通話、ファイル共有、画面共有、その他多くの機能、ボット、ウィジェットを提供します。ルームやコミュニティーを立ち上げて連絡を取り合い、タスクをスムーズに成し遂げましょう。\n\nいつでも、どこにいても：アプリをインストールしている全ての端末とウェブ https://app.element.io でメッセージの履歴が同期されるため、どこにいても連絡を取ることができます。";
 "user_verification_session_details_additional_information_untrusted_other_user" = "ユーザーがこのセッションを信頼するまでは、セッションとの間で送受信されるメッセージには警告が表示されます。また、手動で認証することもできます。";
 "user_verification_session_details_information_untrusted_other_user" = " が新しいセッションを使ってサインインしました：";
 "user_verification_session_details_information_untrusted_current_user" = "このセッションを認証して信頼済としてマークし、暗号化されたメッセージへのアクセスを許可。";
@@ -1141,13 +1141,13 @@
 "secure_backup_setup_banner_subtitle" = "暗号化されたメッセージとデータへのアクセスが失われるのを防ぎましょう";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
-"matrix" = "Matrix";
+"matrix" = "quali.chat";
 // Login Screen
 "login_create_account" = "アカウントを作成：";
-"login_server_url_placeholder" = "URL (例 https://matrix.org)";
+"login_server_url_placeholder" = "URL (例 https://quali.chat)";
 "login_home_server_title" = "ホームサーバーのURL：";
 "login_home_server_info" = "あなたのホームサーバーは、あなたの全ての会話とアカウント情報を保存します";
 "login_identity_server_title" = "IDサーバーのURL：";
@@ -1160,11 +1160,11 @@
 "resend_message" = "メッセージを再送信";
 "select_all" = "全て選択";
 "show_details" = "詳細を表示";
-"login_identity_server_info" = "Matrixは、電子メールなどからMatrix IDを検索するIDサーバーを提供します。現在は https://matrix.org のみが存在します。";
-"login_user_id_placeholder" = "Matrix ID（例 @bob:matrix.org または bob）";
+"login_identity_server_info" = "quali.chatは、電子メールなどからquali.chat IDを検索するIDサーバーを提供します。現在は https://quali.chat のみが存在します。";
+"login_user_id_placeholder" = "quali.chat ID（例 @bob:quali.chat または bob）";
 "login_optional_field" = "任意";
 "login_display_name_placeholder" = "表示名（例 Bob Obson）";
-"login_email_info" = "メールアドレスを指定すると、他のユーザーがあなたをMatrixでより簡単に見つけられます。また、電子メールでパスワードをリセットすることも可能となります。";
+"login_email_info" = "メールアドレスを指定すると、他のユーザーがあなたをquali.chatでより簡単に見つけられます。また、電子メールでパスワードをリセットすることも可能となります。";
 "login_prompt_email_token" = "電子メールの認証トークンを入力してください：";
 "login_error_title" = "ログインに失敗しました";
 "login_error_no_login_flow" = "このホームサーバーから認証情報を取得できませんでした";
@@ -1205,7 +1205,7 @@
 "select_account" = "アカウントを選択";
 "attach_media" = "ライブラリーからメディアを添付";
 "capture_media" = "写真/動画を撮る";
-"invite_user" = "Matrixユーザーを招待";
+"invite_user" = "quali.chatユーザーを招待";
 "reset_to_default" = "既定にリセット";
 "cancel_upload" = "アップロードをキャンセル";
 "cancel_download" = "ダウンロードをキャンセル";
@@ -1305,7 +1305,7 @@
 "account_msisdn_validation_error" = "電話番号を認証できません。";
 "account_error_display_name_change_failed" = "表示名の変更に失敗しました";
 "account_error_picture_change_failed" = "画像の変更に失敗しました";
-"account_error_matrix_session_is_not_opened" = "Matrixセッションが開かれていません";
+"account_error_matrix_session_is_not_opened" = "quali.chatセッションが開かれていません";
 "account_error_email_wrong_title" = "無効なメールアドレス";
 "account_error_email_wrong_description" = "メールアドレスの形式が正しくありません";
 "account_error_msisdn_wrong_title" = "無効な電話番号";
@@ -1349,10 +1349,10 @@
 "attachment_cancel_upload" = "アップロードをキャンセルしますか？";
 "attachment_multiselection_size_prompt" = "画像を次のように送信しますか：";
 "attachment_multiselection_original" = "等倍";
-"attachment_e2e_keys_file_prompt" = "このファイルには、Matrixのクライアントからエクスポートされた暗号鍵が含まれています。\nファイルの内容を表示するか、ファイル内の鍵をインポートしますか？";
+"attachment_e2e_keys_file_prompt" = "このファイルには、quali.chatのクライアントからエクスポートされた暗号鍵が含まれています。\nファイルの内容を表示するか、ファイル内の鍵をインポートしますか？";
 "attachment_e2e_keys_import" = "インポート…";
 // Contacts
-"contact_mx_users" = "Matrixユーザー";
+"contact_mx_users" = "quali.chatユーザー";
 "contact_local_contacts" = "端末の連絡先";
 // Groups
 // Search
@@ -1365,12 +1365,12 @@
 "format_time_d" = "日";
 // E2E import
 "e2e_import_room_keys" = "ルームの暗号鍵をインポート";
-"e2e_import_prompt" = "このプロセスでは、以前に別のMatrixのクライアントからエクスポートした暗号鍵をインポートできます。 これにより、他のクライアントが解読できる全てのメッセージを解読することができます。\nエクスポートした暗号鍵のファイルは、パスフレーズで保護されています。 ファイルを復号化するには、パスフレーズをここに入力する必要があります。";
+"e2e_import_prompt" = "このプロセスでは、以前に別のquali.chatのクライアントからエクスポートした暗号鍵をインポートできます。 これにより、他のクライアントが解読できる全てのメッセージを解読することができます。\nエクスポートした暗号鍵のファイルは、パスフレーズで保護されています。 ファイルを復号化するには、パスフレーズをここに入力する必要があります。";
 "e2e_import" = "インポート";
 "e2e_passphrase_enter" = "パスフレーズを入力";
 // E2E export
 "e2e_export_room_keys" = "ルームの暗号鍵をエクスポート";
-"e2e_export_prompt" = "このプロセスでは、暗号化されたルームで受信したメッセージの鍵をローカルファイルにエクスポートできます。 そのファイルを別のMatrixのクライアントにインポートすると、クライアントはこれらのメッセージを復号化することができます。\nエクスポートしたファイルを使うと、誰でも暗号化されたメッセージを復号化できるため、ファイルを安全に保つように注意する必要があります。";
+"e2e_export_prompt" = "このプロセスでは、暗号化されたルームで受信したメッセージの鍵をローカルファイルにエクスポートできます。 そのファイルを別のquali.chatのクライアントにインポートすると、クライアントはこれらのメッセージを復号化することができます。\nエクスポートしたファイルを使うと、誰でも暗号化されたメッセージを復号化できるため、ファイルを安全に保つように注意する必要があります。";
 "e2e_export" = "エクスポート";
 "e2e_passphrase_confirm" = "パスフレーズを確認";
 "e2e_passphrase_empty" = "パスフレーズには1文字以上が必要です";
@@ -1395,7 +1395,7 @@
 "microphone_access_not_granted_for_call" = "通話にはマイクへのアクセスが必要ですが、%@にはマイクを使用する権限がありません";
 "local_contacts_access_not_granted" = "ローカルの連絡先からユーザーを探すには連絡先にアクセスする必要がありますが、%@にはアクセス権限がありません";
 "local_contacts_access_discovery_warning_title" = "ユーザーを探す";
-"local_contacts_access_discovery_warning" = "Matrixを既に使用している連絡先を見つけるため、%@は電話帳にあるメールアドレスと電話番号を、あなたが選択したMatrixのIDサーバーに送信することができます。サポートしている場合、個人データは送信前にハッシュ化されます。詳細はIDサーバーのプライバシーポリシーを確認してください。";
+"local_contacts_access_discovery_warning" = "quali.chatを既に使用している連絡先を見つけるため、%@は電話帳にあるメールアドレスと電話番号を、あなたが選択したquali.chatのIDサーバーに送信することができます。サポートしている場合、個人データは送信前にハッシュ化されます。詳細はIDサーバーのプライバシーポリシーを確認してください。";
 // Country picker
 "country_picker_title" = "国を選択";
 // Language picker
@@ -1452,7 +1452,7 @@
 "login_error_must_start_http" = "URLは http[s]:// で始まる必要があります";
 // room details dialog screen
 // contacts list screen 
-"invitation_message" = "matrixでチャットしましょう。 詳細はウェブサイト http://matrix.org で確認してください。";
+"invitation_message" = "matrixでチャットしましょう。 詳細はウェブサイト http://quali.chat で確認してください。";
 // Settings screen 
 "settings_title_config" = "設定";
 "settings_title_notifications" = "通知";
@@ -1590,7 +1590,7 @@
 "side_menu_action_invite_friends" = "友だちを招待";
 "call_more_actions_change_audio_device" = "オーディオデバイスを変更";
 "call_more_actions_dialpad" = "ダイヤルパッド";
-"onboarding_splash_login_button_title" = "既にアカウントがあります";
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
 
 // Onboarding
 "onboarding_splash_register_button_title" = "アカウントを作成";
@@ -1622,13 +1622,14 @@
 "space_public_join_rule_detail" = "誰でも参加可能。コミュニティー向け";
 "space_private_join_rule_detail" = "招待者のみ参加可能。個人やチーム向け";
 "onboarding_use_case_title" = "誰と最もよく会話しますか？";
-"onboarding_splash_page_4_message" = "Elementは職場利用にも最適です。世界で最も安全な組織によって信頼されています。";
+"onboarding_splash_page_4_message" = "quali.chatは職場利用にも最適です。世界で最も安全な組織によって信頼されています。";
 "onboarding_splash_page_4_title_no_pun" = "あなたのチームのメッセージングに。";
-"onboarding_splash_page_3_message" = "エンドツーエンドで暗号化されており、登録に電話番号は不要です。広告もデータ収集もありません。";
-"onboarding_splash_page_3_title" = "安全なメッセージのやりとり。";
-"onboarding_splash_page_2_message" = "会話の保存先を自分で決められ、自分で管理できる独立したコミュニケーション。Matrixをもとに。";
-"onboarding_splash_page_2_title" = "主導権を握るのは、あなたです。";
-"onboarding_splash_page_1_message" = "オンライン上でも対面の会話と同じレベルでプライバシーを守る、安全で独立したコミュニケーション。";
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified
 "saving" = "保存しています";
 
 // Activities
@@ -1840,7 +1841,7 @@
 /* The placeholder will be replaces with manage_session_name_info_link */
 "manage_session_name_info" = "セッション名は連絡先にも表示されます。%@";
 "manage_session_name_hint" = "セッション名を設定すると、端末をより簡単に認識できるようになります。";
-"security_settings_coming_soon" = "申し訳ありません。このアクションは%@ iOSではまだ利用できません。他のMatrixのクライアントを使って設定してください。将来的には%@ iOSでも実装される予定です。";
+"security_settings_coming_soon" = "申し訳ありません。このアクションは%@ iOSではまだ利用できません。他のquali.chatのクライアントを使って設定してください。将来的には%@ iOSでも実装される予定です。";
 "security_settings_secure_backup_reset" = "再設定";
 "security_settings_secure_backup_info_checking" = "確認しています…";
 "settings_presence_offline_mode_description" = "有効にすると、このアプリケーションを使用している際にも、他のユーザーにオフラインとして表示されます。";
@@ -1961,13 +1962,12 @@
 "onboarding_use_case_work_messaging" = "チーム";
 "onboarding_use_case_personal_messaging" = "友達と家族";
 "onboarding_use_case_message" = "みんなと繋がる手助けをいたします";
-"onboarding_splash_page_1_title" = "自分の会話は、自分のもの。";
 "accessibility_selected" = "選択済";
 "invite_to" = "%@に招待";
 "joining" = "参加しています";
 "key_backup_setup_passphrase_passphrase_placeholder" = "パスフレーズを入力";
 "key_backup_setup_passphrase_passphrase_title" = "入力";
-"key_backup_setup_passphrase_info" = "鍵のコピーを暗号化してサーバーに保存します。バックアップを保護するためにパスフレーズを設定してください。\n\n最大限のセキュリティーを確保するために、Matrixのアカウントのパスワードと異なるものに設定することが大切です。";
+"key_backup_setup_passphrase_info" = "鍵のコピーを暗号化してサーバーに保存します。バックアップを保護するためにパスフレーズを設定してください。\n\n最大限のセキュリティーを確保するために、quali.chatのアカウントのパスワードと異なるものに設定することが大切です。";
 
 // Passphrase
 
@@ -2221,7 +2221,7 @@
 "secrets_setup_recovery_passphrase_confirm_passphrase_placeholder" = "パスフレーズを確認";
 "secrets_setup_recovery_passphrase_confirm_passphrase_title" = "確認";
 "secrets_setup_recovery_passphrase_confirm_information" = "確認のため、セキュリティーフレーズを再入力してください。";
-"secrets_setup_recovery_passphrase_additional_information" = "Matrixのアカウントパスワードと違うものにしてください。";
+"secrets_setup_recovery_passphrase_additional_information" = "quali.chatのアカウントパスワードと違うものにしてください。";
 "secrets_setup_recovery_passphrase_information" = "あなたしか知らないセキュリティーフレーズを入力してください。サーバーで機密情報を保護するために使用します。";
 
 // Recovery passphrase
@@ -2392,7 +2392,7 @@
 "user_session_item_details" = "%1$@ · %2$@";
 "user_other_session_selected_count" = "%@件選択済";
 "user_session_inactive_session_description" = "非アクティブなセッションは、しばらく使用されていませんが、暗号鍵を受信しているセッションです。\n\n使用していないセッションを削除すると、セキュリティーとパフォーマンスが改善されます。また、新しいセッションが疑わしい場合に、より容易に特定できるようになります。";
-"user_session_permanently_unverified_session_description" = "このセッションは暗号化をサポートしていないため、認証できません。\n\nこのセッションでは、暗号化が有効になっているルームに参加することができません。\n\nセキュリティーとプライバシー保護の観点から、暗号化をサポートしているMatrixのクライアントの使用を推奨します。";
+"user_session_permanently_unverified_session_description" = "このセッションは暗号化をサポートしていないため、認証できません。\n\nこのセッションでは、暗号化が有効になっているルームに参加することができません。\n\nセキュリティーとプライバシー保護の観点から、暗号化をサポートしているquali.chatのクライアントの使用を推奨します。";
 "user_sessions_overview_security_recommendations_unverified_info" = "未認証のセッションを認証するか、サインアウトしてください。";
 "location_sharing_live_list_item_time_left" = "残り%@";
 "location_sharing_live_viewer_title" = "位置情報";
@@ -2511,10 +2511,10 @@
 "contacts_address_book_permission_denied_alert_title" = "連絡先が無効です";
 "password_policy_weak_pwd_error" = "パスワードが弱すぎます。8文字以上で、大文字、小文字、数字、特殊文字をそれぞれ1つずつ含めてください。";
 "authentication_qr_login_loading_signed_in" = "他の端末でサインインしました。";
-"authentication_qr_login_display_step1" = "他の端末でElementを開いてください";
+"authentication_qr_login_display_step1" = "他の端末でquali.chatを開いてください";
 "authentication_qr_login_start_display_qr" = "この端末でQRコードを表示";
 "authentication_qr_login_start_need_alternative" = "別の方法が必要ですか？";
-"authentication_qr_login_start_step1" = "他の端末でElementを開いてください";
+"authentication_qr_login_start_step1" = "他の端末でquali.chatを開いてください";
 "authentication_qr_login_start_subtitle" = "この端末のカメラを使用して、他の端末に表示されているQRコードをスキャンしてください：";
 "authentication_choose_password_not_verified_title" = "電子メールは認証されていません";
 "authentication_server_selection_generic_error" = "このURLでサーバーを発見できません。URLを確認してください。";
@@ -2534,7 +2534,7 @@
 "room_accessibility_record_voice_message_hint" = "2回続けてタップし長押しすると録音。";
 "room_preview_decline_invitation_options" = "招待を拒否するか、このユーザーを無視しますか？";
 "threads_beta_information" = "スレッド機能を使って、会話をまとめましょう。\n\nスレッド機能を使うと、会話のテーマを維持したり、会話を簡単に追跡したりすることができます。 ";
-"threads_notice_information" = "実験期間中に作成されたスレッドは<b>通常の返信として表示されます</b>。<br/><br/>スレッド機能はMatrixの仕様の一部になったため、これは一度限りの変更です。";
+"threads_notice_information" = "実験期間中に作成されたスレッドは<b>通常の返信として表示されます</b>。<br/><br/>スレッド機能はquali.chatの仕様の一部になったため、これは一度限りの変更です。";
 "threads_empty_info_my" = "既存のスレッドに返信するか、メッセージをタップし「スレッド」から新しいスレッドを開始。";
 "room_accessibility_thread_more" = "その他";
 "room_first_message_placeholder" = "最初のメッセージを送信…";
@@ -2551,7 +2551,7 @@
 "authentication_qr_login_start_step4" = "「この端末でQRコードを表示」を選択してください";
 "authentication_qr_login_start_step3" = "「端末をリンク」を選択してください";
 "authentication_qr_login_display_title" = "端末をリンク";
-/* The placeholder will show the full Matrix ID that has been entered. */
+/* The placeholder will show the full quali.chat ID that has been entered. */
 "authentication_registration_username_footer_available" = "他の人は %@ であなたを見つけることができます";
 "authentication_server_selection_register_message" = "あなたのホームサーバーのアドレスを入力してください。ここにあなたの全てのデータがホストされます";
 "authentication_server_info_title_login" = "アカウントにサインインするサーバー";
@@ -2692,7 +2692,7 @@
 // MARK: - Major update
 
 "major_update_title" = "Riotは%@になりました";
-"secrets_reset_authentication_message" = "承認するにはMatrixのアカウントのパスワードを入力してください";
+"secrets_reset_authentication_message" = "承認するにはquali.chatのアカウントのパスワードを入力してください";
 "secrets_setup_recovery_passphrase_summary_information" = "セキュリティーフレーズを記録してください。セキュリティーフレーズを使うと、暗号化したメッセージやデータのロックを解除することができます。";
 "secrets_setup_recovery_key_storage_alert_message" = "✓ 印刷して安全な場所で保管\n✓ USBキーやバックアップ用ドライブに保存\n✓ 個人用のクラウドストレージにコピー";
 "secrets_setup_recovery_key_information" = "セキュリティーキーは安全な場所で保管してください。セキュリティーキーを使うと、暗号化したメッセージやデータのロックを解除することができます。";
@@ -2708,7 +2708,7 @@
 "secrets_recovery_reset_action_part_1" = "全ての復旧用の手段を忘れたか、無くしましたか？ ";
 "user_verification_session_details_additional_information_untrusted_current_user" = "このセッションにサインインしなかった場合、あなたのアカウントの安全性が損なわれている可能性があります。";
 "device_verification_self_verify_wait_recover_secrets_checking_availability" = "他の認証方法を確認しています…";
-"device_verification_self_verify_wait_additional_information" = "これは%@と、クロス署名に対応した他のMatrixのクライアントで機能します。";
+"device_verification_self_verify_wait_additional_information" = "これは%@と、クロス署名に対応した他のquali.chatのクライアントで機能します。";
 "device_verification_self_verify_wait_information" = "暗号化されたメッセージにアクセスするには、あなたの他のセッションからこのセッションを認証する必要があります。\n\n他の端末で最新の%@を使用してください：";
 "key_verification_self_verify_current_session_alert_message" = "他のユーザーは信頼しないかもしれません。";
 "device_verification_start_use_legacy" = "何も表示されませんか？まだ全てのクライアントはインタラクティブな認証をサポートしていません。レガシー認証を使用してください。";
@@ -2773,7 +2773,7 @@
 "location_sharing_live_list_item_last_update" = "%@前に更新済";
 "location_sharing_live_list_item_sharing_expired" = "共有の期限が切れました";
 "location_sharing_map_credits_title" = "© Copyright";
-"location_sharing_allow_background_location_message" = "位置情報（ライブ）を共有したい場合、Elementはバックグラウンドで位置情報にアクセスできる必要があります。アクセスを許可するには、「設定」の「位置情報」にある「常に」をタップしてください。";
+"location_sharing_allow_background_location_message" = "位置情報（ライブ）を共有したい場合、quali.chatはバックグラウンドで位置情報にアクセスできる必要があります。アクセスを許可するには、「設定」の「位置情報」にある「常に」をタップしてください。";
 "location_sharing_invalid_authorization_error_title" = "%@には位置情報にアクセスする権限がありません。「設定」の「位置情報」からアクセスを有効にできます。";
 "location_sharing_loading_map_error_title" = "%@は地図を読み込めませんでした。後でもう一度やり直してください。";
 "poll_history_no_past_poll_period_text" = "過去%@日に実施されたアンケートはありません。さらにアンケートを読み込み、前の月のアンケートを表示";
@@ -2819,3 +2819,15 @@
 "settings_push_rules_error" = "通知の設定をアップデートする際にエラーが発生しました。もう一度オプションを切り替えてみてください。";
 "settings_presence" = "プレゼンス（ステータス表示）";
 "authentication_qr_login_failure_device_not_supported" = "この端末とのリンクはサポートしていません。";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified

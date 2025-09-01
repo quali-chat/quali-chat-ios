@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2015 OpenMarket Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,6 +43,9 @@
 @property (weak, nonatomic) IBOutlet PresenceIndicatorView *presenceIndicatorView;
 @property (weak, nonatomic) IBOutlet UILabel *missedDiscussionsBadgeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *typingLabel;
+
+// MARK: QualiChat modified
+@property (weak, nonatomic) IBOutlet UILabel *customRoomLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *displayNameCenterYConstraint;
 @property (weak, nonatomic) IBOutlet UIView *dotView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *missedDiscussionsBadgeLabelLeadingConstraint;

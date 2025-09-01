@@ -41,6 +41,10 @@ include:
   # https://github.com/element-hq/element-ios/issues/7618
   # - path: RiotShareExtension/target.yml
   # - path: SiriIntents/target.yml
+  - path: QualiChat/target.yml #QUALICHAT modified
+  - path: QualiChatStaging/target.yml #QUALICHAT modified
+  - path: RiotNSEStaging/target.yml #QUALICHAT modified
+  - path: BroadcastUploadExtensionStaging/target.yml #QUALICHAT modified
 
 packages:
   AnalyticsEvents:
@@ -57,9 +61,13 @@ packages:
   SwiftOGG:
     url: https://github.com/element-hq/swift-ogg
     branch: 0.0.1
+#  WysiwygComposer:
+#    url: https://github.com/matrix-org/matrix-rich-text-editor-swift
+#    version: 2.37.3
+# QualiChat modified - Remove fork after update version parent framework
   WysiwygComposer:
-    url: https://github.com/matrix-org/matrix-rich-text-editor-swift
-    version: 2.37.3
+    url: https://github.com/dawidbarniak/matrix-rich-text-editor-swift
+    version: 2.37.7
   DeviceKit:
     url: https://github.com/devicekit/DeviceKit
     majorVersion: 4.7.0

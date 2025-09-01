@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2014 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  Copyright 2018 New Vector Ltd
@@ -435,7 +436,12 @@ NSString *const AppDelegateUniversalLinkDidChangeNotification = @"AppDelegateUni
     [self setupUserDefaults];
 
     // Set up theme
-    ThemeService.shared.themeId = RiotSettings.shared.userInterfaceTheme;
+    
+#if QUALICHAT
+    if (QualiChatBuildSettings.forceDarkTheme) {
+        ThemeService.shared.themeId = @"dark";
+    }
+#endif
     
     application.windows.firstObject.overrideUserInterfaceStyle = [ThemeService.shared isCurrentThemeDark] ? UIUserInterfaceStyleDark : UIUserInterfaceStyleLight;
 
@@ -3379,13 +3385,19 @@ NSString *const AppDelegateUniversalLinkDidChangeNotification = @"AppDelegateUni
             
             switch (mxSession.crypto.crossSigning.state)
             {
-                case MXCrossSigningStateCrossSigningExists:
-                    MXLogDebug(@"[AppDelegate] handleAppState: presentVerifyCurrentSessionAlertIfNeededWithSession");
-                    [self.masterTabBarController presentVerifyCurrentSessionAlertIfNeededWithSession:mxSession];
+                case MXCrossSigningStateCrossSigningExists: {
+                        MXLogDebug(@"[AppDelegate] handleAppState: presentVerifyCurrentSessionAlertIfNeededWithSession");
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [self.masterTabBarController presentVerifyCurrentSessionAlertIfNeededWithSession:mxSession];
+                        });
+                    }
                     break;
-                case MXCrossSigningStateCanCrossSign:
-                    MXLogDebug(@"[AppDelegate] handleAppState: presentReviewUnverifiedSessionsAlertIfNeededWithSession");
-                    [self.masterTabBarController presentReviewUnverifiedSessionsAlertIfNeededWithSession:mxSession];
+                case MXCrossSigningStateCanCrossSign: {
+                        MXLogDebug(@"[AppDelegate] handleAppState: presentReviewUnverifiedSessionsAlertIfNeededWithSession");
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [self.masterTabBarController presentReviewUnverifiedSessionsAlertIfNeededWithSession:mxSession];
+                        });
+                    }
                     break;
                 default:
                     break;
@@ -4106,7 +4118,9 @@ NSString *const AppDelegateUniversalLinkDidChangeNotification = @"AppDelegateUni
 - (void)checkAppVersion
 {
     // Check if we should display a major update alert
+#if !QUALICHAT
     [self checkMajorUpdate];
+#endif
     
     // Update the last app version used
     [AppVersion updateLastUsedVersion];

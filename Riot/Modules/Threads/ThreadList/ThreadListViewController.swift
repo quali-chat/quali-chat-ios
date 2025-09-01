@@ -1,6 +1,7 @@
 // File created from ScreenTemplate
 // $ createScreen.sh Threads/ThreadList ThreadList
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2021 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -96,8 +97,11 @@ final class ThreadListViewController: UIViewController {
     private func update(theme: Theme) {
         self.theme = theme
         
+        #if QUALICHAT
+        self.view.backgroundColor = theme.backgroundColor
+        #else
         self.view.backgroundColor = theme.headerBackgroundColor
-        
+        #endif
         if let navigationBar = self.navigationController?.navigationBar {
             theme.applyStyle(onNavigationBar: navigationBar)
         }

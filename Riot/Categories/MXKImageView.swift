@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,8 +19,13 @@ import Foundation
 
 extension MXKImageView {
     @objc func vc_setRoomAvatarImage(with url: String?, roomId: String, displayName: String, mediaManager: MXMediaManager) {
+        var name = displayName
+        #if QUALICHAT
+        name = displayName.fixDisplayNameInRoomAvatar
+        #endif
+        
         // Use the display name to prepare the default avatar image.
-        let avatarImage = AvatarGenerator.generateAvatar(forMatrixItem: roomId, withDisplayName: displayName)
+        let avatarImage = AvatarGenerator.generateAvatar(forMatrixItem: roomId, withDisplayName: name)
 
         if let avatarUrl = url {
             self.enableInMemoryCache = true

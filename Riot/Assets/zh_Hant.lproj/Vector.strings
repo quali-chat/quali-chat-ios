@@ -50,8 +50,8 @@
 "auth_optional_phone_placeholder" = "電話號碼（選填）";
 "auth_phone_placeholder" = "電話號碼";
 "auth_repeat_password_placeholder" = "確認密碼";
-"auth_repeat_new_password_placeholder" = "確認新 Matrix 帳號的密碼";
-"auth_home_server_placeholder" = "網址（例如 https://matrix.org）";
+"auth_repeat_new_password_placeholder" = "確認新 quali.chat 帳號的密碼";
+"auth_home_server_placeholder" = "網址（例如 https://quali.chat）";
 "auth_identity_server_placeholder" = "網址（例如 https://vector.im）";
 "auth_invalid_login_param" = "使用者名稱和／或密碼不正確";
 "auth_invalid_user_name" = "使用者名稱只能包含英數字、點、連字符號、底線";
@@ -71,7 +71,7 @@
 "auth_untrusted_id_server" = "這個身分伺服器不受信任";
 "auth_password_dont_match" = "密碼不相符";
 "auth_username_in_use" = "使用者名稱已被使用";
-"auth_forgot_password" = "忘記 Matrix 帳號的密碼？";
+"auth_forgot_password" = "忘記 quali.chat 帳號的密碼？";
 "auth_email_not_found" = "無法傳送電子郵件：找不到該電子郵件地址";
 "auth_use_server_options" = "使用自訂的伺服器選項（進階）";
 "auth_email_validation_message" = "請到您的電子郵件信箱收信以繼續註冊流程";
@@ -101,7 +101,7 @@
 "auth_reset_password_missing_password" = "必須輸入新密碼。";
 "auth_reset_password_next_step_button" = "我已經驗證了電子郵件地址";
 "auth_reset_password_error_unauthorized" = "電子郵件地址驗證失敗：請確認您已點擊郵件中的連結";
-"auth_reset_password_error_not_found" = "您的電子郵件地址似乎並未與這台家伺服器上的任何 Matrix ID 相關聯。";
+"auth_reset_password_error_not_found" = "您的電子郵件地址似乎並未與這台家伺服器上的任何 quali.chat ID 相關聯。";
 "room_creation_account" = "帳號";
 "room_creation_appearance_name" = "名稱";
 "room_recents_start_chat_with" = "開始聊天";
@@ -117,7 +117,7 @@
 "room_participants_action_start_new_chat" = "開始新聊天";
 "room_participants_action_mention" = "提及";
 "room_message_placeholder" = "傳送訊息（未加密）…";
-"room_do_not_have_permission_to_post" = "您沒有權限在此聊天室貼文";
+"room_do_not_have_permission_to_post" = "You need to have the room token in your wallet to post to this room.";
 "encrypted_room_message_placeholder" = "傳送加密訊息…";
 "room_offline_notification" = "對伺服器的連線已中斷。";
 "room_event_action_delete" = "刪除";
@@ -164,9 +164,9 @@
 "e2e_room_key_request_title" = "加密金鑰請求";
 "e2e_room_key_request_share_without_verifying" = "不驗證就分享";
 "e2e_room_key_request_ignore_request" = "忽略請求";
-"auth_reset_password_message" = "若要重設您 Matrix 帳號的密碼，請輸入連結到您帳號的電子郵件地址：";
+"auth_reset_password_message" = "若要重設您 quali.chat 帳號的密碼，請輸入連結到您帳號的電子郵件地址：";
 "auth_reset_password_email_validation_message" = "已傳送一封電子郵件至 %@。請點擊郵件中的連結後，再點擊下方。";
-"auth_reset_password_success_message" = "已重設您的 Matrix 密碼。\n\n已將您的所有工作階段登出，並且不會再收到推送通知。若要重新啟用通知，請再次登入每個裝置。";
+"auth_reset_password_success_message" = "已重設您的 quali.chat 密碼。\n\n已將您的所有工作階段登出，並且不會再收到推送通知。若要重新啟用通知，請再次登入每個裝置。";
 "auth_add_email_and_phone_warning" = "未設定 API 前，尚不支援同時使用電子郵件地址和電話號碼註冊。目前只有電話號碼會被採用。您可以在個人資料中新增電子郵件地址。";
 // Chat creation
 "room_creation_title" = "新的聊天";
@@ -181,7 +181,7 @@
 "room_creation_keep_private" = "維持私密";
 "room_creation_make_private" = "設成私密";
 "room_creation_wait_for_creation" = "正在建立聊天室，請稍候。";
-"room_creation_invite_another_user" = "使用者 ID、姓名或電子郵件地址";
+"room_creation_invite_another_user" = "使用者 ID 或姓名";
 // Room recents
 "room_recents_directory_section" = "聊天室目錄";
 "room_recents_favourites_section" = "我的最愛";
@@ -218,7 +218,7 @@
 "directory_search_fail" = "無法取得資料";
 // Contacts
 "contacts_address_book_section" = "裝置上的聯絡人";
-"contacts_address_book_matrix_users_toggle" = "只顯示 Matrix 使用者";
+"contacts_address_book_matrix_users_toggle" = "只顯示 quali.chat 使用者";
 "contacts_address_book_no_contact" = "沒有裝置上的聯絡人";
 "contacts_address_book_permission_required" = "需要權限來取得裝置上的聯絡資訊";
 "contacts_address_book_permission_denied" = "您沒有允許 %@ 存取裝置上的聯絡資訊";
@@ -237,7 +237,7 @@
 "room_participants_invite_prompt_msg" = "您確定要邀請 %@ 進入此聊天室嗎？";
 "room_participants_invite_another_user" = "透過使用者 ID、名稱或電子郵件地址來搜尋／邀請";
 "room_participants_invite_malformed_id_title" = "邀請錯誤";
-"room_participants_invite_malformed_id" = "ID 格式不正確。應為電子郵件地址或 Matrix ID（如 @localpart:domain）";
+"room_participants_invite_malformed_id" = "ID 格式不正確。應為電子郵件地址或 quali.chat ID（如 @localpart:domain）";
 "room_participants_invited_section" = "已邀請";
 "room_participants_now" = "現在";
 "room_participants_ago" = "之前";
@@ -369,8 +369,8 @@
 "settings_old_password" = "舊密碼";
 "settings_new_password" = "新密碼";
 "settings_confirm_password" = "確認密碼";
-"settings_fail_to_update_password" = "Matrix 帳號密碼更新失敗";
-"settings_password_updated" = "已更新您 Matrix 帳號的密碼";
+"settings_fail_to_update_password" = "quali.chat 帳號密碼更新失敗";
+"settings_password_updated" = "已更新您 quali.chat 帳號的密碼";
 "settings_crypto_device_name" = "工作階段名稱： ";
 "settings_crypto_device_id" = "\n工作階段 ID： ";
 "settings_crypto_device_key" = "\n工作階段金鑰：\n";
@@ -440,7 +440,7 @@
 "group_participants_invite_prompt_msg" = "您確定要邀請 %@ 加入此群組嗎？";
 "group_participants_invite_another_user" = "透過使用者 ID 或名稱搜尋／邀請";
 "group_participants_invite_malformed_id_title" = "邀請錯誤";
-"group_participants_invite_malformed_id" = "ID 格式不正確。應為 Matrix ID（如 @localpart:domain）";
+"group_participants_invite_malformed_id" = "ID 格式不正確。應為 quali.chat ID（如 @localpart:domain）";
 "group_participants_invited_section" = "已邀請";
 // Read Receipts
 "read_receipts_list" = "讀取回條清單";
@@ -450,9 +450,9 @@
 "media_picker_select" = "選擇";
 "directory_server_picker_title" = "選擇一個目錄";
 "directory_server_all_rooms" = "在 %@ 伺服器上的所有聊天室";
-"directory_server_all_native_rooms" = "所有 Matrix 的本地聊天室";
+"directory_server_all_native_rooms" = "所有 quali.chat 的本地聊天室";
 "directory_server_type_homeserver" = "輸入一個家伺服器來列出所有公開聊天室";
-"directory_server_placeholder" = "matrix.org";
+"directory_server_placeholder" = "quali.chat";
 // Events formatter
 "event_formatter_member_updates" = "%tu 筆成員狀態變更";
 "event_formatter_widget_added" = "%@ 小工具已由 %@ 新增";
@@ -514,13 +514,13 @@
 "deactivate_account_informations_part2_emphasize" = "此動作無法還原。";
 "deactivate_account_informations_part3" = "\n\n正在停用您的帳號 ";
 "deactivate_account_informations_part4_emphasize" = "在預設情況下我們並不會移除您曾傳送的訊息。 ";
-"deactivate_account_informations_part5" = "如果您希望我們移除您曾傳送的訊息，請選取下方的欄位\n\n在 Matrix 中，訊息的可見性如同電子郵件。我們移除了您曾傳送的訊息表示這些訊息，將不會與任何新註冊或未註冊的使用者分享，但過去已有權限讀取您的訊息的已註冊使用者仍能從他們的副本中讀取。";
+"deactivate_account_informations_part5" = "如果您希望我們移除您曾傳送的訊息，請選取下方的欄位\n\n在 quali.chat 中，訊息的可見性如同電子郵件。我們移除了您曾傳送的訊息表示這些訊息，將不會與任何新註冊或未註冊的使用者分享，但過去已有權限讀取您的訊息的已註冊使用者仍能從他們的副本中讀取。";
 "deactivate_account_forget_messages_information_part1" = "當我停用我的帳號時，請移除所有我曾傳送的訊息（";
 "deactivate_account_forget_messages_information_part2_emphasize" = "警告";
 "deactivate_account_forget_messages_information_part3" = "：這會導致未來的使用者看到不完整的對話紀錄）";
 "deactivate_account_validate_action" = "停用帳號";
 "deactivate_account_password_alert_title" = "停用帳號";
-"deactivate_account_password_alert_message" = "請輸入您的 Matrix 帳號密碼繼續";
+"deactivate_account_password_alert_message" = "請輸入您的 quali.chat 帳號密碼繼續";
 // Re-request confirmation dialog
 "rerequest_keys_alert_title" = "已傳送請求";
 "room_message_reply_to_placeholder" = "傳送回覆（未加密）…";
@@ -601,10 +601,10 @@
 "auth_softlogout_signed_out" = "您已登出";
 "auth_autodiscover_invalid_response" = "家伺服器的探索回應無效";
 "auth_accept_policies" = "請審閱並接受此家伺服器的政策：";
-"auth_reset_password_error_is_required" = "未設定身分伺服器：請到伺服器設定加入一台即可重設 Matrix 帳號的密碼。";
-"auth_forgot_password_error_no_configured_identity_server" = "未設定身分伺服器：請加入一台即可重設 Matrix 帳號的密碼。";
-"auth_phone_is_required" = "未設定身分伺服器，所以無法加入電話號碼，以便將來重設 Matrix 帳號的密碼。";
-"auth_email_is_required" = "未設定身分伺服器，所以無法加入電子郵件地址，以便將來重設 Matrix 帳號的密碼。";
+"auth_reset_password_error_is_required" = "未設定身分伺服器：請到伺服器設定加入一台即可重設 quali.chat 帳號的密碼。";
+"auth_forgot_password_error_no_configured_identity_server" = "未設定身分伺服器：請加入一台即可重設 quali.chat 帳號的密碼。";
+"auth_phone_is_required" = "未設定身分伺服器，所以無法加入電話號碼，以便將來重設 quali.chat 帳號的密碼。";
+"auth_email_is_required" = "未設定身分伺服器，所以無法加入電子郵件地址，以便將來重設 quali.chat 帳號的密碼。";
 "auth_add_email_phone_message_2" = "設定一組電子郵件地址，以便日後恢復帳號，並且可讓認識您的人透過此地址或電話號碼找到您。";
 "auth_add_email_message_2" = "設定一組電子郵件地址，以便日後恢復帳號，並且可讓認識您的人找到您。";
 "auth_add_phone_message_2" = "設定一組電話號碼，日後可讓認識您的人找到您。";
@@ -619,7 +619,7 @@
 "skip" = "略過";
 "close" = "關閉";
 "store_promotional_text" = "開放網路上的隱私保護聊天和協作應用程式。去中心化機制讓您可自行管控。沒有資料探勘、沒有後門，也不會被第三方存取。";
-"store_full_description" = "Element 是一套新型的通訊和協作應用程式，它提供下列功能：\n\n1. 您可以自行掌控隱私\n2. 可以與 Matrix 網路中的任何人進行通訊，甚至可以與 Slack 等應用程式整合\n3. 保護您免受廣告、資料探勘、後門和封閉平台的侵害\n4. 透過端到端加密和交叉簽署來驗證彼此，互相確保安全\n\nElement 是去中心化的開放原始碼軟體，因此與其他通訊和協作應用程式完全不同。\n\nElement 允許您自行架設（或選擇託管）伺服器，使您可針對隱私權，所有權以及對資料和對話內容的完整控制權。您可以連線到所有開放的網路，所以您不是只能與其他 Element 使用者聊天。而且還非常安全。\n\nElement 之所以能夠做到所有這些目標，是因為它使用 Matrix（一套開放、去中心化的通訊標準）運作。\n\nElement 讓您可以自行選擇要將對話放在哪一台伺服器來讓您可自行控制自己的訊息和資料。在 Element 應用程式中，您可以選擇以不同方式託管您的訊息：\n\n1. 在 matrix.org 公開伺服器註冊免費帳號\n2. 使用自行架設的硬體主機上的伺服器來註冊帳號\n3. 訂閱 Element Matrix Services 代管平台，註冊自己的伺服器\n\n為什麼要選擇 Element？\n\n自己擁有自己資料：由您決定將資料與訊息保留在何處。您自己擁有並管理這些資料，而不用讓某些「超大型企業」來探勘您的資料，或將資料提供給第三方。\n\n開放的通訊與協作機制：您可以與 Matrix 網路中的任何人聊天，不管他們使用的是 Element 還是其他 Matrix 應用程式，甚至他們也可以使用像 Slack 、IRC 或 XMPP 之類的其他通訊系統。\n\n超級安全：真正的端對端加密（只有對話中的人才能解開訊息內容），並進行交叉簽署以驗證對話參與者的設備。\n\n完整的通訊：傳訊息、進行語音或視訊通話、分享檔案、畫面，還有大量整合、機器人與小工具。建立聊天室、社群，保持聯繫並完成工作。\n\n無論您身在何處都可保持聯繫：無論您身在何處，都可以透過 https://element.io/app 在所有裝置與網路取得完全同步的訊息記錄來保持聯繫。";
+"store_full_description" = "quali.chat 是一套新型的通訊和協作應用程式，它提供下列功能：\n\n1. 您可以自行掌控隱私\n2. 可以與 quali.chat 網路中的任何人進行通訊，甚至可以與 Slack 等應用程式整合\n3. 保護您免受廣告、資料探勘、後門和封閉平台的侵害\n4. 透過端到端加密和交叉簽署來驗證彼此，互相確保安全\n\nquali.chat 是去中心化的開放原始碼軟體，因此與其他通訊和協作應用程式完全不同。\n\nquali.chat 允許您自行架設（或選擇託管）伺服器，使您可針對隱私權，所有權以及對資料和對話內容的完整控制權。您可以連線到所有開放的網路，所以您不是只能與其他 quali.chat 使用者聊天。而且還非常安全。\n\nquali.chat 之所以能夠做到所有這些目標，是因為它使用 quali.chat（一套開放、去中心化的通訊標準）運作。\n\nquali.chat 讓您可以自行選擇要將對話放在哪一台伺服器來讓您可自行控制自己的訊息和資料。在 quali.chat 應用程式中，您可以選擇以不同方式託管您的訊息：\n\n1. 在 quali.chat 公開伺服器註冊免費帳號\n2. 使用自行架設的硬體主機上的伺服器來註冊帳號\n3. 訂閱 quali.chat 代管平台，註冊自己的伺服器\n\n為什麼要選擇 quali.chat？\n\n自己擁有自己資料：由您決定將資料與訊息保留在何處。您自己擁有並管理這些資料，而不用讓某些「超大型企業」來探勘您的資料，或將資料提供給第三方。\n\n開放的通訊與協作機制：您可以與 quali.chat 網路中的任何人聊天，不管他們使用的是 quali.chat 還是其他 quali.chat 應用程式，甚至他們也可以使用像 Slack 、IRC 或 XMPP 之類的其他通訊系統。\n\n超級安全：真正的端對端加密（只有對話中的人才能解開訊息內容），並進行交叉簽署以驗證對話參與者的設備。\n\n完整的通訊：傳訊息、進行語音或視訊通話、分享檔案、畫面，還有大量整合、機器人與小工具。建立聊天室、社群，保持聯繫並完成工作。\n\n無論您身在何處都可保持聯繫：無論您身在何處，都可以透過 https://element.io/app 在所有裝置與網路取得完全同步的訊息記錄來保持聯繫。";
 // String for App Store
 "store_short_description" = "去中心化的安全通訊／VoIP 軟體";
 "settings_three_pids_management_information_part1" = "在此管理你可以用作登入或回復帳戶的電郵地址或電話號碼。你也可控制誰可以用這些資料找到你。 ";
@@ -902,18 +902,18 @@
 "open" = "開啟";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
-"matrix" = "Matrix";
+"matrix" = "quali.chat";
 // Login Screen
 "login_create_account" = "建立帳號：";
-"login_server_url_placeholder" = "網址（例如 https://matrix.org）";
+"login_server_url_placeholder" = "網址（例如 https://quali.chat）";
 "login_home_server_title" = "家伺服器網址：";
 "login_home_server_info" = "您的家伺服器會儲存所有的對話紀錄跟帳號資料";
 "login_identity_server_title" = "身分伺服器網址：";
-"login_identity_server_info" = "Matrix 提供身分認證伺服器來追蹤電子郵件信箱與 Matrix ID 的關係。目前只有 https://matrix.org 提供這個服務。";
-"login_user_id_placeholder" = "Matrix ID（如 @bob:matrix.org 或 bob）";
+"login_identity_server_info" = "quali.chat 提供身分認證伺服器來追蹤電子郵件信箱與 quali.chat ID 的關係。目前只有 https://quali.chat 提供這個服務。";
+"login_user_id_placeholder" = "quali.chat ID（如 @bob:quali.chat 或 bob）";
 "login_password_placeholder" = "密碼";
 "login_optional_field" = "選擇性";
 "login_display_name_placeholder" = "顯示名稱（如 Bob Obson）";
@@ -976,7 +976,7 @@
 "microphone_access_not_granted_for_call" = "電話需要使用麥克風權限，但是 %@ 沒有存取權限";
 "local_contacts_access_not_granted" = "從本機的聯絡資訊探索使用者，需要存取聯絡資訊的權限，但是 %@ 沒有存取權限";
 "local_contacts_access_discovery_warning_title" = "使用者探索";
-"local_contacts_access_discovery_warning" = "為了發現其他已經使用 Matrix 的聯絡人，%@ 可以從您的聯絡資訊將電子郵件地址跟電話號碼上傳到 Matrix 的身分伺服器。所有的個人資訊在寄出前都會加密，請確認您的身分伺服器的隱私條款以取得更多細節。";
+"local_contacts_access_discovery_warning" = "為了發現其他已經使用 quali.chat 的聯絡人，%@ 可以從您的聯絡資訊將電子郵件地址跟電話號碼上傳到 quali.chat 的身分伺服器。所有的個人資訊在寄出前都會加密，請確認您的身分伺服器的隱私條款以取得更多細節。";
 // Country picker
 "country_picker_title" = "選擇國家";
 // Language picker
@@ -1079,7 +1079,7 @@
 "mention" = "提及";
 "select_account" = "選擇一個帳號";
 "capture_media" = "拍攝照片 / 影片";
-"invite_user" = "邀請 Matrix 使用者";
+"invite_user" = "邀請 quali.chat 使用者";
 "reset_to_default" = "重置為預設值";
 "attach_media" = "從庫中附加媒體";
 "resend_message" = "重新傳送該訊息";
@@ -1194,7 +1194,7 @@
 "authentication_login_title" = "歡迎回來！";
 "authentication_server_info_title" = "您的對話將在哪裡進行";
 "authentication_registration_password_footer" = "至少需要 8 個字元";
-/* The placeholder will show the full Matrix ID that has been entered. */
+/* The placeholder will show the full quali.chat ID that has been entered. */
 "authentication_registration_username_footer_available" = "其他人可以透過 %@ 找到您";
 "authentication_registration_username_footer" = "您之後無法再更改";
 "authentication_registration_username" = "使用者名稱";
@@ -1229,15 +1229,15 @@
 "onboarding_use_case_personal_messaging" = "朋友與家人";
 "onboarding_use_case_message" = "我們將會協助您建立聯繫";
 "onboarding_use_case_title" = "您最常與誰聊天？";
-"onboarding_splash_page_4_message" = "Element 也很適合用在工作場合。許多最重視安全的組織也使用此軟體。";
+"onboarding_splash_page_4_message" = "quali.chat 也很適合用在工作場合。許多最重視安全的組織也使用此軟體。";
 "onboarding_splash_page_4_title_no_pun" = "傳訊息給您的團隊。";
-"onboarding_splash_page_3_message" = "端對端加密且無須電話號碼。沒有廣告也不探勘您的個資。";
-"onboarding_splash_page_1_message" = "安全且獨立的通訊，為您提供與在家中進行面對面對話相同的隱私等級。";
-"onboarding_splash_page_3_title" = "安全地傳輸訊息。";
-"onboarding_splash_page_2_message" = "選擇儲存對話的位置，讓您擁有控制權與獨立性。透過 Matrix 連結。";
-"onboarding_splash_page_2_title" = "一切都在您的掌控之中。";
-"onboarding_splash_page_1_title" = "掌握您的對話。";
-"onboarding_splash_login_button_title" = "我已經有帳號了";
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
 
 // MARK: Onboarding
 "onboarding_splash_register_button_title" = "建立帳號";
@@ -1339,7 +1339,7 @@
 // room details dialog screen
 
 // contacts list screen
-"invitation_message" = "我想要在 Matrix 上與您聯繫。請到 http://matrix.org 取得更多資訊。";
+"invitation_message" = "我想要在 quali.chat 上與您聯繫。請到 http://quali.chat 取得更多資訊。";
 "login_error_must_start_http" = "網址必須以 http[s]:// 開頭";
 
 // Login Screen
@@ -1401,8 +1401,8 @@
 "e2e_passphrase_create" = "建立安全密語";
 "e2e_passphrase_too_short" = "安全密語太短（至少要 %d 字母的長度）";
 "e2e_passphrase_confirm" = "確認安全密語";
-"e2e_export_prompt" = "這個過程能夠將您在加密聊天室中加密訊息的金鑰，匯出到本機。您之後可以在其他Matrix客戶端，匯入此檔案，解密這些訊息。\n匯出的檔案能夠讓任何人讀取並解密任何您能看到的加密檔案，所以您應該將此檔案放在安全的地方。";
-"e2e_import_prompt" = "這個過程讓您能夠匯入您之前從其他Matrix帳號匯出的金鑰。匯入後您將可以解密其他客戶端也能解密的訊息。\n匯出的檔案被安全密語保護。您應該在此輸入您的安全密語以解密此檔案。";
+"e2e_export_prompt" = "這個過程能夠將您在加密聊天室中加密訊息的金鑰，匯出到本機。您之後可以在其他quali.chat客戶端，匯入此檔案，解密這些訊息。\n匯出的檔案能夠讓任何人讀取並解密任何您能看到的加密檔案，所以您應該將此檔案放在安全的地方。";
+"e2e_import_prompt" = "這個過程讓您能夠匯入您之前從其他quali.chat帳號匯出的金鑰。匯入後您將可以解密其他客戶端也能解密的訊息。\n匯出的檔案被安全密語保護。您應該在此輸入您的安全密語以解密此檔案。";
 "format_time_d" = "天";
 "format_time_h" = "時";
 "format_time_m" = "分";
@@ -1418,11 +1418,11 @@
 "contact_local_contacts" = "裝置上的聯絡人";
 
 // Contacts
-"contact_mx_users" = "Matrix 使用者";
+"contact_mx_users" = "quali.chat 使用者";
 "attachment_unsupported_preview_message" = "不支援此檔案類型。";
 "attachment_unsupported_preview_title" = "無法預覽";
 "attachment_e2e_keys_import" = "匯入中…";
-"attachment_e2e_keys_file_prompt" = "這個檔案含有Matrix客戶端匯出的加密金鑰。\n您需要確認檔案內容或是內含的金鑰嗎？";
+"attachment_e2e_keys_file_prompt" = "這個檔案含有quali.chat客戶端匯出的加密金鑰。\n您需要確認檔案內容或是內含的金鑰嗎？";
 "attachment_multiselection_original" = "實際大小";
 "attachment_multiselection_size_prompt" = "請問您要以此身分傳送圖片嗎：";
 "attachment_cancel_upload" = "取消上傳嗎？";
@@ -1481,7 +1481,7 @@
 "account_error_msisdn_wrong_title" = "電話號碼無效";
 "account_error_email_wrong_description" = "不像是有效的電子郵件地址";
 "account_error_email_wrong_title" = "無效的電子郵件地址";
-"account_error_matrix_session_is_not_opened" = "Matrix的工作階段無法打開";
+"account_error_matrix_session_is_not_opened" = "quali.chat的工作階段無法打開";
 "account_error_picture_change_failed" = "無法變更圖片";
 "account_error_display_name_change_failed" = "無法變更顯示名稱";
 "account_msisdn_validation_error" = "無法驗證電話號碼。";
@@ -1531,10 +1531,10 @@
 "user_session_rename_session_title" = "正在重新命名工作階段";
 "user_session_inactive_session_description" = "不活躍的工作階段是您有一段時間未使用的工作階段，但它們會繼續接收加密金鑰。\n\n移除不活躍的工作階段可以改善安全性與效能，並讓您可以更容易地識別新的工作階段是否可疑。";
 "user_session_inactive_session_title" = "不活躍的工作階段";
-"user_session_permanently_unverified_session_description" = "此工作階段不支援加密功能，所以無法驗證。\n\n您無法使用此工作階段進入有開啟加密的聊天室中。\n\n為了安全與隱私，建議使用支援加密的 Matrix 客戶端。";
+"user_session_permanently_unverified_session_description" = "此工作階段不支援加密功能，所以無法驗證。\n\n您無法使用此工作階段進入有開啟加密的聊天室中。\n\n為了安全與隱私，建議使用支援加密的 quali.chat 客戶端。";
 "user_session_unverified_session_description" = "未驗證的工作階段是使用您的憑證登入但交叉叉驗證的工作階段。\n\n您應特別確定您可以識別這些工作階段，因為它們可能代表未經授權使用您的帳號。";
 "user_session_unverified_session_title" = "未經驗證的工作階段";
-"user_session_verified_session_description" = "已驗證的工作階段，是您輸入安全密語或透過另一個已驗證工作階段確認您的身分後，使用此 Element 帳號的任何地方。\n\n這代表了您擁有解鎖加密訊息，並向其他使用者確認您信任此工作階段所需的所有金鑰。";
+"user_session_verified_session_description" = "已驗證的工作階段，是您輸入安全密語或透過另一個已驗證工作階段確認您的身分後，使用此 quali.chat 帳號的任何地方。\n\n這代表了您擁有解鎖加密訊息，並向其他使用者確認您信任此工作階段所需的所有金鑰。";
 "user_session_verified_session_title" = "已驗證的工作階段";
 "user_session_got_it" = "了解";
 "user_session_push_notifications_message" = "打開此選項，工作階段會收到通知。";
@@ -1607,7 +1607,7 @@
 "location_sharing_map_credits_title" = "著作權";
 "location_sharing_allow_background_location_cancel_action" = "現在不要";
 "location_sharing_allow_background_location_validate_action" = "設定";
-"location_sharing_allow_background_location_message" = "如果您想要分享即時位置，Element 需要在背景存取您的位置。您可以在設定 > 位置中選擇「總是啟用此選項」";
+"location_sharing_allow_background_location_message" = "如果您想要分享即時位置，quali.chat 需要在背景存取您的位置。您可以在設定 > 位置中選擇「總是啟用此選項」";
 "location_sharing_allow_background_location_title" = "允許存取";
 "location_sharing_settings_toggle_title" = "啟用位置分享";
 "location_sharing_settings_header" = "即時位置分享";
@@ -1891,7 +1891,7 @@
 "create_room_processing" = "正在建立聊天室";
 "create_room_suggest_room_footer" = "將向聊天空間中的成員推薦建議的聊天室。";
 "create_room_suggest_room" = "推薦給聊天空間成員";
-"create_room_placeholder_address" = "#testroom:matrix.org";
+"create_room_placeholder_address" = "#testroom:quali.chat";
 "create_room_section_header_address" = "位址";
 "create_room_show_in_directory_footer" = "這會幫助人們找到並加入此聊天室。";
 "create_room_show_in_directory" = "在聊天室目錄中顯示";
@@ -1964,7 +1964,7 @@
 // Banner
 
 "cross_signing_setup_banner_title" = "設定加密";
-"secrets_reset_authentication_message" = "輸入您的 Matrix 帳號密碼來確認";
+"secrets_reset_authentication_message" = "輸入您的 quali.chat 帳號密碼來確認";
 "secrets_reset_warning_message" = "重新啟動後，將清空所有聊天紀錄、訊息、已信任的裝置或已信任的使用者。";
 "secrets_reset_warning_title" = "如果您重設了所有東西";
 "secrets_reset_information" = "僅在您沒有其他裝置可以驗證此裝置時才使用此方式。";
@@ -1978,7 +1978,7 @@
 "secrets_setup_recovery_passphrase_summary_title" = "儲存您的安全密語";
 "secrets_setup_recovery_passphrase_confirm_passphrase_placeholder" = "確認安全密語";
 "secrets_setup_recovery_passphrase_confirm_information" = "再次輸入您的安全密語以確認。";
-"secrets_setup_recovery_passphrase_additional_information" = "不要使用您的 Matrix 帳號密碼。";
+"secrets_setup_recovery_passphrase_additional_information" = "不要使用您的 quali.chat 帳號密碼。";
 "secrets_setup_recovery_passphrase_information" = "輸入僅有您知道的安全密語，來保護伺服器上與您有關的祕密資訊。";
 
 // Recovery passphrase
@@ -2164,7 +2164,7 @@
 "device_verification_self_verify_wait_recover_secrets_checking_availability" = "正在檢查是否有其他驗證方式…";
 "device_verification_self_verify_wait_recover_secrets_with_passphrase" = "使用安全密語或金鑰";
 "device_verification_self_verify_wait_recover_secrets_without_passphrase" = "使用安全金鑰";
-"device_verification_self_verify_wait_additional_information" = "這相容於 %@ 與其他允許交叉驗證的 Matrix 客戶端。";
+"device_verification_self_verify_wait_additional_information" = "這相容於 %@ 與其他允許交叉驗證的 quali.chat 客戶端。";
 "device_verification_self_verify_wait_information" = "用其他的工作階段來驗證此工作階段，以確保能夠存取加密訊息。\n\n使用您其他裝置上最新的 %@ ：";
 "device_verification_self_verify_wait_new_sign_in_title" = "驗證此登入";
 
@@ -2280,7 +2280,7 @@
 "key_backup_setup_passphrase_passphrase_invalid" = "試著加入一個新的字";
 "key_backup_setup_passphrase_passphrase_valid" = "太棒了！";
 "key_backup_setup_passphrase_passphrase_placeholder" = "輸入安全密語";
-"key_backup_setup_passphrase_info" = "我們將會在您的家伺服器儲存一份您的金鑰的加密副本。請使用安全密語保護您的備份以確保其安全。\n\n為了確保有最大的安全性，這個應該要與您的 Matrix 帳號密碼不同。";
+"key_backup_setup_passphrase_info" = "我們將會在您的家伺服器儲存一份您的金鑰的加密副本。請使用安全密語保護您的備份以確保其安全。\n\n為了確保有最大的安全性，這個應該要與您的 quali.chat 帳號密碼不同。";
 
 // Passphrase
 
@@ -2495,8 +2495,8 @@
 /* The placeholder will be replaces with manage_session_name_info_link */
 "manage_session_name_info" = "請注意，所有與您對話的人都能看到工作階段的名稱。%@";
 "manage_session_name_hint" = "自訂工作階段名稱，可以幫助您辨識您的裝置。";
-"security_settings_user_password_description" = "請輸入您的 Matrix 帳號密碼，以確認您的身分";
-"security_settings_coming_soon" = "抱歉。此動作目前在 %@ iOS 上無法使用。請使用另一套 Matrix 的客戶端來設定，設定完後 %@ iOS 也會使用。";
+"security_settings_user_password_description" = "請輸入您的 quali.chat 帳號密碼，以確認您的身分";
+"security_settings_coming_soon" = "抱歉。此動作目前在 %@ iOS 上無法使用。請使用另一套 quali.chat 的客戶端來設定，設定完後 %@ iOS 也會使用。";
 "security_settings_complete_security_alert_message" = "您應該先完成此工作階段的安全設定。";
 "security_settings_complete_security_alert_title" = "全面的安全性";
 "security_settings_blacklist_unverified_devices_description" = "驗證使用者的工作階段，將他們標記為信任的使用者，並傳送訊息給他們。";
@@ -2516,7 +2516,7 @@
 "security_settings_secure_backup_info_valid" = "此工作階段正在備份您的金鑰。";
 "security_settings_secure_backup_description" = "備份您帳號的加密金鑰，以防無法使用您的工作階段。您的金鑰會被特殊的安全金鑰保護。";
 "security_settings_secure_backup" = "安全備份";
-"security_settings_crypto_sessions_description_2" = "如果您發現未授權的登入，請變更 Matrix 的帳號密碼並重新設定安全備份。";
+"security_settings_crypto_sessions_description_2" = "如果您發現未授權的登入，請變更 quali.chat 的帳號密碼並重新設定安全備份。";
 "security_settings_crypto_sessions" = "我的工作階段";
 "settings_presence_offline_mode_description" = "若啟用，即使在使用應用程式時，您也會對其他使用者顯示為離線狀態。";
 "settings_presence_offline_mode" = "離線模式";
@@ -2555,7 +2555,7 @@
 "settings_key_backup_info_none" = "您尚未備份此工作階段的金鑰。";
 "settings_key_backup_info" = "加密訊息是使用端對端加密。只有您和接收者才有金鑰可以閱讀這些訊息。";
 "settings_add_3pid_invalid_password_message" = "帳號密碼無效";
-"settings_add_3pid_password_message" = "請輸入您的 Matrix 帳號密碼繼續";
+"settings_add_3pid_password_message" = "請輸入您的 quali.chat 帳號密碼繼續";
 "settings_analytics_and_crash_data" = "傳送當機與分析資料";
 "settings_labs_enable_wysiwyg_composer" = "試試看富文字編輯器";
 "settings_labs_enable_new_app_layout" = "新版應用程式版面";
@@ -2676,7 +2676,7 @@
 "threads_beta_information" = "透過討論串使討論保持整潔。\n\n「討論串」功能可使您的對話聚焦且容易追蹤。 ";
 "threads_beta_title" = "討論串";
 "threads_notice_done" = "了解";
-"threads_notice_information" = "所有在實驗期間建立的討論串，將會改為<b>一般回覆</b>。<br/><br/>由於「討論串」已經是 Matrix 的功能之一，這種轉換只會進行一次。";
+"threads_notice_information" = "所有在實驗期間建立的討論串，將會改為<b>一般回覆</b>。<br/><br/>由於「討論串」已經是 quali.chat 的功能之一，這種轉換只會進行一次。";
 "threads_notice_title" = "「討論串」不再只是實驗性功能 🎉";
 "message_from_a_thread" = "來自討論串";
 "threads_empty_show_all_threads" = "顯示所有討論串";
@@ -2780,7 +2780,7 @@
 "authentication_qr_login_scan_subtitle" = "將 QR Code 放在下方的方框中";
 "authentication_qr_login_scan_title" = "掃描 QR Code";
 "authentication_qr_login_display_step2" = "選擇「用 QR Code 登入」";
-"authentication_qr_login_display_step1" = "開啟您另一台裝置上的 Element";
+"authentication_qr_login_display_step1" = "開啟您另一台裝置上的 quali.chat";
 "authentication_qr_login_display_subtitle" = "請用您已登出的裝置掃描下列 QR Code。";
 "authentication_qr_login_display_title" = "連結裝置";
 "authentication_qr_login_start_display_qr" = "在此裝置顯示 QR Code";
@@ -2788,14 +2788,14 @@
 "authentication_qr_login_start_step4" = "選擇「在此裝置顯示 QR Code」";
 "authentication_qr_login_start_step3" = "選擇「連結裝置」";
 "authentication_qr_login_start_step2" = "到「設定」→「安全性與隱私權」";
-"authentication_qr_login_start_step1" = "開啟您另一台裝置上的 Element";
+"authentication_qr_login_start_step1" = "開啟您另一台裝置上的 quali.chat";
 "authentication_qr_login_start_subtitle" = "使用此裝置的相機掃描您其他裝置上顯示的 QR Code：";
 "authentication_qr_login_start_title" = "掃描 QR Code";
 "authentication_recaptcha_title" = "您是人類使用者嗎？";
 "authentication_terms_policy_url_error" = "無法找到您選擇的條款。請再次嘗試。";
 "key_verification_scan_qr_code_title" = "掃描 QR Code";
 "device_verification_self_verify_wait_recover_secrets_additional_help" = "無法存取其他的 %@ 工作階段嗎？";
-"device_verification_self_verify_open_on_other_device_information" = "需要先驗證此工作階段，才能讀取加密訊息紀錄。\n\n請在您的任一其他裝置開啟 Element 並依照當中的指示進行驗證。";
+"device_verification_self_verify_open_on_other_device_information" = "需要先驗證此工作階段，才能讀取加密訊息紀錄。\n\n請在您的任一其他裝置開啟 quali.chat 並依照當中的指示進行驗證。";
 "device_verification_self_verify_open_on_other_device_title" = "開啟您另一台裝置上的 %@";
 "key_backup_recover_from_private_key_progress" = "完成 %@%%";
 "room_details_polls" = "投票紀錄";
@@ -2885,3 +2885,16 @@
 "room_command_change_display_name_description" = "變更您的顯示名稱";
 "notice_display_name_changed_to" = "%@ 將顯示名稱變更為 %@";
 "poll_timeline_loading" = "載入中 ...";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified
+"demo_login_placeholder" = "Username"; // QUALICHAT modified

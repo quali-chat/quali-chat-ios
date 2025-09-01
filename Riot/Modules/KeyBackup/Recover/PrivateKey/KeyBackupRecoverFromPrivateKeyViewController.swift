@@ -105,9 +105,11 @@ final class KeyBackupRecoverFromPrivateKeyViewController: UIViewController {
     
     private func update(theme: Theme) {
         self.theme = theme
-        
+        #if QUALICHAT
+        self.view.backgroundColor = theme.backgroundColor
+        #else
         self.view.backgroundColor = theme.headerBackgroundColor
-        
+        #endif
         if let navigationBar = self.navigationController?.navigationBar {
             theme.applyStyle(onNavigationBar: navigationBar)
         }

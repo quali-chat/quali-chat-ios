@@ -181,7 +181,11 @@ static UILabel* backgroundLabel = nil;
 
 + (UIImage*)generateAvatarForMatrixItem:(NSString*)itemId withDisplayName:(NSString*)displayname
 {
+#if QUALICHAT
+    return [AvatarGenerator avatarForText:(displayname ? [displayname fixDisplayNameInRoomAvatar] : itemId) andColorIndex:[AvatarGenerator colorIndexForText:itemId]];
+#else
     return [AvatarGenerator avatarForText:(displayname ? displayname : itemId) andColorIndex:[AvatarGenerator colorIndexForText:itemId]];
+#endif
 }
 
 + (UIImage*)generateAvatarForMatrixItem:(NSString*)itemId withDisplayName:(NSString*)displayname size:(CGFloat)size andFontSize:(CGFloat)fontSize

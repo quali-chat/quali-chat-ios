@@ -57,7 +57,11 @@ class ThreadRoomTitleView: RoomTitleView {
             roomNameLeadingConstraint.constant = Constants.roomNameLeadingMarginForEncryptedRoom
         }
         roomEncryptionBadgeView.isHidden = model.roomEncryptionBadge == nil
+        #if QUALICHAT
+        roomNameLabel.attributedText = model.roomDisplayName?.asNSString.fixDisplayNameInRoomTitle(capHeight: roomNameLabel.font.capHeight)
+        #else
         roomNameLabel.text = model.roomDisplayName
+        #endif
     }
     
     //  MARK: - Overrides

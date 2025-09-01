@@ -1,6 +1,7 @@
 // File created from ScreenTemplate
 // $ createScreen.sh Spaces/SpaceRoomList/ExploreRoom ShowSpaceExploreRoom
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2021 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -170,8 +171,10 @@ final class SpaceExploreRoomViewController: UIViewController {
     }
     
     private func setupTableViewHeader() {
-        addRoomHeaderView.delegate = self
-        tableView.tableHeaderView = addRoomHeaderView
+        #if !QUALICHAT
+            addRoomHeaderView.delegate = self
+            tableView.tableHeaderView = addRoomHeaderView
+        #endif
     }
 
     private func setupTableView() {

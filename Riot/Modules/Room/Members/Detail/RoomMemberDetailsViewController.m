@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2016 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  Copyright 2018 New Vector Ltd
@@ -215,8 +216,13 @@
     self.roomMemberStatusLabel.textColor = ThemeService.shared.theme.tintColor;
     self.roomMemberPowerLevelLabel.textColor = ThemeService.shared.theme.textPrimaryColor;
     
+#if QUALICHAT
+    self.tableView.backgroundColor = ThemeService.shared.theme.backgroundColor;
+#else
     // Check the table view style to select its bg color.
     self.tableView.backgroundColor = ((self.tableView.style == UITableViewStylePlain) ? ThemeService.shared.theme.backgroundColor : ThemeService.shared.theme.headerBackgroundColor);
+#endif
+    
     self.view.backgroundColor = self.tableView.backgroundColor;
     self.tableView.separatorColor = ThemeService.shared.theme.lineBreakColor;
     
@@ -350,10 +356,20 @@
     {        
         self.roomMemberNameContainerView.hidden = !self.mxRoomMember.displayname;
         
-        self.roomMemberNameLabel.text = self.mxRoomMember.displayname; 
+        self.roomMemberNameLabel.text = self.mxRoomMember.displayname;
         
-        self.roomMemberUserIdLabel.text = self.mxRoomMember.userId;    
+#if QUALICHAT
+        self.roomMemberNameLabel.lineBreakMode = NSLineBreakByCharWrapping;
+        self.roomMemberNameLabel.numberOfLines = 0;
+        self.roomMemberNameLabel.textAlignment = NSTextAlignmentCenter;
+#endif
+        self.roomMemberUserIdLabel.text = self.mxRoomMember.userId;
         
+#if QUALICHAT
+        self.roomMemberUserIdLabel.lineBreakMode = NSLineBreakByCharWrapping;
+        self.roomMemberUserIdLabel.numberOfLines = 0;
+        self.roomMemberUserIdLabel.textAlignment = NSTextAlignmentCenter;
+#endif
         // Update member power level
         MXWeakify(self);
         [self.mxRoom state:^(MXRoomState *roomState) {
@@ -914,12 +930,20 @@
             
             encryptionInfoCell.selectionStyle = UITableViewCellSelectionStyleNone;
             encryptionInfoCell.accessoryType = UITableViewCellAccessoryNone;
+#if QUALICHAT
+            encryptionInfoCell.contentView.backgroundColor = ThemeService.shared.theme.backgroundColor;
+            encryptionInfoCell.backgroundColor = ThemeService.shared.theme.backgroundColor;
+#else
             encryptionInfoCell.contentView.backgroundColor = ThemeService.shared.theme.headerBackgroundColor;
             encryptionInfoCell.backgroundColor = ThemeService.shared.theme.headerBackgroundColor;
-
+#endif
             //  extend background color to safe area
             UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
+#if QUALICHAT
+            bgView.backgroundColor = ThemeService.shared.theme.backgroundColor;
+#else
             bgView.backgroundColor = ThemeService.shared.theme.headerBackgroundColor;
+#endif
             encryptionInfoCell.backgroundView = bgView;
             
             cell = encryptionInfoCell;

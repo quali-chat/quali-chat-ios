@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2022 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,8 +32,11 @@ struct SentryMonitoringClient {
         
         MXLog.debug("[SentryMonitoringClient] Started")
         SentrySDK.start { options in
+            #if QUALICHAT
+            options.dsn = QualiChatBuildSettings.sentryDSN
+            #else
             options.dsn = Self.sentryDSN
-            
+            #endif
             // Collecting only 10% of all events
             options.sampleRate = 0.1
             options.tracesSampleRate = 0.1

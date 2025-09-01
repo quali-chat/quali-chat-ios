@@ -1,6 +1,7 @@
 // File created from ScreenTemplate
 // $ createScreen.sh Onboarding Authentication
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2021 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -260,21 +261,48 @@ final class AuthenticationCoordinator: NSObject, AuthenticationCoordinatorProtoc
     // MARK: - Login
     
     /// Shows the login screen.
-    @MainActor private func showLoginScreen() {
+    @MainActor private func showLoginScreen(_ isDemo: Bool = false) { // MARK: QualiChat modified
         MXLog.debug("[AuthenticationCoordinator] showLoginScreen")
         
         let homeserver = authenticationService.state.homeserver
+        #if QUALICHAT
+        if !QualiChatBuildSettings.enableLoginScreen, let ssoIdentityProvider = homeserver.viewData.ssoIdentityProviders.first {
+            presentSSOAuthentication(for: ssoIdentityProvider)
+            return
+        }
+        #endif
+        
         let parameters = AuthenticationLoginCoordinatorParameters(navigationRouter: navigationRouter,
                                                                   authenticationService: authenticationService,
                                                                   loginMode: homeserver.preferredLoginMode)
-        let coordinator = AuthenticationLoginCoordinator(parameters: parameters)
+        
+        #if QUALICHAT
+        let modalRouter = NavigationRouter()
+        #endif
+        let coordinator = AuthenticationLoginCoordinator(parameters: parameters, isDemo: isDemo)
         coordinator.callback = { [weak self, weak coordinator] result in
             guard let self = self, let coordinator = coordinator else { return }
             self.loginCoordinator(coordinator, didCallbackWith: result)
+            #if QUALICHAT
+            modalRouter.dismissModule(animated: true) {
+                self.remove(childCoordinator: coordinator)
+            }
+            #endif
         }
+        
+        #if QUALICHAT
         
         coordinator.start()
         add(childCoordinator: coordinator)
+
+        modalRouter.setRootModule(coordinator)
+        navigationRouter.present(modalRouter, animated: true)
+        
+        #else
+        
+        coordinator.start()
+        add(childCoordinator: coordinator)
+        
         
         if navigationRouter.modules.isEmpty {
             navigationRouter.setRootModule(coordinator, popCompletion: nil)
@@ -283,6 +311,8 @@ final class AuthenticationCoordinator: NSObject, AuthenticationCoordinatorProtoc
                 self?.remove(childCoordinator: coordinator)
             }
         }
+        
+        #endif
     }
 
     /// Shows the soft logout screen.
@@ -298,8 +328,7 @@ final class AuthenticationCoordinator: NSObject, AuthenticationCoordinatorProtoc
         let store = MXFileStore(credentials: credentials)
         let userDisplayName = await store.displayName(ofUserWithId: userId) ?? ""
 
-        let cryptoStore = MXRealmCryptoStore(credentials: credentials)
-        let keyBackupNeeded = (cryptoStore?.inboundGroupSessions(toBackup: 1) ?? []).count > 0
+        let keyBackupNeeded = false
 
         let softLogoutCredentials = SoftLogoutCredentials(userId: userId,
                                                           homeserverName: credentials.homeServerName() ?? "",
@@ -348,6 +377,18 @@ final class AuthenticationCoordinator: NSObject, AuthenticationCoordinatorProtoc
             onSessionCreated(session: session, flow: .login, securityCompleted: securityCompleted)
         case .fallback:
             showFallback(for: .login)
+        case .demo: // MARK: QualiChat modified
+            navigationRouter.dismissModule(animated: true) { [weak self] in
+                self?.remove(childCoordinator: coordinator)
+            }
+            
+            showLoginScreen(true)
+        case .blockchainLogin: // MARK: QualiChat modified
+            navigationRouter.dismissModule(animated: true) { [weak self] in
+                self?.remove(childCoordinator: coordinator)
+            }
+            
+            showLoginScreen()
         }
     }
     

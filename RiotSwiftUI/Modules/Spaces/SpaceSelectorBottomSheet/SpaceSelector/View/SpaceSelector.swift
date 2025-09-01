@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -66,7 +67,9 @@ struct SpaceSelector: View {
             ToolbarItem(placement: .confirmationAction) {
                 Button(VectorL10n.create) {
                     viewModel.send(viewAction: .createSpace)
-                }
+                } // MARK: QualiChat modified
+                .opacity(QualiChatBuildSettings.enableAddCreateSpaces ? 1.0 : 0.0)
+                .disabled(!QualiChatBuildSettings.enableAddCreateSpaces)
             }
             ToolbarItem(placement: .cancellationAction) {
                 if viewModel.viewState.showCancel {
@@ -92,13 +95,15 @@ struct SpaceSelector: View {
                 .font(theme.fonts.callout)
                 .multilineTextAlignment(.center)
                 .accessibility(identifier: "emptyListPlaceholderMessage")
-            Spacer()
-            Button { viewModel.send(viewAction: .createSpace) } label: {
-                Text(VectorL10n.spaceSelectorCreateSpace)
-                    .font(theme.fonts.bodySB)
-            }
-            .buttonStyle(PrimaryActionButtonStyle())
-            .accessibility(identifier: "createSpaceButton")
+                Spacer() // MARK: QualiChat modified
+                Button { viewModel.send(viewAction: .createSpace) } label: {
+                    Text(VectorL10n.spaceSelectorCreateSpace)
+                        .font(theme.fonts.bodySB)
+                } // MARK: QualiChat modified
+                .opacity(QualiChatBuildSettings.enableAddCreateSpaces ? 1.0 : 0.0)
+                .disabled(!QualiChatBuildSettings.enableAddCreateSpaces)
+                .buttonStyle(PrimaryActionButtonStyle())
+                .accessibility(identifier: "createSpaceButton")
         }
         .padding(.horizontal, 24)
         .padding(.bottom, 24)

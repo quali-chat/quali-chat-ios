@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2020 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,8 +16,6 @@
  */
 
 #import "ManageSessionViewController.h"
-
-#import <OLMKit/OLMKit.h>
 
 #import "AvatarGenerator.h"
 
@@ -126,7 +125,12 @@ enum {
     self.activityIndicator.backgroundColor = ThemeService.shared.theme.overlayBackgroundColor;
     
     // Check the table view style to select its bg color.
+    
+#if QUALICHAT
+    self.tableView.backgroundColor = ThemeService.shared.theme.backgroundColor;
+#else
     self.tableView.backgroundColor = ((self.tableView.style == UITableViewStylePlain) ? ThemeService.shared.theme.backgroundColor : ThemeService.shared.theme.headerBackgroundColor);
+#endif
     self.view.backgroundColor = self.tableView.backgroundColor;
     self.tableView.separatorColor = ThemeService.shared.theme.lineBreakColor;
     

@@ -1,6 +1,7 @@
 // File created from ScreenTemplate
 // $ createScreen.sh SetPinCode/SetupBiometrics SetupBiometrics
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2020 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -85,9 +86,11 @@ final class SetupBiometricsViewController: UIViewController {
     
     private func update(theme: Theme) {
         self.theme = theme
-        
+        #if QUALICHAT
+        self.view.backgroundColor = theme.backgroundColor
+        #else
         self.view.backgroundColor = theme.headerBackgroundColor
-        
+        #endif
         if let navigationBar = self.navigationController?.navigationBar {
             theme.applyStyle(onNavigationBar: navigationBar)
         }
@@ -96,8 +99,14 @@ final class SetupBiometricsViewController: UIViewController {
         self.subtitleLabel.textColor = theme.textSecondaryColor
 
         self.enableButton.backgroundColor = theme.tintColor
+        #if QUALICHAT
+        self.enableButton.layer.cornerRadius = QualiChatBuildSettings.cornerRadiusButton
+        self.enableButton.tintColor = theme.tintBackgroundColor
+        self.enableButton.setTitleColor(theme.tintBackgroundColor, for: .normal)
+        #else
         self.enableButton.tintColor = theme.baseTextPrimaryColor
         self.enableButton.setTitleColor(theme.baseTextPrimaryColor, for: .normal)
+        #endif
     }
     
     private func registerThemeServiceDidChangeThemeNotification() {

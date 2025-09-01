@@ -6,21 +6,15 @@
 	<string>development</string>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:www.vector.im</string>
-		<string>applinks:vector.im</string>
-		<string>applinks:riot.im</string>
-		<string>applinks:www.riot.im</string>
-		<string>webcredentials:riot.im</string>
-		<string>applinks:element.io</string>
-		<string>applinks:app.element.io</string>
-		<string>applinks:staging.element.io</string>
-		<string>applinks:develop.element.io</string>
-		<string>applinks:mobile.element.io</string>
-		<string>webcredentials:*.element.io</string>
+		<string>webcredentials:quali.chat</string>
+		<string>webcredentials:*.quali.chat</string>
+		<string>applinks:quali.chat</string>
+		<string>applinks:www.quali.chat</string>
+		<string>applinks:app.quali.chat</string>
 	</array>
 	<key>com.apple.developer.icloud-container-identifiers</key>
 	<array>
-		<string>iCloud.$(CFBundleIdentifier)</string>
+		<string>iCloud.chat.quali.ios</string>
 	</array>
 	<key>com.apple.developer.icloud-services</key>
 	<array>
@@ -30,13 +24,13 @@
 	<true/>
 	<key>com.apple.developer.ubiquity-container-identifiers</key>
 	<array>
-		<string>iCloud.$(CFBundleIdentifier)</string>
+		<string>iCloud.chat.quali.ios</string>
 	</array>
 	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
 	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>$(APPLICATION_GROUP_IDENTIFIER)</string>
+		<string>group.chat.quali.ios</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>

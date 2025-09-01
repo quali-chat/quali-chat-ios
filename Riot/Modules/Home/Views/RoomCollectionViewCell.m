@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2017 Vector Creations Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -84,7 +85,12 @@
     {
         // Report computed values as is
         self.roomTitle.hidden = NO;
+        
+        #if QUALICHAT
+        self.roomTitle.attributedText = [roomCellData.roomDisplayname fixDisplayNameInRoomTitleWithCapHeight:self.roomTitle.font.capHeight];
+        #else
         self.roomTitle.text = roomCellData.roomDisplayname;
+        #endif
         self.roomTitle1.hidden = YES;
         self.roomTitle2.hidden = YES;
         
@@ -98,9 +104,18 @@
             {
                 self.roomTitle.hidden = YES;
                 self.roomTitle1.hidden = NO;
+                #if QUALICHAT
+                self.roomTitle1.attributedText = [[roomCellData.roomDisplayname substringToIndex:range.location + 1] fixDisplayNameInRoomTitleWithCapHeight:self.roomTitle1.font.capHeight];
+                #else
                 self.roomTitle1.text = [roomCellData.roomDisplayname substringToIndex:range.location + 1];
+                #endif
                 self.roomTitle2.hidden = NO;
+                #if QUALICHAT
+                self.roomTitle2.attributedText = [[roomCellData.roomDisplayname substringFromIndex:range.location + 1] fixDisplayNameInRoomTitleWithCapHeight:self.roomTitle2.font.capHeight];
+                #else
                 self.roomTitle2.text = [roomCellData.roomDisplayname substringFromIndex:range.location + 1];
+                #endif
+                
                 accessibilityLabel = [[NSString stringWithFormat:@"%@, %@", self.roomTitle1.text, self.roomTitle2.text] mutableCopy];
             }
         }
