@@ -35,10 +35,15 @@ public class ElementView: UIView {
     }
 
     private func setup() {
+        #if QUALICHAT
+        backgroundColor = .clear
+        clipsToBounds = false
+        #else
         backgroundColor = Defaults.backgroundColor
         clipsToBounds = false
         createViews()
         addSubviews()
+        #endif
         //scale(to: frame.size)
     }
 

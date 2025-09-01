@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2017 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  
@@ -124,6 +125,9 @@
  The screen timer used for analytics if they've been enabled. The default value is nil.
  */
 @property (nonatomic) AnalyticsScreenTracker *screenTracker;
+
+// MARK: - QualiChat modified
+@property (nonatomic, assign) int memberCount;
 
 @end
 

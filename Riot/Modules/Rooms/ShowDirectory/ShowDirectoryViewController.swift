@@ -1,6 +1,7 @@
 // File created from ScreenTemplate
 // $ createScreen.sh Rooms/ShowDirectory ShowDirectory
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2020 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -103,6 +104,10 @@ final class ShowDirectoryViewController: UIViewController {
         self.viewModel.viewDelegate = self
 
         self.viewModel.process(viewAction: .loadData(false))
+        
+        #if QUALICHAT
+        vibrancyEffectView.isHidden = QualiChatBuildSettings.limitPersonCreateOnlyDirectChat > 1
+        #endif
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -332,7 +337,11 @@ extension ShowDirectoryViewController: UITableViewDelegate {
         case .searchInput:
             estimatedHeight = 0.0
         case .publicRoomsDirectory:
+            #if QUALICHAT
+            estimatedHeight = 0.0
+            #else
             estimatedHeight = Constants.networkHeaderViewEstimatedHeight
+            #endif
         }
         
         return estimatedHeight

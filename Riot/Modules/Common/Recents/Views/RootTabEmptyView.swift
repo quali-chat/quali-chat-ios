@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2020 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -90,8 +91,14 @@ extension RootTabEmptyView: Themable {
         
         self.backgroundColor = theme.backgroundColor
         
+        #if QUALICHAT
+        self.titleLabel.textColor = theme.colors.accent
+        self.informationLabel.textColor = theme.textPrimaryColor
+        #else
         self.titleLabel.textColor = theme.textPrimaryColor
         self.informationLabel.textColor = theme.textSecondaryColor
+        #endif
+        
         self.iconBackgroundView.backgroundColor = theme.colors.quinaryContent
         self.iconView.tintColor = theme.textSecondaryColor
     }

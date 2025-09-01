@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -65,7 +66,22 @@ struct OnboardingSplashScreenViewState: BindableState, CustomDebugStringConverti
         // The pun doesn't translate, so we only use it for English.
         let locale = Locale.current
         let page4Title = locale.identifier.hasPrefix("en") ? "Cut the slack from teams." : VectorL10n.onboardingSplashPage4TitleNoPun
-        
+#if QUALICHAT
+        content = [
+            OnboardingSplashScreenPageContent(title: VectorL10n.onboardingSplashPage1Title,
+                                              message: VectorL10n.onboardingSplashPage1Message,
+                                              image: Asset.Images.onboardingSplashScreenPage1,
+                                              darkImage: Asset.Images.onboardingSplashScreenPage1Dark),
+            OnboardingSplashScreenPageContent(title: VectorL10n.onboardingSplashPage2Title,
+                                              message: VectorL10n.onboardingSplashPage2Message,
+                                              image: Asset.Images.onboardingSplashScreenPage2,
+                                              darkImage: Asset.Images.onboardingSplashScreenPage2Dark),
+            OnboardingSplashScreenPageContent(title: VectorL10n.onboardingSplashPage3Title,
+                                              message: VectorL10n.onboardingSplashPage3Message,
+                                              image: Asset.Images.onboardingSplashScreenPage3,
+                                              darkImage: Asset.Images.onboardingSplashScreenPage3Dark)
+        ]
+#else
         content = [
             OnboardingSplashScreenPageContent(title: VectorL10n.onboardingSplashPage1Title,
                                               message: VectorL10n.onboardingSplashPage1Message,
@@ -84,6 +100,7 @@ struct OnboardingSplashScreenViewState: BindableState, CustomDebugStringConverti
                                               image: Asset.Images.onboardingSplashScreenPage4,
                                               darkImage: Asset.Images.onboardingSplashScreenPage4Dark)
         ]
+#endif
         bindings = OnboardingSplashScreenBindings()
     }
 }

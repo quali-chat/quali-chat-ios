@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2017 Aram Sargsyan
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -57,14 +58,18 @@
     [MXSDKOptions sharedInstance].analyticsDelegate = analytics;
     [analytics startIfEnabled];
     
+#if QUALICHAT
+    [ThemeService.shared setThemeId:@"dark"];
+#else
     [ThemeService.shared setThemeId:RiotSettings.shared.userInterfaceTheme];
-    
+#endif
     ShareExtensionShareItemProvider *shareItemProvider = [[ShareExtensionShareItemProvider alloc] initWithExtensionContext:self.extensionContext];
     ShareItemSender *shareItemSender = [[ShareItemSender alloc] initWithRootViewController:self
                                                                          shareItemProvider:shareItemProvider];
     
-    _shareManager = [[ShareManager alloc] initWithShareItemSender:shareItemSender
-                                                             type:ShareManagerTypeSend];
+     // MARK: QUALICHAT modified
+    UserSession *session = [UserSessionsService shared].mainUserSession;
+    _shareManager = [[ShareManager alloc] initWithShareItemSender:shareItemSender type:ShareManagerTypeSend session: session.matrixSession];
     
     MXWeakify(self);
     [_shareManager setCompletionCallback:^(ShareManagerResult result) {

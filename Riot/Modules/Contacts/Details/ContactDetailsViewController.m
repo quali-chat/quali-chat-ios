@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2016 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  Copyright 2018 New Vector Ltd
@@ -175,6 +176,11 @@
     // Hide line separators of empty cells
     self.tableView.tableFooterView = [[UIView alloc] init];
     
+#if QUALICHAT
+    if(QualiChatBuildSettings.enableVideoAudioCall) {
+        [self setEnableVoipCall:NO];
+    }
+#endif
     // Observe UIApplicationWillChangeStatusBarOrientationNotification to hide/show bubbles bg.
     UIApplicationWillChangeStatusBarOrientationNotificationObserver = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillChangeStatusBarOrientationNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *notif) {
         

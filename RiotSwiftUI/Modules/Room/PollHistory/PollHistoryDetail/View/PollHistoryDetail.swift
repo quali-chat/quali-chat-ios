@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -51,6 +52,8 @@ struct PollHistoryDetail: View {
                     .padding([.top])
                     .accessibilityIdentifier("PollHistoryDetail.date")
                 AnyView(contentPoll)
+                    .opacity(RoomSharedData.shared.writePermissionRoom ? 1.0 : 0.5) // MARK: - QUALICHAT modified
+                    .allowsHitTesting(RoomSharedData.shared.writePermissionRoom) // MARK: - QUALICHAT modified
                     .navigationTitle(navigationTitle)
                     .navigationBarTitleDisplayMode(.inline)
                     .navigationBarBackButtonHidden(true)

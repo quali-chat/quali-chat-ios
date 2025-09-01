@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2022 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,6 +18,15 @@
 import HTMLParser
 import UIKit
 import WysiwygComposer
+
+@objcMembers
+class RoomSharedData: NSObject {
+    static let shared = RoomSharedData()
+    
+    private override init() {}
+    
+    var writePermissionRoom: Bool = true
+}
 
 extension RoomViewController {
     // MARK: - Override

@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2015 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
 
@@ -68,7 +69,9 @@
 
 /// Is current user sharing is location in the room
 @property(nonatomic, readonly) BOOL isCurrentUserSharingActiveLocation;
-
+#if QUALICHAT
+@property(nonatomic) BOOL isWritePermissions;
+#endif
 /**
  Check if there is an active jitsi widget in the room and return it.
 

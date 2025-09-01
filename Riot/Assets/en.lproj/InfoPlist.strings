@@ -16,10 +16,10 @@
 
 // Permissions usage explanations
 "NSCameraUsageDescription" = "The camera is used to make video calls, or take and upload photos and videos.";
-"NSPhotoLibraryUsageDescription" = "Allow access to photos to upload photos and videos from your library.";
-"NSMicrophoneUsageDescription" = "Element needs to access your microphone to make and receive calls, take videos, and record voice messages.";
-"NSContactsUsageDescription" = "They will be shared with your identity server to help find your contacts on Matrix.";
+"NSPhotoLibraryUsageDescription" = "Allow access to your photo library to share photos and videos with other users in the chat.";
+"NSMicrophoneUsageDescription" = "quali.chat needs to access your microphone to make and receive calls, take videos, and record voice messages.";
+"NSContactsUsageDescription" = "They will be shared with your identity server to help find your contacts on quali.chat.";
 "NSCalendarsUsageDescription" = "See your scheduled meetings in the app.";
 "NSFaceIDUsageDescription" = "Face ID is used to access your app.";
-"NSLocationWhenInUseUsageDescription" = "When you share your location to people, Element needs access to show them a map.";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "When you share your location to people, Element needs access to show them a map.";
+"NSLocationWhenInUseUsageDescription" = "When you share your location to people, quali.chat needs access to show them a map.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "When you share your location to people, quali.chat needs access to show them a map.";

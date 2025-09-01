@@ -1,6 +1,7 @@
 // File created from simpleScreenTemplate
 // $ createSimpleScreen.sh DeviceVerification/Verified DeviceVerificationVerified
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2019 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -105,9 +106,11 @@ final class KeyVerificationVerifiedViewController: UIViewController {
     
     private func update(theme: Theme) {
         self.theme = theme
-        
+        #if QUALICHAT
+        self.view.backgroundColor = theme.backgroundColor
+        #else
         self.view.backgroundColor = theme.headerBackgroundColor
-        
+        #endif
         if let navigationBar = self.navigationController?.navigationBar {
             theme.applyStyle(onNavigationBar: navigationBar)
         }
@@ -128,6 +131,7 @@ final class KeyVerificationVerifiedViewController: UIViewController {
     }
     
     @IBAction private func doneButtonAction(_ sender: Any) {
+        NotificationCenter.default.post(name: .MXDeviceListDidUpdateUsersDevices, object: nil)
         self.delegate?.keyVerificationVerifiedViewControllerDidTapSetupAction(self)
     }
 }

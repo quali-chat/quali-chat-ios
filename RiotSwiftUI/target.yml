@@ -44,6 +44,7 @@ targets:
       - "**/MatrixSDK/**"
       - "**/Coordinator/**"
       - "**/Test/**"
+      - Modules/Common/Theme/ThemeIdentifierExtensions.swift #QualiChat modified
     - path: ../Riot/Managers/AppInfo/
     - path: ../Riot/Categories/Bundle.swift
     - path: ../Riot/Generated/Strings.swift
@@ -68,10 +69,25 @@ targets:
     - path: ../Riot/Modules/VoiceBroadcast/VoiceBroadcastSDK/MatrixSDK/VoiceBroadcastInfoState.swift
     - path: ../Riot/Assets/en.lproj/Untranslated.strings
       buildPhase: resources
-    - path: ../Riot/Assets/Images.xcassets
+    #- path: ../Riot/Assets/Images.xcassets #QualiChat modified
+    #  buildPhase: resources
+    #- path: ../Riot/Assets/SharedImages.xcassets
+    #  buildPhase: resources
+    - path: ../QualiChat/Assets/Images.xcassets #QualiChat modified
       buildPhase: resources
-    - path: ../Riot/Assets/SharedImages.xcassets
+    - path: ../QualiChat/Assets/SharedImages.xcassets #QualiChat modified
       buildPhase: resources
+    - path: ../QualiChat/Config/QualiChatBuildSettings.swift #QualiChat modified
+    - path: ../QualiChat/Assets/Fonts
+    - path: ../QualiChat/Extensions #QualiChat modified
+      excludes:
+        - "UIFont+Extensions.swift" #QualiChat modified
+    - path: ../Riot/Managers/Theme/Themes #QualiChat modified
+      excludes:
+        - "DarkTheme.swift"
+        - "DefaultTheme.swift"
+    - path: ../QualiChat/Managers #QualiChat modified
+    - path: ../QualiChat/Modules/Login #QualiChat modified
     configFiles:
       Debug: Debug.xcconfig
       Release: Release.xcconfig

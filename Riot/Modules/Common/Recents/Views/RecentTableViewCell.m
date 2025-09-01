@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2015 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  
@@ -75,7 +76,11 @@
     if (roomCellData)
     {
         // Report computed values as is
+#if QUALICHAT
+        self.roomTitle.attributedText = [roomCellData.roomDisplayname fixDisplayNameInRoomTitleWithCapHeight:self.roomTitle.font.capHeight];
+#else
         self.roomTitle.text = roomCellData.roomDisplayname;
+#endif
         self.lastEventDate.text = roomCellData.lastEventDate;
         
         // Manage lastEventAttributedTextMessage optional property

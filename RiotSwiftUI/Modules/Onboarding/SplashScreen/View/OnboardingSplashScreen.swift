@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,8 +41,16 @@ struct OnboardingSplashScreen: View {
     var body: some View {
         GeometryReader { geometry in
             VStack(alignment: .leading) {
+                #if QUALICHAT
+                VStack (alignment: .center) {
+                    Image(uiImage: Asset.Images.onboardingLogo.image)
+                           .resizable()
+                           .scaledToFit()
+                           .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 60).position(x: (geometry.size.width / 2), y: 40)
+                }.frame(width: geometry.size.width, height: 80)
+                #endif
                 Spacer()
-                    .frame(height: OnboardingMetrics.spacerHeight(in: geometry))
+                    .frame(height:OnboardingMetrics.spacerHeight(in: geometry))
                 
                 // The main content of the carousel
                 HStack(alignment: .top, spacing: 0) {
@@ -65,11 +74,17 @@ struct OnboardingSplashScreen: View {
                 
                 Spacer()
                 
+                #if QUALICHAT
+                buttons
+                    .frame(width: geometry.size.width)
+                termsDescription
+                    .frame(width: geometry.size.width)
+                #else
                 buttons
                     .frame(width: geometry.size.width)
                     .padding(.bottom, OnboardingMetrics.actionButtonBottomPadding)
                     .padding(.bottom, geometry.safeAreaInsets.bottom > 0 ? 0 : 16)
-                
+                #endif
                 Spacer()
                     .frame(height: OnboardingMetrics.spacerHeight(in: geometry))
             }
@@ -88,11 +103,18 @@ struct OnboardingSplashScreen: View {
         }
         .onDisappear { stopTimer() }
         .track(screen: .welcome)
+        .ignoresSafeArea(.keyboard)
     }
     
     /// The main action buttons.
     var buttons: some View {
         VStack(spacing: 12) {
+            #if QUALICHAT
+            Button { viewModel.send(viewAction: .login) } label: {
+                Text(VectorL10n.onboardingSplashLoginButtonTitle)
+            }
+            .buttonStyle(PrimaryActionButtonStyle())
+            #else
             Button { viewModel.send(viewAction: .register) } label: {
                 Text(VectorL10n.onboardingSplashRegisterButtonTitle)
             }
@@ -103,9 +125,21 @@ struct OnboardingSplashScreen: View {
                     .font(theme.fonts.body)
                     .padding(12)
             }
+            #endif
         }
         .padding(.horizontal, 16)
         .readableFrame()
+    }
+    
+    var termsDescription: some View {
+        VStack {
+            Text("\(VectorL10n.welcomeTerms) \(VectorL10n.welcomeTermsTitle, link: QualiChatBuildSettings.termsOfUseURL) \n \(VectorL10n.welcomeAnd) \(VectorL10n.welcomePrivacyTitle, link: BuildSettings.applicationPrivacyPolicyUrlString)")
+                .font(theme.fonts.caption2)
+                .foregroundColor(theme.colors.secondaryContent)
+                .multilineTextAlignment(.center)
+        }
+        .padding(.vertical, 16)
+        .padding(.horizontal, 32)
     }
     
     @ViewBuilder

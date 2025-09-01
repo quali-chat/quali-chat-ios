@@ -1,4 +1,5 @@
 /*
+Copyright 2025 Keypair Establishment
 Copyright 2020 Vector Creations Ltd
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,6 +17,7 @@ limitations under the License.
 
 import UIKit
 import Reusable
+import Lottie
 
 @objcMembers
 final class LaunchLoadingView: UIView, NibLoadable, Themable {
@@ -52,18 +54,36 @@ final class LaunchLoadingView: UIView, NibLoadable, Themable {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+    #if QUALICHAT
+        let lottieView = LottieAnimationView(name: QualiChatBuildSettings.nameLottieLoadingView)
+        lottieView.frame = animationView.bounds
+        lottieView.contentMode = .scaleAspectFit
+        lottieView.loopMode = .loop
+        animationView.addSubview(lottieView)
+
+        lottieView.centerXAnchor.constraint(equalTo: animationView.centerXAnchor).isActive = true
+        lottieView.centerYAnchor.constraint(equalTo: animationView.centerYAnchor).isActive = true
+        
+        lottieView.play()
+    #else
         let animationTimeline = Timeline_1(view: self.animationView, duration: LaunchAnimation.duration, repeatCount: LaunchAnimation.repeatCount)
         animationTimeline.play()
         self.animationTimeline = animationTimeline
-        
+    #endif
         progressContainer.isHidden = true
     }
     
     // MARK: - Public
     
     func update(theme: Theme) {
+    #if QUALICHAT
+        self.backgroundColor = theme.backgroundColor
+        self.animationView.backgroundColor = .clear
+        self.progressView.tintColor = theme.colors.accent
+    #else
         self.backgroundColor = theme.backgroundColor
         self.animationView.backgroundColor = theme.backgroundColor
+    #endif
     }
 }
 

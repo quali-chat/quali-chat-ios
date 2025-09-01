@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2022 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -126,6 +127,13 @@ class AllChatsViewController: HomeViewController {
         recentsTableView.contentInsetAdjustmentBehavior = .automatic
         
         toolbarHeight = toolbar.frame.height
+        
+        #if QUALICHAT
+        toolbar.barTintColor = theme.backgroundColor
+        toolbar.isTranslucent = false
+        toolbar.setShadowImage(UIImage(), forToolbarPosition: .any)
+        #endif
+        
         emptyViewBottomAnchor = toolbar.topAnchor
 
         updateUI()
@@ -144,7 +152,11 @@ class AllChatsViewController: HomeViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        #if QUALICHAT
+        self.toolbar.tintColor = theme.colors.primaryContent
+        #else
         self.toolbar.tintColor = theme.colors.accent
+        #endif
         if self.navigationItem.searchController == nil {
             self.navigationItem.searchController = searchController
         }
@@ -414,15 +426,25 @@ class AllChatsViewController: HomeViewController {
         
         let title: String
         let informationText: String
+        let myUser = mainSession.myUser
+        let displayName = (myUser?.displayName ?? myUser?.userId) ?? ""
+        let appName = AppInfo.current.displayName
         if let currentSpace = self.dataSource?.currentSpace {
+            #if QUALICHAT
+            title = VectorL10n.homeEmptyViewTitle("\n" + appName, "")
+            informationText = displayName + "\n\n\n" + VectorL10n.welcomeEmptyDescription
+            #else
             title = VectorL10n.allChatsEmptyViewTitle(currentSpace.summary?.displayName ?? VectorL10n.spaceTag)
             informationText = VectorL10n.allChatsEmptySpaceInformation
+            #endif
         } else {
-            let myUser = mainSession.myUser
-            let displayName = (myUser?.displayName ?? myUser?.userId) ?? ""
-            let appName = AppInfo.current.displayName
+            #if QUALICHAT
+            title = VectorL10n.homeEmptyViewTitle("\n" + appName, "")
+            informationText = displayName + "\n\n\n" + VectorL10n.welcomeEmptyDescription
+            #else
             title = VectorL10n.homeEmptyViewTitle(appName, displayName)
             informationText = VectorL10n.allChatsEmptyViewInformation
+            #endif
         }
         
         self.emptyView?.fill(with: emptyViewArtwork,
@@ -466,7 +488,13 @@ class AllChatsViewController: HomeViewController {
     }
     
     private func update(with theme: Theme) {
+        #if QUALICHAT
+        self.navigationController?.toolbar?.backgroundColor = theme.colors.background
+        self.navigationController?.toolbar?.barTintColor = theme.colors.background
+        self.navigationController?.toolbar?.tintColor = theme.colors.primaryContent
+        #else
         self.navigationController?.toolbar?.tintColor = theme.colors.accent
+        #endif
     }
     
     // MARK: - Private
@@ -514,7 +542,8 @@ class AllChatsViewController: HomeViewController {
         innerButton.accessibilityLabel = VectorL10n.spaceSelectorTitle
         innerButton.addTarget(self, action: #selector(self.showSpaceSelectorAction(sender:)), for: .touchUpInside)
         innerButton.setImage(Asset.Images.allChatsSpacesIcon.image, for: .normal)
-        return BadgedBarButtonItem(withBaseButton: innerButton, theme: theme)
+        // MARK: QualiChat modified
+        return BadgedBarButtonItem(withBaseButton: innerButton, theme: theme, iconColor: true)
     }()
     
     @objc private func updateBadgeButton() {
@@ -548,8 +577,13 @@ class AllChatsViewController: HomeViewController {
         self.isToolbarHidden = false
         self.update(with: theme)
         
+        var enableSpaces = true
+        #if QUALICHAT
+        enableSpaces = QualiChatBuildSettings.enableCreateSpaces
+        #endif
+        
         self.toolbar.items = [
-            spacesButton,
+            enableSpaces ? spacesButton : UIBarButtonItem.flexibleSpace(),
             UIBarButtonItem.flexibleSpace(),
             UIBarButtonItem(image: Asset.Images.allChatsEditIcon.image, menu: menu)
         ]

@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -66,7 +67,11 @@ struct AnalyticsPromptCheckmarkItem: View {
     
     var body: some View {
         Label { label } icon: {
+            #if QUALICHAT
+            Image(uiImage: Asset.Images.analyticsCheckmark.image.withRenderingMode(.alwaysTemplate)).foregroundColor(theme.colors.accent)
+            #else
             Image(uiImage: Asset.Images.analyticsCheckmark.image)
+            #endif
         }
     }
 }

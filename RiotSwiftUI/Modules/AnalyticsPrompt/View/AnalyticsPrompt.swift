@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -65,9 +66,18 @@ struct AnalyticsPrompt: View {
     
     private var mainContent: some View {
         VStack {
-            Image(uiImage: Asset.Images.analyticsLogo.image)
+            #if QUALICHAT
+            Image(uiImage:
+            Asset.Images.analyticsLogo.image)
+                .resizable()
+                .scaledToFit()
+                .frame(height: 64)
+                .padding(.bottom, 10)
+            #else
+            Image(uiImage:
+                    Asset.Images.analyticsLogo.image)
                 .padding(.bottom, 25)
-            
+            #endif
             Text(VectorL10n.analyticsPromptTitle(AppInfo.current.displayName))
                 .font(theme.fonts.title2B)
                 .multilineTextAlignment(.center)

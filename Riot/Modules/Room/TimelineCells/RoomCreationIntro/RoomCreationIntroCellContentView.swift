@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2020 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -90,7 +91,11 @@ final class RoomCreationIntroCellContentView: UIView, NibLoadable, Themable {
     
     func fill(with viewData: RoomCreationIntroViewData) {
         self.viewData = viewData
+        #if QUALICHAT
+        self.titleLabel.attributedText = viewData.roomDisplayName.asNSString.fixDisplayNameInRoomTitle(capHeight: self.titleLabel.font.capHeight)
+        #else
         self.titleLabel.text = viewData.roomDisplayName
+        #endif
         self.informationLabel.attributedText = self.buildInformationText()
         
         let hideAddParticipants: Bool
@@ -103,6 +108,11 @@ final class RoomCreationIntroCellContentView: UIView, NibLoadable, Themable {
         }
         
         self.addParticipantsContainerView.isHidden = hideAddParticipants
+        #if QUALICHAT
+        if(!QualiChatBuildSettings.enableCreateOnlyDirectChat) {
+            self.addParticipantsContainerView.isHidden = true
+        }
+        #endif
         
         self.roomAvatarView?.fill(with: viewData.avatarViewData)
     }
@@ -148,7 +158,11 @@ final class RoomCreationIntroCellContentView: UIView, NibLoadable, Themable {
         let attributedString = NSMutableAttributedString()
                                     
         let firstSentencePart1 = NSAttributedString(string: VectorL10n.roomIntroCellInformationRoomSentence1Part1, attributes: informationTextDefaultAttributes)
-        let firstSentencePart2 = NSAttributedString(string: roomName, attributes: informationTextBoldAttributes)
+        #if QUALICHAT
+        let firstSentencePart2 = roomName.asNSString.fixDisplayNameInRoomTitle(capHeight: informationLabel.font.capHeight)
+        #else
+        let firstSentencePart2 = NSAttributedString(string: newRoomName, attributes: informationTextBoldAttributes)
+        #endif
         let firstSentencePart3 = NSAttributedString(string: VectorL10n.roomIntroCellInformationRoomSentence1Part3, attributes: informationTextDefaultAttributes)
         
         attributedString.append(firstSentencePart1)
@@ -158,10 +172,12 @@ final class RoomCreationIntroCellContentView: UIView, NibLoadable, Themable {
         if let topic = topic, topic.isEmpty == false {
             attributedString.append(NSAttributedString(string: VectorL10n.roomIntroCellInformationRoomWithTopicSentence2(topic), attributes: informationTextDefaultAttributes))
         } else {
+            #if !QUALICHAT
             let secondSentencePart1 = NSAttributedString(string: VectorL10n.roomIntroCellInformationRoomWithoutTopicSentence2Part1, attributes: [.foregroundColor: self.theme.tintColor])
             let secondSentencePart2 = NSAttributedString(string: VectorL10n.roomIntroCellInformationRoomWithoutTopicSentence2Part2, attributes: informationTextDefaultAttributes)
             attributedString.append(secondSentencePart1)
             attributedString.append(secondSentencePart2)
+            #endif
         }
         
         return attributedString

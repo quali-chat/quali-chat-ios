@@ -46,7 +46,7 @@
 "auth_optional_phone_placeholder" = "Símanúmer (valfrjálst)";
 "auth_phone_placeholder" = "Símanúmer";
 "auth_repeat_password_placeholder" = "Endurtaka lykilorð";
-"auth_repeat_new_password_placeholder" = "Staðfestu nýtt lykilorð á Matrix-aðganginn þinn";
+"auth_repeat_new_password_placeholder" = "Staðfestu nýtt lykilorð á quali.chat-aðganginn þinn";
 "auth_invalid_login_param" = "Rangt notandanafn og/eða lykilorð";
 "auth_invalid_user_name" = "Notandanöfn mega einungis innihalda bókstafi, tölustafi, punkta, bandstrik eða undirstrik";
 "auth_invalid_password" = "Lykilorð er of stutt (lágmark 6 stafir)";
@@ -56,7 +56,7 @@
 "auth_missing_email_or_phone" = "Vantar tölvupóstfang eða símanúmer";
 "auth_password_dont_match" = "Lykilorðin stemma ekki";
 "auth_username_in_use" = "Notandanafn er í notkun";
-"auth_forgot_password" = "Gleymt lykilorð á Matrix-notandaaðgangi?";
+"auth_forgot_password" = "Gleymt lykilorð á quali.chat-notandaaðgangi?";
 "auth_msisdn_validation_title" = "Sannvottun í bið";
 "room_creation_account" = "Notandaaðgangur";
 "room_creation_appearance" = "Útlit";
@@ -93,7 +93,7 @@
 "directory_cell_description" = "%tu spjallrásir";
 // Contacts
 "contacts_address_book_section" = "TENGILIÐIR Á TÆKI";
-"contacts_address_book_matrix_users_toggle" = "Einungis notendur Matrix";
+"contacts_address_book_matrix_users_toggle" = "Einungis notendur quali.chat";
 "room_participants_leave_prompt_title" = "Fara af spjallrás";
 "room_participants_leave_prompt_msg" = "Ertu viss um að þú viljir fara út úr spjallrásinni?";
 "room_participants_remove_prompt_title" = "Staðfesting";
@@ -194,8 +194,8 @@
 "settings_old_password" = "Eldra lykilorð";
 "settings_new_password" = "Nýtt lykilorð";
 "settings_confirm_password" = "Staðfestu lykilorðið";
-"settings_fail_to_update_password" = "Mistókst að uppfæra Matrix-lykilorð";
-"settings_password_updated" = "Matrix-lykilorðið þitt hefur verið uppfært";
+"settings_fail_to_update_password" = "Mistókst að uppfæra quali.chat-lykilorð";
+"settings_password_updated" = "quali.chat-lykilorðið þitt hefur verið uppfært";
 "settings_crypto_device_name" = "Nafn á setu: ";
 "settings_crypto_device_id" = "\nAuðkenni setu: ";
 "settings_crypto_device_key" = "\nDulritunarlykill setu:\n";
@@ -246,7 +246,7 @@
 "directory_title" = "Yfirlitsskrá";
 "directory_server_picker_title" = "Veldu yfirlitsskrá";
 "directory_server_all_rooms" = "Allar spjallrásir á %@ vefþjóninum";
-"directory_server_all_native_rooms" = "Allar innbyggðar Matrix-spjallrásir";
+"directory_server_all_native_rooms" = "Allar innbyggðar quali.chat-spjallrásir";
 // Others
 "or" = "eða";
 "you" = "Þú";
@@ -279,7 +279,7 @@
 "active_call_details" = "Virkt símtal (%@)";
 "auth_send_reset_email" = "Senda endurstillingarpóst";
 "auth_return_to_login" = "Fara aftur í innskráningargluggann";
-"auth_home_server_placeholder" = "URL-slóð (t.d. https://matrix.org)";
+"auth_home_server_placeholder" = "URL-slóð (t.d. https://quali.chat)";
 "auth_identity_server_placeholder" = "URL-slóð (t.d. https://vector.im)";
 "auth_invalid_email" = "Þetta lítur ekki út eins og gilt tölvupóstfang";
 "auth_invalid_phone" = "Þetta lítur ekki út eins og gilt símanúmer";
@@ -315,7 +315,7 @@
 // Chat
 "room_jump_to_first_unread" = "Fara í ólesið";
 "room_message_placeholder" = "Senda skilaboð (ódulrituð)…";
-"room_do_not_have_permission_to_post" = "Þú hefur ekki heimild til að senda skilaboð á þessa spjallrás";
+"room_do_not_have_permission_to_post" = "You need to have the room token in your wallet to post to this room.";
 "room_message_short_placeholder" = "Senda skilaboð…";
 "room_offline_notification" = "Tenging við vefþjón hefur rofnað.";
 "room_resend_unsent_messages" = "Senda aftur ósend skilaboð";
@@ -352,7 +352,7 @@
 "e2e_room_key_request_start_verification" = "Hefja sannvottun…";
 "e2e_room_key_request_share_without_verifying" = "Deila án sannvottunar";
 "room_creation_appearance_picture" = "Mynd spjalls (valfrjálst)";
-"room_creation_invite_another_user" = "Notandaauðkenni, nafn eða tölvupóstfang";
+"room_creation_invite_another_user" = "Notandaauðkenni eða nafn";
 // Room recents
 "room_recents_directory_section" = "SKRÁ YFIR SPJALLRÁSIR";
 "directory_searching_title" = "Leita í yfirlitsskrá.…";
@@ -389,17 +389,17 @@
 "auth_add_email_phone_message" = "Bættu tölvupóstfangi og/eða símanúmeri við notandaaðganginn þinn til að gera öðrum notendum kleift að finna þig. Tölvupóstfang nýtist einnig til að endurstilla lykilorðið þitt.";
 "auth_add_email_and_phone_message" = "Bættu tölvupóstfangi og símanúmeri við notandaaðganginn þinn til að gera öðrum notendum kleift að finna þig. Tölvupóstfang nýtist einnig til að endurstilla lykilorðið þitt.";
 "auth_recaptcha_message" = "Þessi heimaþjónn vill ganga úr skugga um að þú sért ekki vélmenni";
-"auth_reset_password_message" = "Til að endursetja Matrix-lykilorðið þitt, settu þá inn tölvupóstfangið sem tengt er notandaaðgangnum þínum:";
+"auth_reset_password_message" = "Til að endursetja quali.chat-lykilorðið þitt, settu þá inn tölvupóstfangið sem tengt er notandaaðgangnum þínum:";
 "auth_reset_password_missing_email" = "Það þarf að setja inn tölvupóstfangið sem tengt er notandaaðgangnum þínum.";
 "auth_reset_password_email_validation_message" = "Tölvupóstur hefur verið sendur á %@ Þegar þú ert búin/n að fylgja tenglinum sem sá póstur inniheldur, smelltu þá hér fyrir neðan.";
 "auth_reset_password_error_unauthorized" = "Gat ekki sannprófað tölvupóstfang: gakktu úr skugga um að þú hafir smellt á tengilinn í tölvupóstinum";
-"auth_reset_password_success_message" = "Matrix-ykilorðið þitt hefur verið endurstillt.\n\nÞú hefur verið skráður út af öllum tækjum og munt ekki lengur fá ýti-tilkynningar. Til að endurvirkja tilkynningar, þarf að skrá sig aftur inn á hverju tæki fyrir sig.";
+"auth_reset_password_success_message" = "quali.chat-ykilorðið þitt hefur verið endurstillt.\n\nÞú hefur verið skráður út af öllum tækjum og munt ekki lengur fá ýti-tilkynningar. Til að endurvirkja tilkynningar, þarf að skrá sig aftur inn á hverju tæki fyrir sig.";
 "directory_search_results" = "%1$tu niðurstöður fundust fyrir %2$@";
 "directory_search_results_more_than" = ">%1$tu niðurstöður fundust fyrir %2$@";
 "contacts_address_book_permission_denied" = "Þú heimilaðir %@ ekki aðgang að tengiliðum á tækinu";
 "room_participants_remove_prompt_msg" = "Ertu viss um að þú viljir fjarlægja %@ úr þessu spjalli?";
 "room_participants_invite_prompt_msg" = "Ertu viss um að þú viljir bjóða %@ á þetta spjall?";
-"room_participants_invite_malformed_id" = "Rangt formað auðkenni. Ætti að vera tölvupóstfang eða Matrix-auðkenni á borð við'@sérheiti:lén'";
+"room_participants_invite_malformed_id" = "Rangt formað auðkenni. Ætti að vera tölvupóstfang eða quali.chat-auðkenni á borð við'@sérheiti:lén'";
 "room_unsent_messages_notification" = "Skilaboð ekki send.";
 "room_unsent_messages_unknown_devices_notification" = "Skilaboð ekki send vegna þess að vart var við óþekkta setu.";
 "room_ongoing_conference_call" = "Símafundur í gangi. Taka þátt með %@ eða %@.";
@@ -464,8 +464,8 @@
 "room_details_unset_main_address" = "Ekki setja sem aðalvistfang";
 "group_participants_invite_prompt_msg" = "Ertu viss um að þú viljir bjóða %@ í þennan hóp?";
 "group_participants_invite_malformed_id_title" = "Villa við boð";
-"group_participants_invite_malformed_id" = "Rangt formað auðkenni. Ætti að vera Matrix-auðkenni á borð við'@sérheiti:lén'";
-"directory_server_placeholder" = "matrix.org";
+"group_participants_invite_malformed_id" = "Rangt formað auðkenni. Ætti að vera quali.chat-auðkenni á borð við'@sérheiti:lén'";
+"directory_server_placeholder" = "quali.chat";
 // Events formatter
 "event_formatter_member_updates" = "%tu breytingar á aðild";
 "event_formatter_widget_added" = "%@ viðmótshluta bætt við af %@";
@@ -480,7 +480,7 @@
 "e2e_room_key_request_message" = "Ósannvottaða setan þín '%@' er að krefjast dulritunarlykla.";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
 
@@ -776,20 +776,20 @@
 "login_password_placeholder" = "Lykilorð";
 "login_identity_server_title" = "Slóð á auðkennisþjón:";
 "login_home_server_title" = "Slóð á heimaþjón:";
-"login_server_url_placeholder" = "URL-slóð (t.d. https://matrix.org)";
+"login_server_url_placeholder" = "URL-slóð (t.d. https://quali.chat)";
 
 // Login Screen
 "login_create_account" = "Búa til notandaaðgang:";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
 /* *********************** */
 /*      iOS specific       */
 /* *********************** */
 
-"matrix" = "Matrix";
+"matrix" = "quali.chat";
 "location_sharing_settings_toggle_title" = "Virkja deilingu staðsetninga";
 "location_sharing_settings_header" = "Deiling staðsetninga";
 "location_sharing_open_open_street_maps" = "Opna í OpenStreetMap";
@@ -1459,15 +1459,14 @@
 "auth_softlogout_clear_data_sign_out_title" = "Ertu viss?";
 "auth_softlogout_clear_data_button" = "Hreinsa öll gögn";
 "auth_softlogout_sign_in" = "Skrá inn";
-"auth_reset_password_error_not_found" = "Tölvupóstfangið þitt lítur ekki út fyrir að vera tengt við Matrix-auðkenni á þessum heimaþjóni.";
+"auth_reset_password_error_not_found" = "Tölvupóstfangið þitt lítur ekki út fyrir að vera tengt við quali.chat-auðkenni á þessum heimaþjóni.";
 "auth_login_single_sign_on" = "Skrá inn";
 "onboarding_use_case_existing_server_button" = "Tengjast þjóni";
 "onboarding_use_case_skip_button" = "Sleppa þessari spurningu";
 "onboarding_use_case_community_messaging" = "Samfélög";
 "onboarding_use_case_work_messaging" = "Teymi";
 "onboarding_use_case_personal_messaging" = "Vinir og fjölskylda";
-"onboarding_splash_page_1_title" = "Eigðu samtölin þín.";
-"onboarding_splash_login_button_title" = "Ég er nú þegar með notandaaðgang";
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
 
 // Onboarding
 "onboarding_splash_register_button_title" = "Stofna notandaaðgang";
@@ -1492,7 +1491,7 @@
 "notification_settings_receive_a_call" = "Láta mig vita þegar ég fæ símtal";
 "notification_settings_people_join_leave_rooms" = "Láta mig vita þegar fólk tekur þátt eða yfirgefur spjallrásir";
 "notification_settings_invite_to_a_new_room" = "Láta mig vita þegar mér er boðið á nýja spjallrás";
-"account_error_matrix_session_is_not_opened" = "Matrix-seta er ekki opnuð";
+"account_error_matrix_session_is_not_opened" = "quali.chat-seta er ekki opnuð";
 "notice_error_unformattable_event" = "** Gat ekki myndgert skilaboð. Endilega tilkynntu villu";
 "notice_error_unknown_event_type" = "Óþekkt tegund atburðar";
 "notice_error_unexpected_event" = "Óvænt atvik";
@@ -1501,7 +1500,7 @@
 "notice_event_redacted" = "<redacted%@>";
 "reject_call" = "Hafna símtali";
 "resend_message" = "Endursenda skilaboðin";
-"invite_user" = "Bjóða Matrix-notanda";
+"invite_user" = "Bjóða quali.chat-notanda";
 "capture_media" = "Taka ljósmynd/myndskeið";
 "set_admin" = "Setja stjórnanda";
 "set_moderator" = "Setja umsjónarmann";
@@ -1510,7 +1509,7 @@
 "submit_code" = "Senda inn kóða";
 "login_use_fallback" = "Nota varasíðu";
 "login_display_name_placeholder" = "Birtingarnafn (t.d. Jón Sigurðsson)";
-"login_user_id_placeholder" = "Matrix-auðkenni (t.d. @jon:matrix.org eða jon)";
+"login_user_id_placeholder" = "quali.chat-auðkenni (t.d. @jon:quali.chat eða jon)";
 "poll_timeline_vote_not_registered_subtitle" = "Því miður, atkvæðið þitt var ekki skráð Prófaðu aftur";
 "version_check_modal_action_title_deprecated" = "Sjáðu hvernig";
 "space_participants_action_ban" = "Banna á þessu svæði";
@@ -1545,7 +1544,7 @@
 
 "secrets_setup_recovery_passphrase_summary_title" = "Vista öryggisfrasann þinn";
 "secrets_setup_recovery_passphrase_confirm_information" = "Settu aftur inn öryggisfrasann þinn til að staðfesta hann.";
-"secrets_setup_recovery_passphrase_additional_information" = "Ekki nota Matrix-lykilorðið þitt.";
+"secrets_setup_recovery_passphrase_additional_information" = "Ekki nota quali.chat-lykilorðið þitt.";
 
 // Recovery passphrase
 
@@ -1645,7 +1644,7 @@
 "secure_key_backup_setup_existing_backup_error_title" = "Öryggisafrit skilaboða er þegar til";
 "secure_key_backup_setup_intro_use_security_passphrase_title" = "Nota öryggisfrasa";
 "secure_key_backup_setup_intro_use_security_key_title" = "Nota öryggislykil";
-"deactivate_account_password_alert_message" = "Til að halda áfram, settu inn Matrix-lykilorðið þitt";
+"deactivate_account_password_alert_message" = "Til að halda áfram, settu inn quali.chat-lykilorðið þitt";
 "service_terms_modal_description_integration_manager" = "Þetta gerir þér kleift að nota vélmenni, viðmótshluta og límmerkjapakka.";
 "service_terms_modal_table_header_integration_manager" = "SKILMÁLAR SAMÞÆTTINGARSTÝRINGAR";
 "service_terms_modal_table_header_identity_server" = "SKILMÁLAR AUÐKENNISÞJÓNS";
@@ -1686,7 +1685,7 @@
 
 // Manage session
 "manage_session_title" = "Sýsla með setu";
-"security_settings_user_password_description" = "Staðfestu auðkennin þín með því að setja inn lykilorðið á Matrix-aðganginn þinn";
+"security_settings_user_password_description" = "Staðfestu auðkennin þín með því að setja inn lykilorðið á quali.chat-aðganginn þinn";
 "security_settings_blacklist_unverified_devices" = "Aldrei senda skilaboð til ósannvottaðra tækja";
 "security_settings_export_keys_manually" = "Flytja handvirkt út dulritunarlykla";
 "security_settings_crosssigning_info_not_bootstrapped" = "Kross-undirritun er ekki ennþá uppsett.";
@@ -1703,7 +1702,7 @@
 "settings_discovery_terms_not_signed" = "Samþykktu þjónustuskilmála auðkennisþjónsins (%@) svo hægt sé að finna þig með tölvupóstfangi eða símanúmeri.";
 "settings_devices_description" = "Opinbert heiti setu er sýnilegt þeim sem þú átt samskipti við";
 "settings_key_backup_info_version" = "Útgáfa öryggisafrits af lykli: %@";
-"settings_add_3pid_password_message" = "Til að halda áfram, settu inn Matrix-lykilorðið þitt";
+"settings_add_3pid_password_message" = "Til að halda áfram, settu inn quali.chat-lykilorðið þitt";
 "settings_analytics_and_crash_data" = "Senda hrun- og greiningargögn";
 "settings_show_url_previews_description" = "Forskoðanir verða eingöngu sýndar í ódulrituðum spjallrásum.";
 "settings_show_url_previews" = "Birta forskoðun vefsvæða";
@@ -1776,7 +1775,7 @@
 "search_searching" = "Leit í gangi...";
 
 // Contacts
-"contact_mx_users" = "Matrix-notendur";
+"contact_mx_users" = "quali.chat-notendur";
 "attachment_unsupported_preview_title" = "Ekki tókst að forskoða";
 "attachment_multiselection_size_prompt" = "Viltu senda myndir sem:";
 "attachment_size_prompt_message" = "Þú getur slökkt á þessu í stillingunum.";
@@ -2058,7 +2057,7 @@
 
 "share_invite_link_action" = "Deila boðstengli";
 "create_room_processing" = "Bý til spjallrás";
-"create_room_placeholder_address" = "#testroom:matrix.org";
+"create_room_placeholder_address" = "#testroom:quali.chat";
 "create_room_section_footer_type_restricted" = "Hver sem er á svæðinu getur fundið og tekið þátt.";
 "create_room_section_footer_type_private" = "Aðeins fólk sem hefur verið boðið getur fundið og tekið þátt.";
 "create_room_type_restricted" = "Meðlimir svæðis";
@@ -2193,10 +2192,10 @@
 "room_access_settings_screen_restricted_message" = "Hver sem er í svæði getur fundið og tekið þátt. \nÞý verður beðin/n um að staðfesta hvaða svæði.";
 "room_access_settings_screen_private_message" = "Aðeins fólk sem er boðið getur fundið og tekið þátt.";
 "room_access_settings_screen_message" = "Veldu hverjir geta fundið %@ og tekið þátt.";
-"auth_reset_password_error_is_required" = "Enginn auðkennisþjónn er stilltur: bættu við einum slíkum í stillingum fyrir netþjónninn til að geta endurstillt Matrix-lykilorðið þitt.";
-"auth_forgot_password_error_no_configured_identity_server" = "Enginn auðkennisþjónn er stilltur: bættu við einum slíkum til að geta endurstillt Matrix-lykilorðið þitt.";
-"auth_phone_is_required" = "Enginn auðkennisþjónn er stilltur, þannig að þú getur ekki bætt við símanúmeri til að geta í framtíðinni endurstillt Matrix-lykilorðið þitt.";
-"auth_email_is_required" = "Enginn auðkennisþjónn er stilltur, þannig að þú getur ekki bætt við tölvupóstfangi til að geta í framtíðinni endurstillt Matrix-lykilorðið þitt.";
+"auth_reset_password_error_is_required" = "Enginn auðkennisþjónn er stilltur: bættu við einum slíkum í stillingum fyrir netþjónninn til að geta endurstillt quali.chat-lykilorðið þitt.";
+"auth_forgot_password_error_no_configured_identity_server" = "Enginn auðkennisþjónn er stilltur: bættu við einum slíkum til að geta endurstillt quali.chat-lykilorðið þitt.";
+"auth_phone_is_required" = "Enginn auðkennisþjónn er stilltur, þannig að þú getur ekki bætt við símanúmeri til að geta í framtíðinni endurstillt quali.chat-lykilorðið þitt.";
+"auth_email_is_required" = "Enginn auðkennisþjónn er stilltur, þannig að þú getur ekki bætt við tölvupóstfangi til að geta í framtíðinni endurstillt quali.chat-lykilorðið þitt.";
 "auth_add_email_phone_message_2" = "Notaðu tölvupóstfang til að endurheimta aðganginn þinn. Notaðu síðar tölvupóstfang eða símanúmer til að vera geta verið finnanleg/ur fyrir fólk sem þekkir þig.";
 "auth_add_phone_message_2" = "Notaðu símanúmer til að vera geta verið finnanleg/ur fyrir fólk sem þekkir þig.";
 "auth_add_email_message_2" = "Notaðu tölvupóstfang til að endurheimta aðganginn þinn, og síðar til að vera geta verið finnanleg/ur fyrir fólk sem þekkir þig.";
@@ -2293,7 +2292,7 @@
 "authentication_server_info_title_login" = "Þar sem samtölin þín eru";
 "authentication_server_info_title" = "Þar sem samtölin þín verða";
 "authentication_registration_password_footer" = "Verður að vera að minnsta kosti 8 stafir";
-/* The placeholder will show the full Matrix ID that has been entered. */
+/* The placeholder will show the full quali.chat ID that has been entered. */
 "authentication_registration_username_footer_available" = "Aðrir geta fundið þig %@";
 "authentication_registration_username_footer" = "Þú getur ekki breytt þessu síðar";
 "onboarding_display_name_max_length" = "Birtingarnafnið þitt verður að vera styttra en 256 stafir";
@@ -2302,11 +2301,14 @@
 "onboarding_congratulations_message" = "%@ aðgangur þinn hefur verið útbúinn";
 "onboarding_use_case_existing_server_message" = "Ætlarðu að ganga til liðs við fyrirliggjandi netþjón?";
 "onboarding_use_case_title" = "Við hverja muntu helst spjalla?";
-"onboarding_splash_page_4_message" = "Element er líka frábært fyrir vinnustaðinn. Heimsins öruggustu samtök treysta því.";
+"onboarding_splash_page_4_message" = "quali.chat er líka frábært fyrir vinnustaðinn. Heimsins öruggustu samtök treysta því.";
 "onboarding_splash_page_4_title_no_pun" = "Skilaboð fyrir teymið þitt.";
-"onboarding_splash_page_3_message" = "Enda-í-enda dulritað og ekkert símanúmer nauðsynlegt. Engar auglýsingar eða gagnasöfnun.";
-"onboarding_splash_page_2_message" = "Veldu hvar á að geyma samtölin þín, sem gefur þér stjórnina og algert sjálfstæði. Tengt í gegnum Matrix.";
-"onboarding_splash_page_1_message" = "Örugg og óháð samskipti sem gefa þér færi á að ræða málin í friði rétt eins og þetta sé maður á mann í heimahúsi.";
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified
 "invite_to" = "Bjóða í %@";
 "call_consulting_with_user" = "Ráðfæri við %@";
 "message_reply_to_sender_sent_their_live_location" = "Staðsetning í rauntíma.";
@@ -2479,3 +2481,16 @@
 "authentication_qr_login_scan_title" = "Skanna QR-kóða";
 "authentication_qr_login_start_title" = "Skanna QR-kóða";
 "authentication_login_with_qr" = "Skrá inn með QR-kóða";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified
+"demo_login_placeholder" = "Username"; // QUALICHAT modified

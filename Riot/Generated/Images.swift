@@ -175,6 +175,7 @@ internal class Asset: NSObject {
     internal static let onboardingAvatarEdit = ImageAsset(name: "onboarding_avatar_edit")
     internal static let onboardingCelebrationIcon = ImageAsset(name: "onboarding_celebration_icon")
     internal static let onboardingCongratulationsIcon = ImageAsset(name: "onboarding_congratulations_icon")
+    internal static let onboardingLogo = ImageAsset(name: "onboarding_logo")
     internal static let onboardingSplashScreenPage1 = ImageAsset(name: "onboarding_splash_screen_page_1")
     internal static let onboardingSplashScreenPage1Dark = ImageAsset(name: "onboarding_splash_screen_page_1_dark")
     internal static let onboardingSplashScreenPage2 = ImageAsset(name: "onboarding_splash_screen_page_2")

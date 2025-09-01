@@ -30,4 +30,12 @@ targets:
 
     sources:
       - path: .
+        excludes: #QualiChat modified
+          - "Source/Colors.swift"
+          - "Source/ColorsUIkit.swift"
+          - "Source/ColorsSwiftUI.swift"
+          - "Source/ColorValues.swift"
+      - path: ../QualiChat/DesignKit/ #QualiChat modified
+      - path: ../QualiChat/Extensions/UIColor+Extensions.swift #QualiChat modified
+      - path: ../QualiChat/Extensions/UIFont+Extensions.swift #QualiChat modified
       - path: ../Riot/Categories/UIColor.swift

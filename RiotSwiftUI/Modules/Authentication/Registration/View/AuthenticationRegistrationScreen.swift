@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,16 +36,17 @@ struct AuthenticationRegistrationScreen: View {
                 header
                     .padding(.top, OnboardingMetrics.topPaddingToNavigationBar)
                     .padding(.bottom, 28)
-                
-                serverInfo
-                    .padding(.leading, 12)
-                    .padding(.bottom, 16)
-                
-                Rectangle()
-                    .fill(theme.colors.quinaryContent)
-                    .frame(height: 1)
-                    .padding(.bottom, 22)
-                
+                // MARK: - QualiChat modified
+                if QualiChatBuildSettings.serverChangingOptionEnabled {
+                    serverInfo
+                        .padding(.leading, 12)
+                        .padding(.bottom, 16)
+                    
+                    Rectangle()
+                        .fill(theme.colors.quinaryContent)
+                        .frame(height: 1)
+                        .padding(.bottom, 22)
+                }
                 if viewModel.viewState.homeserver.showRegistrationForm {
                     registrationForm
                 }

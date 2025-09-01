@@ -1,4 +1,5 @@
 {
+  "originHash" : "90efaf6a129f9b7ce5d2da0065f0c5e8b3cc7dab16965a76678e5093a2184f85",
   "pins" : [
     {
       "identity" : "devicekit",
@@ -23,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Cocoanetics/DTFoundation.git",
       "state" : {
-        "revision" : "76062513434421cb6c8a1ae1d4f8368a7ebc2da3",
-        "version" : "1.7.18"
+        "revision" : "a61be65dd7d5b2cde3acabd13bf320b71f2907a5",
+        "version" : "1.7.19"
       }
     },
     {
@@ -48,10 +49,10 @@
     {
       "identity" : "matrix-rich-text-editor-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/matrix-org/matrix-rich-text-editor-swift",
+      "location" : "https://github.com/dawidbarniak/matrix-rich-text-editor-swift",
       "state" : {
-        "revision" : "21c0dd6e9c0b38d19d97af8e3e99fe01df56825d",
-        "version" : "2.37.3"
+        "revision" : "1cb792d247403e6f1cf8f33d700bcd0967f2a722",
+        "version" : "2.37.7"
       }
     },
     {
@@ -86,8 +87,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-collections",
       "state" : {
-        "revision" : "94cf62b3ba8d4bed62680a282d4c25f9c63c2efb",
-        "version" : "1.1.0"
+        "revision" : "671108c96644956dddcd89dd59c203dcdb36cec7",
+        "version" : "1.1.4"
       }
     },
     {
@@ -100,5 +101,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

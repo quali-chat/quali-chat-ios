@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,7 +17,8 @@
 
 import Foundation
 
-class PollPlainCell: SizableBaseRoomCell, RoomCellReactionsDisplayable, RoomCellReadMarkerDisplayable {
+// MARK: - QualiChat modified
+class PollPlainCell: SizableBaseRoomCell, RoomCellReactionsDisplayable, RoomCellReadMarkerDisplayable, PermissionWriteCellProtocol {
 
     private var event: MXEvent?
     
@@ -53,6 +55,17 @@ class PollPlainCell: SizableBaseRoomCell, RoomCellReactionsDisplayable, RoomCell
         
         delegate.cell(self, didRecognizeAction: kMXKRoomBubbleCellTapOnContentView, userInfo: [kMXKRoomBubbleCellEventKey: event])
     }
+    
+    // MARK: - QualiChat modified
+    func setPermissionVote(_ isPermitted: Bool) {
+        roomCellContentView?.alpha = isPermitted ? 1.0 : 0.5
+        isUserInteractionEnabled = isPermitted
+    }
 }
 
 extension PollPlainCell: RoomCellThreadSummaryDisplayable {}
+
+// MARK: - QualiChat modified
+@objc protocol PermissionWriteCellProtocol {
+    func setPermissionVote(_ isPermitted: Bool)
+}

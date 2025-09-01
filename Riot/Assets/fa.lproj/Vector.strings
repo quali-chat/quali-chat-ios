@@ -15,7 +15,7 @@
 "continue" = "ادامه";
 "close" = "بستن";
 "back" = "بازگشت";
-"store_full_description" = "المنت یک پیام‌رسان جدید و ابزاری برای همکاری افراد است که:\n\n۱. امکانات کنترلی لازم برای حفاظت از حریم خصوصی را در اختیار شما قرار می‌دهد.\n۲. امکان برقراری ارتباط با هر کسی را بر بستر شبکه‌ی ماتریکس و حتی فراتر از آن، امکان برقراری ارتباط با برنامه‌های دیگر نظیر Slack را در اختیار شما قرار می‌دهد.\n۳. شما را در برابر تبلیغات، کندوکاو داده‌هایتان، در پشتی و همچنین یک زیست‌بوم بسته و محصور محافظت می‌کند.\n۴. شما را از طریق رمزنگاری سرتاسری و همچنین امضاء متقابل برای تائيد هویت دیگران، امن می‌کند.\n\nالمنت یک پیام‌رسان و ابزار ارتباطی کاملا متفاوت است، چرا که از معماری غیرمتمرکز بهره برده و متن‌باز است.\n\nالمنت امکان استقرار محلی - یا انتخاب هر میزبان دلخواهی - را به شما داده و از این طریق حریم خصوصی، مالکیت و کنترل داده‌ها و گفتگوهایتان برای شما به ارمغان می‌آورد. همچنین دسترسی به یک شبکه‌ی باز را برای شما فراهم کرده، به طوری که مجبور نیستید فقط با کاربران المنت به گفتگو و صحبت بپردازید. در کنار همه‌ی این‌ها، بسیار امن است.\n\nپشتوانه‌ی قابلیت‌های بالا، استفاده از ماتریکس است - یک استاندارد برای ارتباطات غیرمحدود و متمرکز.\n\nالمنت به شما اختیار می‌دهد سرور گفتگو‌های خود را انتخاب کنید. در برنامه المنت، به طرق مختلف می‌توانید سرور مورد نظر خود را انتخاب کنید:\n\n۱. ساختن یک حساب‌کاربری رایگان بر روی سرور عمومی matrix.org\n۲. استقرار محلی و راه‌اندازی سرور بر روی سخت‌افزار خودتان و ایجاد حساب کاربری بر روی آن\n۳. ایجاد حساب کاربری بر روی یک سرور دلخواه از طریق عضویت در پلتفورم استقرار Element Matrix Services\n\nچرا المنت گزینه‌ی جذابی است؟\n\nمالک حقیقی داده‌های خود باشید: شما تصمیم بگیرید داده‌ها و پیام‌هایتان کجا ذخیره شوند. المنت مانند برخی اَبَرشرکت ها، در داده‌های شما کاوش نکرده و آن‌ها را در اختیار شخص ثالثی قرار نمی‌دهد.\n\nپیام‌رسانی و ارتباطات باز: شما می‌توانید با هر کسی بر بستر ماتریکس ارتباط بگیرید، فارغ از اینکه از کدام کلاینت ماتریکسی استفاده می‌کنند؛ حتی فراتر، شما می‌توانید افراد بر بستر سازوکارهای پیام‌رسانی دیگر نظیر Slack ،XMPP و یا IRC نیز ارتباط برقرار نمائید.\n\nفوق‌العاده امن: رمزنگاری سرتاسری واقعی (فقط افرادی که در حال گفتگو هستند امکان رمزگشایی پیام‌ها را دارند)، به همراه قابلیت امضاء متقابل برای تائید هویت دستگاه و هویت طرف‌های گفتگو.\n\nپکیج ارتباطی کامل: پیام‌رسانی، تماس‌های صوتی و تصویری، ارسال فایل، به اشتراک‌گذاری صفحه نمایش و یک طیف گسترده‌ای از یکپارچه‌سازی‌ها، بات‌ها و ابزارک‌ها. اتاق‌ها و فضاهای کاری مختلف بسازید و برای به سرانجام رسیدن امور، در ارتباط باشید.\n\nحاضر در همه جا: هرجا و هر زمان در دسترس بوده و پیام‌های خود را به صورت همگام‌سازی‌شده بر روی دستگاه‌های مختلف در اختیار داشته باشید.";
+"store_full_description" = "المنت یک پیام‌رسان جدید و ابزاری برای همکاری افراد است که:\n\n۱. امکانات کنترلی لازم برای حفاظت از حریم خصوصی را در اختیار شما قرار می‌دهد.\n۲. امکان برقراری ارتباط با هر کسی را بر بستر شبکه‌ی ماتریکس و حتی فراتر از آن، امکان برقراری ارتباط با برنامه‌های دیگر نظیر Slack را در اختیار شما قرار می‌دهد.\n۳. شما را در برابر تبلیغات، کندوکاو داده‌هایتان، در پشتی و همچنین یک زیست‌بوم بسته و محصور محافظت می‌کند.\n۴. شما را از طریق رمزنگاری سرتاسری و همچنین امضاء متقابل برای تائيد هویت دیگران، امن می‌کند.\n\nالمنت یک پیام‌رسان و ابزار ارتباطی کاملا متفاوت است، چرا که از معماری غیرمتمرکز بهره برده و متن‌باز است.\n\nالمنت امکان استقرار محلی - یا انتخاب هر میزبان دلخواهی - را به شما داده و از این طریق حریم خصوصی، مالکیت و کنترل داده‌ها و گفتگوهایتان برای شما به ارمغان می‌آورد. همچنین دسترسی به یک شبکه‌ی باز را برای شما فراهم کرده، به طوری که مجبور نیستید فقط با کاربران المنت به گفتگو و صحبت بپردازید. در کنار همه‌ی این‌ها، بسیار امن است.\n\nپشتوانه‌ی قابلیت‌های بالا، استفاده از ماتریکس است - یک استاندارد برای ارتباطات غیرمحدود و متمرکز.\n\nالمنت به شما اختیار می‌دهد سرور گفتگو‌های خود را انتخاب کنید. در برنامه المنت، به طرق مختلف می‌توانید سرور مورد نظر خود را انتخاب کنید:\n\n۱. ساختن یک حساب‌کاربری رایگان بر روی سرور عمومی quali.chat\n۲. استقرار محلی و راه‌اندازی سرور بر روی سخت‌افزار خودتان و ایجاد حساب کاربری بر روی آن\n۳. ایجاد حساب کاربری بر روی یک سرور دلخواه از طریق عضویت در پلتفورم استقرار quali.chat\n\nچرا المنت گزینه‌ی جذابی است؟\n\nمالک حقیقی داده‌های خود باشید: شما تصمیم بگیرید داده‌ها و پیام‌هایتان کجا ذخیره شوند. المنت مانند برخی اَبَرشرکت ها، در داده‌های شما کاوش نکرده و آن‌ها را در اختیار شخص ثالثی قرار نمی‌دهد.\n\nپیام‌رسانی و ارتباطات باز: شما می‌توانید با هر کسی بر بستر ماتریکس ارتباط بگیرید، فارغ از اینکه از کدام کلاینت ماتریکسی استفاده می‌کنند؛ حتی فراتر، شما می‌توانید افراد بر بستر سازوکارهای پیام‌رسانی دیگر نظیر Slack ،XMPP و یا IRC نیز ارتباط برقرار نمائید.\n\nفوق‌العاده امن: رمزنگاری سرتاسری واقعی (فقط افرادی که در حال گفتگو هستند امکان رمزگشایی پیام‌ها را دارند)، به همراه قابلیت امضاء متقابل برای تائید هویت دستگاه و هویت طرف‌های گفتگو.\n\nپکیج ارتباطی کامل: پیام‌رسانی، تماس‌های صوتی و تصویری، ارسال فایل، به اشتراک‌گذاری صفحه نمایش و یک طیف گسترده‌ای از یکپارچه‌سازی‌ها، بات‌ها و ابزارک‌ها. اتاق‌ها و فضاهای کاری مختلف بسازید و برای به سرانجام رسیدن امور، در ارتباط باشید.\n\nحاضر در همه جا: هرجا و هر زمان در دسترس بوده و پیام‌های خود را به صورت همگام‌سازی‌شده بر روی دستگاه‌های مختلف در اختیار داشته باشید.";
 // String for App Store
 "store_short_description" = "پیام رسان/تماس صوتی تصویری اینترنتی امن مبتنی بر بستر غیرمتمرکز";
 "auth_missing_password" = "لطفا رمز عبور را وارد نمایید";
@@ -25,7 +25,7 @@
 "auth_invalid_user_name" = "نام کاربری تنها می‌تواند شامل حروف، اعداد، نقطه، خط تیره و زیر خط باشد";
 "auth_invalid_login_param" = "نام کاربری ویا رمزعبور اشتباه است";
 "auth_identity_server_placeholder" = "آدرس (مانند https://vector.im)";
-"auth_home_server_placeholder" = "آدرس (مانند https://matrix.org)";
+"auth_home_server_placeholder" = "آدرس (مانند https://quali.chat)";
 "auth_repeat_new_password_placeholder" = "رمز عبور جدید خود را تکرار کنید";
 "auth_repeat_password_placeholder" = "تکرار رمز عبور";
 "auth_phone_placeholder" = "شماره تماس";
@@ -136,7 +136,7 @@
 "room_recents_people_section" = "افراد";
 "room_recents_favourites_section" = "علاقه مندی ها";
 "room_creation_make_public_prompt_title" = "چت عمومی شود؟";
-"room_creation_invite_another_user" = "شناسه کاربری، نام یاآدرس ایمیل";
+"room_creation_invite_another_user" = "شناسه کاربری یا نام یا آدرس ایمیل";
 "room_creation_wait_for_creation" = "یک اتاق گفت و گو از قبل در حال ایجاد است. لطفا صبر کنید.";
 "room_creation_make_private" = "شخصی سازی";
 "room_creation_keep_private" = "خصوصی نگه دارید";
@@ -297,7 +297,7 @@
 "room_message_short_placeholder" = "ارسال پیام…";
 "encrypted_room_message_reply_to_placeholder" = "ارسال پاسخ رمزگذاری شده…";
 "encrypted_room_message_placeholder" = "ارسال پیام رمزگذاری شده…";
-"room_do_not_have_permission_to_post" = "شما اجازه ندارید در این اتاق پست ارسال کنید";
+"room_do_not_have_permission_to_post" = "You need to have the room token in your wallet to post to this room.";
 "room_message_replying_to" = "در حال پاسخ دادن به %@";
 "room_message_editing" = "ویرایش";
 "room_message_unable_open_link_error_message" = "لینک باز نشد.";
@@ -439,7 +439,7 @@
 
 // Events formatter
 "event_formatter_member_updates" = "%tu تغییر عضویت";
-"directory_server_placeholder" = "matrix.org";
+"directory_server_placeholder" = "quali.chat";
 "directory_server_type_homeserver" = "برای فهرست کردن اتاق های عمومی یک سرور خانگی را تایپ کنید";
 "directory_server_all_rooms" = "همه اتاق ها در سرور %@";
 
@@ -730,7 +730,7 @@
 "settings_deactivate_account" = "غیرفعال کردن حساب";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
 
@@ -805,7 +805,7 @@
 "notice_room_history_visible_to_members_from_joined_point" = "%@ تاریخچه آینده‌ی اتاق را از همان زمانی که افراد به اتاق پیوستند برای آنان قابل مشاهده کرد.";
 "notice_room_history_visible_to_members_from_invited_point" = "%@ تاریخچه آینده‌ی اتاق را از همان زمانی که افراد دعوت شده اند برای آنان قابل مشاهده کرد.";
 "login_email_info" = "یک ایمیل مشخص کنید تا سایر کاربران بتوانند شما را در ماتریکس با سهولت بیشتری پیدا کنند و به شما راهی برای تنظیم مجدد رمز عبور خود در آینده بدهد.";
-"login_identity_server_info" = "ماتریکس سرورهای هویت‌سنجی را برای ردیابی اینکه کدام ایمیل‌ها و غیره متعلق به کدام شناسه‌های ماتریکس هستند فراهم می کند. در حال حاضر فقط https://matrix.org وجود دارد.";
+"login_identity_server_info" = "ماتریکس سرورهای هویت‌سنجی را برای ردیابی اینکه کدام ایمیل‌ها و غیره متعلق به کدام شناسه‌های ماتریکس هستند فراهم می کند. در حال حاضر فقط https://quali.chat وجود دارد.";
 "notice_video_attachment" = "پیوست ویدیویی";
 "notice_audio_attachment" = "پیوست صوتی";
 "notice_image_attachment" = "پیوست تصویر";
@@ -905,11 +905,11 @@
 "login_display_name_placeholder" = "نام (به عنوان مثال محمد حسینی)";
 "login_optional_field" = "اختیاری";
 "login_password_placeholder" = "گذرواژه";
-"login_user_id_placeholder" = "شناسه ماترکیس (به عنوان مثال @bob:matrix.org یا Bob)";
+"login_user_id_placeholder" = "شناسه ماترکیس (به عنوان مثال @bob:quali.chat یا Bob)";
 "login_identity_server_title" = "آدرس سرور هویت‌سنجی:";
 "login_home_server_info" = "سرور تمام مکالمات و داده‌های حساب شما را ذخیره می کند";
 "login_home_server_title" = "آدرس سرور:";
-"login_server_url_placeholder" = "URL (به عنوان مثال https://matrix.org)";
+"login_server_url_placeholder" = "URL (به عنوان مثال https://quali.chat)";
 
 // Login Screen
 "login_create_account" = "ایجاد حساب:";
@@ -928,7 +928,7 @@
 "settings_title_config" = "پیکربندی";
 
 // contacts list screen 
-"invitation_message" = "من دوست دارم با شما با ماتریس گپ بزنم. لطفاً برای کسب اطلاعات بیشتر به وب سایت http://matrix.org مراجعه کنید.";
+"invitation_message" = "من دوست دارم با شما با ماتریس گپ بزنم. لطفاً برای کسب اطلاعات بیشتر به وب سایت http://quali.chat مراجعه کنید.";
 
 // members list Screen 
 
@@ -1270,8 +1270,7 @@
 "microphone_access_not_granted_for_voice_message" = "جهت ارسال پیام صوتی نیاز به دسترسی به میکروفون وجود دارد اما %@ دسترسی استفاده از آن را ندارد";
 "e2e_passphrase_too_short" = "کلمه عبور بیش از حد کوتاه است (حداقل می‌بایست %d کاراکتر باشد)";
 "message_reply_to_sender_sent_a_voice_message" = "یک پیام صوتی ارسال کنید.";
-"onboarding_splash_page_1_title" = "صاحب گفتگوهای خود شوید.";
-"onboarding_splash_login_button_title" = "من از قبل حساب کاربری دارم";
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
 
 // MARK: Onboarding
 "onboarding_splash_register_button_title" = "ساخت حساب کاربری";
@@ -1303,7 +1302,7 @@
 "authentication_login_title" = "خوش برگشتید!";
 "authentication_server_info_title" = "جایی که مکالماتتان قرار میگیرند";
 "authentication_registration_password_footer" = "باید 8 حرف یا بیشتر باشد";
-/* The placeholder will show the full Matrix ID that has been entered. */
+/* The placeholder will show the full quali.chat ID that has been entered. */
 "authentication_registration_username_footer_available" = "بقیه میتوانند شما را پیدا کنند %@";
 "authentication_registration_username_footer" = "نمیتوانید بعدا تغییرش دهید";
 "authentication_registration_username" = "نام کاربری";
@@ -1340,10 +1339,24 @@
 "onboarding_use_case_title" = "با چه کسانی بیشتر چت میکنید؟";
 "onboarding_splash_page_4_message" = "المنت برای محیط های شغلی عالی است چرا که توسط امن ترین سازمان های جهانی، استفاده میشود.";
 "onboarding_splash_page_4_title_no_pun" = "ارسال پیام بین اعضای تیمتان.";
-"onboarding_splash_page_3_message" = "رمزنگاری کامل بدون نیاز به شماره تلفن، بدون وجود تبلیغات و دیتاکاوی.";
-"onboarding_splash_page_3_title" = "پیام رسانی امن.";
-"onboarding_splash_page_2_message" = "انتخاب مکان ذخیره سازی پیام هایتان، برایتان کنترل و استقلال را از طریق اتصال به ماتریکس به ارمغان می‌آورد.";
-"onboarding_splash_page_2_title" = "تحت کنترل شماست.";
-"onboarding_splash_page_1_message" = "یک ارتباط امن و مستقل که سطح حریم شخصی آن دقیقا مشابه ارتباط رو در رو در منزل شماست.";
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified
 "accessibility_selected" = "انتخاب شده";
 "room_title_members" = "%@ عضو";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified
+"demo_login_placeholder" = "Username"; // QUALICHAT modified

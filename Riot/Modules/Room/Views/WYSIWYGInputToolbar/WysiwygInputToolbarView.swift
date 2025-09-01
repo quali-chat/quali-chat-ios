@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2022 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -244,11 +245,17 @@ class WysiwygInputToolbarView: MXKRoomInputToolbarView, NibLoadable, HtmlRoomInp
               let toolbarViewDelegate,
               let permalinkReplacer else { return }
 
+        #if QUALICHAT
+        viewModel = ComposerViewModel(
+            initialViewState: ComposerViewState(textFormattingEnabled: QualiChatBuildSettings.enableCommandDirectChatInput,
+                                                isLandscapePhone: isLandscapePhone,
+                                                bindings: ComposerBindings(focused: false)))
+        #else
         viewModel = ComposerViewModel(
             initialViewState: ComposerViewState(textFormattingEnabled: RiotSettings.shared.enableWysiwygTextFormatting,
                                                 isLandscapePhone: isLandscapePhone,
                                                 bindings: ComposerBindings(focused: false)))
-
+        #endif
         viewModel.callback = { [weak self] result in
             self?.handleViewModelResult(result)
         }

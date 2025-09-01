@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2020 Vector Creations Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,8 +18,8 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-#include "Config/AppIdentifiers.xcconfig"
-#include "Config/AppVersion.xcconfig"
+#include "QualiChat/Config/AppIdentifiers.xcconfig"
+#include "QualiChat/Config/AppVersion.xcconfig"
 
 PRODUCT_NAME = RiotShareExtension
 PRODUCT_BUNDLE_IDENTIFIER = $(BASE_BUNDLE_IDENTIFIER).shareExtension
@@ -31,7 +32,7 @@ CODE_SIGN_ENTITLEMENTS = RiotShareExtension/SupportingFiles/RiotShareExtension.e
 APPLICATION_EXTENSION_API_ONLY = YES
 SKIP_INSTALL = YES
 SWIFT_OBJC_BRIDGING_HEADER = $(SRCROOT)/$(PRODUCT_NAME)/SupportingFiles/RiotShareExtension-Bridging-Header.h
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) IS_SHARE_EXTENSION=1
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) IS_SHARE_EXTENSION=1 QUALICHAT=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @executable_path/../../Frameworks
 
 SWIFT_OBJC_INTERFACE_HEADER_NAME = GeneratedInterface-Swift.h

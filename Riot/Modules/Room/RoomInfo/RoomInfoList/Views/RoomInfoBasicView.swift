@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2020 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +26,7 @@ class RoomInfoBasicView: UIView {
         static let defaultNumberOfLines = 4
         static let moreLessTextPadding = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
     }
-
+    
     @IBOutlet private weak var mainStackView: UIStackView!
     @IBOutlet private weak var avatarContainerView: UIView!
     @IBOutlet private weak var avatarImageView: MXKImageView!
@@ -36,7 +37,15 @@ class RoomInfoBasicView: UIView {
         }
     }
     @IBOutlet private weak var roomNameStackView: UIStackView!
-    @IBOutlet private weak var roomNameLabel: UILabel!
+    @IBOutlet private weak var roomNameLabel: UILabel! {
+        didSet {
+            #if QUALICHAT
+            roomNameLabel.numberOfLines = 0
+            roomNameLabel.lineBreakMode = .byCharWrapping
+            roomNameLabel.textAlignment = .center
+            #endif
+        }
+    }
     @IBOutlet private weak var roomAddressLabel: UILabel!
     @IBOutlet private weak var topicContainerView: UIView!
     @IBOutlet private weak var topicTitleLabel: UILabel! {
@@ -92,11 +101,19 @@ class RoomInfoBasicView: UIView {
             avatarImageView.image = avatarImage
         }
         badgeImageView.image = viewData.encryptionImage
+        #if QUALICHAT
+        roomNameLabel.attributedText = viewData.roomDisplayName?.asNSString.fixDisplayNameInRoomTitle(capHeight: (roomNameLabel.font.capHeight))
+        #else
         roomNameLabel.text = viewData.roomDisplayName
+        #endif
         roomAddressLabel.text = viewData.mainRoomAlias
         roomAddressLabel.isHidden = roomAddressLabel.text?.isEmpty ?? true
         roomTopicTextView.text = viewData.roomTopic
+        #if QUALICHAT
+        topicContainerView.isHidden = true
+        #else
         topicContainerView.isHidden = roomTopicTextView.text?.isEmpty ?? true
+        #endif
         securityTitleLabel.text = VectorL10n.securitySettingsTitle
         securityInformationLabel.text = viewData.isDirect ?
             VectorL10n.roomParticipantsSecurityInformationRoomEncryptedForDm :
@@ -140,7 +157,11 @@ extension RoomInfoBasicView: NibLoadable {}
 extension RoomInfoBasicView: Themable {
     
     func update(theme: Theme) {
+        #if QUALICHAT
+        backgroundColor = theme.backgroundColor
+        #else
         backgroundColor = theme.headerBackgroundColor
+        #endif
         roomNameLabel.textColor = theme.textPrimaryColor
         roomAddressLabel.textColor = theme.textSecondaryColor
         topicTitleLabel.textColor = theme.textSecondaryColor

@@ -52,8 +52,8 @@
 "auth_optional_phone_placeholder" = "Telefonszám (nem kötelező)";
 "auth_phone_placeholder" = "Telefonszám";
 "auth_repeat_password_placeholder" = "Jelszó megerősítés";
-"auth_repeat_new_password_placeholder" = "Új Matrix fiók jelszó megerősítés";
-"auth_home_server_placeholder" = "URL (pl. https://matrix.org)";
+"auth_repeat_new_password_placeholder" = "Új quali.chat fiók jelszó megerősítés";
+"auth_home_server_placeholder" = "URL (pl. https://quali.chat)";
 "auth_identity_server_placeholder" = "URL (pl. https://vector.im)";
 "auth_invalid_login_param" = "Hibás felhasználói név és/vagy jelszó";
 "auth_invalid_user_name" = "A felhasználói név tartalmazhat betűket, számokat, pontokat, kötőjeleket és aláhúzást";
@@ -73,22 +73,22 @@
 "auth_untrusted_id_server" = "Az azonosító szerver megbízhatatlan";
 "auth_password_dont_match" = "A jelszavak nem egyeznek meg";
 "auth_username_in_use" = "A felhasználónév foglalt";
-"auth_forgot_password" = "Elfelejtetted a Matrix fiók jelszót?";
+"auth_forgot_password" = "Elfelejtetted a quali.chat fiók jelszót?";
 "auth_email_not_found" = "E-mail küldési hiba: Az e-mail cím nem található";
 "auth_use_server_options" = "Egyedi szerver beállítások használata (haladó)";
 "auth_email_validation_message" = "Ellenőrizd az e-mailedet a regisztráció folytatásához";
 "auth_msisdn_validation_title" = "Ellenőrzés folyamatban";
 "auth_msisdn_validation_message" = "Elküldtük az SMS aktivációs kódot. Írd be a kódot ide.";
 "auth_msisdn_validation_error" = "Nem sikerült ellenőrizni a telefonszámot.";
-"auth_recaptcha_message" = "Ez a Matrix szerver szeretne megbizonyosodni arról, hogy nem vagy robot";
-"auth_reset_password_message" = "A Matrix fiók jelszó visszaállításához add meg az e-mail címet amit a felhasználói fiókhoz kötöttél:";
+"auth_recaptcha_message" = "Ez a quali.chat szerver szeretne megbizonyosodni arról, hogy nem vagy robot";
+"auth_reset_password_message" = "A quali.chat fiók jelszó visszaállításához add meg az e-mail címet amit a felhasználói fiókhoz kötöttél:";
 "auth_reset_password_missing_email" = "A felhasználói fiókodhoz kötött jelszót kell megadni.";
 "auth_reset_password_missing_password" = "Add meg az új jelszót.";
 "auth_reset_password_email_validation_message" = "Az e-mailt elküldtük a %@ címre. Ha rákattintottál a linkre ami benne van utána kattints ide.";
 "auth_reset_password_next_step_button" = "Ellenőriztem az e-mail címet";
 "auth_reset_password_error_unauthorized" = "E-mail cím ellenőrzése nem sikerült: bizonyosodj meg róla, hogy az e-mailben lévő linkre rákattintottál";
-"auth_reset_password_error_not_found" = "Úgy tűnik az e-mail címed nincs összekötve a Matrix azonosítóddal a Matrix szerveren.";
-"auth_reset_password_success_message" = "Visszaállítottuk a Matrix fiók jelszavad.\n\nKijelentkeztettünk minden munkamenetedből és nem kapsz értesítéseket sem. Az értesítések újra engedélyezéséhez jelentkezz be újra az eszközökön.";
+"auth_reset_password_error_not_found" = "Úgy tűnik az e-mail címed nincs összekötve a quali.chat azonosítóddal a quali.chat szerveren.";
+"auth_reset_password_success_message" = "Visszaállítottuk a quali.chat fiók jelszavad.\n\nKijelentkeztettünk minden munkamenetedből és nem kapsz értesítéseket sem. Az értesítések újra engedélyezéséhez jelentkezz be újra az eszközökön.";
 // Chat creation
 "room_creation_title" = "Új csevegés";
 "room_creation_account" = "Fiók";
@@ -105,7 +105,7 @@
 "room_creation_keep_private" = "Maradjon zárt";
 "room_creation_make_private" = "Legyen nyilvános";
 "room_creation_wait_for_creation" = "A szoba elkészítése folyamatban van. Kérlek várj.";
-"room_creation_invite_another_user" = "Felhasználói azonosító, név vagy e-mail";
+"room_creation_invite_another_user" = "Felhasználói azonosító vagy név";
 // Room recents
 "room_recents_directory_section" = "SZOBA KÖNYVTÁR";
 "room_recents_favourites_section" = "KEDVENCEK";
@@ -147,7 +147,7 @@
 "directory_search_fail" = "Az adatot nem sikerült betölteni";
 // Contacts
 "contacts_address_book_section" = "HELYI NÉVJEGYZÉK";
-"contacts_address_book_matrix_users_toggle" = "Csak Matrix felhasználók";
+"contacts_address_book_matrix_users_toggle" = "Csak quali.chat felhasználók";
 "contacts_address_book_no_contact" = "Nincsenek helyi ismerősök";
 "contacts_address_book_permission_required" = "Jogosultság szükséges a helyi névjegyzék eléréséhez";
 "contacts_address_book_permission_denied" = "Nem engedted meg, hogy az %@ hozzáférjen a helyi névjegyzékhez";
@@ -168,7 +168,7 @@
 "room_participants_filter_room_members" = "Szoba résztvevők szűrése";
 "room_participants_invite_another_user" = "Keresés / meghívás felhasználói név, név vagy e-mail cím alapján";
 "room_participants_invite_malformed_id_title" = "Meghívó hiba";
-"room_participants_invite_malformed_id" = "Érvénytelen azonosító. E-mail címnek vagy Matrix azonosítónak kell lennie mint: '@helyirész:domain'";
+"room_participants_invite_malformed_id" = "Érvénytelen azonosító. E-mail címnek vagy quali.chat azonosítónak kell lennie mint: '@helyirész:domain'";
 "room_participants_invited_section" = "MEGHÍVOTT";
 "room_participants_online" = "Kapcsolódva";
 "room_participants_offline" = "Kapcsolat nélkül";
@@ -203,7 +203,7 @@
 "room_many_users_are_typing" = "%@, %@ és mások pötyögnek…";
 "room_message_placeholder" = "Üzenet küldése (titkosítás nélkül)…";
 "room_message_reply_to_placeholder" = "Válasz küldése (titkosítás nélkül)…";
-"room_do_not_have_permission_to_post" = "Ebbe a szobába nincs jogod írni";
+"room_do_not_have_permission_to_post" = "You need to have the room token in your wallet to post to this room.";
 "encrypted_room_message_placeholder" = "Titkosított üzenet küldése…";
 "encrypted_room_message_reply_to_placeholder" = "Titkosított válasz küldése…";
 "room_message_short_placeholder" = "Üzenet küldése…";
@@ -273,7 +273,7 @@
 "settings_config_no_build_info" = "Nincsenek fordítási  információk";
 "settings_mark_all_as_read" = "Minden üzenetet olvasottnak jelöl";
 "settings_report_bug" = "Hiba jelentése";
-"settings_config_home_server" = "Matrix szerver: %@";
+"settings_config_home_server" = "quali.chat szerver: %@";
 "settings_config_identity_server" = "Azonosító szerver: %@";
 "settings_config_user_id" = "Bejelentkezve mint: %@";
 "settings_user_settings" = "FELHASZNÁLÓI BEÁLLÍTÁSOK";
@@ -327,7 +327,7 @@
 "settings_labs_e2e_encryption" = "Végponttól végpontig titkosítás";
 "settings_labs_e2e_encryption_prompt_message" = "A titkosítás beállításának befejezéséhez újra be kell jelentkezni.";
 "settings_labs_room_members_lazy_loading" = "Szoba tagság késleltetett betöltése";
-"settings_labs_room_members_lazy_loading_error_message" = "A Matrix szervered még nem támogatja a szoba tagság késleltetett betöltését. Próbáld később.";
+"settings_labs_room_members_lazy_loading_error_message" = "A quali.chat szervered még nem támogatja a szoba tagság késleltetett betöltését. Próbáld később.";
 "settings_labs_create_conference_with_jitsi" = "Konferencia hívás indítása Jitsivel";
 "settings_version" = "Verzió %@";
 "settings_olm_version" = "Olm verzió %@";
@@ -342,8 +342,8 @@
 "settings_old_password" = "Régi jelszó";
 "settings_new_password" = "Új jelszó";
 "settings_confirm_password" = "Jelszó megerősítése";
-"settings_fail_to_update_password" = "A Matrix fiók jelszó frissítése nem sikerült";
-"settings_password_updated" = "A Matrix fiók jelszavad frissítve";
+"settings_fail_to_update_password" = "A quali.chat fiók jelszó frissítése nem sikerült";
+"settings_password_updated" = "A quali.chat fiók jelszavad frissítve";
 "settings_crypto_device_name" = "Munkamenet neve: ";
 "settings_crypto_device_id" = "\nMunkamenet azonosítója: ";
 "settings_crypto_device_key" = "\nMunkamenet kulcsa:\n";
@@ -434,7 +434,7 @@
 "group_participants_filter_members" = "Közösség tagok szűrése";
 "group_participants_invite_another_user" = "Keresés / meghívás felhasználói azonosító vagy név alapján";
 "group_participants_invite_malformed_id_title" = "Meghívás hiba";
-"group_participants_invite_malformed_id" = "Hibás azonosító. Matrix azonosítónak kell lennie mint '@helyirész:domain'";
+"group_participants_invite_malformed_id" = "Hibás azonosító. quali.chat azonosítónak kell lennie mint '@helyirész:domain'";
 "group_participants_invited_section" = "MEGHÍVVA";
 // Group rooms
 "group_rooms_filter_rooms" = "Közösségi szobák szűrése";
@@ -448,9 +448,9 @@
 "directory_title" = "Mappa";
 "directory_server_picker_title" = "Mappa kiválasztása";
 "directory_server_all_rooms" = "%@ szerveren az összes szoba";
-"directory_server_all_native_rooms" = "Minden eredeti Matrix szoba";
-"directory_server_type_homeserver" = "Add meg a Matrix szervert aminek a nyilvános szobáit listázni szeretnéd";
-"directory_server_placeholder" = "matrix.org";
+"directory_server_all_native_rooms" = "Minden eredeti quali.chat szoba";
+"directory_server_type_homeserver" = "Add meg a quali.chat szervert aminek a nyilvános szobáit listázni szeretnéd";
+"directory_server_placeholder" = "quali.chat";
 // Events formatter
 "event_formatter_member_updates" = "%tu tagság változás";
 "event_formatter_widget_added" = "%@ kisalkalmazás innen: %@";
@@ -488,7 +488,7 @@
 // Crash report
 // Crypto
 "e2e_enabling_on_app_update" = "%@ most már támogatja a végponttól végpontig titkosítást de újra be kell jelentkezned.\n\nMegteheted most vagy később az alkalmazás beállításainál.";
-"e2e_need_log_in_again" = "Vissza kell jelentkezned, hogy a munkamenetedhez a végponttól végpontig titkosítási kulcsokat létrehozzuk és a nyilvános kulcsokat elküldjük a Matrix szerverednek.\nEz egy egyszeri alkalom; elnézést a kellemetlenségért.";
+"e2e_need_log_in_again" = "Vissza kell jelentkezned, hogy a munkamenetedhez a végponttól végpontig titkosítási kulcsokat létrehozzuk és a nyilvános kulcsokat elküldjük a quali.chat szerverednek.\nEz egy egyszeri alkalom; elnézést a kellemetlenségért.";
 // Bug report
 "bug_report_title" = "Hiba bejelentés";
 "bug_report_description" = "Kérlek írd le a hibát. Mit csináltál? Mit szerettél volna, hogy történjen? Végül mi történt?";
@@ -527,20 +527,20 @@
 "e2e_room_key_request_share_without_verifying" = "Megosztás ellenőrzés nélkül";
 "e2e_room_key_request_ignore_request" = "Kérés figyelmen kívül hagyása";
 // GDPR
-"gdpr_consent_not_given_alert_message" = "A %@ Matrix szerver további használatához el kell olvasnod és el kell fogadnod a felhasználási feltételeket.";
+"gdpr_consent_not_given_alert_message" = "A %@ quali.chat szerver további használatához el kell olvasnod és el kell fogadnod a felhasználási feltételeket.";
 "gdpr_consent_not_given_alert_review_now_action" = "Most átnézem";
 "deactivate_account_title" = "Felhasználói fiók felfüggesztése";
 "deactivate_account_informations_part1" = "Ez a felhasználói fiókodat végleg használhatatlanná teszi. Nem leszel képes újra belépni, és senki más sem lesz képes újra ezzel a felhasználói azonosítóval regisztrálni. Így a felhasználód elhagyja az összes szobát amiben benn volt, és törli a fiók adatokat az azonosító szerverről. ";
 "deactivate_account_informations_part2_emphasize" = "Ez a művelet visszavonhatatlan.";
 "deactivate_account_informations_part3" = "\n\nFelhasználói fiókod felfüggesztése ";
 "deactivate_account_informations_part4_emphasize" = "alapesetben nem jelenti azt, hogy minden eddig küldött üzenetedet elfelejtjük. ";
-"deactivate_account_informations_part5" = "Ha azt szeretnéd, hogy felejtsük el minden üzenetedet, kérlek jelöld meg a jelölőnégyzetet alább\n\nAz üzenet láthatósága a Matrixban hasonló mint az e-mail. Az hogy elfelejtjük az üzeneteidet azt jelenti, hogy a továbbiakban az üzeneteket amiket küldtél nem osztjuk meg nem regisztrált felhasználókkal, de azok a regisztrált felhasználók akik már hozzáfértek ezekhez az üzenetekhez továbbra is hozzáférnek a saját másolatukhoz.";
+"deactivate_account_informations_part5" = "Ha azt szeretnéd, hogy felejtsük el minden üzenetedet, kérlek jelöld meg a jelölőnégyzetet alább\n\nAz üzenet láthatósága a quali.chatban hasonló mint az e-mail. Az hogy elfelejtjük az üzeneteidet azt jelenti, hogy a továbbiakban az üzeneteket amiket küldtél nem osztjuk meg nem regisztrált felhasználókkal, de azok a regisztrált felhasználók akik már hozzáfértek ezekhez az üzenetekhez továbbra is hozzáférnek a saját másolatukhoz.";
 "deactivate_account_forget_messages_information_part1" = "Kérlek felejtsétek el az összes üzenetet amit küldtem amikor a fiókom felfüggesztem (";
 "deactivate_account_forget_messages_information_part2_emphasize" = "Figyelmeztetés";
 "deactivate_account_forget_messages_information_part3" = ": ezzel a jövőben a felhasználók hiányos csevegést fognak csak látni)";
 "deactivate_account_validate_action" = "Felhasználói fiók felfüggesztése";
 "deactivate_account_password_alert_title" = "Felhasználói fiók felfüggesztése";
-"deactivate_account_password_alert_message" = "A folytatáshoz add meg a Matrix fiók jelszavadat";
+"deactivate_account_password_alert_message" = "A folytatáshoz add meg a quali.chat fiók jelszavadat";
 // Re-request confirmation dialog
 "rerequest_keys_alert_title" = "Kérés elküldve";
 "rerequest_keys_alert_message" = "Kérlek indítsd el a %@et egy másik eszközödön amelyik vissza tudja fejteni az üzenetet, hogy el tudja küldeni a kulcsokat ennek a munkamenetnek.";
@@ -548,12 +548,12 @@
 "room_resource_limit_exceeded_message_contact_1" = " Kérlek ";
 "room_resource_limit_exceeded_message_contact_2_link" = "vedd fel a kapcsolatot a szolgáltatás adminisztrátorával";
 "room_resource_limit_exceeded_message_contact_3" = " , hogy tovább használhasd a szolgáltatást.";
-"homeserver_connection_lost" = "A Matrix szerverhez nem lehet kapcsolódni.";
-"room_resource_usage_limit_reached_message_1_default" = "Ez a Matrix szerver túllépte egyik erőforrás korlátját így ";
-"room_resource_usage_limit_reached_message_1_monthly_active_user" = "Ez a Matrix szerver elérte a havi aktív felhasználói korlátját, így ";
+"homeserver_connection_lost" = "A quali.chat szerverhez nem lehet kapcsolódni.";
+"room_resource_usage_limit_reached_message_1_default" = "Ez a quali.chat szerver túllépte egyik erőforrás korlátját így ";
+"room_resource_usage_limit_reached_message_1_monthly_active_user" = "Ez a quali.chat szerver elérte a havi aktív felhasználói korlátját, így ";
 "room_resource_usage_limit_reached_message_2" = "néhány felhasználó nem tud majd bejelentkezni.";
 "room_resource_usage_limit_reached_message_contact_3" = " hogy korlátot megemeljék.";
-"auth_accept_policies" = "A Matrix szerver felhasználási feltételeit kérlek nézd át és fogadd el:";
+"auth_accept_policies" = "A quali.chat szerver felhasználási feltételeit kérlek nézd át és fogadd el:";
 "settings_key_backup" = "KULCS MENTÉS";
 "settings_key_backup_info_checking" = "Ellenőrzés…";
 "settings_key_backup_info_none" = "A kulcsaid nem kerülnek elmentésre erről a munkamenetről.";
@@ -585,7 +585,7 @@
 "key_backup_setup_intro_title" = "Soha ne veszítsd el a titkosított üzeneteidet";
 "key_backup_setup_intro_info" = "Titkosított szobákban az üzenetek végponttól-végpontig vannak titkosítva. Csak te és a címzettek rendelkeznek a kulcsokkal az üzenetek visszafejtéséhez.\n\nMentsd el megfelelően a kulcsaidat, hogy ne veszítsd el őket.";
 "key_backup_setup_intro_setup_action" = "Beállítás";
-"key_backup_setup_passphrase_info" = "A kulcsaid titkosított másolatát elmentjük a szerverünkre. Védd a mentést jelmondattal.\n\nA maximális biztonság érdekében ez a jelmondat különbözzön a felhasználói Matrix fiókhoz használttól.";
+"key_backup_setup_passphrase_info" = "A kulcsaid titkosított másolatát elmentjük a szerverünkre. Védd a mentést jelmondattal.\n\nA maximális biztonság érdekében ez a jelmondat különbözzön a felhasználói quali.chat fiókhoz használttól.";
 "key_backup_setup_passphrase_passphrase_title" = "Bead";
 "key_backup_setup_passphrase_passphrase_placeholder" = "Jelmondat bevitele";
 "key_backup_setup_passphrase_passphrase_valid" = "Szuper!";
@@ -669,8 +669,8 @@
 "store_short_description" = "Biztonságos elosztott csevegés/VoIP";
 "auth_login_single_sign_on" = "Bejelentkezés";
 "room_message_unable_open_link_error_message" = "A linket nem lehet megnyitni.";
-"store_full_description" = "Element egy újfajta csevegő és együttműködést segítő alkalmazás ami:\n\n1. Visszaadja az irányítást neked, hogy megvédd a magánéleted információit\n2. Lépj kapcsolatba bárkivel a Matrix hálózatban, és azon túl alkalmazások integrálásával mint amilyen például a slack\n3. Megvéd a hirdetőktől, adatbányászoktól, hátsó kapuktól és fallal védett rendszerektől\n4. Végpontok közötti titkosítással véd, ahol egymás személyazonosságát ellenőrizhetitek\n\nElement a többi üzenetküldő és kollaborációs alkalmazástól teljesen eltérő abban a tekintetben, hogy elosztott és nyílt forrású rendszer.\n\nElement megengedi, hogy saját magadnak üzemeltess szervert vagy válassz szervert tetszés szerint - így biztonságban vagy te vagy a tulajdonosa az üzeneteidnek és te irányítod az adatokat és a beszélgetéseket. Egy nyílt hálózathoz enged hozzáférést; tehát nem csak más Element felhasználókkal beszélgethetsz. És nagyon biztonságos.\n\nElement mindezt a Matrix miatt tudja ami egy szabványos nyílt és elosztott kommunikációs rendszer.\n\nElement visszaadja az irányítást azzal, hogy kiválaszthatod ki kezelje a beszélgetéseidet. Az Element alkalmazásból különbözőképpen választhatod ki a szerverd:\n\n1. Kérj egy ingyenes fiókot a matrix.org nyilvános szerveren\n2. Saját szervert is üzemeltethetsz a fiókodnak saját hardveren\n3. Jelentkezz egy fiókért egy egyedi szerveren az Element Matrix Services hosting platformra való feliratkozással\n\nMiért válasz az Elementet?\n\nAZ ADATOD A TULAJDONOD: Te döntöd el hol tárolod az adataidat és üzeneteidet. A tiéd és nálad az irányítás és nem valami NAGYVÁLLALATNÁL ami elemzi az adataidat és odaadja másoknak.\n\nNYILT ÜZENETKÜLDÉS ÉS KOLLABORÁCIÓ: Bárkivel beszélgethetsz a Matrix hálózaton, akár az Elementet használja akár más Matrix alkalmazást vagy akár másik üzenetküldő rendszert használ mint például a Slack, IRC vagy XMPP.\n\nSZUPER-BIZTONSÁGOS: Igazi végpontok közötti titkosítás (csak a beszélgetés résztvevői tudják visszafejteni az üzenetet), és kereszt aláírásokkal lehet a beszélgetésben résztvevő eszközöket ellenőrizni.\n\nTELJES KOMMUNIKÁCIÓ: Üzenetküldés, hang és videó hívások, fájl megosztás, képernyő megosztás és egy csomó egyéb integráció, botok és kisalkalmazások. Építs szobákat, közösségeket, maradj kapcsolatban és vigyél véghez dolgokat. \n\nBÁRHOL VAGY: Maradj kapcsolatban akárhol vagy az összes üzeneteddel minden eszközödön vagy a weben a https://element.io/app -pal.";
-"auth_autodiscover_invalid_response" = "Matrix szerver felderítésénél érvénytelen válasz érkezett";
+"store_full_description" = "quali.chat egy újfajta csevegő és együttműködést segítő alkalmazás ami:\n\n1. Visszaadja az irányítást neked, hogy megvédd a magánéleted információit\n2. Lépj kapcsolatba bárkivel a quali.chat hálózatban, és azon túl alkalmazások integrálásával mint amilyen például a slack\n3. Megvéd a hirdetőktől, adatbányászoktól, hátsó kapuktól és fallal védett rendszerektől\n4. Végpontok közötti titkosítással véd, ahol egymás személyazonosságát ellenőrizhetitek\n\nquali.chat a többi üzenetküldő és kollaborációs alkalmazástól teljesen eltérő abban a tekintetben, hogy elosztott és nyílt forrású rendszer.\n\nquali.chat megengedi, hogy saját magadnak üzemeltess szervert vagy válassz szervert tetszés szerint - így biztonságban vagy te vagy a tulajdonosa az üzeneteidnek és te irányítod az adatokat és a beszélgetéseket. Egy nyílt hálózathoz enged hozzáférést; tehát nem csak más quali.chat felhasználókkal beszélgethetsz. És nagyon biztonságos.\n\nquali.chat mindezt a quali.chat miatt tudja ami egy szabványos nyílt és elosztott kommunikációs rendszer.\n\nquali.chat visszaadja az irányítást azzal, hogy kiválaszthatod ki kezelje a beszélgetéseidet. Az quali.chat alkalmazásból különbözőképpen választhatod ki a szerverd:\n\n1. Kérj egy ingyenes fiókot a quali.chat nyilvános szerveren\n2. Saját szervert is üzemeltethetsz a fiókodnak saját hardveren\n3. Jelentkezz egy fiókért egy egyedi szerveren az quali.chat hosting platformra való feliratkozással\n\nMiért válasz az quali.chat?\n\nAZ ADATOD A TULAJDONOD: Te döntöd el hol tárolod az adataidat és üzeneteidet. A tiéd és nálad az irányítás és nem valami NAGYVÁLLALATNÁL ami elemzi az adataidat és odaadja másoknak.\n\nNYILT ÜZENETKÜLDÉS ÉS KOLLABORÁCIÓ: Bárkivel beszélgethetsz a quali.chat hálózaton, akár az quali.chat használja akár más quali.chat alkalmazást vagy akár másik üzenetküldő rendszert használ mint például a Slack, IRC vagy XMPP.\n\nSZUPER-BIZTONSÁGOS: Igazi végpontok közötti titkosítás (csak a beszélgetés résztvevői tudják visszafejteni az üzenetet), és kereszt aláírásokkal lehet a beszélgetésben résztvevő eszközöket ellenőrizni.\n\nTELJES KOMMUNIKÁCIÓ: Üzenetküldés, hang és videó hívások, fájl megosztás, képernyő megosztás és egy csomó egyéb integráció, botok és kisalkalmazások. Építs szobákat, közösségeket, maradj kapcsolatban és vigyél véghez dolgokat. \n\nBÁRHOL VAGY: Maradj kapcsolatban akárhol vagy az összes üzeneteddel minden eszközödön vagy a weben a https://element.io/app -pal.";
+"auth_autodiscover_invalid_response" = "quali.chat szerver felderítésénél érvénytelen válasz érkezett";
 "room_event_action_reply" = "Válasz";
 "room_event_action_edit" = "Szerkeszt";
 "room_action_reply" = "Válasz";
@@ -805,7 +805,7 @@
 "room_event_action_reaction_history" = "Reakciók története";
 // MARK: Reaction history
 "reaction_history_title" = "Reakciók";
-"auth_forgot_password_error_no_configured_identity_server" = "Azonosítási szerver nincs beállítva: a Matrix fiók jelszó visszaállításhoz adj hozzá egyet.";
+"auth_forgot_password_error_no_configured_identity_server" = "Azonosítási szerver nincs beállítva: a quali.chat fiók jelszó visszaállításhoz adj hozzá egyet.";
 "room_creation_error_invite_user_by_email_without_identity_server" = "Azonosítási szerver nincs beállítva, így e-mail cím alapján nem tudsz hozzáadni résztvevőt.";
 "room_participants_start_new_chat_error_using_user_email_without_identity_server" = "Azonosítási szerver nincs beállítva, így e-mail cím alapján nem tudsz beszélgetést kezdeményezni.";
 "room_action_camera" = "Fotó vagy videó készítése";
@@ -841,9 +841,9 @@
 "auth_add_email_message_2" = "E-mail cím beállítása fiók visszaállításhoz és, hogy később az ismerősök megtalálhassanak.";
 "auth_add_phone_message_2" = "Telefonszám beállítása, hogy később az ismerősök megtalálhassanak.";
 "auth_add_email_phone_message_2" = "E-mail cím beállítása fiók visszaállításhoz. Használj később e-mail címet vagy telefonszámot, hogy az ismerősök megtalálhassanak.";
-"auth_email_is_required" = "Azonosítási szerver nincs beállítva, így nem tudsz hozzáadni e-mail címet amivel vissza lehetne állítani a Matrix fiók jelszót a későbbiekben.";
-"auth_phone_is_required" = "Azonosítási szerver nincs beállítva, így nem tudsz hozzáadni telefonszámot, hogy vissza lehetne állítani a Matrix fiók jelszót a későbbiekben.";
-"auth_reset_password_error_is_required" = "Azonosítási szerver nincs beállítva: adj hozzá egyet a szerver beállításoknál, hogy a Matrix fiók jelszót vissza lehessen állítani.";
+"auth_email_is_required" = "Azonosítási szerver nincs beállítva, így nem tudsz hozzáadni e-mail címet amivel vissza lehetne állítani a quali.chat fiók jelszót a későbbiekben.";
+"auth_phone_is_required" = "Azonosítási szerver nincs beállítva, így nem tudsz hozzáadni telefonszámot, hogy vissza lehetne állítani a quali.chat fiók jelszót a későbbiekben.";
+"auth_reset_password_error_is_required" = "Azonosítási szerver nincs beállítva: adj hozzá egyet a szerver beállításoknál, hogy a quali.chat fiók jelszót vissza lehessen állítani.";
 "contacts_address_book_no_identity_server" = "Azonosítási szerver nincs beállítva";
 "settings_discovery_settings" = "FELDERÍTÉS";
 "settings_identity_server_settings" = "AZONOSÍTÁSI SZERVER";
@@ -903,7 +903,7 @@
 "service_terms_modal_title_identity_server" = "Ismerősök keresése";
 "settings_add_3pid_password_title_email" = "E-mail cím hozzáadása";
 "settings_add_3pid_password_title_msidsn" = "Telefonszám hozzáadása";
-"settings_add_3pid_password_message" = "A folytatáshoz add meg a Matrix fiók jelszavadat";
+"settings_add_3pid_password_message" = "A folytatáshoz add meg a quali.chat fiók jelszavadat";
 "settings_add_3pid_invalid_password_message" = "Érvénytelen jelszó";
 "error_not_supported_on_mobile" = "%@ mobilról ezt nem teheted meg.";
 "widget_menu_refresh" = "Frissítés";
@@ -1046,9 +1046,9 @@
 "security_settings_crosssigning_complete_security" = "Biztonsági beállítás befejezése";
 "security_settings_complete_security_alert_title" = "Biztonsági beállítás befejezése";
 "security_settings_complete_security_alert_message" = "Először be kell fejezned ennek a munkamenetnek a biztonsági beállítását.";
-"security_settings_coming_soon" = "Bocsánat. %@ iOS-n ez a művelet egyenlőre nem érhető el. Kérlek használj másik Matrix klienst a beállításához. %@ iOS használni fogja.";
+"security_settings_coming_soon" = "Bocsánat. %@ iOS-n ez a művelet egyenlőre nem érhető el. Kérlek használj másik quali.chat klienst a beállításához. %@ iOS használni fogja.";
 "device_verification_self_verify_wait_new_sign_in_title" = "Belépés ellenőrzése";
-"device_verification_self_verify_wait_additional_information" = "Ez %@tel vagy más eszközök közötti hitelesítést támogató Matrix klienssel működik.";
+"device_verification_self_verify_wait_additional_information" = "Ez %@tel vagy más eszközök közötti hitelesítést támogató quali.chat klienssel működik.";
 // MARK: - Device Verification
 "key_verification_other_session_title" = "Munkamenet hitelesítése";
 "key_verification_new_session_title" = "Új munkamenet ellenőrzése";
@@ -1109,7 +1109,7 @@
 "security_settings_secure_backup_setup" = "Beállítás";
 "security_settings_secure_backup_synchronise" = "Szinkronizál";
 "security_settings_secure_backup_delete" = "Mentés törlése";
-"security_settings_user_password_description" = "A Matrix fiók jelszó megadásával erősítsd meg a személyazonosságodat";
+"security_settings_user_password_description" = "A quali.chat fiók jelszó megadásával erősítsd meg a személyazonosságodat";
 "secure_key_backup_setup_intro_title" = "Biztonsági Mentés";
 "secure_key_backup_setup_intro_info" = "A titkosított üzenetekhez és adatokhoz való hozzáférés elvesztése esetén használható biztonsági tartalék a titkosított kulcsok a szerveredre való elmentésével.";
 "secure_key_backup_setup_intro_use_security_key_title" = "Használd a Biztonsági Kulcsot";
@@ -1129,14 +1129,14 @@
 "secrets_setup_recovery_key_done_action" = "Kész";
 "secrets_setup_recovery_key_storage_alert_title" = "Tartsd biztonságban";
 "secrets_setup_recovery_passphrase_title" = "Biztonsági Jelmondat beállítása";
-"secrets_setup_recovery_passphrase_additional_information" = "Ne a Matrix fiók jelszavadat használd.";
+"secrets_setup_recovery_passphrase_additional_information" = "Ne a quali.chat fiók jelszavadat használd.";
 "secrets_setup_recovery_passphrase_validate_action" = "Kész";
 "secrets_setup_recovery_passphrase_confirm_information" = "A megerősítéshez add meg újra a Biztonsági Jelmondatot.";
 "secrets_setup_recovery_passphrase_confirm_passphrase_title" = "Megerősítés";
 "secrets_setup_recovery_passphrase_confirm_passphrase_placeholder" = "Jelmondat megerősítése";
 "cross_signing_setup_banner_title" = "Titkosítás beállítása";
 "cross_signing_setup_banner_subtitle" = "A többi eszközödet ellenőrizd egyszerűen";
-"security_settings_crypto_sessions_description_2" = "Ha ez a bejelentkezés nem ismerős, akkor változtasd meg a Matrix fiók jelszavad és újra állítsd be a Biztonsági Mentést.";
+"security_settings_crypto_sessions_description_2" = "Ha ez a bejelentkezés nem ismerős, akkor változtasd meg a quali.chat fiók jelszavad és újra állítsd be a Biztonsági Mentést.";
 "security_settings_secure_backup_description" = "Mentsd el a titkosítási kulcsokat a fiókadatokkal arra az esetre ha elvesztenéd a hozzáférést a munkameneteidhez. A kulcsok egy egyedi Biztonsági Kulccsal lesznek védve.";
 // AuthenticatedSessionViewControllerFactory
 "authenticated_session_flow_not_supported" = "Ez az alkalmazás nem támogatja a matrix szervered azonosítási mechanizmusát.";
@@ -1229,11 +1229,11 @@
 "create_room_section_footer_type" = "Emberek csak meghívóval csatlakozhatnak a privát szobához.";
 "create_room_show_in_directory" = "Megjelenítés a szoba listába";
 "create_room_section_header_address" = "CÍM";
-"create_room_placeholder_address" = "#testroom:matrix.org";
+"create_room_placeholder_address" = "#testroom:quali.chat";
 "room_info_list_one_member" = "1 tag";
 "room_info_list_several_members" = "%@ tag";
 "room_info_list_section_other" = "Más";
-"secrets_reset_authentication_message" = "A Matrix fiók jelszavaddal erősítsd meg";
+"secrets_reset_authentication_message" = "A quali.chat fiók jelszavaddal erősítsd meg";
 "secrets_reset_reset_action" = "Visszaállít";
 "secrets_reset_warning_message" = "Tiszta lappal indulsz, üzenetek, megbízható eszközök és felhasználók nélkül.";
 "secrets_reset_warning_title" = "Ha mindent visszaállítasz";
@@ -1595,16 +1595,15 @@
 
 "location_sharing_title" = "Földrajzi helyzet";
 "ok" = "OK";
-"onboarding_splash_page_4_message" = "Az Element megállja a helyét a munkahelyi kommunikációban is. A világ legbiztonságosabb szervezetei bíznak meg benne.";
-"onboarding_splash_page_3_message" = "Végponti titkosítással védett, és nem kell telefonszám a regiszrációhoz. Reklámok és adatbányászat nélkül.";
-"onboarding_splash_page_2_message" = "Kiválaszthatod, hogy hol legyenek a beszélgetéseid tárolva, így visszaadva neked az irányítást és a függetlenséget. Csatlakozz a Matrixhoz.";
-"onboarding_splash_page_1_message" = "Biztonságos és független kommunikáció, ami olyan biztonságos mintha valakivel négyszemközt beszélgetnél a házadban.";
-"settings_enable_room_message_bubbles" = "Üzenet buborékok";
+"onboarding_splash_page_4_message" = "Az quali.chat megállja a helyét a munkahelyi kommunikációban is. A világ legbiztonságosabb szervezetei bíznak meg benne.";
 "onboarding_splash_page_4_title_no_pun" = "Üzenetküldés a csoportodnak.";
-"onboarding_splash_page_3_title" = "Biztonságos üzenetküldés.";
-"onboarding_splash_page_2_title" = "Tiéd az irányítás.";
-"onboarding_splash_page_1_title" = "Vedd birtokba a beszélgetéseid!";
-"onboarding_splash_login_button_title" = "Már van fiókom";
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
 
 // Onboarding
 "onboarding_splash_register_button_title" = "Fiók létrehozása";
@@ -1661,22 +1660,22 @@
 "onboarding_use_case_title" = "Kikkel fogsz legtöbbet beszélgetni?";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
-"matrix" = "Matrix";
+"matrix" = "quali.chat";
 // Login Screen
 "login_create_account" = "Fiók létrehozása:";
-"login_server_url_placeholder" = "URL (például https://matrix.org)";
-"login_home_server_title" = "Matrix szerver URL:";
+"login_server_url_placeholder" = "URL (például https://quali.chat)";
+"login_home_server_title" = "quali.chat szerver URL:";
 "login_home_server_info" = "A matrix szerver tárolja minden beszélgetésedet és felhasználói fiók adatodat";
 "login_identity_server_title" = "Azonosítási szerver URL:";
-"login_identity_server_info" = "Matrix biztosít egy azonosító szerver ami nyilvántartja, hogy melyik matrix azonosítóhoz milyen e-mail cím, stb. tartozik. Jelenleg csak a https://matrix.org az egyetlen ilyen szerver.";
-"login_user_id_placeholder" = "Matrix azonosító (pl.: @bob:matrix.org vagy csak bob)";
+"login_identity_server_info" = "quali.chat biztosít egy azonosító szerver ami nyilvántartja, hogy melyik matrix azonosítóhoz milyen e-mail cím, stb. tartozik. Jelenleg csak a https://quali.chat az egyetlen ilyen szerver.";
+"login_user_id_placeholder" = "quali.chat azonosító (pl.: @bob:quali.chat vagy csak bob)";
 "login_password_placeholder" = "Jelszó";
 "login_optional_field" = "opcionális";
 "login_display_name_placeholder" = "Megjelenített név (pl. Bob Obson)";
-"login_email_info" = "Az e-mail cím megadásával más felhasználók könnyebben találhatnak meg a Matrixon és lehetőséget ad a jelszó alaphelyzetbe állítására.";
+"login_email_info" = "Az e-mail cím megadásával más felhasználók könnyebben találhatnak meg a quali.chaton és lehetőséget ad a jelszó alaphelyzetbe állítására.";
 "login_email_placeholder" = "E-mail cím";
 "login_prompt_email_token" = "Kérlek add meg az e-mail érvényesítő kódot:";
 "login_error_title" = "A bejelentkezés sikertelen";
@@ -1717,7 +1716,7 @@
 "select_account" = "Felhasználói fiók kiválasztása";
 "attach_media" = "Média fájl csatolása a könyvtárból";
 "capture_media" = "Fénykép/videó készítése";
-"invite_user" = "Matrix felhasználó meghívása";
+"invite_user" = "quali.chat felhasználó meghívása";
 "reset_to_default" = "Alapértelmezés visszaállítása";
 "resend_message" = "Üzenet újraküldése";
 "select_all" = "Mind kijelölése";
@@ -1815,7 +1814,7 @@
 "account_msisdn_validation_error" = "A telefonszám ellenőrzése sikertelen.";
 "account_error_display_name_change_failed" = "Megjelenítési név megváltoztatása sikertelen";
 "account_error_picture_change_failed" = "A kép megváltoztatása sikertelen";
-"account_error_matrix_session_is_not_opened" = "A Matrix munkamenet nincs megnyitva";
+"account_error_matrix_session_is_not_opened" = "A quali.chat munkamenet nincs megnyitva";
 "account_error_email_wrong_title" = "Érvénytelen e-mail cím";
 "account_error_email_wrong_description" = "Ez nem tűnik érvényes e-mail címnek";
 "account_error_msisdn_wrong_title" = "Érvénytelen telefonszám";
@@ -1863,10 +1862,10 @@
 "attachment_cancel_upload" = "Megszakítod a feltöltést?";
 "attachment_multiselection_size_prompt" = "Hogy szeretnéd elküldeni a képet:";
 "attachment_multiselection_original" = "Jelenlegi méret";
-"attachment_e2e_keys_file_prompt" = "Ez a fájl a Matrix kliensből kimentett titkosító kulcsokat tartalmaz.\nSzeretnéd megjeleníteni a fájl tartalmát vagy betöltöd a kulcsokat amiket tartalmaz?";
+"attachment_e2e_keys_file_prompt" = "Ez a fájl a quali.chat kliensből kimentett titkosító kulcsokat tartalmaz.\nSzeretnéd megjeleníteni a fájl tartalmát vagy betöltöd a kulcsokat amiket tartalmaz?";
 "attachment_e2e_keys_import" = "Betöltés...";
 // Contacts
-"contact_mx_users" = "Matrix felhasználók";
+"contact_mx_users" = "quali.chat felhasználók";
 "contact_local_contacts" = "Helyi névjegyek";
 // Groups
 // Search
@@ -1879,12 +1878,12 @@
 "format_time_d" = "n";
 // E2E import
 "e2e_import_room_keys" = "Szoba kulcsok betöltése";
-"e2e_import_prompt" = "Ez a folyamat betölti azokat a titkosítási kulcsokat amiket előzőleg egy másik Matrix kliensből mentettél ki. Ez után minden olyan üzenetet vissza tudsz fejteni amit a másik eszköz vissza tud.\nA kulcsokat tartalmazó fájl jelszóval védett. Add meg itt a jelszót a fájl visszafejtéséhez.";
+"e2e_import_prompt" = "Ez a folyamat betölti azokat a titkosítási kulcsokat amiket előzőleg egy másik quali.chat kliensből mentettél ki. Ez után minden olyan üzenetet vissza tudsz fejteni amit a másik eszköz vissza tud.\nA kulcsokat tartalmazó fájl jelszóval védett. Add meg itt a jelszót a fájl visszafejtéséhez.";
 "e2e_import" = "Betöltés";
 "e2e_passphrase_enter" = "Jelszó megadása";
 // E2E export
 "e2e_export_room_keys" = "Szoba kulcsok kimentése";
-"e2e_export_prompt" = "Ezzel a folyamattal kimentheted azokat a kulcsokat amiket a titkosított szobákban az üzenetek visszafejtésére használtál. Így később ezt a fájlt egy másik Matrix kliensbe betöltve a kliens vissza tudja fejteni ezeket az üzeneteket.\nAki el tudja olvasni a kimentett kulcsokat tartalmazó fájlt vissza fogja tudni fejteni az üzeneteket amiket látsz, ezért tartsd a fájlt biztonságosan.";
+"e2e_export_prompt" = "Ezzel a folyamattal kimentheted azokat a kulcsokat amiket a titkosított szobákban az üzenetek visszafejtésére használtál. Így később ezt a fájlt egy másik quali.chat kliensbe betöltve a kliens vissza tudja fejteni ezeket az üzeneteket.\nAki el tudja olvasni a kimentett kulcsokat tartalmazó fájlt vissza fogja tudni fejteni az üzeneteket amiket látsz, ezért tartsd a fájlt biztonságosan.";
 "e2e_export" = "Kiment";
 "e2e_passphrase_confirm" = "Jelszó megerősítése";
 "e2e_passphrase_empty" = "A jelszó nem lehet üres";
@@ -1902,13 +1901,13 @@
 "power_level" = "Hozzáférési szint";
 "network_error_not_reachable" = "Ellenőrizd a hálózati hozzáférésed";
 "user_id_placeholder" = "pl.: @bob:matrixszerver";
-"ssl_homeserver_url" = "Matrix szerver URL: %@";
+"ssl_homeserver_url" = "quali.chat szerver URL: %@";
 // Permissions
 "camera_access_not_granted_for_call" = "Videó hívásokhoz engedélyezni kell a hozzáférést a kamerához de %@ nem rendelkezik ilyen engedéllyel";
 "microphone_access_not_granted_for_call" = "Hívásokhoz engedélyezni kell a hozzáférést a mikrofonhoz, de %@ nem rendelkezik ilyen engedéllyel";
 "local_contacts_access_not_granted" = "Címjegyzékben található felhasználók feltérképezéséhez engedéllyel kell rendelkezni a címjegyzékhez, de %@ nem rendelkezik ilyen engedéllyel";
 "local_contacts_access_discovery_warning_title" = "Felhasználók keresése";
-"local_contacts_access_discovery_warning" = "Az olyan ismerősök felderítéséhez akik már használják a Matrixot, %@ el tudja küldeni a címjegyzékben található e-mail címeket és telefonszámokat az általad választott Matrix azonosítási szervernek. Ahol lehetséges a személyes adatok hash-elve lesznek - kérlek ellenőrizd az azonosítási szervered adatvédelmi szabályait.";
+"local_contacts_access_discovery_warning" = "Az olyan ismerősök felderítéséhez akik már használják a quali.chatot, %@ el tudja küldeni a címjegyzékben található e-mail címeket és telefonszámokat az általad választott quali.chat azonosítási szervernek. Ahol lehetséges a személyes adatok hash-elve lesznek - kérlek ellenőrizd az azonosítási szervered adatvédelmi szabályait.";
 // Country picker
 "country_picker_title" = "Válassz országot";
 // Language picker
@@ -1965,7 +1964,7 @@
 "login_error_must_start_http" = "Az URL-nek http[s]:// -sel kell kezdődnie";
 // room details dialog screen
 // contacts list screen 
-"invitation_message" = "Szeretnék veled beszélgetni a Matrix-szal. További információkért látogasd meg a http://matrix.org weboldalt.";
+"invitation_message" = "Szeretnék veled beszélgetni a quali.chat-szal. További információkért látogasd meg a http://quali.chat weboldalt.";
 // Settings screen 
 "settings_title_config" = "Beállítások";
 "settings_title_notifications" = "Értesítések";
@@ -2016,8 +2015,8 @@
 "ssl_expected_existing_expl" = "Az eddig elfogadott tanúsítvány egy nem elfogadottra módosult. A szerver lehet, hogy megújította a tanúsítványát. Vedd fel a kapcsolatot a szerver adminisztrátorával az új ujjlenyomat ellenőrzéséhez.";
 "ssl_only_accept" = "CSAK akkor fogadd el a tanúsítványt ha a szerver adminisztrátora közzétette az ujjlenyomatot és az megegyezik az alábbival.";
 "login_error_resource_limit_exceeded_title" = "Erőforrás korlát túllépés";
-"login_error_resource_limit_exceeded_message_default" = "Ez a Matrix szerver túllépte az egyik erőforrás-korlátját.";
-"login_error_resource_limit_exceeded_message_monthly_active_user" = "Ez a Matrix szerver elérte a havi aktív felhasználói korlátját.";
+"login_error_resource_limit_exceeded_message_default" = "Ez a quali.chat szerver túllépte az egyik erőforrás-korlátját.";
+"login_error_resource_limit_exceeded_message_monthly_active_user" = "Ez a quali.chat szerver elérte a havi aktív felhasználói korlátját.";
 "login_error_resource_limit_exceeded_message_contact" = "\n\nKérlek vedd fel a kapcsolatot a szolgáltatás adminisztrátorával, hogy tovább használhasd.";
 "login_error_resource_limit_exceeded_contact_button" = "Adminisztrátor kapcsolatfelvétel";
 // room display name
@@ -2184,7 +2183,7 @@
 "onboarding_congratulations_home_button" = "A kezdőlapra";
 "onboarding_congratulations_personalize_button" = "Profil személyre szabása";
 /* The placeholder string contains the user's matrix ID */
-"onboarding_congratulations_message" = "A fiókod elkészült. A Matrix címed: %@";
+"onboarding_congratulations_message" = "A fiókod elkészült. A quali.chat címed: %@";
 "onboarding_congratulations_title" = "Gratulálunk!";
 "saving" = "Mentés";
 
@@ -2198,7 +2197,7 @@
 "stop" = "Állj";
 "joining" = "Belépés";
 "threads_beta_information" = "Tedd a megbeszéléseket átláthatóvá üzenetszálakkal.\n\nAz üzenetszálak segítenek a beszélgetések témánál tartásában és követésében. ";
-"threads_notice_information" = "A kísérleti időszakban készült üzenetszálak ezentúl <b>közönséges válaszokként jelennek meg</b><br/><br/>Ez egy egyszeri konverzió, mivel az üzenetszálak már a Matrix részét képezik.";
+"threads_notice_information" = "A kísérleti időszakban készült üzenetszálak ezentúl <b>közönséges válaszokként jelennek meg</b><br/><br/>Ez egy egyszeri konverzió, mivel az üzenetszálak már a quali.chat részét képezik.";
 "ignore_user" = "Felhasználó figyelmen kívül hagyása";
 "location_sharing_pin_drop_share_title" = "Ennek a pozíciónak az elküldése";
 "location_sharing_static_share_title" = "Jelenlegi pozícióm elküldése";
@@ -2305,7 +2304,7 @@
 "settings_presence_offline_mode" = "Kapcsolat nélküli mód";
 "settings_presence" = "Állapot";
 "threads_discourage_information_2" = "\n\nEnnek ellenére be szeretné kapcsolni az üzenetszálakat?";
-"threads_discourage_information_1" = "A Matrix szervered jelenleg nem támogatja az üzenetszálakat így ez a funkció nem lesz megbízható. Bizonyos üzenetszálas üzenetek nem jelennek meg megbízhatóan. ";
+"threads_discourage_information_1" = "A quali.chat szervered jelenleg nem támogatja az üzenetszálakat így ez a funkció nem lesz megbízható. Bizonyos üzenetszálas üzenetek nem jelennek meg megbízhatóan. ";
 "location_sharing_live_stop_sharing_progress" = "Földrajzi helymeghatározás megállítása";
 "location_sharing_live_stop_sharing_error" = "A megosztás megállítása nem sikerült";
 "location_sharing_live_no_user_locations_error_title" = "Felhasználói helymeghatározás nem érhető el";
@@ -2320,7 +2319,7 @@
 "confirm" = "Megerősítés";
 "location_sharing_allow_background_location_cancel_action" = "Ne most";
 "location_sharing_allow_background_location_validate_action" = "Beállítások";
-"location_sharing_allow_background_location_message" = "Ha az élő helyzetedet szeretnéd megosztani, Elementnek akkor is hozzáférésre van szüksége a helyadatokhoz ha éppen a háttérben fut. A hozzáférés engedélyezéséhez koppints a Beállítások> Helyadatokra és válaszd a Mindiget";
+"location_sharing_allow_background_location_message" = "Ha az élő helyzetedet szeretnéd megosztani, quali.chat akkor is hozzáférésre van szüksége a helyadatokhoz ha éppen a háttérben fut. A hozzáférés engedélyezéséhez koppints a Beállítások> Helyadatokra és válaszd a Mindiget";
 "location_sharing_allow_background_location_title" = "Hozzáférés engedélyezése";
 "settings_labs_enable_live_location_sharing" = "Folyamatos helymeghatározás megosztása - a jelenlegi helyzet megosztása (aktív fejlesztés alatt, átmenetileg a megosztott helyek megmaradnak a szoba idővonalán)";
 "settings_ui_show_redactions_in_room_history" = "Helykitöltő megjelenítése a törölt szövegek helyett";
@@ -2397,17 +2396,17 @@
 "authentication_verify_email_input_title" = "Add meg az e-mail címed";
 "authentication_cancel_flow_confirmation_message" = "A felhasználói fiókod még nincs kész. Félbehagyod a regisztrációt?";
 "authentication_server_selection_generic_error" = "Ezen a címen nem található szerver, kérlek ellenőrizd, hogy helyesen adtad-e meg.";
-"authentication_server_selection_server_url" = "Matrix szerver URL";
+"authentication_server_selection_server_url" = "quali.chat szerver URL";
 "authentication_server_selection_register_message" = "Mi a szervered címe? Olyan mint az adataid otthona";
 "authentication_server_selection_register_title" = "Válaszd ki a matrix szerveredet";
 "authentication_server_selection_login_message" = "Mi a szervered címe?";
-"authentication_server_selection_login_title" = "Matrix szerverhez csatlakozás";
+"authentication_server_selection_login_title" = "quali.chat szerverhez csatlakozás";
 "authentication_server_info_title" = "Itt lesznek tárolva a beszélgetéseid";
 "authentication_login_forgot_password" = "Elfelejtetted a jelszót?";
 "authentication_login_username" = "Felhasználónév / E-mail / Telefonszám";
 "authentication_login_title" = "Üdv újra!";
 "authentication_registration_password_footer" = "8 vagy több karakternek kell lennie";
-/* The placeholder will show the full Matrix ID that has been entered. */
+/* The placeholder will show the full quali.chat ID that has been entered. */
 "authentication_registration_username_footer_available" = "%@ mások megtalálhatnak";
 "authentication_registration_username_footer" = "Ezt később nem lehet megváltoztatni";
 "authentication_registration_username" = "Felhasználónév";
@@ -2604,7 +2603,7 @@
 "authentication_qr_login_scan_subtitle" = "A QR kód legyen a négyzetben";
 "authentication_qr_login_scan_title" = "QR kód beolvasása";
 "authentication_qr_login_display_step2" = "Válaszd ezt: „Belépés QR kóddal”";
-"authentication_qr_login_display_step1" = "Nyisd meg az Elementet a másik eszközödön";
+"authentication_qr_login_display_step1" = "Nyisd meg az quali.chat a másik eszközödön";
 "authentication_qr_login_display_subtitle" = "A kijelentkezett eszközzel olvasd be a QR kódot alább.";
 "authentication_qr_login_display_title" = "Eszköz összekötése";
 "authentication_qr_login_start_display_qr" = "QR kód megjelenítése ezen az eszközön";
@@ -2612,7 +2611,7 @@
 "authentication_qr_login_start_step4" = "Válaszd ezt: „QR kód megjelenítése ezen az eszközön”";
 "authentication_qr_login_start_step3" = "Válaszd ezt: „Eszköz összekötése”";
 "authentication_qr_login_start_step2" = "Menj a Beállítások -> Biztonság és Adatvédelem menübe";
-"authentication_qr_login_start_step1" = "Nyisd meg az Elementet a másik eszközödön";
+"authentication_qr_login_start_step1" = "Nyisd meg az quali.chat a másik eszközödön";
 "authentication_qr_login_start_subtitle" = "Használd a kamerát ezen az eszközön a másik eszközödön megjelenő QR kód beolvasására:";
 "authentication_qr_login_start_title" = "QR kód beolvasása";
 "authentication_login_with_qr" = "Belépés QR kóddal";
@@ -2632,7 +2631,7 @@
 "user_sessions_hide_location_info" = "IP címek elrejtése";
 "user_sessions_show_location_info" = "IP címek megjelenítése";
 "manage_session_sign_out_other_sessions" = "Kijelentkezés minden más munkamenetből";
-"user_session_verified_session_description" = "Mindenhol ellenőrzött munkamenetek vannak ahol Elementet használva megadtad a jelmondatodat vagy egy másik már hitelesített munkamenetből megerősítetted az identitásodat.\n\nEz azt jelenti, hogy a titkosított üzenetek visszafejtéséhez rendelkezel a kulcsokkal és megerősíted a többiek felé, hogy megbízol a munkamenetben.";
+"user_session_verified_session_description" = "Mindenhol ellenőrzött munkamenetek vannak ahol quali.chat használva megadtad a jelmondatodat vagy egy másik már hitelesített munkamenetből megerősítetted az identitásodat.\n\nEz azt jelenti, hogy a titkosított üzenetek visszafejtéséhez rendelkezel a kulcsokkal és megerősíted a többiek felé, hogy megbízol a munkamenetben.";
 
 // Unverified sessions
 "key_verification_alert_title" = "Ellenőrizetlen bejelentkezései vannak";
@@ -2647,7 +2646,7 @@
 "voice_broadcast_tile" = "Hang közvetítés";
 "voice_broadcast_live" = "Élő";
 "key_verification_alert_body" = "Tekintsd át, hogy meggyőződj arról, hogy a fiókod biztonságban van.";
-"user_session_permanently_unverified_session_description" = "Ez a munkamenet nem támogatja a titkosítást, így nem lehet ellenőrizni sem.\n\nEzzel a munkamenettel nem tudsz részt venni olyan szobákban ahol a titkosítás be van kapcsolva.\n\nA biztonság és a adatbiztonsági okokból javasolt olyan Matrix kliens használata ami támogatja a titkosítást.";
+"user_session_permanently_unverified_session_description" = "Ez a munkamenet nem támogatja a titkosítást, így nem lehet ellenőrizni sem.\n\nEzzel a munkamenettel nem tudsz részt venni olyan szobákban ahol a titkosítás be van kapcsolva.\n\nA biztonság és a adatbiztonsági okokból javasolt olyan quali.chat kliens használata ami támogatja a titkosítást.";
 "user_other_session_permanently_unverified_additional_info" = "Ez a munkamenet nem támogatja a titkosítást, így nem lehet ellenőrizni sem.";
 "voice_broadcast_stop_alert_agree_button" = "Igen, befejez";
 "voice_broadcast_stop_alert_description" = "Biztos, hogy befejezed az élő közvetítést? Ez befejezi a közvetítést és a felvétel az egész szoba számára elérhető lesz.";
@@ -2733,7 +2732,7 @@
 "key_verification_scan_qr_code_information_other_session" = "A munkameneted ellenőrzéséhez irányítsd a kamerádat a másik eszközödön megjelenő QR kódra";
 "key_verification_scan_qr_code_information_other_device" = "A munkamenet ellenőrzéséhez irányítsd a kamerádat a másik eszközödön megjelenő QR kódra";
 "key_verification_scan_qr_code_information_other_user" = "A munkamenetük ellenőrzéséhez irányítsd a kamerádat az eszközükön megjelenő QR kódra";
-"device_verification_self_verify_open_on_other_device_information" = "Ennek a munkamenetnek az ellenőrzésére szükséged van a régi titkosított üzenetek olvasásához.\n\nNyisd meg az Elementet egy másik eszközödön és kövesd az utasításokat.";
+"device_verification_self_verify_open_on_other_device_information" = "Ennek a munkamenetnek az ellenőrzésére szükséged van a régi titkosított üzenetek olvasásához.\n\nNyisd meg az quali.chat egy másik eszközödön és kövesd az utasításokat.";
 "key_verification_self_verify_security_upgrade_alert_message" = "A biztonságos üzenetküldés a legutolsó fejlesztésekkel frissült. Kérjük ellenőrizzed újra az eszközt.";
 
 // Legacy to Rust security upgrade
@@ -2741,9 +2740,9 @@
 "key_verification_self_verify_security_upgrade_alert_title" = "Alkalmazás frissítve";
 "settings_acceptable_use" = "Elfogadható felhasználói feltételek";
 "room_creation_user_not_found_prompt_title" = "Megerősítés";
-"room_creation_user_not_found_prompt_message" = "Nem található profil ehhez a Matrix-azonosítóhoz. Mindenképp elindítja a privát csevegést?";
+"room_creation_user_not_found_prompt_message" = "Nem található profil ehhez a quali.chat-azonosítóhoz. Mindenképp elindítja a privát csevegést?";
 "room_creation_user_not_found_prompt_invite_action" = "Privát csevegés mindenképp";
-"room_participants_invite_unknown_participant_prompt_to_msg" = "Nem található profil ehhez a Matrix-azonosítóhoz. Mindenképp meghívja %@ felhasználót a(z) %@ szobába?";
+"room_participants_invite_unknown_participant_prompt_to_msg" = "Nem található profil ehhez a quali.chat-azonosítóhoz. Mindenképp meghívja %@ felhasználót a(z) %@ szobába?";
 "room_participants_invite_anyway" = "Meghívás mindenképp";
 
 // Room commands descriptions
@@ -2755,3 +2754,16 @@
 "room_command_kick_user_description" = "Eltávolítja az adott azonosítójú felhasználót ebből a szobából";
 "room_command_ban_user_description" = "Kitiltja az adott azonosítójú felhasználót";
 "room_command_unban_user_description" = "Feloldja az adott azonosítójú felhasználó kitiltását";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified
+"demo_login_placeholder" = "Username"; // QUALICHAT modified

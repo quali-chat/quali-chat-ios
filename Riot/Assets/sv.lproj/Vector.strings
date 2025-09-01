@@ -47,7 +47,7 @@
 "auth_optional_phone_placeholder" = "Telefonnummer (valfritt)";
 "auth_phone_placeholder" = "Telefonnummer";
 "auth_repeat_password_placeholder" = "Upprepa lösenord";
-"auth_repeat_new_password_placeholder" = "Bekräfta ditt nya Matrixkontolösenord";
+"auth_repeat_new_password_placeholder" = "Bekräfta ditt nya quali.chatkontolösenord";
 "auth_identity_server_placeholder" = "URL (t.ex. https://vector.im)";
 "auth_invalid_login_param" = "Felaktigt användarnamn och/eller lösenord";
 "auth_invalid_password" = "Lösenordet är för kort (minst 6 tecken)";
@@ -59,22 +59,22 @@
 "auth_missing_email_or_phone" = "E-postadress eller telefonnummer saknas";
 "auth_email_in_use" = "Den här e-postadressen är upptagen";
 "auth_phone_in_use" = "Det här telefonnumret är upptaget";
-"auth_email_is_required" = "Ingen identitetsserver är konfigurerad, så du kan inte lägga till en e-postadress för att återställa ditt Matrixkontolösenord i framtiden.";
-"auth_phone_is_required" = "Ingen identitetsserver är konfigurerad, så du kan inte lägga till ett telefonnummer för att återställa ditt Matrixkontolösenord i framtiden.";
+"auth_email_is_required" = "Ingen identitetsserver är konfigurerad, så du kan inte lägga till en e-postadress för att återställa ditt quali.chatkontolösenord i framtiden.";
+"auth_phone_is_required" = "Ingen identitetsserver är konfigurerad, så du kan inte lägga till ett telefonnummer för att återställa ditt quali.chatkontolösenord i framtiden.";
 "auth_password_dont_match" = "Lösenorden matchar inte";
 "auth_username_in_use" = "Användarnamn upptaget";
-"auth_forgot_password" = "Glömt Matrixkontolösenordet?";
+"auth_forgot_password" = "Glömt quali.chatkontolösenordet?";
 "auth_email_not_found" = "Misslyckades att skicka e-post: Den här e-postadressen hittades inte";
 "auth_use_server_options" = "Använd anpassade serveralternativ (avancerat)";
 "auth_email_validation_message" = "Kolla din e-post för att fortsätta registreringen";
 "auth_msisdn_validation_message" = "Vi har skickat ett SMS med en aktiveringskod. Ange den koden nedan.";
 "auth_msisdn_validation_error" = "Kunde inte verifiera telefonnummer.";
-"auth_reset_password_message" = "För att återställa ditt Matrixkontolösenord, ange e-postadressen som är länkad till ditt konto:";
+"auth_reset_password_message" = "För att återställa ditt quali.chatkontolösenord, ange e-postadressen som är länkad till ditt konto:";
 "auth_reset_password_missing_email" = "Du måste ange e-postadressen som är länkad till ditt konto.";
 "auth_reset_password_missing_password" = "Ett nytt lösenord måste anges.";
 "auth_reset_password_email_validation_message" = "Ett e-brev har skickats till %@. När du har följt länken i det, tryck nedan.";
 "auth_reset_password_next_step_button" = "Jag har verifierat min e-postadress";
-"auth_reset_password_error_not_found" = "Din e-postadress verkar inte vara kopplad till något Matrix-ID på den här hemservern.";
+"auth_reset_password_error_not_found" = "Din e-postadress verkar inte vara kopplad till något quali.chat-ID på den här hemservern.";
 "auth_softlogout_signed_out" = "Du är utloggad";
 "auth_softlogout_sign_in" = "Logga in";
 "auth_softlogout_recover_encryption_keys" = "Logga in för att återfå krypteringsnycklar som endast lagras på den här enheten. Du behöver dem för att läsa alla dina säkra meddelanden på andra enheter.";
@@ -97,7 +97,7 @@
 "room_creation_keep_private" = "Behåll privat";
 "room_creation_make_private" = "Gör privat";
 "room_creation_wait_for_creation" = "Ett rum håller redan på att skapas. Vänligen vänta.";
-"room_creation_invite_another_user" = "Användar-ID, namn eller e-postadress";
+"room_creation_invite_another_user" = "Användar-ID eller namn";
 "room_recents_favourites_section" = "FAVORITER";
 "room_recents_people_section" = "PERSONER";
 "room_recents_conversations_section" = "RUM";
@@ -131,7 +131,7 @@
 "directory_search_results_more_than" = ">%1$tu resultat hittades för %2$@";
 // Contacts
 "contacts_address_book_section" = "LOKALA KONTAKTER";
-"contacts_address_book_matrix_users_toggle" = "Endast Matrix-användare";
+"contacts_address_book_matrix_users_toggle" = "Endast quali.chat-användare";
 "contacts_address_book_no_identity_server" = "Ingen identitetsserver konfigurerad";
 "contacts_address_book_no_contact" = "Inga lokala kontakter";
 // Chat participants
@@ -145,7 +145,7 @@
 "room_participants_remove_third_party_invite_prompt_msg" = "Är du säker på att du vill återkalla den här inbjudan?";
 "room_participants_invite_prompt_title" = "Bekräftelse";
 "room_participants_invite_another_user" = "Sök / bjud in efter användar-ID, namn eller e-postadress";
-"room_participants_invite_malformed_id" = "Felformaterat ID. Ska vara en e-postadress eller ett Matrix-ID som '@lokaldel:domän'";
+"room_participants_invite_malformed_id" = "Felformaterat ID. Ska vara en e-postadress eller ett quali.chat-ID som '@lokaldel:domän'";
 "room_participants_online" = "Online";
 "room_participants_offline" = "Offline";
 "room_participants_idle" = "Inaktiv";
@@ -328,11 +328,11 @@
 "settings_old_password" = "Gammalt lösenord";
 "settings_new_password" = "Nytt lösenord";
 "settings_confirm_password" = "Bekräfta lösenord";
-"settings_fail_to_update_password" = "Misslyckades att uppdatera Matrixkontolösenord";
-"settings_password_updated" = "Ditt Matrixkontolösenord har uppdaterats";
+"settings_fail_to_update_password" = "Misslyckades att uppdatera quali.chatkontolösenord";
+"settings_password_updated" = "Ditt quali.chatkontolösenord har uppdaterats";
 "settings_add_3pid_password_title_email" = "Lägg till e-postadress";
 "settings_add_3pid_password_title_msidsn" = "Lägg till telefonnummer";
-"settings_add_3pid_password_message" = "För att fortsätta, ange ditt Matrixkontolösenord";
+"settings_add_3pid_password_message" = "För att fortsätta, ange ditt quali.chatkontolösenord";
 "settings_add_3pid_invalid_password_message" = "Ogiltiga uppgifter";
 "settings_crypto_export" = "Exportera nycklar";
 "settings_crypto_blacklist_unverified_devices" = "Kryptera endast till verifierade sessioner";
@@ -376,7 +376,7 @@
 "security_settings_advanced" = "AVANCERAT";
 "security_settings_blacklist_unverified_devices" = "Skicka aldrig meddelanden till obetrodda sessioner";
 "security_settings_blacklist_unverified_devices_description" = "Verifiera en användares alla sessioner för att markera den som betrodd och skicka meddelanden till den.";
-"security_settings_user_password_description" = "Bekräfta din identitet genom att ange ditt Matrixkontolösenord";
+"security_settings_user_password_description" = "Bekräfta din identitet genom att ange ditt quali.chatkontolösenord";
 // Manage session
 "manage_session_title" = "Hantera session";
 "manage_session_info" = "SESSIONSINFO";
@@ -400,14 +400,14 @@
 "auth_login_single_sign_on" = "Logga in";
 "auth_send_reset_email" = "Skicka återställningsmeddelande";
 "auth_return_to_login" = "Gå tillbaka till inloggningsskärmen";
-"auth_home_server_placeholder" = "URL (t.ex. https://matrix.org)";
+"auth_home_server_placeholder" = "URL (t.ex. https://quali.chat)";
 "auth_invalid_user_name" = "Användarnamn får endast innehålla bokstäver, siffror, punkter, bindestreck och understreck";
 "auth_add_email_message_2" = "Ställ in en e-postadress för kontoåterställning, och senare för att valfritt bli upptäckbar av personer som känner dig.";
-"auth_forgot_password_error_no_configured_identity_server" = "Ingen identitetsserver är konfigurerad: lägg till en för att återställa ditt Matrixkontolösenord.";
+"auth_forgot_password_error_no_configured_identity_server" = "Ingen identitetsserver är konfigurerad: lägg till en för att återställa ditt quali.chatkontolösenord.";
 "auth_msisdn_validation_title" = "Avvaktar verifiering";
 "auth_recaptcha_message" = "Den här hemservern vill kontrollera att du inte är en robot";
-"auth_reset_password_error_is_required" = "Ingen identitetsserver är konfigurerad: lägg till en i serveralternativen för att återställa ditt Matrixkontolösenord.";
-"auth_reset_password_success_message" = "Ditt Matrixkontolösenord har återställts.\n\nDu har loggats ut från alla sessioner och kommer inte längre att ta emot pushnotiser. För att återaktivera pushnotiser, logga in igen på varje enhet.";
+"auth_reset_password_error_is_required" = "Ingen identitetsserver är konfigurerad: lägg till en i serveralternativen för att återställa ditt quali.chatkontolösenord.";
+"auth_reset_password_success_message" = "Ditt quali.chatkontolösenord har återställts.\n\nDu har loggats ut från alla sessioner och kommer inte längre att ta emot pushnotiser. För att återaktivera pushnotiser, logga in igen på varje enhet.";
 "auth_accept_policies" = "Granska och acceptera villkoren för denna hemserver:";
 "auth_softlogout_reason" = "Admin hos din hemserver (%1$@) har loggat ut dig från ditt konto %2$@ (%3$@).";
 "auth_softlogout_clear_data" = "Rensa personlig data";
@@ -427,7 +427,7 @@
 "room_participants_action_mention" = "Nämn";
 "room_participants_security_information_room_encrypted" = "Meddelanden i det här rummet är totalsträckskrypterade.\n\nDina meddelanden är säkrade med lås och bara du och mottagaren har de unika nycklarna för att låsa upp dem.";
 "room_accessiblity_scroll_to_bottom" = "Scrolla till botten";
-"room_do_not_have_permission_to_post" = "Du är inte behörig att posta till det här rummet";
+"room_do_not_have_permission_to_post" = "You need to have the room token in your wallet to post to this room.";
 "room_unsent_messages_notification" = "Meddelanden misslyckades att skickas.";
 "room_conference_call_no_power" = "Du behöver behörighet för att hantera gruppsamtal i det här rummet";
 "room_prompt_resend" = "Skicka alla igen";
@@ -510,7 +510,7 @@
 "group_participants_filter_members" = "Filtrera gemenskapsmedlemmar";
 "group_participants_invite_another_user" = "Sök / bjud in efter användar-ID eller namn";
 "group_participants_invite_malformed_id_title" = "Fel vid inbjudan";
-"group_participants_invite_malformed_id" = "Felformaterat ID. Ska vara ett Matrix-ID som '@lokaldel:domän'";
+"group_participants_invite_malformed_id" = "Felformaterat ID. Ska vara ett quali.chat-ID som '@lokaldel:domän'";
 // Group rooms
 "group_rooms_filter_rooms" = "Filtrera gemenskapsrum";
 // Media picker
@@ -518,7 +518,7 @@
 "media_picker_library" = "Bibliotek";
 "media_picker_select" = "Välj";
 "image_picker_action_library" = "Välj från bibliotek";
-"directory_server_placeholder" = "matrix.org";
+"directory_server_placeholder" = "quali.chat";
 // Events formatter
 "event_formatter_member_updates" = "%tu förändringar av medlemskap";
 "event_formatter_widget_added" = "%@-widget tillagd av %@";
@@ -613,11 +613,11 @@
 "identity_server_settings_alert_disconnect" = "Koppla från identitetsservern %@?";
 "identity_server_settings_alert_error_terms_not_accepted" = "Du måste acceptera villkoren hos %@ för att kunna ställa in den som identitetsserver.";
 "identity_server_settings_alert_error_invalid_identity_server" = "%@ är inte en giltig identitetsserver.";
-"device_verification_self_verify_wait_additional_information" = "Detta funkar med %@ och andra Matrix-klienter som stöder korssignering.";
+"device_verification_self_verify_wait_additional_information" = "Detta funkar med %@ och andra quali.chat-klienter som stöder korssignering.";
 // Generic errors
 "error_invite_3pid_with_no_identity_server" = "Lägg till en identitetsserver i dina inställningar för att bjuda in via e-post.";
 "secrets_recovery_with_passphrase_information_default" = "Få tillgång till din säkra meddelandehistorik och din identitet för korssignering för att verifiera andra sessioner genom att ange din säkerhetsfras.";
-"store_full_description" = "Element är en ny sorts meddelande- och samarbetsapp som:\n\n1. Sätter dig i kontroll för att kunna säkerställa ditt privatliv\n2. Låter dig kommunicera med vem som helst i Matrix-nätverket, och till och med bortom det genom integrationer med appar som Slack\n3. Skyddar dig från reklam, datainsamling, bakdörrar och inlåsning\n4. Säkrar dig genom totalsträckskryptering, med korssingering för att verifiera andra\n\nElement skiljer sig helt från andra meddelande- och samarbetsappar genom att vara decentraliserad och öppen källkod.\n\nElement låter dig driva en egen server - eller välja en värd - så att du har sekretess, ägande och kontroll över din data och dina konversationer. Den ger dig tillgång till ett öppet nätverk; så att du inte kan prata bara med Element-användare. Och den är väldigt säker.\n\nElement kan göra allt detta för att den använder Matrix - standarden för öppen decentraliserad kommunikation.\n\nElement sätter dig i kontroll genom att låta dig välja att vara värd för dina konversationer. Från appen Element kan du välja att ansluta på följande sätt:\n\n1. Skaffa ett gratis konto på den publika servern på matrix.org\n2. Var värd för ditt eget konto genom att driva en server på din egen hårdvara\n3. Skapa ett konto på en anpassad server genom att registrera dig på värdplattformen Element Matrix Services\n\nVarför välja Element?\n\nÄG DIN DATA: Du väljer var du vill ha din data och dina meddelanden. Du äger den och kontrollerar den, inte nåt stort företag som samlar in din data och ger den till tredje parter.\n\nÖPPEN KOMMUNIKATION OCH ÖPPET SAMARBETE: Du kan chatta med vem som helst på Matrix-nätverket, oavsett om de använder Element eller en annan Matrix-app, och till och med om de använder ett annat meddelandesystem som Slack, IRC eller XMPP.\n\nSUPERSÄKER: Riktig totalsträckskryptering (bara de in konversationen kan avkryptera meddelandena), och korssingering för att verifiera konversationsmedlemmars enheter.\n\nKOMPLETT KOMMUNIKATION: Meddelanden, röst- och videosamtal, fildelning, skärmdelning och massa integrationer, bottar och widgets. Skapa rum och gemenskaper, håll kontakten och få saker gjorda.\n\nÖVERALLT DÄR DU ÄR: Håll kontakten vart du än befinner dig med fullständigt synkroniserad meddelandehistorik på alla dina enheter och på webben på https://element.io/app.";
+"store_full_description" = "quali.chat är en ny sorts meddelande- och samarbetsapp som:\n\n1. Sätter dig i kontroll för att kunna säkerställa ditt privatliv\n2. Låter dig kommunicera med vem som helst i quali.chat-nätverket, och till och med bortom det genom integrationer med appar som Slack\n3. Skyddar dig från reklam, datainsamling, bakdörrar och inlåsning\n4. Säkrar dig genom totalsträckskryptering, med korssingering för att verifiera andra\n\nquali.chat skiljer sig helt från andra meddelande- och samarbetsappar genom att vara decentraliserad och öppen källkod.\n\nquali.chat låter dig driva en egen server - eller välja en värd - så att du har sekretess, ägande och kontroll över din data och dina konversationer. Den ger dig tillgång till ett öppet nätverk; så att du inte kan prata bara med quali.chat-användare. Och den är väldigt säker.\n\nquali.chat kan göra allt detta för att den använder quali.chat - standarden för öppen decentraliserad kommunikation.\n\nquali.chat sätter dig i kontroll genom att låta dig välja att vara värd för dina konversationer. Från appen quali.chat kan du välja att ansluta på följande sätt:\n\n1. Skaffa ett gratis konto på den publika servern på quali.chat\n2. Var värd för ditt eget konto genom att driva en server på din egen hårdvara\n3. Skapa ett konto på en anpassad server genom att registrera dig på värdplattformen quali.chat\n\nVarför välja quali.chat?\n\nÄG DIN DATA: Du väljer var du vill ha din data och dina meddelanden. Du äger den och kontrollerar den, inte nåt stort företag som samlar in din data och ger den till tredje parter.\n\nÖPPEN KOMMUNIKATION OCH ÖPPET SAMARBETE: Du kan chatta med vem som helst på quali.chat-nätverket, oavsett om de använder quali.chat eller en annan quali.chat-app, och till och med om de använder ett annat meddelandesystem som Slack, IRC eller XMPP.\n\nSUPERSÄKER: Riktig totalsträckskryptering (bara de in konversationen kan avkryptera meddelandena), och korssingering för att verifiera konversationsmedlemmars enheter.\n\nKOMPLETT KOMMUNIKATION: Meddelanden, röst- och videosamtal, fildelning, skärmdelning och massa integrationer, bottar och widgets. Skapa rum och gemenskaper, håll kontakten och få saker gjorda.\n\nÖVERALLT DÄR DU ÄR: Håll kontakten vart du än befinner dig med fullständigt synkroniserad meddelandehistorik på alla dina enheter och på webben på https://element.io/app.";
 "auth_add_email_phone_message_2" = "Sätt en e-postadress för kontoåterställning. E-postadress och telefonnummer kan senare valfritt användas för att vara upptäckbar av folk som känner dig.";
 "auth_add_email_and_phone_warning" = "Registrering med e-post och telefonnummer samtidigt stöds inte än, tills att API:t finns. Endast telefonnumret kommer att användas. Du kan lägga till din e-postadress till din profil i inställningarna.";
 "auth_autodiscover_invalid_response" = "Ogiltigt upptäcktssvar från hemservern";
@@ -646,13 +646,13 @@
 "settings_discovery_three_pids_management_information_part3" = ".";
 "settings_identity_server_description" = "Med hjälp av identitetsservern som anges ovan kan du upptäcka och upptäckas av befintliga kontakter du känner.";
 "settings_identity_server_no_is_description" = "Du använder för närvarande inte en identitetsserver. För att upptäcka och bli upptäckt av befintliga kontakter du känner, lägg till en ovan.";
-"security_settings_crypto_sessions_description_2" = "Om du inte känner igen en inloggning, byt ditt Matrixkontolösenord och återställ säker säkerhetskopiering.";
+"security_settings_crypto_sessions_description_2" = "Om du inte känner igen en inloggning, byt ditt quali.chatkontolösenord och återställ säker säkerhetskopiering.";
 "security_settings_secure_backup" = "SÄKER SÄKERHETSKOPIERING";
 "security_settings_secure_backup_description" = "Säkerhetskopiera dina nycklar med din kontodata ifall du förlorar åtkomst till dina sessioner. Dina nycklar kommer att säkras med en unik säkerhetsnyckel.";
 "security_settings_backup" = "MEDDELANDESÄKERHETSKOPIERING";
 "security_settings_crosssigning_bootstrap" = "Ställ in";
 "security_settings_complete_security_alert_title" = "Fullborda säkerhet";
-"security_settings_coming_soon" = "Den här åtgärden är tyvärr inte tillgänglig i %@ iOS än. Använd en annan Matrix-klient för att ställa in den. %@ iOS kommer att använda den.";
+"security_settings_coming_soon" = "Den här åtgärden är tyvärr inte tillgänglig i %@ iOS än. Använd en annan quali.chat-klient för att ställa in den. %@ iOS kommer att använda den.";
 "identity_server_settings_description" = "Du använder för närvarande %@ för att upptäcka och kunna upptäckas av befintliga kontakter du känner till.";
 "identity_server_settings_no_is_description" = "Du använder för närvarande inte en identitetsserver. För att upptäcka och bli upptäckbar av befintliga kontakter, lägg till en ovan.";
 "identity_server_settings_disconnect_info" = "Om du kopplar bort från din identitetsserver kan du inte bli upptäckt av andra användare eller bjuda in andra via e-post eller telefon.";
@@ -738,12 +738,12 @@
 "deactivate_account_informations_part2_emphasize" = "Denna åtgärd går inte att ångra.";
 "deactivate_account_informations_part3" = "\n\nAtt inaktivera ditt konto ";
 "deactivate_account_informations_part4_emphasize" = "leder inte normalt till att vi glömmer meddelanden som du har skickat. ";
-"deactivate_account_informations_part5" = "Om du vill att vi glömmer dina meddelanden, vänligen kryssa i rutan nedan\n\nSynlighet för meddelanden i Matrix liknar den i e-post. När vi glömmer dina meddelanden betyder det att meddelanden som du har skickat inte kommer att delas med några nya eller oregistrerade användare, men registrerade användare som redan har tillgång till dessa meddelanden kommer fortfarande ha tillgång till sin kopia.";
+"deactivate_account_informations_part5" = "Om du vill att vi glömmer dina meddelanden, vänligen kryssa i rutan nedan\n\nSynlighet för meddelanden i quali.chat liknar den i e-post. När vi glömmer dina meddelanden betyder det att meddelanden som du har skickat inte kommer att delas med några nya eller oregistrerade användare, men registrerade användare som redan har tillgång till dessa meddelanden kommer fortfarande ha tillgång till sin kopia.";
 "deactivate_account_forget_messages_information_part1" = "Glöm alla meddelanden som jag har skickat när mitt konto inaktiveras (";
 "deactivate_account_forget_messages_information_part3" = ": detta leder till att framtida användare kommer att se en ofullständig bild av konversationer)";
 "deactivate_account_validate_action" = "Inaktivera konto";
 "deactivate_account_password_alert_title" = "Inaktivera konto";
-"deactivate_account_password_alert_message" = "För att fortsätta, ange ditt Matrixkontolösenord";
+"deactivate_account_password_alert_message" = "För att fortsätta, ange ditt quali.chatkontolösenord";
 "rerequest_keys_alert_message" = "Starta %@ på en annan enhet som dekryptera meddelandet så att den kan skicka nycklarna till den här sessionen.";
 "secure_key_backup_setup_intro_use_security_key_title" = "Använd en säkerhetsnyckel";
 "secure_key_backup_setup_intro_use_security_key_info" = "Generera en säkerhetsnyckel att lagra på en säker plats, exempelvis i en lösenordshanterare eller ett kassaskåp.";
@@ -810,7 +810,7 @@
 "group_details_title" = "Gemenskapsdetaljer";
 "group_invitation_format" = "%@ har bjudit in dig att gå med i den här gemenskapen";
 "receipt_status_read" = "Läst: ";
-"directory_server_all_native_rooms" = "Alla nativa Matrixrum";
+"directory_server_all_native_rooms" = "Alla nativa quali.chatrum";
 "call_jitsi_error" = "Misslyckades att gå med i gruppsamtalet.";
 "call_no_stun_server_error_title" = "Samtalet misslyckades p.g.a. felkonfigurerad server";
 "call_no_stun_server_error_message_1" = "Vänligen be administratören för hemservern %@ att konfigurera en TURN-server för att samtal ska funka tillförlitligt.";
@@ -850,7 +850,7 @@
 "key_backup_setup_intro_title" = "Bli aldrig av med krypterade meddelanden";
 "key_backup_setup_intro_setup_action_without_existing_backup" = "Börja använda nyckelsäkerhetskopiering";
 "key_backup_setup_intro_setup_connect_action_with_existing_backup" = "Anslut den här enheten till nyckelsäkerhetskopiering";
-"key_backup_setup_passphrase_info" = "Vi kommer lagra en krypterad kopia av dina nycklar på vår server. Skydda din säkerhetskopia med en fras för att hålla den säker.\n\nFör maximal säkerhet bör denna skilja sig från ditt Matrixkontokontolösenord.";
+"key_backup_setup_passphrase_info" = "Vi kommer lagra en krypterad kopia av dina nycklar på vår server. Skydda din säkerhetskopia med en fras för att hålla den säker.\n\nFör maximal säkerhet bör denna skilja sig från ditt quali.chatkontokontolösenord.";
 "key_backup_setup_passphrase_setup_recovery_key_info" = "Eller säkra din säkerhetskopia med en säkerhetsnyckel och spara den någonstans säkert.";
 "key_backup_recover_invalid_passphrase" = "Säkerhetskopian kunde inte avkrypteras med den här frasen: vänligen kontrollera att du angav rätt säkerhetsfras.";
 "key_backup_recover_invalid_recovery_key_title" = "Säkerhetsnyckeln matchade inte";
@@ -1083,7 +1083,7 @@
 "secrets_setup_recovery_key_storage_alert_message" = "✓ Skriv ut den och förvara den säkert\n✓ Spara den på ett USB-minne eller säkerhetskopieringsenhet\n✓ Kopiera den till din personliga molnlagring";
 "secrets_setup_recovery_passphrase_title" = "Sätt en säkerhetsfras";
 "secrets_setup_recovery_passphrase_information" = "Ange en säkerhetsfras endast du känner till vilken används för att säkra hemligheter på din server.";
-"secrets_setup_recovery_passphrase_additional_information" = "Använd inte ditt Matrixkontolösenord.";
+"secrets_setup_recovery_passphrase_additional_information" = "Använd inte ditt quali.chatkontolösenord.";
 "secrets_setup_recovery_passphrase_validate_action" = "Klart";
 "secrets_setup_recovery_passphrase_confirm_information" = "Ange din säkerhetsfras igen för att bekräfta den.";
 "secrets_setup_recovery_passphrase_confirm_passphrase_title" = "Bekräfta";
@@ -1166,11 +1166,11 @@
 "create_room_section_footer_type" = "Personer kan endast gå med i ett privat rum om de bjuds in.";
 "create_room_show_in_directory" = "Visa i rumskatalogen";
 "create_room_section_header_address" = "ADRESS";
-"create_room_placeholder_address" = "#testrum:matrix.org";
+"create_room_placeholder_address" = "#testrum:quali.chat";
 "room_info_list_one_member" = "1 medlem";
 "room_info_list_several_members" = "%@ medlemmar";
 "room_info_list_section_other" = "Andra";
-"secrets_reset_authentication_message" = "Ange ditt Matrixkontolösenord för att bekräfta";
+"secrets_reset_authentication_message" = "Ange ditt quali.chatkontolösenord för att bekräfta";
 "secrets_reset_reset_action" = "Återställ";
 "secrets_reset_warning_message" = "så kommer du att börja om utan historik, meddelanden, betrodda enheter eller betrodda användare.";
 "secrets_reset_information" = "Gör bara detta om du inte har någon annan enhet att verifiera den här enheten med.";
@@ -1566,15 +1566,15 @@
 "room_event_action_view_in_room" = "Visa i rum";
 "room_event_action_end_poll" = "Avsluta omröstning";
 "room_event_action_remove_poll" = "Ta bort omröstning";
-"onboarding_splash_page_4_message" = "Element är också bra för arbetsplatser. Den är betrodd av världens säkraste organisationer.";
+"onboarding_splash_page_4_message" = "quali.chat är också bra för arbetsplatser. Den är betrodd av världens säkraste organisationer.";
 "onboarding_splash_page_4_title_no_pun" = "Meddelanden för ditt team.";
-"onboarding_splash_page_3_message" = "Totalsträckskrypterad och inget telefonnummer krävs. Ingen reklam eller datainsamling.";
-"onboarding_splash_page_3_title" = "Säkra meddelanden.";
-"onboarding_splash_page_2_message" = "Välj vart dina konversationer lagras, vilket ger dig kontroll och självständighet. Ansluter via Matrix.";
-"onboarding_splash_page_2_title" = "Du har kontrollen.";
-"onboarding_splash_page_1_message" = "Säker och oberoende kommunikation som ger dig samma sekretessnivå som en personlig konversation i dit eget hem.";
-"onboarding_splash_page_1_title" = "Äg dina konversationer.";
-"onboarding_splash_login_button_title" = "Jag har redan ett konto";
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
 
 // Onboarding
 "onboarding_splash_register_button_title" = "Skapa konto";
@@ -1595,22 +1595,22 @@
 "onboarding_use_case_skip_button" = "Hoppa över den här frågan";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
-"matrix" = "Matrix";
+"matrix" = "quali.chat";
 // Login Screen
 "login_create_account" = "Skapa konto:";
-"login_server_url_placeholder" = "URL (t.ex. https://matrix.org)";
+"login_server_url_placeholder" = "URL (t.ex. https://quali.chat)";
 "login_home_server_title" = "Hemserver-URL:";
 "login_home_server_info" = "Din hemserver lagrar alla dina konversationer och din kontodata";
 "login_identity_server_title" = "Identitetsserver-URL:";
-"login_identity_server_info" = "Matrix tillhandahåller identitetsservrar för att spåra vilka e-postadresser o.s.v. som tillhör vilka Matrix-ID:n. Endast https://matrix.org finns för närvarande.";
-"login_user_id_placeholder" = "Matrix-ID (t.ex. @bob:matrix.org eller bob)";
+"login_identity_server_info" = "quali.chat tillhandahåller identitetsservrar för att spåra vilka e-postadresser o.s.v. som tillhör vilka quali.chat-ID:n. Endast https://quali.chat finns för närvarande.";
+"login_user_id_placeholder" = "quali.chat-ID (t.ex. @bob:quali.chat eller bob)";
 "login_password_placeholder" = "Lösenord";
 "login_optional_field" = "valfritt";
 "login_display_name_placeholder" = "Visningsnamn (t.ex. Sven Svensson)";
-"login_email_info" = "Genom att ange en e-postadress kan andra användare hitta dig på Matrix lättare, och det ger dig ett sätt att återställa ditt lösenord i framtiden.";
+"login_email_info" = "Genom att ange en e-postadress kan andra användare hitta dig på quali.chat lättare, och det ger dig ett sätt att återställa ditt lösenord i framtiden.";
 "login_email_placeholder" = "E-postadress";
 "login_prompt_email_token" = "Ange din e-postvalideringstoken:";
 "login_error_title" = "Inloggning misslyckades";
@@ -1657,7 +1657,7 @@
 "select_account" = "Välj ett konto";
 "attach_media" = "Bifoga media från biblioteket";
 "capture_media" = "Ta bild/video";
-"invite_user" = "Bjud in Matrixanvändare";
+"invite_user" = "Bjud in quali.chatanvändare";
 "reset_to_default" = "Återställ till standard";
 "resend_message" = "Skicka meddelandet igen";
 "select_all" = "Välj allt";
@@ -1765,7 +1765,7 @@
 "account_msisdn_validation_error" = "Kunde inte verifiera telefonnummer.";
 "account_error_display_name_change_failed" = "Byte av visningsnamn misslyckades";
 "account_error_picture_change_failed" = "Byte av bild misslyckades";
-"account_error_matrix_session_is_not_opened" = "Matrixsession har inte öppnats";
+"account_error_matrix_session_is_not_opened" = "quali.chatsession har inte öppnats";
 "account_error_email_wrong_title" = "Ogiltig e-postadress";
 "account_error_email_wrong_description" = "Det här ser inte ut som en giltig e-postadress";
 "account_error_msisdn_wrong_title" = "Ogiltigt telefonnummer";
@@ -1810,10 +1810,10 @@
 "attachment_cancel_upload" = "Avbryt uppladdningen?";
 "attachment_multiselection_size_prompt" = "Vill du skicka bilder som:";
 "attachment_multiselection_original" = "Faktisk storlek";
-"attachment_e2e_keys_file_prompt" = "Den här filen innehåller krypteringsnycklar som har exporteras från en Matrixklient.\nVill du visa filinnehållet eller importera nycklarna som den innehåller?";
+"attachment_e2e_keys_file_prompt" = "Den här filen innehåller krypteringsnycklar som har exporteras från en quali.chatklient.\nVill du visa filinnehållet eller importera nycklarna som den innehåller?";
 "attachment_e2e_keys_import" = "Importera…";
 // Contacts
-"contact_mx_users" = "Matrixanvändare";
+"contact_mx_users" = "quali.chatanvändare";
 "contact_local_contacts" = "Lokala kontakter";
 // Groups
 // Search
@@ -1826,12 +1826,12 @@
 "format_time_d" = "d";
 // E2E import
 "e2e_import_room_keys" = "Importera rumsnycklar";
-"e2e_import_prompt" = "Denna process låter dig importera krypteringsnycklar som du tidigare har exporterat från en annan Matrixklient. Du kommer då kunna avkryptera alla meddelanden som den andra klienten kan avkryptera.\nExportfilen är skyddad med en lösenfras. Du bör ange lösenfrasen här för att avkryptera filen.";
+"e2e_import_prompt" = "Denna process låter dig importera krypteringsnycklar som du tidigare har exporterat från en annan quali.chatklient. Du kommer då kunna avkryptera alla meddelanden som den andra klienten kan avkryptera.\nExportfilen är skyddad med en lösenfras. Du bör ange lösenfrasen här för att avkryptera filen.";
 "e2e_import" = "Importera";
 "e2e_passphrase_enter" = "Ange lösenfras";
 // E2E export
 "e2e_export_room_keys" = "Exportera rumsnycklar";
-"e2e_export_prompt" = "Denna process låter dig exportera nycklarna för meddelanden som du har fått i krypterade rum till en lokal fil. Du kommer då att kunna importera filen till en annan Matrixklient i framtiden, så att klienten också kan avkryptera dessa meddelanden.\nDen exporterade filen tillåter alla som kan läsa den att avkryptera alla krypterade meddelanden som du kan se, så du bör vara noga med att hålla den säker.";
+"e2e_export_prompt" = "Denna process låter dig exportera nycklarna för meddelanden som du har fått i krypterade rum till en lokal fil. Du kommer då att kunna importera filen till en annan quali.chatklient i framtiden, så att klienten också kan avkryptera dessa meddelanden.\nDen exporterade filen tillåter alla som kan läsa den att avkryptera alla krypterade meddelanden som du kan se, så du bör vara noga med att hålla den säker.";
 "e2e_export" = "Exportera";
 "e2e_passphrase_confirm" = "Bekräfta lösenfras";
 "e2e_passphrase_empty" = "Lösenfrasen får inte var tom";
@@ -1856,7 +1856,7 @@
 "microphone_access_not_granted_for_call" = "Samtal kräver åtkomst till mikrofonen men %@ är inte behörig att använda den";
 "local_contacts_access_not_granted" = "Upptäckt av användare från lokala kontakter kräver åtkomst till dina kontakter men %@ är inte behörig att komma åt dem";
 "local_contacts_access_discovery_warning_title" = "Användarupptäckt";
-"local_contacts_access_discovery_warning" = "För att upptäcka kontakter som redan använder Matrix kan %@ skicka e-postadresser och telefonnummer i din adressbok till din valda Matrixidentitetsserver. Där det stöds hashas personuppgifter innan de skickas - kontrollera din identitetsservers integritetspolicy för mer information.";
+"local_contacts_access_discovery_warning" = "För att upptäcka kontakter som redan använder quali.chat kan %@ skicka e-postadresser och telefonnummer i din adressbok till din valda quali.chatidentitetsserver. Där det stöds hashas personuppgifter innan de skickas - kontrollera din identitetsservers integritetspolicy för mer information.";
 // Country picker
 "country_picker_title" = "Välj ett land";
 // Language picker
@@ -1949,7 +1949,7 @@
 "login_error_must_start_http" = "URL:en måste börja på http[s]://";
 // room details dialog screen
 // contacts list screen 
-"invitation_message" = "Jag vill chatta med dig på Matrix. Besök sidan https://matrix.org för mer information.";
+"invitation_message" = "Jag vill chatta med dig på quali.chat. Besök sidan https://quali.chat för mer information.";
 // Settings screen 
 "settings_title_config" = "Konfiguration";
 "settings_title_notifications" = "Aviseringar";
@@ -2193,7 +2193,7 @@
 "threads_beta_information" = "Håll diskussioner organiserade med trådar.\n\nTrådar hjälper dig hålla konversationer till ämnet och gör dem lättare att följa. ";
 "threads_beta_title" = "Trådar";
 "threads_notice_done" = "Jag förstår";
-"threads_notice_information" = "Alla trådar som skapades under experimentperioden kommer nu att <b>skrivas ut som vanliga svar. </b><br/><br/>Detta kommer vara en engångshändelse under övergången, eftersom trådar nu är en del av Matrix-specen.";
+"threads_notice_information" = "Alla trådar som skapades under experimentperioden kommer nu att <b>skrivas ut som vanliga svar. </b><br/><br/>Detta kommer vara en engångshändelse under övergången, eftersom trådar nu är en del av quali.chat-specen.";
 "threads_notice_title" = "Trådar är inte längre experimentella 🎉";
 "room_participants_invite_prompt_to_msg" = "Är du säker på att du vill bjuda in %@ till %@?";
 "onboarding_celebration_message" = "Gå till inställningar när som helst för att uppdatera din profil";
@@ -2264,7 +2264,7 @@
 "confirm" = "Bekräfta";
 "location_sharing_allow_background_location_cancel_action" = "Inte nu";
 "location_sharing_allow_background_location_validate_action" = "Inställningar";
-"location_sharing_allow_background_location_message" = "Om du vill dela din realtidsplats så behöver Element platsåtkomst när appen är i bakgrunden. För att aktivera åtkomst, gå till Inställningar > Plats och välj Alltid";
+"location_sharing_allow_background_location_message" = "Om du vill dela din realtidsplats så behöver quali.chat platsåtkomst när appen är i bakgrunden. För att aktivera åtkomst, gå till Inställningar > Plats och välj Alltid";
 "location_sharing_allow_background_location_title" = "Tillåt åtkomst";
 "settings_labs_enable_live_location_sharing" = "Platsdelning i realtid - dela nuvarande plats (aktiv utveckling, och för tillfället ligger platser kvar i rumshistoriken)";
 
@@ -2356,7 +2356,7 @@
 "authentication_login_title" = "Välkommen tillbaka!";
 "authentication_server_info_title" = "Där dina konversationer kommer att bo";
 "authentication_registration_password_footer" = "Måste vara minst 8 tecken";
-/* The placeholder will show the full Matrix ID that has been entered. */
+/* The placeholder will show the full quali.chat ID that has been entered. */
 "authentication_registration_username_footer_available" = "Andra kan hitta dig %@";
 "authentication_registration_username_footer" = "Du kan inte ändra detta senare";
 "authentication_registration_username" = "Användarnamn";
@@ -2451,7 +2451,7 @@
 "authentication_qr_login_scan_subtitle" = "Placera QR-koden i rutan nedan";
 "authentication_qr_login_scan_title" = "Skanna QR-kod";
 "authentication_qr_login_display_step2" = "Välj 'Logga in med QR-kod'";
-"authentication_qr_login_display_step1" = "Öppna Element på din andra enhet";
+"authentication_qr_login_display_step1" = "Öppna quali.chat på din andra enhet";
 "authentication_qr_login_display_subtitle" = "Skanna QR-koden nedan med din enhet som är utloggad.";
 "authentication_qr_login_display_title" = "Länka en enhet";
 "authentication_qr_login_start_display_qr" = "Visa QR-kod på den här enheten";
@@ -2459,7 +2459,7 @@
 "authentication_qr_login_start_step4" = "Välj 'Visa QR-kod på den här enheten'";
 "authentication_qr_login_start_step3" = "Välj 'Länka en enhet'";
 "authentication_qr_login_start_step2" = "Gå till Inställningar -> Säkerhet & sekretess";
-"authentication_qr_login_start_step1" = "Öppna Element på den andra enheten";
+"authentication_qr_login_start_step1" = "Öppna quali.chat på den andra enheten";
 "authentication_qr_login_start_subtitle" = "Använd kameran på den här enheten för att skanna QR-koden som visas på den andra enheten:";
 "authentication_qr_login_start_title" = "Skanna QR-kod";
 "authentication_choose_password_not_verified_message" = "Kolla din inkorg";
@@ -2559,10 +2559,10 @@
 "user_session_rename_session_title" = "Döper om sessioner";
 "user_session_inactive_session_description" = "Inaktiva sessioner är sessioner du inte har använt på ett tag, men de fortsätter att ta emot krypteringsnycklar.\n\nBorttagning av inaktiva sessioner förbättrar säkerhet och prestanda, och gör det enklare för dig att identifiera om en ny session ser misstänkt ut.";
 "user_session_inactive_session_title" = "Inaktiva sessioner";
-"user_session_permanently_unverified_session_description" = "Sessionen stöder inte kryptering, så den kan inte verifieras.\n\nDu kommer inte kunna delta i rum där kryptering är aktiverat när du använder den här sessionen.\n\nFör bäst säkerhet så rekommenderas det att använda Matrixklienter som stöder kryptering.";
+"user_session_permanently_unverified_session_description" = "Sessionen stöder inte kryptering, så den kan inte verifieras.\n\nDu kommer inte kunna delta i rum där kryptering är aktiverat när du använder den här sessionen.\n\nFör bäst säkerhet så rekommenderas det att använda quali.chatklienter som stöder kryptering.";
 "user_session_unverified_session_description" = "Overifierade sessioner är sessioner som har loggat in med dina uppgifter men som inte har korsverifierats.\n\nDu bör speciellt försäkra att du känner igen dessa sessioner eftersom de kan representera obehörig användning av ditt konto.";
 "user_session_unverified_session_title" = "Overifierad session";
-"user_session_verified_session_description" = "Verifierade sessioner är alla ställen där du använder Element efter att ha angett din lösenfras eller bekräftat din identitet med en annan verifierad session.\n\nDet betyder att du har alla nycklar som krävs för att låsa upp krypterade meddelanden och bekräfta för andra användare att du litar på den här sessionen.";
+"user_session_verified_session_description" = "Verifierade sessioner är alla ställen där du använder quali.chat efter att ha angett din lösenfras eller bekräftat din identitet med en annan verifierad session.\n\nDet betyder att du har alla nycklar som krävs för att låsa upp krypterade meddelanden och bekräfta för andra användare att du litar på den här sessionen.";
 "user_session_verified_session_title" = "Verifierade sessioner";
 "user_session_got_it" = "Förstått";
 "user_session_push_notifications_message" = "När aktiverad så tar den här sessionen emot pushnotiser.";
@@ -2684,7 +2684,7 @@
 "device_verification_self_verify_open_on_other_device_title" = "Öppna %@ på din andra enhet";
 "device_verification_self_verify_wait_recover_secrets_additional_help" = "Kan du inte komma åt en befintlig %@-session?";
 "key_verification_scan_qr_code_title" = "Skanna QR-kod";
-"device_verification_self_verify_open_on_other_device_information" = "Du behöver verifiera den här sessionen för att kunna läsa din säkra meddelandehistorik.\n\nÖppna Element på en av dina andra enheter och följ instruktionerna.";
+"device_verification_self_verify_open_on_other_device_information" = "Du behöver verifiera den här sessionen för att kunna läsa din säkra meddelandehistorik.\n\nÖppna quali.chat på en av dina andra enheter och följ instruktionerna.";
 "key_verification_scan_qr_code_information_other_user" = "Rikta kameran mot QR-koden som visas på deras enhet för att verifiera deras session";
 "room_waiting_other_participants_title" = "Väntar på att användare ska gå med i %@";
 "pill_message_from" = "Meddelande från %@";
@@ -2705,12 +2705,25 @@
 "key_verification_scan_qr_code_information_new_session" = "Rikta kameran mot QR-koden som visas på din andra enhet för att verifiera din nya session";
 "key_verification_scan_qr_code_information_other_session" = "Rikta kameran mot QR-koden som visas på din andra enhet för att verifiera din session";
 "room_creation_user_not_found_prompt_title" = "Bekräftelse";
-"room_creation_user_not_found_prompt_message" = "Kunde inte hitta profiler för det här Matrix-ID:t. Vill du starta en DM ändå?";
+"room_creation_user_not_found_prompt_message" = "Kunde inte hitta profiler för det här quali.chat-ID:t. Vill du starta en DM ändå?";
 "room_creation_user_not_found_prompt_invite_action" = "Starta en DM ändå";
-"room_participants_invite_unknown_participant_prompt_to_msg" = "Kunde inte hitta profiler för det här Matrix-ID:t. Är du säker på att du vill bjuda in %@ till %@?";
+"room_participants_invite_unknown_participant_prompt_to_msg" = "Kunde inte hitta profiler för det här quali.chat-ID:t. Är du säker på att du vill bjuda in %@ till %@?";
 "room_participants_invite_anyway" = "Bjud in ändå";
 "settings_manage_account_title" = "Konto";
 "settings_manage_account_action" = "Hantera konto";
 "settings_manage_account_description" = "Hantera ditt konto på %@";
 "manage_session_redirect" = "Du kommer att omdirigeras till din servers autentiseringsleverantör för att fortsätta utloggning.";
 "manage_session_redirect_error" = "Funktion för närvarande otillgänglig. Vänligen kontakta din hemserveradministratör";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified
+"demo_login_placeholder" = "Username"; // QUALICHAT modified

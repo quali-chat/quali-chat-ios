@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2015 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  
@@ -50,6 +51,9 @@
         self.dotView.layer.masksToBounds = YES;
         self.dotView.layer.cornerRadius = CGRectGetMidX(self.dotView.bounds);
     }
+    
+    self.customRoomLabel.textColor = self.displayNameTextField.textColor;
+    self.customRoomLabel.font = self.displayNameTextField.font;
 }
 
 - (void)layoutSubviews
@@ -106,6 +110,12 @@
     if (self.roomPreviewData)
     {
         self.displayNameTextField.text = self.roomPreviewData.roomName;
+        
+#if QUALICHAT
+        self.displayNameTextField.alpha = 0.0;
+        self.customRoomLabel.attributedText = [self.roomPreviewData.roomName fixDisplayNameInRoomTitleWithCapHeight:self.displayNameTextField.font.capHeight];
+#endif
+        
     }
     else if (self.mxRoom)
     {
@@ -122,13 +132,26 @@
         }
         
         self.displayNameTextField.text = self.mxRoom.summary.displayName;
+        
+#if QUALICHAT
+        self.displayNameTextField.alpha = 0.0;
+        self.customRoomLabel.attributedText = [self.mxRoom.summary.displayName fixDisplayNameInRoomTitleWithCapHeight:self.displayNameTextField.font.capHeight];
+#endif
+        
         if (!self.displayNameTextField.text.length)
         {
+#if QUALICHAT
+            self.customRoomLabel.text = [VectorL10n roomDisplaynameEmptyRoom];
+            self.customRoomLabel.textColor = ThemeService.shared.theme.textSecondaryColor;
+#endif
             self.displayNameTextField.text = [VectorL10n roomDisplaynameEmptyRoom];
             self.displayNameTextField.textColor = ThemeService.shared.theme.textSecondaryColor;
         }
         else
         {
+#if QUALICHAT
+            self.customRoomLabel.textColor = ThemeService.shared.theme.textPrimaryColor;
+#endif
             self.displayNameTextField.textColor = ThemeService.shared.theme.textPrimaryColor;
         }
     }

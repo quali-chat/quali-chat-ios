@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2019 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +38,7 @@ final class KeyBackupRecoverFromPassphraseViewController: UIViewController {
     @IBOutlet private weak var unknownPassphraseButton: UIButton!
     
     @IBOutlet private weak var recoverButtonBackgroundView: UIView!
-    @IBOutlet private weak var recoverButton: UIButton!
+    @IBOutlet private weak var recoverButton: RoundedButton!
     
     // MARK: Private
     
@@ -115,9 +116,11 @@ final class KeyBackupRecoverFromPassphraseViewController: UIViewController {
     
     private func update(theme: Theme) {
         self.theme = theme
-        
+        #if QUALICHAT
+        self.view.backgroundColor = theme.backgroundColor
+        #else
         self.view.backgroundColor = theme.headerBackgroundColor
-        
+        #endif
         if let navigationBar = self.navigationController?.navigationBar {
             theme.applyStyle(onNavigationBar: navigationBar)
         }
@@ -135,8 +138,10 @@ final class KeyBackupRecoverFromPassphraseViewController: UIViewController {
         self.theme.applyStyle(onButton: self.passphraseVisibilityButton)
         
         self.recoverButtonBackgroundView.backgroundColor = theme.backgroundColor
-        theme.applyStyle(onButton: self.recoverButton)
         
+        #if !QUALICHAT
+        theme.applyStyle(onButton: self.recoverButton)
+        #endif
         let unknownRecoveryKeyAttributedString = NSMutableAttributedString(string: VectorL10n.keyBackupRecoverFromPassphraseLostPassphraseActionPart1, attributes: [.foregroundColor: self.theme.textPrimaryColor])
         let unknownRecoveryKeyAttributedStringPart2 = NSAttributedString(string: VectorL10n.keyBackupRecoverFromPassphraseLostPassphraseActionPart2, attributes: [.foregroundColor: self.theme.tintColor])
         let unknownRecoveryKeyAttributedStringPart3 = NSAttributedString(string: VectorL10n.keyBackupRecoverFromPassphraseLostPassphraseActionPart3, attributes: [.foregroundColor: self.theme.textPrimaryColor])

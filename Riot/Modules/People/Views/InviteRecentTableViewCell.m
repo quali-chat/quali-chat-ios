@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2015 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  
@@ -63,6 +64,9 @@ NSString *const kInviteRecentTableViewCellRoomKey = @"kInviteRecentTableViewCell
     self.leftButton.titleLabel.font = ThemeService.shared.theme.fonts.body;
     [self.leftButton setTitleColor:ThemeService.shared.theme.colors.alert forState:UIControlStateNormal];
 
+#if QUALICHAT
+    [self.rightButton setTitleColor:ThemeService.shared.theme.tintBackgroundColor forState:UIControlStateNormal];
+#endif
     self.rightButton.backgroundColor = ThemeService.shared.theme.tintColor;
     self.rightButton.titleLabel.font = ThemeService.shared.theme.fonts.body;
 }

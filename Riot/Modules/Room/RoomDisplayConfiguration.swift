@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,11 +39,18 @@ class RoomDisplayConfiguration: NSObject {
         super.init()
     }
     
+    #if QUALICHAT
+    static let `default`: RoomDisplayConfiguration = RoomDisplayConfiguration(callsEnabled: QualiChatBuildSettings.enableVideoAudioCall,
+                                                                              integrationsEnabled: true,
+                                                                              jitsiWidgetRemoverEnabled: true,
+                                                                              sendingPollsEnabled: true)
+    #else
+    
     static let `default`: RoomDisplayConfiguration = RoomDisplayConfiguration(callsEnabled: true,
                                                                               integrationsEnabled: true,
                                                                               jitsiWidgetRemoverEnabled: true,
                                                                               sendingPollsEnabled: true)
-    
+    #endif
     static let forThreads: RoomDisplayConfiguration = RoomDisplayConfiguration(callsEnabled: false,
                                                                                integrationsEnabled: false,
                                                                                jitsiWidgetRemoverEnabled: false,

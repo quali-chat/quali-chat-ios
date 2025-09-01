@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2020 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -52,21 +53,37 @@ final class InviteFriendsHeaderView: UIView, NibLoadable, Themable {
         
         button.setTitle(VectorL10n.inviteFriendsAction(AppInfo.current.displayName), for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        
+        #if QUALICHAT
+        button.layer.cornerRadius = QualiChatBuildSettings.cornerRadiusButton
+        #else
         button.layer.cornerRadius = 8
+        #endif
         button.layer.borderWidth = 2
     }
     
     // MARK: - Public
     
     func update(theme: Theme) {
+        #if QUALICHAT
+        button.layer.borderColor = theme.tintColor.cgColor
+        button.setTitleColor(theme.tintBackgroundColor, for: .normal)
+        button.setTitleColor(theme.tintBackgroundColor.withAlphaComponent(Constants.buttonHighlightedAlpha), for: .highlighted)
+        button.vc_setBackgroundColor(theme.tintColor, for: .normal)
+
+        let buttonImage = Asset.Images.shareActionButton.image.vc_tintedImage(usingColor: theme.tintBackgroundColor)
+        
+        button.setImage(buttonImage, for: .normal)
+        #else
         button.layer.borderColor = theme.tintColor.cgColor
         button.setTitleColor(theme.tintColor, for: .normal)
         button.setTitleColor(theme.tintColor.withAlphaComponent(Constants.buttonHighlightedAlpha), for: .highlighted)
         button.vc_setBackgroundColor(theme.baseColor, for: .normal)
-        
+
         let buttonImage = Asset.Images.shareActionButton.image.vc_tintedImage(usingColor: theme.tintColor)
         
         button.setImage(buttonImage, for: .normal)
+        #endif
     }
     
     // MARK: - Action

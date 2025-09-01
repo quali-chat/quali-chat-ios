@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2019 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -55,6 +56,10 @@ final class ActivityIndicatorPresenter: ActivityIndicatorPresenterType {
         let backgroundOverlayView = self.createBackgroundOverlayView(with: view.frame)
         
         let activityIndicatorView = ActivityIndicatorView()
+        
+        #if QUALICHAT
+        activityIndicatorView.color = ThemeService.shared().theme.colors.background
+        #endif
         
         // Add activityIndicatorView on backgroundOverlayView centered
         backgroundOverlayView.addSubview(activityIndicatorView)

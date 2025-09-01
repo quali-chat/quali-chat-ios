@@ -24,7 +24,7 @@
 "camera" = "카메라";
 // String for App Store
 "store_short_description" = "안전한 분산 대화/VoIP";
-"store_full_description" = "Element는 다음과 같은 기능을 제공하는 새로운 유형의 메신저입니다.\n\n1. 프라이버시를 관리할 수 있는 권한을 제공합니다.\n2. Matrix 네트워크의 사용자와 통신할 수 있을 뿐만 아니라 Slack 등의 \n앱을 연계하여 다른 네트워크와도 통신할 수 있습니다.\n3. 광고, 데이터마이닝, 백도어와 클로즈 플랫폼으로부터의 사용자를 보호합니다.\n4. 교차 검증과 강력한 종단간 암호화을 통해 사용자를 보호합니다.\n\nElement는 탈중앙화이며 오픈 소스이기 때문에 다른 메신저 앱과는 완전히 다릅니다.\n\nElement에서는 데이터 및 대화에 대한 소유권 및 제어 권한을 가질 수 있도록 자체 호스팅을 통해 \n직접 메신저 서버를 운영할 수 있고, 다른 사용자가 제공하고 있는 서버를 선택할 수 있습니다. 또한 개방형 네트워크에 액세스할 수 있으므로 Element 이외의 사용자와도 이야기할 수 있습니다. 그리고 매우 안전합니다.\n\nElement는 개방-분산형 통신의 표준인 Matrix에서 동작하기 때문에 이 모든 것을 수행할 수 있습니다.\n\nElement는 어떤 서버를 사용할지 사용자가 직접 Element 앱에서 결정할 수 있습니다.\n\n1. matrix.org의 공식 서버에서 무료 계정을 생성한다.\n2. 자체 호스팅을 통해 직접 서버를 운영하고 계정을 관리한다.\n3. Element Matrix Services의 호스팅 플랫폼에 가입하여 사용자 커스텀 서버에서 계정을 만든다.\n\n왜 Element를 선택해야합니까?\n\n내 데이터를 내가 소유함: 데이터나 메시지를 보관할 곳을 스스로 정할 수 있습니다. 데이터를 수집하거나 제 3자에게 데이터를 제공하는 거대 IT 기업이 아닌, 사용자가 스스로 데이터를 소유하고 제어할 수 있습니다.\n\n개방적인 메시징 및 협업: Element 또는 다른 Matrix 앱을 사용하든, 심지어 Slack, IRC, XMPP와 같은 다른 메시징 시스템을 사용하던 상관없이 Matrix 네트워크 상의 다른 사용자와 채팅할 수 있습니다.\n\n매우 안전함: 강력한 종단간 암호화(대화에 참여하고 있는 사람만 메시지를 복호화할 수 있습니다) 및 대화 참가자의 장치를 확인하기 위한 교차 검증을 실시할 수 있습니다.\n\n완벽한 커뮤니케이션: 메시징, 음성 및 화상 통화, 파일 공유, 화면 공유 및 다양한 통합, 봇, 위젯 등을 제공합니다. 방이나 커뮤니티를 만들어 서로 연락하고 일을 원활하게 해낼 수 있습니다.\n\n언제 어디서나: 모든 장치 및 웹(https://element.io/app)에서 메시지가 완전히 동기화되므로 언제 어디서나 연락을 취할 수 있습니다.";
+"store_full_description" = "quali.chat는 다음과 같은 기능을 제공하는 새로운 유형의 메신저입니다.\n\n1. 프라이버시를 관리할 수 있는 권한을 제공합니다.\n2. quali.chat 네트워크의 사용자와 통신할 수 있을 뿐만 아니라 Slack 등의 \n앱을 연계하여 다른 네트워크와도 통신할 수 있습니다.\n3. 광고, 데이터마이닝, 백도어와 클로즈 플랫폼으로부터의 사용자를 보호합니다.\n4. 교차 검증과 강력한 종단간 암호화을 통해 사용자를 보호합니다.\n\nquali.chat는 탈중앙화이며 오픈 소스이기 때문에 다른 메신저 앱과는 완전히 다릅니다.\n\nquali.chat에서는 데이터 및 대화에 대한 소유권 및 제어 권한을 가질 수 있도록 자체 호스팅을 통해 \n직접 메신저 서버를 운영할 수 있고, 다른 사용자가 제공하고 있는 서버를 선택할 수 있습니다. 또한 개방형 네트워크에 액세스할 수 있으므로 quali.chat 이외의 사용자와도 이야기할 수 있습니다. 그리고 매우 안전합니다.\n\nquali.chat는 개방-분산형 통신의 표준인 quali.chat에서 동작하기 때문에 이 모든 것을 수행할 수 있습니다.\n\nquali.chat는 어떤 서버를 사용할지 사용자가 직접 quali.chat 앱에서 결정할 수 있습니다.\n\n1. quali.chat의 공식 서버에서 무료 계정을 생성한다.\n2. 자체 호스팅을 통해 직접 서버를 운영하고 계정을 관리한다.\n3. quali.chat의 호스팅 플랫폼에 가입하여 사용자 커스텀 서버에서 계정을 만든다.\n\n왜 quali.chat를 선택해야합니까?\n\n내 데이터를 내가 소유함: 데이터나 메시지를 보관할 곳을 스스로 정할 수 있습니다. 데이터를 수집하거나 제 3자에게 데이터를 제공하는 거대 IT 기업이 아닌, 사용자가 스스로 데이터를 소유하고 제어할 수 있습니다.\n\n개방적인 메시징 및 협업: quali.chat 또는 다른 quali.chat 앱을 사용하든, 심지어 Slack, IRC, XMPP와 같은 다른 메시징 시스템을 사용하던 상관없이 quali.chat 네트워크 상의 다른 사용자와 채팅할 수 있습니다.\n\n매우 안전함: 강력한 종단간 암호화(대화에 참여하고 있는 사람만 메시지를 복호화할 수 있습니다) 및 대화 참가자의 장치를 확인하기 위한 교차 검증을 실시할 수 있습니다.\n\n완벽한 커뮤니케이션: 메시징, 음성 및 화상 통화, 파일 공유, 화면 공유 및 다양한 통합, 봇, 위젯 등을 제공합니다. 방이나 커뮤니티를 만들어 서로 연락하고 일을 원활하게 해낼 수 있습니다.\n\n언제 어디서나: 모든 장치 및 웹(https://element.io/app)에서 메시지가 완전히 동기화되므로 언제 어디서나 연락을 취할 수 있습니다.";
 "join" = "참가";
 "decline" = "끊기";
 "accept" = "수락";
@@ -55,8 +55,8 @@
 "auth_optional_phone_placeholder" = "전화번호 (선택)";
 "auth_phone_placeholder" = "전화번호";
 "auth_repeat_password_placeholder" = "비밀번호 다시 입력";
-"auth_repeat_new_password_placeholder" = "새 Matrix 계정 비밀번호 확인";
-"auth_home_server_placeholder" = "URL (예: https://matrix.org)";
+"auth_repeat_new_password_placeholder" = "새 quali.chat 계정 비밀번호 확인";
+"auth_home_server_placeholder" = "URL (예: https://quali.chat)";
 "auth_identity_server_placeholder" = "URL (예: https://vector.im)";
 "auth_invalid_login_param" = "맞지 않은 사용자 이름 혹은 비밀번호";
 "auth_invalid_user_name" = "사용자 이름에는 문자, 숫자, 점, 하이픈(-)과 밑줄(_)만 들어갑니다";
@@ -76,8 +76,8 @@
 "auth_untrusted_id_server" = "ID 서버를 신뢰할 수 없습니다";
 "auth_password_dont_match" = "비밀번호가 맞지 않음";
 "auth_username_in_use" = "사용 중인 사용자 이름";
-"auth_forgot_password" = "Matrix 계정 비밀번호를 잊었습니까?";
-"auth_forgot_password_error_no_configured_identity_server" = "설정된 ID 서버가 없습니다: Matrix 계정 비밀번호를 초기화를 위해 ID 서버를 추가합니다.";
+"auth_forgot_password" = "quali.chat 계정 비밀번호를 잊었습니까?";
+"auth_forgot_password_error_no_configured_identity_server" = "설정된 ID 서버가 없습니다: quali.chat 계정 비밀번호를 초기화를 위해 ID 서버를 추가합니다.";
 "auth_email_not_found" = "이메일 전송에 실패함: 이 이메일 주소를 찾을 수 없음";
 "auth_use_server_options" = "맞춤 서버 옵션 사용 (고급)";
 "auth_email_validation_message" = "가입을 계속하려면 이메일을 확인해주세요";
@@ -85,13 +85,13 @@
 "auth_msisdn_validation_message" = "활성 코드가 있는 SMS를 보냈습니다. 아래에 이 코드를 입력해주세요.";
 "auth_msisdn_validation_error" = "전화번호를 확인할 수 없습니다.";
 "auth_recaptcha_message" = "이 홈서버는 당신이 로봇이 아닌지 알고 싶습니다";
-"auth_reset_password_message" = "Matrix 계정 비밀번호를 초기화하려면 계정에 연결된 이메일 주소를 입력하세요:";
+"auth_reset_password_message" = "quali.chat 계정 비밀번호를 초기화하려면 계정에 연결된 이메일 주소를 입력하세요:";
 "auth_reset_password_missing_email" = "계정에 연결된 이메일 주소를 입력해야 합니다.";
 "auth_reset_password_missing_password" = "새 비밀번호를 입력해야 합니다.";
 "auth_reset_password_email_validation_message" = "이메일을 %@(으)로 보냈습니다. 링크를 따라간 뒤, 아래를 클릭하세요.";
 "auth_reset_password_next_step_button" = "저는 제 이메일 주소를 확인했습니다";
 "auth_reset_password_error_unauthorized" = "이메일 주소 확인에 실패함: 이메일에 있는 링크를 클릭했는 지 확인하세요";
-"auth_reset_password_error_not_found" = "이메일 주소가 이 홈서버의 Matrix ID에 연결되어 있지 않습니다.";
+"auth_reset_password_error_not_found" = "이메일 주소가 이 홈서버의 quali.chat ID에 연결되어 있지 않습니다.";
 "auth_reset_password_success_message" = "비밀번호가 재설정되었습니다.\n\n모든 기기에서 로그아웃되며 더 이상 푸시 알림을 받을 수 없습니다. 알림을 다시 켜려면 각 기기마다 다시 로그인하세요.";
 "auth_add_email_and_phone_warning" = "API가 있기 전까진 이메일과 전화번호를 동시에 등록하는 것을 지원하지 않습니다. 오직 계정에는 전화번호만 들어갑니다. 설정에서 프로필에 이메일을 추가할 수 있습니다.";
 "auth_accept_policies" = "이 홈서버의 정책을 검토하고 수락해주세요:";
@@ -122,7 +122,7 @@
 "room_creation_keep_private" = "개인으로 유지";
 "room_creation_make_private" = "개인으로 하기";
 "room_creation_wait_for_creation" = "방을 이미 만드는 중입니다. 기다려주세요.";
-"room_creation_invite_another_user" = "사용자 ID, 이름 또는 이메일";
+"room_creation_invite_another_user" = "사용자 ID 또는 이름 또는 이메일";
 "room_creation_error_invite_user_by_email_without_identity_server" = "ID 서버가 설정되지 않아 이메일로 참가자를 추가할 수 없습니다.";
 // Room recents
 "room_recents_directory_section" = "방 목록";
@@ -165,7 +165,7 @@
 "directory_search_fail" = "데이터 가져오기에 실패함";
 // Contacts
 "contacts_address_book_section" = "로컬 연락처";
-"contacts_address_book_matrix_users_toggle" = "Matrix 사용자만";
+"contacts_address_book_matrix_users_toggle" = "quali.chat 사용자만";
 "contacts_address_book_no_contact" = "로컬 연락처 없음";
 "contacts_address_book_permission_required" = "로컬 연락처에 접근하는데 필요한 권한";
 "contacts_address_book_permission_denied" = "%@이(가) 연락처에 접근하도록 허용하지 않음";
@@ -186,7 +186,7 @@
 "room_participants_filter_room_members" = "방 구성원 필터";
 "room_participants_invite_another_user" = "검색 / 사용자 ID, 이름 또는 이메일로 초대";
 "room_participants_invite_malformed_id_title" = "초대 오류";
-"room_participants_invite_malformed_id" = "잘못된 ID. 이메일 주소 혹은 '@localpart:domain'과 같은 Matrix ID이어야 합니다";
+"room_participants_invite_malformed_id" = "잘못된 ID. 이메일 주소 혹은 '@localpart:domain'과 같은 quali.chat ID이어야 합니다";
 "room_participants_invited_section" = "초대받음";
 "room_participants_start_new_chat_error_using_user_email_without_identity_server" = "ID 서버가 설정되지 않아서 이메일을 사용하는 연락처와 대화를 시작할 수 없습니다.";
 "room_participants_online" = "온라인";
@@ -223,7 +223,7 @@
 "room_message_placeholder" = "(암호화 안 된) 메시지를 보내세요…";
 "room_message_reply_to_placeholder" = "(암호화 안 된) 답장을 보내세요…";
 "room_message_unable_open_link_error_message" = "링크를 열 수 없습니다.";
-"room_do_not_have_permission_to_post" = "이 방에 글을 올릴 권한이 없습니다";
+"room_do_not_have_permission_to_post" = "You need to have the room token in your wallet to post to this room.";
 "encrypted_room_message_placeholder" = "암호화된 메시지를 보내세요…";
 "encrypted_room_message_reply_to_placeholder" = "암호화된 답장을 보내세요…";
 "room_message_short_placeholder" = "메시지를 보내세요…";
@@ -340,7 +340,7 @@
 "settings_add_email_address" = "이메일 주소 추가";
 "settings_phone_number" = "휴대 전화";
 "settings_add_phone_number" = "전화번호 추가";
-"settings_change_password" = "Matrix 계정 비밀번호 변경";
+"settings_change_password" = "quali.chat 계정 비밀번호 변경";
 "settings_night_mode" = "야간 모드";
 "settings_fail_to_update_profile" = "프로필 업데이트에 실패함";
 "settings_enable_push_notif" = "이 기기에서 알림";
@@ -496,7 +496,7 @@
 "group_participants_filter_members" = "커뮤니티 구성원 필터";
 "group_participants_invite_another_user" = "사용자 ID 또는 이름으로 검색 / 초대";
 "group_participants_invite_malformed_id_title" = "초대 오류";
-"group_participants_invite_malformed_id" = "잘못된 ID. '@localpart:domain'과 같은 Matrix ID이어야 합니다";
+"group_participants_invite_malformed_id" = "잘못된 ID. '@localpart:domain'과 같은 quali.chat ID이어야 합니다";
 "group_participants_invited_section" = "초대받음";
 // Group rooms
 "group_rooms_filter_rooms" = "커뮤니티 방 필터";
@@ -514,9 +514,9 @@
 "directory_title" = "목록";
 "directory_server_picker_title" = "목록을 선택";
 "directory_server_all_rooms" = "%@ 서버에 있는 모든 방";
-"directory_server_all_native_rooms" = "모든 네이티브 Matrix 방";
+"directory_server_all_native_rooms" = "모든 네이티브 quali.chat 방";
 "directory_server_type_homeserver" = "홈서버를 입력하면 공개 방 목록을 나열합니다";
-"directory_server_placeholder" = "matrix.org";
+"directory_server_placeholder" = "quali.chat";
 // Events formatter
 "event_formatter_member_updates" = "%tu명의 구성원 변경 사항";
 "event_formatter_widget_added" = "%@ 위젯을 %@님이 추가했습니다";
@@ -613,7 +613,7 @@
 "deactivate_account_informations_part2_emphasize" = "이 행동은 돌이킬 수 없습니다.";
 "deactivate_account_informations_part3" = "\n\n계정 비활성화하기 ";
 "deactivate_account_informations_part4_emphasize" = "우리는 보낸 메시지는 기본적으로 지우지 않습니다. ";
-"deactivate_account_informations_part5" = "메시지를 지우고 싶다면 아래 상자를 체크하시요\n\nMatrix에서 메시지 가시성은 이메일과 유사합니다. 메시지를 지운다는 것은 보낸 메시지를 더 이상 새로운 혹은 등록하지 않은 사용자와 공유하는 않는 다는 것입니다, 하지만 이미 이 메시지에 접근한 등록한 사용자라면 그 사본에 계속 접근할 수 있습니다.";
+"deactivate_account_informations_part5" = "메시지를 지우고 싶다면 아래 상자를 체크하시요\n\nquali.chat에서 메시지 가시성은 이메일과 유사합니다. 메시지를 지운다는 것은 보낸 메시지를 더 이상 새로운 혹은 등록하지 않은 사용자와 공유하는 않는 다는 것입니다, 하지만 이미 이 메시지에 접근한 등록한 사용자라면 그 사본에 계속 접근할 수 있습니다.";
 "deactivate_account_forget_messages_information_part1" = "계정을 비활성화하면 보낸 모든 메시지를 지워주세요 (";
 "deactivate_account_forget_messages_information_part2_emphasize" = "경고";
 "deactivate_account_forget_messages_information_part3" = ": 이것은 이후 사용자가 불완전한 대화를 보게 됩니다)";
@@ -634,7 +634,7 @@
 "key_backup_setup_intro_manual_export_info" = "(고급)";
 "key_backup_setup_intro_manual_export_action" = "수동으로 키 내보내기";
 "key_backup_setup_passphrase_title" = "백업을 보안 암호로 보호하기";
-"key_backup_setup_passphrase_info" = "암호화된 키의 사본을 서버에 보관합니다. 암호로 된 백업을 보호하며 안전하게 유지해줍니다.\n\n보안을 최대화하려면, 암호는 Matrix 계정의 비밀번호와 달라야 합니다.";
+"key_backup_setup_passphrase_info" = "암호화된 키의 사본을 서버에 보관합니다. 암호로 된 백업을 보호하며 안전하게 유지해줍니다.\n\n보안을 최대화하려면, 암호는 quali.chat 계정의 비밀번호와 달라야 합니다.";
 "key_backup_setup_passphrase_passphrase_title" = "입력";
 "key_backup_setup_passphrase_passphrase_placeholder" = "암호 입력";
 "key_backup_setup_passphrase_passphrase_valid" = "좋아요!";
@@ -816,8 +816,8 @@
 "auth_add_email_message_2" = "계정 복구 용 이메일을 설정하세요, 이후 당신을 아는 사람들이 선택적으로 당신을 찾을 수 있도록 할 수 있습니다.";
 "auth_add_phone_message_2" = "전화를 설정하세요, 이후 당신을 아는 사람들이 선택적으로 당신을 찾을 수 있도록 할 수 있습니다.";
 "auth_add_email_phone_message_2" = "계정 복구 용 이메일을 설정하세요. 이후 당신을 아는 사람들이 선택적으로 당신을 찾을 수 있도록 이메일이나 전화를 사용할 수 있습니다.";
-"auth_email_is_required" = "설정된 ID 서버가 없으므로 이후에 Matrix 계정 비밀번호를 초기화할 이메일 주소를 추가할 수 없습니다.";
-"auth_phone_is_required" = "설정된 ID 서버가 없으므로 이후에 Matrix 계정 비밀번호를 초기화할 전화번호를 추가할 수 없습니다.";
+"auth_email_is_required" = "설정된 ID 서버가 없으므로 이후에 quali.chat 계정 비밀번호를 초기화할 이메일 주소를 추가할 수 없습니다.";
+"auth_phone_is_required" = "설정된 ID 서버가 없으므로 이후에 quali.chat 계정 비밀번호를 초기화할 전화번호를 추가할 수 없습니다.";
 "auth_reset_password_error_is_required" = "설정된 ID 서버가 없음: 비밀번호를 초기화하려면 서버 설정에서 하나를 추가하세요.";
 "contacts_address_book_no_identity_server" = "설정된 ID 서버 없음";
 "settings_discovery_settings" = "탐색";
@@ -1123,16 +1123,16 @@
 "enable" = "활성화";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
-"matrix" = "Matrix";
+"matrix" = "quali.chat";
 // Login Screen
 "login_create_account" = "계정 만들기:";
-"login_server_url_placeholder" = "URL (예: https://matrix.org)";
+"login_server_url_placeholder" = "URL (예: https://quali.chat)";
 "login_home_server_title" = "홈서버 URL:";
 "login_identity_server_title" = "ID 서버 URL:";
-"login_user_id_placeholder" = "Matrix ID (예: @bob:matrix.org 혹은 bob)";
+"login_user_id_placeholder" = "quali.chat ID (예: @bob:quali.chat 혹은 bob)";
 "login_password_placeholder" = "비밀번호";
 "login_optional_field" = "선택";
 "login_email_placeholder" = "이메일 주소";
@@ -1163,7 +1163,7 @@
 "start_video_call" = "영상 통화 시작";
 "select_account" = "계정 선택";
 "capture_media" = "사진/영상 찍기";
-"invite_user" = "Matrix 사용자 초대";
+"invite_user" = "quali.chat 사용자 초대";
 "reset_to_default" = "기본으로 되돌리기";
 "resend_message" = "메시지 다시 보내기";
 "select_all" = "모두 선택";
@@ -1217,9 +1217,9 @@
 "language_picker_title" = "언어를 고르세요";
 "language_picker_default_language" = "기본 (%@)";
 "login_home_server_info" = "당신의 홈서버는 대화와 계정 정보를 저장합니다";
-"login_identity_server_info" = "Matrix는 어떤 이메일이 어떤 Matrix ID에 속하느 지 추적하도록 ID 서버를 제공합니다. 현재는 https://matrix.org만 존재합니다.";
+"login_identity_server_info" = "quali.chat는 어떤 이메일이 어떤 quali.chat ID에 속하느 지 추적하도록 ID 서버를 제공합니다. 현재는 https://quali.chat만 존재합니다.";
 "login_display_name_placeholder" = "표시 이름 (예: Bob Obson)";
-"login_email_info" = "다른 사용자가 Matrix에서 당신을 더 쉽게 찾고, 이후 비밀번호를 다시 설정할 수 있도록 이메일 주소를 지정하세요.";
+"login_email_info" = "다른 사용자가 quali.chat에서 당신을 더 쉽게 찾고, 이후 비밀번호를 다시 설정할 수 있도록 이메일 주소를 지정하세요.";
 "login_prompt_email_token" = "이메일 확인 토큰을 입럭해주세요:";
 "login_error_no_login_flow" = "이 홈서버에서 확인 정보를 검색하는데 실패함";
 "login_error_do_not_support_login_flows" = "현재 이 홈서버가 정의한 일부 혹은 모든 로그인 흐름을 지원하지 않음";
@@ -1303,7 +1303,7 @@
 "account_msisdn_validation_error" = "전화번호를 확인할 수 없습니다.";
 "account_error_display_name_change_failed" = "표시 이름 변경에 실패함";
 "account_error_picture_change_failed" = "사진 변경에 실패함";
-"account_error_matrix_session_is_not_opened" = "Matrix 세션이 열리지 않았습니다";
+"account_error_matrix_session_is_not_opened" = "quali.chat 세션이 열리지 않았습니다";
 "account_error_email_wrong_title" = "올바르지 않은 이메일 주소";
 "account_error_email_wrong_description" = "올바른 이메일 주소로 보이지 않습니다";
 "account_error_msisdn_wrong_title" = "올바르지 않은 전화번호";
@@ -1348,10 +1348,10 @@
 "attachment_cancel_upload" = "업로드를 취소합니까?";
 "attachment_multiselection_size_prompt" = "다음으로 사진을 보내겠습니까:";
 "attachment_multiselection_original" = "실제 크기";
-"attachment_e2e_keys_file_prompt" = "이 파일은 Matrix 클라이언트에서 내보낸 암호화 키를 갖고 있습니다.\n파일 내용물을 보거나 갖고 있는 키를 가져오고 싶나요?";
+"attachment_e2e_keys_file_prompt" = "이 파일은 quali.chat 클라이언트에서 내보낸 암호화 키를 갖고 있습니다.\n파일 내용물을 보거나 갖고 있는 키를 가져오고 싶나요?";
 "attachment_e2e_keys_import" = "가져오기...";
 // Contacts
-"contact_mx_users" = "Matrix 사용자";
+"contact_mx_users" = "quali.chat 사용자";
 "contact_local_contacts" = "로컬 연락처";
 // Groups
 // Search
@@ -1364,12 +1364,12 @@
 "format_time_d" = "일";
 // E2E import
 "e2e_import_room_keys" = "방 키 가져오기";
-"e2e_import_prompt" = "이 과정으로 다른 Matrix 클라이언트에서 이전에 내보낸 암호화 키를 가져올 수 있습니다. 이 키로 다른 클라이언트에서 복호화할 수 있는 모든 메시지를 복호화할 수 있게 됩니다.\n내보낸 파일은 암호로 보호됩니다. 파일을 복호화하려면 여기에 암호를 입력해야 합니다.";
+"e2e_import_prompt" = "이 과정으로 다른 quali.chat 클라이언트에서 이전에 내보낸 암호화 키를 가져올 수 있습니다. 이 키로 다른 클라이언트에서 복호화할 수 있는 모든 메시지를 복호화할 수 있게 됩니다.\n내보낸 파일은 암호로 보호됩니다. 파일을 복호화하려면 여기에 암호를 입력해야 합니다.";
 "e2e_import" = "가져오기";
 "e2e_passphrase_enter" = "암호 입력";
 // E2E export
 "e2e_export_room_keys" = "방 키 내보내기";
-"e2e_export_prompt" = "이 과정으로 암호화된 방에서 받은 메시지의 키를 로컬 파일로 내보낼 수 있습니다. 그런 다음 이후 다른 Matrix 클라이언트에 파일을 가져올 수 있습니다, 이 키로 메시지를 복호화할 수 있게 됩니다.\n파일을 읽을 수 있는 모든 사용자는 내보낸 파일로 볼 수 있는 암호화된 메시지를 복호화할 수 있으므로, 안전하게 보관해야 합니다.";
+"e2e_export_prompt" = "이 과정으로 암호화된 방에서 받은 메시지의 키를 로컬 파일로 내보낼 수 있습니다. 그런 다음 이후 다른 quali.chat 클라이언트에 파일을 가져올 수 있습니다, 이 키로 메시지를 복호화할 수 있게 됩니다.\n파일을 읽을 수 있는 모든 사용자는 내보낸 파일로 볼 수 있는 암호화된 메시지를 복호화할 수 있으므로, 안전하게 보관해야 합니다.";
 "e2e_export" = "내보내기";
 "e2e_passphrase_confirm" = "암호 확인";
 "e2e_passphrase_empty" = "암호를 입력해주세요";
@@ -1387,7 +1387,7 @@
 "microphone_access_not_granted_for_call" = "전화를 하려면 마이크에 접근해야 하지만 %@은(는) 사용할 권한이 없습니다";
 "local_contacts_access_not_granted" = "로컬 연락처에서 사용자를 검색하려면 연락처에 접근해야 하지만 %@은(는) 사용할 권한이 없습니다";
 "local_contacts_access_discovery_warning_title" = "사용자 검색";
-"local_contacts_access_discovery_warning" = "Matrix를 사용 중인 연락처 사람들을 찾기 위해 %@은(는) 주소록에 있는 이메일 주소와 전화번호를 선택한 Matrix ID 서버로 보낼 수 있습니다. 서버가 지원한다면, 개인 정보는 보내기 전에 해시됩니다 - 더 자세한 정보는 ID 서버의 개인 정보 정책을 확인해주세요.";
+"local_contacts_access_discovery_warning" = "quali.chat를 사용 중인 연락처 사람들을 찾기 위해 %@은(는) 주소록에 있는 이메일 주소와 전화번호를 선택한 quali.chat ID 서버로 보낼 수 있습니다. 서버가 지원한다면, 개인 정보는 보내기 전에 해시됩니다 - 더 자세한 정보는 ID 서버의 개인 정보 정책을 확인해주세요.";
 "notice_room_invite" = "%@님이 %@님을 초대했습니다";
 "notice_room_third_party_invite" = "%@님이 %@님에게 방에 참가하라는 초대를 보냈습니다";
 "notice_room_third_party_registered_invite" = "%@님이 %@님의 초대를 수락했습니다";
@@ -1439,7 +1439,7 @@
 "login_error_must_start_http" = "URL은 http[s]://로 시작해야 함";
 // room details dialog screen
 // contacts list screen 
-"invitation_message" = "저는 Matrix로 당신과 대화하고 싶습니다. 자세한 정보는 웹사이트 http://martix.org에 방문해주세요.";
+"invitation_message" = "저는 quali.chat로 당신과 대화하고 싶습니다. 자세한 정보는 웹사이트 http://martix.org에 방문해주세요.";
 // Settings screen 
 "settings_title_config" = "설정";
 "settings_title_notifications" = "알림";
@@ -1511,13 +1511,15 @@
 "search_filter_placeholder" = "필터";
 "onboarding_use_case_existing_server_button" = "서버에 연결";
 "onboarding_use_case_community_messaging" = "커뮤니티";
-"onboarding_splash_page_4_message" = "Element는 직장에서도 좋습니다. 세계에서 가장 안전한 조직에서 신뢰합니다.";
+"onboarding_splash_page_4_message" = "quali.chat는 직장에서도 좋습니다. 세계에서 가장 안전한 조직에서 신뢰합니다.";
 "onboarding_splash_page_4_title_no_pun" = "당신의 팀을 위한 메세징.";
-"onboarding_splash_page_3_message" = "종단 간 암호화(E2EE) 되며 전화 번호가 필요하지 않습니다. 광고나 수집되는 데이터가 없습니다.";
-"onboarding_splash_page_3_title" = "보안 메세징.";
-"onboarding_splash_page_2_title" = "당신에게 모든 통제 권한이 있습니다.";
-"onboarding_splash_page_1_message" = "독립적이고 안전한 커뮤니케이션으로 집에서 직접 이야기 하는 것과 같은 개인 정보 보호를 제공합니다.";
-"onboarding_splash_login_button_title" = "이미 계정이 있습니다";
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
 
 // Onboarding
 "onboarding_splash_register_button_title" = "계정 만들기";
@@ -1553,8 +1555,6 @@
 "onboarding_use_case_personal_messaging" = "친구와 가족";
 "onboarding_use_case_message" = "연결할 수 있도록 도와드릴게요.";
 "onboarding_use_case_title" = "누구와 가장 많이 대화하나요?";
-"onboarding_splash_page_2_message" = "데이터 및 대화가 저장될 서버를 선택하여 내 정보에 대한 통제력과 독립성을 확보하세요. Matrix를 통해 연결됩니다.";
-"onboarding_splash_page_1_title" = "대화 내용을 소유하세요.";
 "onboarding_use_case_work_messaging" = "팀";
 "existing" = "기존의";
 "user_verification_session_details_additional_information_untrusted_current_user" = "이 세션에 로그인하고 있지 않은 경우, 계정이 도용되고 있을 가능성이 있습니다.";
@@ -1632,3 +1632,16 @@
 "room_preview_decline_invitation_options" = "초대를 거부하거나 친구를 차단하시겠습니까?";
 "threads_beta_information_link" = "더 알아보기";
 "threads_beta_title" = "스레드";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified
+"demo_login_placeholder" = "Username"; // QUALICHAT modified

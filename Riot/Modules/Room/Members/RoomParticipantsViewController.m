@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2015 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  
@@ -56,6 +57,8 @@
     id kThemeServiceDidChangeThemeNotificationObserver;
     
     RoomParticipantsInviteCoordinatorBridgePresenter *invitePresenter;
+    
+    UIImageView *fabAddButtonImageView; // MARK: QualiChat modified;
 }
 
 @end
@@ -144,7 +147,6 @@
     
     [self.tableView registerClass:ContactTableViewCell.class forCellReuseIdentifier:@"ParticipantTableViewCellId"];
     
-    
     if (_showInviteUserFab)
     {
         // Add invite members button programmatically
@@ -152,7 +154,7 @@
                           target:self
                           action:@selector(onAddParticipantButtonPressed)];
     }
-    
+
     // Observe user interface theme change.
     kThemeServiceDidChangeThemeNotificationObserver = [[NSNotificationCenter defaultCenter] addObserverForName:kThemeServiceDidChangeThemeNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *notif) {
         
@@ -255,7 +257,6 @@
     
     // Refresh display
     [self refreshTableView];
-    
     [self.screenTracker trackScreen];
 }
 

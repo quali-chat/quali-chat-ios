@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2022 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -44,13 +45,22 @@ struct AuthenticationSSOButton: View {
         Button(action: action) {
             HStack {
                 icon
+                #if QUALICHAT
+                    .frame(maxWidth: .infinity, alignment: .center)
+                #else
                     .frame(maxWidth: .infinity, alignment: .leading)
-                
+                #endif
+                #if QUALICHAT
+                Text(provider.name.replacingOccurrences(of: "Wallet", with: ""))
+                    .foregroundColor(theme.colors.primaryContent)
+                    .multilineTextAlignment(.center)
+                    .layoutPriority(1)
+                #else
                 Text(VectorL10n.socialLoginButtonTitleContinue(provider.name))
                     .foregroundColor(theme.colors.primaryContent)
                     .multilineTextAlignment(.center)
                     .layoutPriority(1)
-                
+                #endif
                 icon
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
                     .opacity(0)
@@ -59,7 +69,11 @@ struct AuthenticationSSOButton: View {
             .fixedSize(horizontal: false, vertical: true)
             .contentShape(RoundedRectangle(cornerRadius: 8))
         }
+        #if QUALICHAT
+        .buttonStyle(QualiSecondaryActionButtonStyle(customColor: theme.colors.quinaryContent))
+        #else
         .buttonStyle(SecondaryActionButtonStyle(customColor: theme.colors.quinaryContent))
+        #endif
     }
     
     /// The icon with appropriate rendering mode and size for dynamic type.
@@ -90,7 +104,18 @@ struct AuthenticationSSOButton: View {
         case Brand.twitter.rawValue:
             return Image(Asset.Images.authenticationSsoIconTwitter.name)
         default:
-            return nil
+            #if QUALICHAT
+            switch(provider.id) {
+            case "oidc-siwe":
+                return Image("etherum_icon")
+            case "oidc-aeternity":
+                return Image("aeternity_icon")
+            default:
+                return nil
+            }
+            #else
+            return
+            #endif
         }
     }
 }

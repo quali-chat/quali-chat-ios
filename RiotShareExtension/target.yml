@@ -35,6 +35,7 @@ targets:
     - package: AnalyticsEvents
     - package: DeviceKit
     - package: DTCoreText
+    - package: PostHog
 
     configFiles:
       Debug: Debug.xcconfig
@@ -46,6 +47,11 @@ targets:
     - path: ../Riot/Categories/Bundle.swift
     - path: ../Riot/Categories/MXEvent.swift
     - path: ../Riot/Managers/Theme/
+      excludes: #QualiChat modified
+        - "Themes/DarkTheme.swift"
+        - "Themes/DefaultTheme.swift"
+    - path: ../QualiChat/Managers/Theme/ #QualiChat modified
+    - path: ../RiotSwiftUI/Modules/Common/Theme/ThemeSwiftUI.swift #QualiChat modified
     - path: ../Riot/Utils/AvatarGenerator.m
     - path: ../Config/BuildSettings.swift
     - path: ../Config/MDMSettings.swift
@@ -78,6 +84,8 @@ targets:
       buildPhase: resources
     - path: ../Riot/Assets/SharedImages.xcassets
       buildPhase: resources
+    - path: ../QualiChat/Assets/Images.xcassets
+      buildPhase: resources
     - path: ../Riot/Modules/MatrixKit
       excludes:
         - "**/MXKAuthenticationViewController.*"
@@ -89,3 +97,8 @@ targets:
     - path: ../Riot/Modules/Room/TimelineCells/Styles/RoomTimelineStyleIdentifier.swift
     - path: ../Riot/Modules/VoiceBroadcast/VoiceBroadcastSDK/MatrixSDK
     - path: ../Riot/Modules/Encryption/EncryptionTrustLevel.swift
+    # MARK: QualiChat modified
+    - path: ../Riot/Categories/UIImage.swift
+    - path: ../QualiChat/Config/QualiChatBuildSettings.swift #QualiChat modified
+    - path: ../QualiChat/Extensions/String+Extensions.swift #QualiChat modified
+    - path: ../QualiChat/Extensions/UIColor+Extensions.swift #QualiChat modified

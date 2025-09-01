@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2020 Vector Creations Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +29,7 @@ BROADCAST_UPLOAD_EXTENSION_BUNDLE_IDENTIFIER = $(BASE_BUNDLE_IDENTIFIER).broadca
 // Build settings
 IPHONEOS_DEPLOYMENT_TARGET = 15.0
 SDKROOT = iphoneos
-TARGETED_DEVICE_FAMILY = 1,2
+TARGETED_DEVICE_FAMILY = 1 // MARK: - QUALICHAT modified
 SWIFT_VERSION = 5.6
 ENABLE_BITCODE = NO
 

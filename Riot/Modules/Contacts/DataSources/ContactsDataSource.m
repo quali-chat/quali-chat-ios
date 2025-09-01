@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2017 Vector Creations Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -214,12 +215,22 @@
                 MXStrongifyAndReturnIfNil(self);
                 
                 self->filteredMatrixContacts = [NSMutableArray arrayWithCapacity:userSearchResponse.results.count];
-
+                
+            #if QUALICHAT
+                NSMutableArray<NSString*> *unfilteredMatrixContactsId = [[NSMutableArray alloc] init];
+            #endif
                 // Keep the response order as the hs ordered users by relevance
                 for (MXUser *mxUser in userSearchResponse.results)
                 {
                     MXKContact *contact = [[MXKContact alloc] initMatrixContactWithDisplayName:mxUser.displayname andMatrixID:mxUser.userId];
+            #if QUALICHAT
+                    if (![unfilteredMatrixContactsId containsObject:mxUser.userId]) {
+                        [unfilteredMatrixContactsId addObject:mxUser.userId];
+                        [self->filteredMatrixContacts addObject:contact];
+                    }
+            #else
                     [self->filteredMatrixContacts addObject:contact];
+            #endif
                 }
 
                 self->hsUserDirectoryOperation = nil;
@@ -605,6 +616,15 @@
                 }
             }
         }
+        
+        NSLog(@"test %d", _memberCount);
+        
+#if QUALICHAT
+        if(!QualiChatBuildSettings.enableCreateOnlyDirectChat && _memberCount >= QualiChatBuildSettings.limitPersonCreateOnlyDirectChat) {
+            contactCell.userInteractionEnabled = NO;
+            contactCell.accessoryView = nil;
+        }
+#endif
         
         return contactCell;
     }

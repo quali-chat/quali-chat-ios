@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -183,6 +184,9 @@ class VoiceMessageToolbarView: PassthroughView, NibLoadable, Themable, UIGesture
     func update(theme: Theme) {
         currentTheme = theme
         playbackView.update(theme: theme)
+        #if QUALICHAT
+        deleteButton.tintColor = theme.tintColor
+        #endif
     }
     
     // MARK: - UIGestureRecognizerDelegate
@@ -312,7 +316,11 @@ class VoiceMessageToolbarView: PassthroughView, NibLoadable, Themable, UIGesture
             self.backgroundView.backgroundColor = theme.colors.background
             self.slideToCancelGradient.tintColor = theme.colors.background
             
+            #if QUALICHAT
+            self.primaryRecordButton.tintColor = theme.tintColor
+            #else
             self.primaryRecordButton.tintColor = theme.colors.tertiaryContent
+            #endif
             self.slideToCancelLabel.textColor = theme.colors.secondaryContent
             self.slideToCancelChevron.tintColor = theme.colors.secondaryContent
             self.elapsedTimeLabel.textColor = theme.colors.secondaryContent

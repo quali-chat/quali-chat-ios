@@ -113,7 +113,7 @@
 "room_participants_action_ignore" = "Ezkutatu erabiltzaile honen mezu guztiak";
 "room_participants_action_unignore" = "Erakutsi erabiltzaile honen mezu guztiak";
 "room_participants_action_mention" = "Aipamena";
-"contacts_address_book_matrix_users_toggle" = "Matrix erabiltzaileak besterik ez";
+"contacts_address_book_matrix_users_toggle" = "quali.chat erabiltzaileak besterik ez";
 "encrypted_room_message_placeholder" = "Bidali zifratutako mezua…";
 "room_message_placeholder" = "Bidali mezua (zifratu gabe)…";
 "room_offline_notification" = "Zerbitzariarekin konexioa galdu da.";
@@ -125,7 +125,7 @@
 "room_details_title" = "Gelaren xehetasunak";
 "room_details_files" = "Fitxategiak";
 "room_details_settings" = "Ezarpenak";
-"room_participants_invite_malformed_id" = "Gaizki osatutako IDa. e-mail helbide bat edo Matrix ID bat izan behar da, honelakoa '@erabiltzailea:domeinua'";
+"room_participants_invite_malformed_id" = "Gaizki osatutako IDa. e-mail helbide bat edo quali.chat ID bat izan behar da, honelakoa '@erabiltzailea:domeinua'";
 "room_participants_invited_section" = "GONBIDATUTA";
 "room_event_action_report_prompt_reason" = "Eduki hau salatzeko arrazoia";
 "room_event_action_report_prompt_ignore_user" = "Erabiltzaile honen mezu guztiak  ezkutatu nahi dituzu?";
@@ -222,7 +222,7 @@
 "auth_untrusted_id_server" = "Identitate zerbitzaria ez da fidagarria";
 "auth_msisdn_validation_error" = "Ezin izan da telefono zenbakia egiaztatu.";
 "auth_reset_password_email_validation_message" = "E-mail bat bidali da %@ helbidera. Honek dakarren esteka jarraitu eta gero egin klik azpian.";
-"auth_reset_password_error_not_found" = "Zure e-mail helbidea ez dago antza hasiera-zerbitzari honetako Matrix ID batekin lotuta.";
+"auth_reset_password_error_not_found" = "Zure e-mail helbidea ez dago antza hasiera-zerbitzari honetako quali.chat ID batekin lotuta.";
 "room_creation_account" = "Kontua";
 "room_creation_appearance" = "Itxura";
 "room_creation_appearance_picture" = "Txateko irudia (aukerakoa)";
@@ -235,7 +235,7 @@
 "room_creation_keep_private" = "Mantendu pribatua";
 "room_creation_make_private" = "Egin pribatua";
 "room_creation_wait_for_creation" = "Gelan bat sortzen ari da. Itxaron.";
-"room_creation_invite_another_user" = "Bilatu / gonbidatu erabiltzaile ID-a, izena edo e-maila erabiliz";
+"room_creation_invite_another_user" = "Bilatu / gonbidatu erabiltzaile ID-a edo izena";
 // Room recents
 "room_recents_directory_section" = "GELEN DIREKTORIOA";
 "room_recents_favourites_section" = "GOGOKOAK";
@@ -382,8 +382,8 @@
 "media_picker_select" = "Hautatu";
 "directory_server_picker_title" = "Hautatu direktorio bat";
 "directory_server_all_rooms" = "%@ zerbitzariko gela guztiak";
-"directory_server_all_native_rooms" = "Matrix gela natibo guztiak";
-"directory_server_placeholder" = "matrix.org";
+"directory_server_all_native_rooms" = "quali.chat gela natibo guztiak";
+"directory_server_placeholder" = "quali.chat";
 // Events formatter
 "event_formatter_member_updates" = "%tu kidetza aldaketa";
 "you" = "Zu";
@@ -409,7 +409,7 @@
 "bug_report_progress_zipping" = "Egunkariak biltzen";
 "bug_report_progress_uploading" = "Txostena igotzen";
 "room_details_advanced_e2e_encryption_prompt_message" = "Muturretik muturrerako zifratzea esperimentala da eta agian ez dabil behar bezala.\n\nEz zenuke datuak babesteko erabili behar oraindik.\n\nGailuek ezin izango dute gelara elakrtu aurreko historiala deszifratu.\n\nBehin gela batean zifratzea aktibatuta ez dago gero desaktibatzerik (oraingoz).\n\nZifratutako mezuak ezin izango dira ikusi oraindik zifratzea onartzen ez duten bezeroetan.";
-"auth_home_server_placeholder" = "URL (adib. https://matrix.org)";
+"auth_home_server_placeholder" = "URL (adib. https://quali.chat)";
 "auth_identity_server_placeholder" = "URL (e.g. https://vector.im)";
 "room_ongoing_conference_call_with_close" = "Konferentzia deia abian. elkartu %@ edo %@ gisa. %@.";
 "room_ongoing_conference_call_close" = "Itxi";
@@ -498,12 +498,12 @@
 "group_participants_filter_members" = "Iragazi komunitateko kideak";
 "group_participants_invite_another_user" = "Bilatu / gonbidatu erabiltzaile ID-a edo izena erabiliz";
 "group_participants_invite_malformed_id_title" = "Gonbidapen errorea";
-"group_participants_invite_malformed_id" = "Gaizki osatutako IDa. Matrix ID bat izan behar da, honelakoa '@erabiltzailea:domeinua'";
+"group_participants_invite_malformed_id" = "Gaizki osatutako IDa. quali.chat ID bat izan behar da, honelakoa '@erabiltzailea:domeinua'";
 "group_participants_invited_section" = "GONBIDATUTA";
 // Group rooms
 "group_rooms_filter_rooms" = "Iragazi komunitateko gelak";
 "e2e_room_key_request_message_new_device" = "'%@' saio berria gehitu duzu, eta zifratze-gakoak eskatzen ari da.";
-"room_do_not_have_permission_to_post" = "Ez duzu gela honetara mezuak bidaltzeko baimenik";
+"room_do_not_have_permission_to_post" = "You need to have the room token in your wallet to post to this room.";
 "room_event_action_kick_prompt_reason" = "Erabiltzaile hau kanporatzeko arrazoia";
 "room_event_action_ban_prompt_reason" = "Erabiltzaile hau debekatzeko arrazoia";
 // GDPR
@@ -520,7 +520,7 @@
 "deactivate_account_informations_part2_emphasize" = "Ekintza hau ezin da desegin.";
 "deactivate_account_informations_part3" = "\n\nZure kontua desaktibatzen ";
 "deactivate_account_informations_part4_emphasize" = "ez du lehenetsita guk zuk bidalitako mezuak ahaztea eragingo ";
-"deactivate_account_informations_part5" = "Guk zure mezuak ahaztea nahi baduzu markatu beheko kutxa.\n\nMatrix-eko mezuen ikusgaitasuna e-mail sistemaren antekoa da. Guk zure mezuak ahaztean ez dizkiogu erabiltzaile berriei edo izena eman ez dutenei erakutsiko, baina jada zure mezuak jaso dituzten erregistratutako erabiltzaileen bere kopia izaten jarraituko dute.";
+"deactivate_account_informations_part5" = "Guk zure mezuak ahaztea nahi baduzu markatu beheko kutxa.\n\nquali.chat-eko mezuen ikusgaitasuna e-mail sistemaren antekoa da. Guk zure mezuak ahaztean ez dizkiogu erabiltzaile berriei edo izena eman ez dutenei erakutsiko, baina jada zure mezuak jaso dituzten erregistratutako erabiltzaileen bere kopia izaten jarraituko dute.";
 "deactivate_account_forget_messages_information_part1" = "Ahaztu bidali ditudan mezu guztiak kontua desaktibatzean (";
 "deactivate_account_forget_messages_information_part2_emphasize" = "Abisua";
 "deactivate_account_forget_messages_information_part3" = ": Honekin etorkizuneko erabiltzaileek elkarrizketaren bertsio ez oso bat ikusiko dute)";
@@ -652,7 +652,7 @@
 "key_backup_setup_intro_manual_export_action" = "Esportatu gakoak eskuz";
 // String for App Store
 "store_short_description" = "Deszentralizatutako txat/VoIP segurua";
-"store_full_description" = "Komunikatu, zure erara.\n\nTxat aplikazio bat, zure kontrolpean eta erabat malgua. Element-ek zuk nahi eran komunikatzea ahalbidetzen dizu. Komunikaziorako estandar ireki eta deszentralizatua den [matrix] protokolorako egina.\n\nEskuratu matrix.org kontu bat, ezarri zure zerbitzaria  https://ems.element.io erabiliz, edo erabili beste Matrix zerbitzari bat.\n\nZertgatik aukeratu Element?\n\nERABATEKO KOMUNIKAZIOA: Sortu zure taldeentzako gelak, zure lagunentzko, zure komunitatearentzat, zuk nahi eran! Txateatu, partekatu fitxategiak, gehitu trepetak eta egin ahots eta bideo-deiak, dena doan.\n\nINTEGRAZIO AHALTSUAK: Erabili Element jada ezagutu eta maite dituzun tresnekin. Element erabilita beste txat aplikazioak erabiltzen dituzten erabiltzaile eta taldeekin ere aritu zaitezke.\n\nPRIBATUA ETA SEGURUA: Mantendu zure elkarrizketak sekretupean. Gaur egungo muturretik muturrerako zifratzeak pribatua dena pribatu mantentzen laguntzen du.\n\nIREKIA, EZ ITXIA: Kode irekikoa, eta Matrix protokoloan eraikia. Izan zure datuen jabe zure zerbitzaria osatatauz, edo fidagarritzat duzun bat aukeratuz.\n\nZUREKIN NONAHI: Mantendu kontaktua zauden tokian zaudela gailuetan zehar erabat sinkronizatutako mezuen historialarekin, eta web bidez https://app.element.io helbidean.";
+"store_full_description" = "Komunikatu, zure erara.\n\nTxat aplikazio bat, zure kontrolpean eta erabat malgua. quali.chat zuk nahi eran komunikatzea ahalbidetzen dizu. Komunikaziorako estandar ireki eta deszentralizatua den [matrix] protokolorako egina.\n\nEskuratu quali.chat kontu bat, ezarri zure zerbitzaria  https://ems.element.io erabiliz, edo erabili beste quali.chat zerbitzari bat.\n\nZertgatik aukeratu quali.chat?\n\nERABATEKO KOMUNIKAZIOA: Sortu zure taldeentzako gelak, zure lagunentzko, zure komunitatearentzat, zuk nahi eran! Txateatu, partekatu fitxategiak, gehitu trepetak eta egin ahots eta bideo-deiak, dena doan.\n\nINTEGRAZIO AHALTSUAK: Erabili quali.chat jada ezagutu eta maite dituzun tresnekin. quali.chat erabilita beste txat aplikazioak erabiltzen dituzten erabiltzaile eta taldeekin ere aritu zaitezke.\n\nPRIBATUA ETA SEGURUA: Mantendu zure elkarrizketak sekretupean. Gaur egungo muturretik muturrerako zifratzeak pribatua dena pribatu mantentzen laguntzen du.\n\nIREKIA, EZ ITXIA: Kode irekikoa, eta quali.chat protokoloan eraikia. Izan zure datuen jabe zure zerbitzaria osatatauz, edo fidagarritzat duzun bat aukeratuz.\n\nZUREKIN NONAHI: Mantendu kontaktua zauden tokian zaudela gailuetan zehar erabat sinkronizatutako mezuen historialarekin, eta web bidez https://app.element.io helbidean.";
 "auth_login_single_sign_on" = "Hasi saioa Single sign-on bidez";
 "auth_autodiscover_invalid_response" = "Erantzun baliogabea hasiera-zerbitzarien bilaketari";
 "room_message_unable_open_link_error_message" = "Ezin izan da esteka ireki.";
@@ -1022,7 +1022,7 @@
 "security_settings_crosssigning_complete_security" = "Segurtasun osoa";
 "security_settings_complete_security_alert_title" = "Segurtasun osoa";
 "security_settings_complete_security_alert_message" = "Aurretik segurtasuna osatu beharko zenuke oraingo saioan.";
-"security_settings_coming_soon" = "Sentitzen dugu. Ekintza hau ez dago iOS plataformarako %@ bezeroan eskuragarri oraindik. Erabili beste Matrix bezero bat ezartzeko. %@ iOS-ek erabili egingo du.";
+"security_settings_coming_soon" = "Sentitzen dugu. Ekintza hau ez dago iOS plataformarako %@ bezeroan eskuragarri oraindik. Erabili beste quali.chat bezero bat ezartzeko. %@ iOS-ek erabili egingo du.";
 "device_verification_self_verify_wait_new_sign_in_title" = "Egiaztatu saio hau";
 // Scanning
 "key_verification_scan_confirmation_scanning_title" = "Ia bukatu duzu! Baieztapenaren zain…";
@@ -1090,7 +1090,7 @@
 "secrets_recovery_with_key_invalid_recovery_key_message" = "Egiaztatu berreskuratze gako zuzena sartu duzula.";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
 "notice_conference_call_started" = "VoIP konferentzia hasita";
@@ -1197,17 +1197,17 @@
 "create_room" = "Sortu gela";
 "membership_invite" = "Gonbidatuta";
 "kick" = "Kanporatu";
-"matrix" = "Matrix";
+"matrix" = "quali.chat";
 // Login Screen
 "login_create_account" = "Sortu kontua:";
-"login_server_url_placeholder" = "URL-a (adib. https://matrix.org)";
+"login_server_url_placeholder" = "URL-a (adib. https://quali.chat)";
 "login_home_server_info" = "Zure hasiera-zerbitzariak gordetzen ditu zure elkarrizketa guztiak eta kontuaren datuak";
-"login_identity_server_info" = "Matrixek identitate zerbitzariak hornitzen ditu e-mailak eta abar zein Matrix ID-ri dagokien jakiteko, Orain https://matrix.org da dagoen bakarra.";
-"login_user_id_placeholder" = "Matrix ID-a (adib. @urko:matrix.org edo urko)";
+"login_identity_server_info" = "quali.chatek identitate zerbitzariak hornitzen ditu e-mailak eta abar zein quali.chat ID-ri dagokien jakiteko, Orain https://quali.chat da dagoen bakarra.";
+"login_user_id_placeholder" = "quali.chat ID-a (adib. @urko:quali.chat edo urko)";
 "login_optional_field" = "aukerakoa";
 "login_display_name_placeholder" = "Pantaila-izena (adib. Urko Etxeberria)";
 "login_error_title" = "Saio hasierak huts egin du";
-"login_email_info" = "Zehaztu e-mail helbide bat beste Matrix erabiltzaileek zu errazago aurkitzeko, e-mail helbidea izateak ere etorkizunean pasahitza aldatzea ahalbidetuko dizu.";
+"login_email_info" = "Zehaztu e-mail helbide bat beste quali.chat erabiltzaileek zu errazago aurkitzeko, e-mail helbidea izateak ere etorkizunean pasahitza aldatzea ahalbidetuko dizu.";
 "login_prompt_email_token" = "Sartu zure e-mail egiaztaketa tokena:";
 "login_error_no_login_flow" = "Huts egin du autentifikazio informazioa hasiera zerbitzari honetatik jasotzean";
 "login_leave_fallback" = "Utzi";
@@ -1325,7 +1325,7 @@
 "account_linked_emails" = "Lotutako e-mailak";
 "account_error_display_name_change_failed" = "Huts egin du pantaila-izenaren aldaketak";
 "account_error_picture_change_failed" = "Huts egin du irudiaren aldaketak";
-"account_error_matrix_session_is_not_opened" = "Matrix saioa ez dago irekita";
+"account_error_matrix_session_is_not_opened" = "quali.chat saioa ez dago irekita";
 "account_error_msisdn_wrong_title" = "Telefono zenbaki baliogabea";
 "account_error_msisdn_wrong_description" = "Honek ez du baliozko telefono zenbaki baten antzik";
 // Room creation
@@ -1357,10 +1357,10 @@
 "attachment_large" = "Handia: %@";
 "attachment_multiselection_size_prompt" = "Irudiak nola bidali nahi dituzu:";
 "attachment_multiselection_original" = "Jatorrizko tamaina";
-"attachment_e2e_keys_file_prompt" = "Fitxategi honek Matrix bezero batetik esportatutako zifratze gakoak ditu.\nFitxategiaren edukia ikusi nahi duzu edo dauzkan gakoak inportatu?";
+"attachment_e2e_keys_file_prompt" = "Fitxategi honek quali.chat bezero batetik esportatutako zifratze gakoak ditu.\nFitxategiaren edukia ikusi nahi duzu edo dauzkan gakoak inportatu?";
 "attachment_e2e_keys_import" = "Inportatu…";
 // Contacts
-"contact_mx_users" = "Matrix erabiltzaileak";
+"contact_mx_users" = "quali.chat erabiltzaileak";
 "contact_local_contacts" = "Kontaktu lokalak";
 // Search
 "search_no_results" = "Emaitzarik ez";
@@ -1369,7 +1369,7 @@
 "camera_access_not_granted_for_call" = "Bideo deiek kamera atzitzeko baimena behar dute baina %@ aplikazioak ez du baimenik";
 "microphone_access_not_granted_for_call" = "Deiek mikrofonoa atzitzeko baimena behar dute baina %@ aplikazioak ez du baimenik";
 "local_contacts_access_discovery_warning_title" = "Erabiltzaileak aurkitzea";
-"local_contacts_access_discovery_warning" = "Matrix darabilten kontaktuak aukitzeko, %@ aplikazioak zure helbide-liburuko kontaktuen e-mail eta telefono zenbakiak igo ahal ditu zuk hautatutako Matrix identitate-zerbitzarira. AHal denean, datu pertsonalak hasheatu egingo dira bidali aurretik, egiaztatu zure identitate-zerbitzariaren pribatutasun politika xehetasun gehiagorako.";
+"local_contacts_access_discovery_warning" = "quali.chat darabilten kontaktuak aukitzeko, %@ aplikazioak zure helbide-liburuko kontaktuen e-mail eta telefono zenbakiak igo ahal ditu zuk hautatutako quali.chat identitate-zerbitzarira. AHal denean, datu pertsonalak hasheatu egingo dira bidali aurretik, egiaztatu zure identitate-zerbitzariaren pribatutasun politika xehetasun gehiagorako.";
 "notice_room_withdraw" = "%@ erabiltzaileak %@ erabiltzailearen gonbidapena atzera bota du";
 "notice_room_reason" = ".Arrazoia: %@";
 "notice_avatar_url_changed" = "%@ erabiltzaileak abatarra aldatu du";
@@ -1395,8 +1395,8 @@
 // Login Screen 
 "login_error_already_logged_in" = "Saioa hasita zegoen jada";
 // contacts list screen 
-"invitation_message" = "Zurekin hitz egin nahiko nuke matrix erabilita, zoaz http://matrix.org webgunera informazio gehiagorako.";
-// Settings screen 
+"invitation_message" = "Zurekin hitz egin nahiko nuke quali.chat erabilita, zoaz http://quali.chat webgunera informazio gehiagorako.";
+// Settings screen
 "settings_title_config" = "Konfigurazioa";
 // Notification settings screen 
 "notification_settings_disable_all" = "Desgaitu jakinarazpen guztiak";
@@ -1431,8 +1431,8 @@
 "notice_feedback" = "Informazio gertaera (id: %@): %@";
 "room_event_encryption_verify_message" = "Saio hau fidagarria dela egiaztatzeko, jarri kontaktuan jabearekin beste medio batzuk erabilita (adib. aurrez-aurre edo telefonoz deituz) eta galdetu bere erabiltzaile-ezarpenetan ikusten duten gakoa honekin bat datorren:\n\n\tSaioaren izena: %@\n\tSaioaren ID-a: %@\n\tSaioaren gakoa: %@\n\nBat badatoz, sakatu beheko egiaztatu botoia. Ez badatoz bat, beste norbait egon daiteke saioa atzematen eta ziur aski zerrenda beltzaren botoia zapaldu nahiko duzu.\n\nEtorkizunean egiaztaketa prozesu hau sofistikatuagoa izango da.";
 "room_error_timeline_event_not_found" = "Aplikazioa gela honen denbora lerroko puntu zehatz bat kargatzen saiatu da baina ezin izan du aurkitu";
-"e2e_import_prompt" = "Prozesu honek aurretik beste Matrix bezero batetik esportatutako zifratze gakoak inportatzea ahalbidetzen du. Beste bezeroak dezifratu zitekeen mezuak deszifratu ahal izango duzu.\nEsportazio fitxategia pasaesaldi batez babestuta dago. Pasaesaldi hori hemen jarri behar duzu fitxategia deszifratzeko.";
-"e2e_export_prompt" = "Prozesu honek zifratutako geletan jaso dituzun mezuen gakoak fitxategi lokal batera esportatzea ahalbidetzen dizu. Gero beste Matrix bezero batera inportatu ditzakezu, bezero horrek ere mezu hauek dezifratu ahal izateko.\nEsportatutako fitxategiak berau irakurri dezakeen edonori zuk ikusi ditzakezun mezuak deszifratzea ahalbidetuko dio, beraz kontuz non gordetzen duzun.";
+"e2e_import_prompt" = "Prozesu honek aurretik beste quali.chat bezero batetik esportatutako zifratze gakoak inportatzea ahalbidetzen du. Beste bezeroak dezifratu zitekeen mezuak deszifratu ahal izango duzu.\nEsportazio fitxategia pasaesaldi batez babestuta dago. Pasaesaldi hori hemen jarri behar duzu fitxategia deszifratzeko.";
+"e2e_export_prompt" = "Prozesu honek zifratutako geletan jaso dituzun mezuen gakoak fitxategi lokal batera esportatzea ahalbidetzen dizu. Gero beste quali.chat bezero batera inportatu ditzakezu, bezero horrek ere mezu hauek dezifratu ahal izateko.\nEsportatutako fitxategiak berau irakurri dezakeen edonori zuk ikusi ditzakezun mezuak deszifratzea ahalbidetuko dio, beraz kontuz non gordetzen duzun.";
 "local_contacts_access_not_granted" = "Kontaktu lokaletatik erabiltzaileak aurkitzeko zure kontaktua atzitzeko baimena behar da baina %@ aplikazioak ez du baimenik";
 "notification_settings_global_info" = "Jakinarazpen ezarpenak zure erabiltzaile kontuan gordetzen dira eta onartutako bezeroen artean partekatzen dira (mahaigaineko jakinarazpenak barne).\n\nArauak ordenan aplikatzen dira;  bat datorren lehen arauak zehazten du zer gertatzen den mezuarekin.\nBeraz: Hitzen jakinarazpenak gelen jakinarazpenak baino garrantzitsuagoak dira, eta hauek igorleen jakinarazpenak baino garrantzitsuagoak.\nMota bereko arauentzat, zerrendan bat datorren lehenak lehentasuna hartzen du.";
 "notification_settings_per_word_info" = "Hitzak ez dituzte bereizten maiuskula eta minuskulak, eta * komodina izan dezakete. Beraz:\nmar bat dator mar katearekin hitz mugatzaileez inguratuta dagoenean (adib. puntuazioa, zuriunea, lerro hasiera edo bukaera).\nmar* bat dator mar-ez hasten den edozein hitzekin.\n*mar* bat dator edozein posiziotan mar duten hitzekin.";
@@ -1458,3 +1458,23 @@
 "notice_room_third_party_revoked_invite" = "%@ erabiltzaileak %@ gelara elkartzeko gonbidapena indargabetu du";
 "notice_encryption_enabled_ok" = "%@ erabiltzaileak zifratzea gaitu du.";
 "notice_encryption_enabled_unknown_algorithm" = "%1$@ erabiltzaileak zifratzea gaitu du. (%2$@ algoritmo ezezaguna).";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified
+"demo_login_placeholder" = "Username"; // QUALICHAT modified
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified

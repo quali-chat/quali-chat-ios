@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2015 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  Copyright 2018 New Vector Ltd
@@ -17,8 +18,6 @@
  */
 
 #import "SettingsViewController.h"
-
-#import <OLMKit/OLMKit.h>
 
 #import "AvatarGenerator.h"
 
@@ -166,6 +165,8 @@ typedef NS_ENUM(NSUInteger, ABOUT)
     ABOUT_ACCEPTABLE_USE_INDEX,
     ABOUT_PRIVACY_INDEX,
     ABOUT_THIRD_PARTY_INDEX,
+    ABOUT_US_INDEX,
+    ABOUT_TERMS_OF_USE_INDEX
 };
 
 typedef NS_ENUM(NSUInteger, LABS_ENABLE)
@@ -538,8 +539,11 @@ SSOAuthenticationPresenterDelegate>
     sectionUserInterface.headerTitle = [VectorL10n settingsUserInterface];
     
     [sectionUserInterface addRowWithTag:USER_INTERFACE_LANGUAGE_INDEX];
+    
+#if !QUALICHAT
     [sectionUserInterface addRowWithTag:USER_INTERFACE_THEME_INDEX];
-        
+#endif
+    
     [tmpSections addObject:sectionUserInterface];
 
     Section *sectionTimeline = [Section sectionWithTag:SECTION_TAG_TIMELINE];
@@ -566,11 +570,14 @@ SSOAuthenticationPresenterDelegate>
     
     Section *sectionAdvanced = [Section sectionWithTag:SECTION_TAG_ADVANCED];
     sectionAdvanced.headerTitle = [VectorL10n settingsAdvanced];
-    
+#if QUALICHAT
+
+#else
     if (RiotSettings.shared.settingsScreenShowNsfwRoomsOption)
     {
         [sectionAdvanced addRowWithTag:ADVANCED_SHOW_NSFW_ROOMS_INDEX];
     }
+#endif
     
     if (BuildSettings.settingsScreenAllowChangingCrashUsageDataSettings)
     {
@@ -590,6 +597,16 @@ SSOAuthenticationPresenterDelegate>
     [tmpSections addObject:sectionAdvanced];
     
     Section *sectionAbout = [Section sectionWithTag:SECTION_TAG_ABOUT];
+    if (BuildSettings.applicationCopyrightUrlString.length)
+    {
+        [sectionAbout addRowWithTag:ABOUT_US_INDEX];
+    }
+#if QUALICHAT
+    if (QualiChatBuildSettings.termsOfUseURL.length)
+    {
+        [sectionAbout addRowWithTag:ABOUT_TERMS_OF_USE_INDEX];
+    }
+#endif
     if (BuildSettings.applicationCopyrightUrlString.length)
     {
         [sectionAbout addRowWithTag:ABOUT_COPYRIGHT_INDEX];
@@ -743,7 +760,11 @@ SSOAuthenticationPresenterDelegate>
     self.activityIndicator.backgroundColor = ThemeService.shared.theme.overlayBackgroundColor;
     
     // Check the table view style to select its bg color.
+#if QUALICHAT
+    self.tableView.backgroundColor = ((self.tableView.style == UITableViewStylePlain) ? ThemeService.shared.theme.backgroundColor : ThemeService.shared.theme.backgroundColor);
+#else
     self.tableView.backgroundColor = ((self.tableView.style == UITableViewStylePlain) ? ThemeService.shared.theme.backgroundColor : ThemeService.shared.theme.headerBackgroundColor);
+#endif
     self.view.backgroundColor = self.tableView.backgroundColor;
     self.tableView.separatorColor = ThemeService.shared.theme.lineBreakColor;
     
@@ -1469,8 +1490,11 @@ SSOAuthenticationPresenterDelegate>
  
     NSString *loggedUserInfo = [VectorL10n settingsConfigUserId:account.mxCredentials.userId];
     
-    NSString *homeserverInfo = [VectorL10n settingsConfigHomeServer:account.mxCredentials.homeServer];       
-    
+#if QUALICHAT
+    NSString *homeserverInfo = [VectorL10n settingsConfigHomeServer:BuildSettings.serverConfigDefaultHomeserverUrlString];
+#else
+    NSString *homeserverInfo = [VectorL10n settingsConfigHomeServer:account.mxCredentials.homeServer];
+#endif
     NSString *sdkVersionInfo = [NSString stringWithFormat:@"Matrix SDK %@", MatrixSDKVersion];
     
     [footerText appendFormat:@"%@\n", loggedUserInfo];
@@ -1490,7 +1514,11 @@ SSOAuthenticationPresenterDelegate>
     labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsEnableRoomMessageBubbles];
     
     labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.roomScreenEnableMessageBubbles;
+#if QUALICHAT
+    labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+#else
     labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+#endif
     labelAndSwitchCell.mxkSwitch.enabled = YES;
     [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleEnableRoomMessageBubbles:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -1505,7 +1533,11 @@ SSOAuthenticationPresenterDelegate>
     labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsLabsEnableAutoReportDecryptionErrors];
     
     labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.enableUISIAutoReporting;
+#if QUALICHAT
+    labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+#else
     labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+#endif
     labelAndSwitchCell.mxkSwitch.enabled = YES;
     [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleEnableAutoReportDecryptionErrors:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -1520,7 +1552,11 @@ SSOAuthenticationPresenterDelegate>
     labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsLabsEnableLiveLocationSharing];
     
     labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.enableLiveLocationSharing;
+#if QUALICHAT
+    labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+#else
     labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+#endif
     labelAndSwitchCell.mxkSwitch.enabled = YES;
     [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleEnableLiveLocationSharing:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -1816,6 +1852,9 @@ SSOAuthenticationPresenterDelegate>
             displaynameCell.mxkLabel.text = [VectorL10n settingsDisplayName];
             displaynameCell.mxkTextField.text = myUser.displayname;
             
+        #if QUALICHAT
+            displaynameCell.mxkTextField.userInteractionEnabled = NO;
+        #endif
             displaynameCell.mxkTextField.tag = row;
             displaynameCell.mxkTextField.delegate = self;
             [displaynameCell.mxkTextField removeTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
@@ -2016,7 +2055,11 @@ SSOAuthenticationPresenterDelegate>
     
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsConfirmMediaSize];
             labelAndSwitchCell.mxkSwitch.on =  RiotSettings.shared.showMediaCompressionPrompt;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             labelAndSwitchCell.mxkSwitch.enabled = YES;
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleConfirmMediaSize:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -2031,7 +2074,11 @@ SSOAuthenticationPresenterDelegate>
             
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsShowUrlPreviews];
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.roomScreenShowsURLPreviews;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             labelAndSwitchCell.mxkSwitch.enabled = YES;
             
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleEnableURLPreviews:) forControlEvents:UIControlEventTouchUpInside];
@@ -2055,7 +2102,11 @@ SSOAuthenticationPresenterDelegate>
             MXKTableViewCellWithLabelAndSwitch* labelAndSwitchCell = [self getLabelAndSwitchCell:tableView forIndexPath:indexPath];
     
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsEnablePushNotif];
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             labelAndSwitchCell.mxkSwitch.enabled = YES;
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(togglePushNotifications:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -2093,7 +2144,11 @@ SSOAuthenticationPresenterDelegate>
             
             labelAndSwitchCell.mxkLabel.text = VectorL10n.settingsEnableInappNotifications;
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.showInAppNotifications;
-            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+            #if QUALICHAT
+                labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+            #else
+                labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+            #endif
             labelAndSwitchCell.mxkSwitch.enabled = account.pushNotificationServiceIsActive;
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleShowInAppNotifications:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -2105,7 +2160,11 @@ SSOAuthenticationPresenterDelegate>
             
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsShowDecryptedContent];
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.showDecryptedContentInNotifications;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             labelAndSwitchCell.mxkSwitch.enabled = account.pushNotificationServiceIsActive;
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleShowDecodedContent:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -2118,7 +2177,11 @@ SSOAuthenticationPresenterDelegate>
             
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsPinRoomsWithMissedNotif];
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.pinRoomsWithMissedNotificationsOnHome;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             labelAndSwitchCell.mxkSwitch.enabled = YES;
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(togglePinRoomsWithMissedNotif:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -2130,7 +2193,11 @@ SSOAuthenticationPresenterDelegate>
             
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsPinRoomsWithUnread];
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.pinRoomsWithUnreadMessagesOnHome;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             labelAndSwitchCell.mxkSwitch.enabled = YES;
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(togglePinRoomsWithUnread:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -2161,7 +2228,11 @@ SSOAuthenticationPresenterDelegate>
             MXKTableViewCellWithLabelAndSwitch* labelAndSwitchCell = [self getLabelAndSwitchCell:tableView forIndexPath:indexPath];
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsCallsStunServerFallbackButton];
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.allowStunServerFallback;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             labelAndSwitchCell.mxkSwitch.enabled = YES;
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleStunServerFallback:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -2207,7 +2278,11 @@ SSOAuthenticationPresenterDelegate>
                 MXKTableViewCellWithLabelAndSwitch* labelAndSwitchCell = [self getLabelAndSwitchCell:tableView forIndexPath:indexPath];
                 labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsIntegrationsAllowButton];
                 labelAndSwitchCell.mxkSwitch.on = sharedSettings.hasIntegrationProvisioningEnabled;
+            #if QUALICHAT
+                labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+            #else
                 labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+            #endif
                 labelAndSwitchCell.mxkSwitch.enabled = YES;
                 [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleAllowIntegrations:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -2288,7 +2363,11 @@ SSOAuthenticationPresenterDelegate>
             labelAndSwitchCell.mxkLabel.text = VectorL10n.settingsUiShowRedactionsInRoomHistory;
 
             labelAndSwitchCell.mxkSwitch.on = [MXKAppSettings standardAppSettings].showRedactionsInRoomHistory;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             labelAndSwitchCell.mxkSwitch.enabled = YES;
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleShowRedacted:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -2301,7 +2380,11 @@ SSOAuthenticationPresenterDelegate>
             labelAndSwitchCell.mxkLabel.text = VectorL10n.settingsLabsUseOnlyLatestUserAvatarAndName;
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.roomScreenUseOnlyLatestUserAvatarAndName;
             labelAndSwitchCell.mxkSwitch.enabled = YES;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
 
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleUseOnlyLatestUserAvatarAndName:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -2325,7 +2408,11 @@ SSOAuthenticationPresenterDelegate>
             labelAndSwitchCell.mxkLabel.numberOfLines = 0;
             labelAndSwitchCell.mxkLabel.text = VectorL10n.settingsContactsEnableSync;
             labelAndSwitchCell.mxkSwitch.on = [MXKAppSettings standardAppSettings].syncLocalContacts;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             labelAndSwitchCell.mxkSwitch.enabled = YES;
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleLocalContactsSync:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -2363,7 +2450,11 @@ SSOAuthenticationPresenterDelegate>
             MXKAccount *account = MXKAccountManager.sharedManager.accounts.firstObject;
             
             labelAndSwitchCell.mxkSwitch.on = account.preferredSyncPresence == MXPresenceOffline;
-            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+            #if QUALICHAT
+                labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+            #else
+                labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+            #endif
             labelAndSwitchCell.mxkSwitch.enabled = YES;
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(togglePresenceOfflineMode:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -2379,7 +2470,11 @@ SSOAuthenticationPresenterDelegate>
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsShowNSFWPublicRooms];
             
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.showNSFWPublicRooms;
-            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+            #if QUALICHAT
+                labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+            #else
+                labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+            #endif
             labelAndSwitchCell.mxkSwitch.enabled = YES;
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleNSFWPublicRoomsFiltering:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -2391,7 +2486,11 @@ SSOAuthenticationPresenterDelegate>
             
             sendCrashReportCell.mxkLabel.text = VectorL10n.settingsAnalyticsAndCrashData;
             sendCrashReportCell.mxkSwitch.on = RiotSettings.shared.enableAnalytics;
+        #if QUALICHAT
+            sendCrashReportCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             sendCrashReportCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             sendCrashReportCell.mxkSwitch.enabled = YES;
             [sendCrashReportCell.mxkSwitch addTarget:self action:@selector(toggleAnalytics:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -2403,7 +2502,11 @@ SSOAuthenticationPresenterDelegate>
 
             enableRageShakeCell.mxkLabel.text = [VectorL10n settingsEnableRageshake];
             enableRageShakeCell.mxkSwitch.on = RiotSettings.shared.enableRageShake;
+        #if QUALICHAT
+            enableRageShakeCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             enableRageShakeCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             enableRageShakeCell.mxkSwitch.enabled = YES;
             [enableRageShakeCell.mxkSwitch addTarget:self action:@selector(toggleEnableRageShake:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -2507,6 +2610,28 @@ SSOAuthenticationPresenterDelegate>
             
             cell = copyrightCell;
         }
+#if QUALICHAT
+        else if (row == ABOUT_US_INDEX)
+        {
+            MXKTableViewCell *copyrightCell = [self getDefaultTableViewCell:tableView];
+
+            copyrightCell.textLabel.text = [VectorL10n aboutUsSettings];
+            
+            [copyrightCell vc_setAccessoryDisclosureIndicatorWithCurrentTheme];
+            
+            cell = copyrightCell;
+        }
+        else if (row == ABOUT_TERMS_OF_USE_INDEX)
+        {
+            MXKTableViewCell *copyrightCell = [self getDefaultTableViewCell:tableView];
+
+            copyrightCell.textLabel.text = [VectorL10n termsOfUseSettings];
+            
+            [copyrightCell vc_setAccessoryDisclosureIndicatorWithCurrentTheme];
+            
+            cell = copyrightCell;
+        }
+#endif
         else if (row == ABOUT_PRIVACY_INDEX)
         {
             MXKTableViewCell *privacyPolicyCell = [self getDefaultTableViewCell:tableView];
@@ -2536,7 +2661,11 @@ SSOAuthenticationPresenterDelegate>
             
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsLabsEnableRingingForGroupCalls];
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.enableRingingForGroupCalls;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleEnableRingingForGroupCalls:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -2548,7 +2677,11 @@ SSOAuthenticationPresenterDelegate>
             
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsLabsEnableThreads];
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.enableThreads;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
             
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleEnableThreads:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -2568,7 +2701,11 @@ SSOAuthenticationPresenterDelegate>
 
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsLabsEnableNewSessionManager];
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.enableNewSessionManager;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
 
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleEnableNewSessionManager:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -2580,7 +2717,11 @@ SSOAuthenticationPresenterDelegate>
 
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsLabsEnableNewClientInfoFeature];
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.enableClientInformationFeature;
-            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+            #if QUALICHAT
+                labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+            #else
+                labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+            #endif
 
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleEnableNewClientInfoFeature:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -2592,7 +2733,11 @@ SSOAuthenticationPresenterDelegate>
 
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsLabsEnableWysiwygComposer];
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.enableWysiwygComposer;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
 
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleEnableWysiwygComposerFeature:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -2605,7 +2750,11 @@ SSOAuthenticationPresenterDelegate>
 
             labelAndSwitchCell.mxkLabel.text = [VectorL10n settingsLabsEnableVoiceBroadcast];
             labelAndSwitchCell.mxkSwitch.on = RiotSettings.shared.enableVoiceBroadcast;
+        #if QUALICHAT
+            labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.colors.accent;
+        #else
             labelAndSwitchCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
+        #endif
 
             [labelAndSwitchCell.mxkSwitch addTarget:self action:@selector(toggleEnableVoiceBroadcastFeature:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -2784,8 +2933,11 @@ SSOAuthenticationPresenterDelegate>
                 [self onRemove3PID:indexPath];
                 
             }];
-            
+        #if QUALICHAT
+            leaveAction.backgroundColor = [MXKTools convertImageToPatternColor:@"remove_icon_pink" backgroundColor:ThemeService.shared.theme.backgroundColor patternSize:CGSizeMake(50, cellHeight) resourceSize:CGSizeMake(24, 24)];
+        #else
             leaveAction.backgroundColor = [MXKTools convertImageToPatternColor:@"remove_icon_pink" backgroundColor:ThemeService.shared.theme.headerBackgroundColor patternSize:CGSizeMake(50, cellHeight) resourceSize:CGSizeMake(24, 24)];
+        #endif
             [actions insertObject:leaveAction atIndex:0];
         }
     }
@@ -2906,6 +3058,26 @@ SSOAuthenticationPresenterDelegate>
                 
                 [self pushViewController:webViewViewController];
             }
+#if QUALICHAT
+            else if (row == ABOUT_US_INDEX)
+            {
+                WebViewViewController *webViewViewController = [[WebViewViewController alloc] initWithURL:QualiChatBuildSettings.aboutUsURL];
+                
+                webViewViewController.title = [VectorL10n aboutUsSettings];
+                [webViewViewController vc_setLargeTitleDisplayMode:UINavigationItemLargeTitleDisplayModeNever];
+                
+                [self pushViewController:webViewViewController];
+            }
+            else if (row == ABOUT_TERMS_OF_USE_INDEX)
+            {
+                WebViewViewController *webViewViewController = [[WebViewViewController alloc] initWithURL:QualiChatBuildSettings.termsOfUseURL];
+                
+                webViewViewController.title = [VectorL10n termsOfUseSettings];
+                [webViewViewController vc_setLargeTitleDisplayMode:UINavigationItemLargeTitleDisplayModeNever];
+                
+                [self pushViewController:webViewViewController];
+            }
+#endif
             else if (row == ABOUT_ACCEPTABLE_USE_INDEX)
             {
                 WebViewViewController *webViewViewController = [[WebViewViewController alloc] initWithURL:BuildSettings.applicationAcceptableUsePolicyUrlString];
@@ -2926,10 +3098,13 @@ SSOAuthenticationPresenterDelegate>
             }
             else if (row == ABOUT_THIRD_PARTY_INDEX)
             {
+            #if QUALICHAT
+                WebViewViewController *webViewViewController = [[WebViewViewController alloc] initWithURL:QualiChatBuildSettings.thirdPartyNoticeURL];
+            #else
                 NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"third_party_licenses" ofType:@"html" inDirectory:nil];
 
                 WebViewViewController *webViewViewController = [[WebViewViewController alloc] initWithLocalHTMLFile:htmlFile];
-                
+            #endif
                 webViewViewController.title = [VectorL10n settingsThirdPartyNotices];
                 [webViewViewController vc_setLargeTitleDisplayMode:UINavigationItemLargeTitleDisplayModeNever];
                 
@@ -3034,11 +3209,19 @@ SSOAuthenticationPresenterDelegate>
 {
     self.signOutButton = (UIButton*)sender;
     
-    SignOutFlowPresenter *flowPresenter = [[SignOutFlowPresenter alloc] initWithSession:self.mainSession presentingViewController:self];
-    flowPresenter.delegate = self;
+    // MARK: - QualiChat modified
+    if(self.mainSession.crypto.backup != nil) {
+        BOOL hasKeysToBackup = self.mainSession.crypto.backup.hasKeysToBackup;
+        NSLog(@"hasKeysToBackup: %d", hasKeysToBackup);
+    }
     
-    [flowPresenter startWithSourceView:self.signOutButton];
-    self.signOutFlowPresenter = flowPresenter;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        SignOutFlowPresenter *flowPresenter = [[SignOutFlowPresenter alloc] initWithSession:self.mainSession presentingViewController:self];
+        flowPresenter.delegate = self;
+        
+        [flowPresenter startWithSourceView:self.signOutButton];
+        self.signOutFlowPresenter = flowPresenter;
+    });
 }
 
 - (void)onRemove3PID:(NSIndexPath*)indexPath

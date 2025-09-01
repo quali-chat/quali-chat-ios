@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,6 +35,10 @@ enum AuthenticationLoginCoordinatorResult: CustomStringConvertible {
     case loggedInWithQRCode(session: MXSession, securityCompleted: Bool)
     /// Login requested a fallback
     case fallback
+    // MARK: QualiChat modified
+    case demo
+    // MARK: QualiChat modified
+    case blockchainLogin
     
     /// A string representation of the result, ignoring any associated values that could leak PII.
     var description: String {
@@ -46,6 +51,10 @@ enum AuthenticationLoginCoordinatorResult: CustomStringConvertible {
             return "loggedInWithQRCode"
         case .fallback:
             return "fallback"
+        case .demo:
+            return "demo"
+        case .blockchainLogin:
+            return "blockchainLogin"
         }
     }
 }
@@ -83,14 +92,19 @@ final class AuthenticationLoginCoordinator: Coordinator, Presentable {
     
     // MARK: - Setup
     
-    @MainActor init(parameters: AuthenticationLoginCoordinatorParameters) {
+    @MainActor init(parameters: AuthenticationLoginCoordinatorParameters, isDemo: Bool = false) {
         self.parameters = parameters
         
         let homeserver = parameters.authenticationService.state.homeserver
         let viewModel = AuthenticationLoginViewModel(homeserver: homeserver.viewData)
         authenticationLoginViewModel = viewModel
         
-        let view = AuthenticationLoginScreen(viewModel: viewModel.context)
+        // MARK: QualiChat modified
+        var view: any View = AuthenticationLoginScreen(viewModel: viewModel.context)
+        if isDemo {
+            view = DemoLoginScreen(viewModel: viewModel.context)
+        }
+        
         authenticationLoginHostingController = VectorHostingController(rootView: view)
         authenticationLoginHostingController.vc_removeBackTitle()
         authenticationLoginHostingController.enableNavigationBarScrollEdgeAppearance = true
@@ -132,6 +146,10 @@ final class AuthenticationLoginCoordinator: Coordinator, Presentable {
                 self.callback?(.fallback)
             case .qrLogin:
                 self.showQRLoginScreen()
+            case .demo: // MARK: QualiChat modified
+                self.callback?(.demo)
+            case .blockchainLogin: // MARK: QualiChat modified
+                self.callback?(.blockchainLogin)
             }
         }
     }
@@ -287,6 +305,11 @@ final class AuthenticationLoginCoordinator: Coordinator, Presentable {
 
         modalRouter.setRootModule(coordinator)
 
+        #if QUALICHAT
+        if(QualiChatBuildSettings.enableLoginScreen) {
+            navigationRouter.dismissModule(animated: true, completion: nil)
+        }
+        #endif
         navigationRouter.present(modalRouter, animated: true)
     }
 

@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -72,6 +73,82 @@ struct SecondaryActionButtonStyle_Previews: PreviewProvider {
                     .foregroundColor(theme.colors.secondaryContent)
             }
             .buttonStyle(SecondaryActionButtonStyle(customColor: theme.colors.quarterlyContent))
+        }
+        .padding()
+    }
+}
+
+struct QualiSecondaryActionButtonStyle: ButtonStyle {
+    @Environment(\.theme) private var theme
+    @Environment(\.isEnabled) private var isEnabled
+
+    /// `theme.colors.accent` by default
+    var customColor: Color?
+    /// `theme.fonts.body` by default
+    var font: Font?
+    
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .padding(.top, 12.0)
+            .padding(.bottom, 12.0)
+            .frame(maxWidth: .infinity)
+            .foregroundColor(isEnabled ? theme.colors.secondaryContent : (customColor ?? theme.colors.accent))
+            .font(font ?? theme.fonts.title3)
+            .opacity(opacity(when: configuration.isPressed))
+            .overlay { borders }
+    }
+    
+    private func opacity(when isPressed: Bool) -> CGFloat {
+        guard isEnabled else { return 0.6 }
+        return isPressed ? 0.6 : 1.0
+    }
+    
+    private var borders: some View {
+         VStack(content: {
+             if isEnabled {
+                 Rectangle()
+                     .frame(height: 2)
+                     .foregroundColor(customColor ?? theme.colors.accent)
+                 Spacer()
+                 Rectangle()
+                     .frame(height: 2)
+                     .foregroundColor(customColor ?? theme.colors.accent)
+             } else {
+                 EmptyView()
+             }
+        })
+    }
+}
+
+struct QualiSecondaryActionButtonStyle_Previews: PreviewProvider {
+    static var theme: ThemeSwiftUI = DefaultThemeSwiftUI()
+    
+    static var previews: some View {
+        Group {
+            buttonGroup
+        }.theme(.light).preferredColorScheme(.light)
+        Group {
+            buttonGroup
+        }.theme(.dark).preferredColorScheme(.dark)
+    }
+    
+    static var buttonGroup: some View {
+        VStack {
+            Button("Enabled") { }
+                .buttonStyle(QualiSecondaryActionButtonStyle())
+            
+            Button("Disabled") { }
+                .buttonStyle(QualiSecondaryActionButtonStyle())
+                .disabled(true)
+            
+            Button("Red BG") { }
+                .buttonStyle(QualiSecondaryActionButtonStyle(customColor: .red))
+            
+            Button { } label: {
+                Text("Custom")
+                    .foregroundColor(theme.colors.secondaryContent)
+            }
+            .buttonStyle(QualiSecondaryActionButtonStyle(customColor: theme.colors.quarterlyContent))
         }
         .padding()
     }

@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2016 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  Copyright 2018 New Vector Ltd
@@ -64,8 +65,12 @@
     [super customizeViewRendering];
 
     // Use same color as navigation bar
+    
+#if QUALICHAT
+    self.mainHeaderBackground.backgroundColor = ThemeService.shared.theme.backgroundColor;
+#else
     self.mainHeaderBackground.backgroundColor = ThemeService.shared.theme.baseColor;
-
+#endif
     
     self.roomTopic.textColor = ThemeService.shared.theme.baseTextSecondaryColor;
     
@@ -77,15 +82,30 @@
     self.subNoticeLabel.textColor = ThemeService.shared.theme.textSecondaryColor;
     self.subNoticeLabel.numberOfLines = 0;
     
-    self.bottomBorderView.backgroundColor = ThemeService.shared.theme.headerBackgroundColor;
     
+#if QUALICHAT
+    self.bottomBorderView.backgroundColor = ThemeService.shared.theme.backgroundColor;
+#else
+    self.bottomBorderView.backgroundColor = ThemeService.shared.theme.headerBackgroundColor;
+#endif
     [self.leftButton.layer setCornerRadius:5];
     self.leftButton.clipsToBounds = YES;
     self.leftButton.backgroundColor = ThemeService.shared.theme.tintColor;
     
+#if QUALICHAT
+    [self.leftButton setTitleColor:ThemeService.shared.theme.tintBackgroundColor forState:UIControlStateNormal];
+    self.leftButton.backgroundColor = ThemeService.shared.theme.colors.alert;
+    [self.leftButton.layer setCornerRadius:self.leftButton.frame.size.height / 2];
+#endif
+    
     [self.rightButton.layer setCornerRadius:5];
     self.rightButton.clipsToBounds = YES;
     self.rightButton.backgroundColor = ThemeService.shared.theme.tintColor;
+    
+#if QUALICHAT
+    [self.rightButton setTitleColor:ThemeService.shared.theme.tintBackgroundColor forState:UIControlStateNormal];
+    [self.rightButton.layer setCornerRadius:self.rightButton.frame.size.height / 2];
+#endif
 }
 
 - (void)refreshDisplay
@@ -97,7 +117,10 @@
     {
         if (self.roomAvatarURL)
         {
-            [self.roomAvatar setImageURI:self.roomAvatarURL
+#if QUALICHAT
+            [self.roomAvatar vc_setRoomAvatarImageWith:self.roomAvatarURL roomId:self.roomPreviewData.roomId displayName:self.roomPreviewData.roomName mediaManager:UserSessionsService.shared.mainUserSession.matrixSession.mediaManager];
+#else
+            [self.roomAvatar setImageURI:roomAvatarURL
                                 withType:nil
                      andImageOrientation:UIImageOrientationUp
                            toFitViewSize:self.roomAvatar.frame.size
@@ -105,6 +128,7 @@
                             previewImage:[MXKTools paintImage:AssetImages.placeholder.image
                                                     withColor:ThemeService.shared.theme.tintColor]
                             mediaManager:self.mxRoom.mxSession.mediaManager];
+#endif
         }
         else
         {
@@ -165,10 +189,16 @@
                 // Would have been nice to get the cropped string displayed by
                 // self.displayNameTextField but the value is not accessible.
                 // Cut it off by hand
+#if !QUALICHAT
                 roomName = [NSString stringWithFormat:@"%@…",[roomName substringToIndex:20]];
+#endif
             }
 
+#if QUALICHAT
+            self.previewLabel.attributedText = [[VectorL10n roomPreviewTryJoinAnUnknownRoom:roomName] fixDisplayNameInRoomTitleWithCapHeight:self.previewLabel.font.capHeight];
+#else
             self.previewLabel.text = [VectorL10n roomPreviewTryJoinAnUnknownRoom:roomName];
+#endif
         }
     }
     else if (self.mxRoom)
@@ -243,7 +273,7 @@
     self.roomAvatar.layer.cornerRadius = self.roomAvatar.frame.size.width / 2;
     self.roomAvatar.clipsToBounds = YES;
     
-    self.roomAvatar.defaultBackgroundColor = ThemeService.shared.theme.headerBackgroundColor;
+    self.roomAvatar.defaultBackgroundColor = ThemeService.shared.theme.tintBackgroundColor;
     
     // Force the layout of subviews to update the position of 'bottomBorderView' which is used to define the actual height of the preview container.
     [self layoutIfNeeded];

@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2020 Vector Creations Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -55,19 +56,19 @@ final class BuildSettings: NSObject {
     }
     
     static var pushKitAppIdProd: String {
-        return baseBundleIdentifier + ".ios.voip.prod"
+        return baseBundleIdentifier + ".voip.prod"
     }
     
     static var pushKitAppIdDev: String {
-        return baseBundleIdentifier + ".ios.voip.dev"
+        return baseBundleIdentifier + ".voip.dev"
     }
     
     static var pusherAppIdProd: String {
-        return baseBundleIdentifier + ".ios.prod"
+        return baseBundleIdentifier
     }
     
     static var pusherAppIdDev: String {
-        return baseBundleIdentifier + ".ios.dev"
+        return baseBundleIdentifier
     }
     
     static var pushKitAppId: String {
@@ -86,8 +87,37 @@ final class BuildSettings: NSObject {
         #endif
     }
     
+    enum APIEnvironment {
+        case PRODUCTION, STAGING
+        
+        var baseUrl: String {
+            switch self {
+            case .PRODUCTION: "quali.chat"
+            case .STAGING: "quali.chat"
+            }
+        }
+        
+        var identityPrefix: String {
+            switch self {
+            case .PRODUCTION: "matrix."
+            case .STAGING: ""
+            }
+        }
+    }
+    // MARK: - QualiChat modified
+    #if STAGING
+    static let environment: APIEnvironment = .STAGING
+    #else
+    static let environment: APIEnvironment = .PRODUCTION
+    #endif
+    // MARK: - QualiChat modified
+    
+    static let identityPrefix: String = environment.identityPrefix
+    static let baseUrl: String = environment.baseUrl
+    static let fullBaseUrl: String = "https://\(baseUrl)"
+    // MARK: - QualiChat modified
     // Element-Web instance for the app
-    static let applicationWebAppUrlString = "https://app.element.io"
+    static let applicationWebAppUrlString = "https://app.\(baseUrl)"
     
     
     // MARK: - Localization
@@ -103,41 +133,50 @@ final class BuildSettings: NSObject {
 
     /// Default server proposed on the authentication screen
     static var serverConfigDefaultHomeserverUrlString: String {
-        MDMSettings.serverConfigDefaultHomeserverUrlString ?? "https://matrix.org"
+        MDMSettings.serverConfigDefaultHomeserverUrlString ?? "https://\(identityPrefix)\(baseUrl)" // MARK: - QualiChat modified
     }
     
     /// Default identity server
-    static let serverConfigDefaultIdentityServerUrlString = "https://vector.im"
+    static let serverConfigDefaultIdentityServerUrlString = "https://\(identityPrefix)\(baseUrl)" // MARK: - QualiChat modified
         
     static var serverConfigSygnalAPIUrlString: String {
-        MDMSettings.serverConfigSygnalAPIUrlString ?? "https://matrix.org/_matrix/push/v1/notify"
+        MDMSettings.serverConfigSygnalAPIUrlString ?? "https://sygnal.\(baseUrl)/_matrix/push/v1/notify" // MARK: - QualiChat modified
     }
     
     // MARK: - Legal URLs
     
     // Note: Set empty strings to hide the related entry in application settings
-    static let applicationCopyrightUrlString = "https://element.io/copyright"
-    static let applicationPrivacyPolicyUrlString = "https://element.io/privacy"
-    static let applicationAcceptableUsePolicyUrlString = "https://element.io/acceptable-use-policy-terms"
+    static let applicationCopyrightUrlString = "https://\(APIEnvironment.PRODUCTION.baseUrl)/copyright" // MARK: - QualiChat modified
+    static let applicationPrivacyPolicyUrlString = "https://\(APIEnvironment.PRODUCTION.baseUrl)/privacy" // MARK: - QualiChat modified
+    static let applicationAcceptableUsePolicyUrlString = "https://\(APIEnvironment.PRODUCTION.baseUrl)/acceptable-use-policy" // MARK: - QualiChat modified
     static let applicationHelpUrlString =
-    "https://element.io/help"
+    "https://\(APIEnvironment.PRODUCTION.baseUrl)/help" // MARK: - QualiChat modified
     
     
     // MARK: - Permalinks
     // Hosts/Paths for URLs that will considered as valid permalinks. Those permalinks are opened within the app.
     static let permalinkSupportedHosts: [String: [String]] = [
-        "app.element.io": [],
-        "staging.element.io": [],
-        "develop.element.io": [],
-        "mobile.element.io": [""],
+        //"app.element.io": [],
+        //"staging.element.io": [],
+        //"develop.element.io": [],
+        //"mobile.element.io": [""],
         // Historical ones
-        "riot.im": ["/app", "/staging", "/develop"],
-        "www.riot.im": ["/app", "/staging", "/develop"],
-        "vector.im": ["/app", "/staging", "/develop"],
-        "www.vector.im": ["/app", "/staging", "/develop"],
+       // "riot.im": ["/app", "/staging", "/develop"],
+        //"www.riot.im": ["/app", "/staging", "/develop"],
+        //"vector.im": ["/app", "/staging", "/develop"],
+        //"www.vector.im": ["/app", "/staging", "/develop"],
         // Official Matrix ones
+        // MARK: - QualiChat modified
         "matrix.to": ["/"],
         "www.matrix.to": ["/"],
+        // "quali.chat": ["/"],
+        //"www.quali.chat": ["/"],
+        "quali.chat": ["/"],
+        "www.quali.chat": ["/"],
+        "app.quali.chat": ["/"],
+        "www.app.quali.chat": ["/"],
+        //"app.quali.chat": ["/"],
+        //"www.app.quali.chat": ["/"],
         // Client Permalinks (for use with `BuildSettings.clientPermalinkBaseUrl`)
 //        "example.com": ["/"],
 //        "www.example.com": ["/"],
@@ -154,7 +193,7 @@ final class BuildSettings: NSObject {
     // MARK: - VoIP
     static var allowVoIPUsage: Bool {
         #if canImport(JitsiMeetSDK)
-        return true
+        return true // MARK: QUALICHAT modified
         #else
         return false
         #endif
@@ -165,7 +204,9 @@ final class BuildSettings: NSObject {
     // List of homeservers for the public rooms directory
     static let publicRoomsDirectoryServers = [
         "matrix.org",
-        "gitter.im"
+        "gitter.im",
+        "quali.chat",
+        //"quali.chat",
     ]
     
     // MARK: -  Rooms Screen
@@ -187,24 +228,24 @@ final class BuildSettings: NSObject {
         /// The URL to open with more information about analytics terms.
         let termsURL: URL
     }
-    
+    // MARK: QualiChat modified
     #if DEBUG
     /// The configuration to use for analytics during development. Set `isEnabled` to false to disable analytics in debug builds.
-    static let analyticsConfiguration = AnalyticsConfiguration(isEnabled: BuildSettings.baseBundleIdentifier.starts(with: "im.vector.app"),
-                                                               host: "https://posthog.element.dev",
-                                                               apiKey: "phc_VtA1L35nw3aeAtHIx1ayrGdzGkss7k1xINeXcoIQzXN",
-                                                               termsURL: URL(string: "https://element.io/cookie-policy")!)
+    static let analyticsConfiguration = AnalyticsConfiguration(isEnabled: false,
+                                                               host: "https://posthog.\(baseUrl)",
+                                                               apiKey: "phc_30ySRD1mbKWx6G3EOjno1qrbK09A5kxGW0xrX2vzkNV",
+                                                               termsURL: URL(string: "https://\(baseUrl)/privacy")!)
     #else
     /// The configuration to use for analytics. Set `isEnabled` to false to disable analytics.
-    static let analyticsConfiguration = AnalyticsConfiguration(isEnabled: BuildSettings.baseBundleIdentifier.starts(with: "im.vector.app"),
-                                                               host: "https://posthog.element.io",
-                                                               apiKey: "phc_Jzsm6DTm6V2705zeU5dcNvQDlonOR68XvX2sh1sEOHO",
-                                                               termsURL: URL(string: "https://element.io/cookie-policy")!)
+    static let analyticsConfiguration = AnalyticsConfiguration(isEnabled: BuildSettings.baseBundleIdentifier.starts(with: "chat.quali.ios"),
+                                                               host: "https://posthog.\(baseUrl)",
+                                                               apiKey: "phc_30ySRD1mbKWx6G3EOjno1qrbK09A5kxGW0xrX2vzkNV",
+                                                               termsURL: URL(string: "https://\(baseUrl)/privacy")!)
     #endif
     
     
     // MARK: - Bug report
-    static let bugReportEndpointUrlString = "https://riot.im/bugreports"
+    static let bugReportEndpointUrlString = "https://\(baseUrl)/bugreports" // MARK: QualiChat modified
     // Use the name allocated by the bug report server
     static let bugReportApplicationId = "riot-ios"
     static let bugReportUISIId = "element-auto-uisi"
@@ -238,17 +279,17 @@ final class BuildSettings: NSObject {
     /// Force non-jailbroken app usage
     static let forceNonJailbrokenUsage: Bool = true
     
-    static let allowSendingStickers: Bool = true
+    static let allowSendingStickers: Bool = false // MARK: QUALICHAT modified
     
-    static let allowLocalContactsAccess: Bool = true
+    static let allowLocalContactsAccess: Bool = false // MARK: QUALICHAT modified
     
-    static let allowInviteExernalUsers: Bool = true
+    static let allowInviteExernalUsers: Bool = false // MARK: QUALICHAT modified
     
     static let allowBackgroundAudioMessagePlayback: Bool = true
     
     // MARK: - Side Menu
     static let enableSideMenu: Bool = true && !newAppLayoutEnabled
-    static let sideMenuShowInviteFriends: Bool = true
+    static let sideMenuShowInviteFriends: Bool = false // MARK: QUALICHAT modified
 
     /// Whether to read the `io.element.functional_members` state event and exclude any service members when computing a room's name and avatar.
     static let supportFunctionalMembers: Bool = true
@@ -282,20 +323,20 @@ final class BuildSettings: NSObject {
     
     static let settingsScreenShowUserFirstName: Bool = false
     static let settingsScreenShowUserSurname: Bool = false
-    static let settingsScreenAllowAddingEmailThreepids: Bool = true
-    static let settingsScreenAllowAddingPhoneThreepids: Bool = true
-    static let settingsScreenShowThreepidExplanatory: Bool = true
-    static let settingsScreenShowDiscoverySettings: Bool = true
-    static let settingsScreenAllowIdentityServerConfig: Bool = true
+    static let settingsScreenAllowAddingEmailThreepids: Bool = false // MARK: QUALICHAT modified
+    static let settingsScreenAllowAddingPhoneThreepids: Bool = false // MARK: QUALICHAT modified
+    static let settingsScreenShowThreepidExplanatory: Bool = false // MARK: QUALICHAT modified
+    static let settingsScreenShowDiscoverySettings: Bool = false // MARK: QUALICHAT modified
+    static let settingsScreenAllowIdentityServerConfig: Bool = false // MARK: QUALICHAT modified
     static let settingsScreenShowConfirmMediaSize: Bool = true
-    static let settingsScreenShowAdvancedSettings: Bool = true
-    static let settingsScreenShowLabSettings: Bool = true
-    static let settingsScreenAllowChangingRageshakeSettings: Bool = true
+    static let settingsScreenShowAdvancedSettings: Bool = false // MARK: QUALICHAT modified
+    static let settingsScreenShowLabSettings: Bool = false // MARK: QUALICHAT modified
+    static let settingsScreenAllowChangingRageshakeSettings: Bool = false // MARK: QUALICHAT modified
     static let settingsScreenAllowChangingCrashUsageDataSettings: Bool = true
-    static let settingsScreenAllowBugReportingManually: Bool = true
+    static let settingsScreenAllowBugReportingManually: Bool = false // MARK: QUALICHAT modified
     static let settingsScreenAllowDeactivatingAccount: Bool = true
-    static let settingsScreenShowChangePassword:Bool = true
-    static let settingsScreenShowEnableStunServerFallback: Bool = true
+    static let settingsScreenShowChangePassword:Bool = false // MARK: QUALICHAT modified
+    static let settingsScreenShowEnableStunServerFallback: Bool = false // MARK: QUALICHAT modified
     static let settingsScreenShowNotificationDecodedContentOption: Bool = true
     static let settingsScreenShowNsfwRoomsOption: Bool = true
     static let settingsSecurityScreenShowSessions:Bool = true
@@ -324,11 +365,11 @@ final class BuildSettings: NSObject {
     
     // MARK: - Room Screen
     
-    static let roomScreenAllowVoIPForDirectRoom: Bool = true
-    static let roomScreenAllowVoIPForNonDirectRoom: Bool = true
+    static let roomScreenAllowVoIPForDirectRoom: Bool = true // MARK: QUALICHAT modified
+    static let roomScreenAllowVoIPForNonDirectRoom: Bool = false // MARK: QUALICHAT modified
     static let roomScreenAllowCameraAction: Bool = true
     static let roomScreenAllowMediaLibraryAction: Bool = true
-    static let roomScreenAllowStickerAction: Bool = true
+    static let roomScreenAllowStickerAction: Bool = false // MARK: QUALICHAT modified
     static let roomScreenAllowFilesAction: Bool = true
     
     // Timeline style
@@ -350,15 +391,15 @@ final class BuildSettings: NSObject {
 
     // MARK: - Room Info Screen
     
-    static let roomInfoScreenShowIntegrations: Bool = true
+    static let roomInfoScreenShowIntegrations: Bool = false // MARK: QUALICHAT modified
 
     // MARK: - Room Settings Screen
     
     static let roomSettingsScreenShowLowPriorityOption: Bool = true
     static let roomSettingsScreenShowDirectChatOption: Bool = true
-    static let roomSettingsScreenAllowChangingAccessSettings: Bool = true
+    static let roomSettingsScreenAllowChangingAccessSettings: Bool = false // MARK: QUALICHAT modified
     static let roomSettingsScreenAllowChangingHistorySettings: Bool = true
-    static let roomSettingsScreenShowAddressSettings: Bool = true
+    static let roomSettingsScreenShowAddressSettings: Bool = false // MARK: QUALICHAT modified
     static let roomSettingsScreenShowAdvancedSettings: Bool = true
     static let roomSettingsScreenAdvancedShowEncryptToVerifiedOption: Bool = true
 

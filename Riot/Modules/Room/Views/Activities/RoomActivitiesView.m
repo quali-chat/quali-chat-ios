@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2015 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  Copyright 2019 New Vector Ltd
@@ -123,6 +124,14 @@
     self.resendButton.clipsToBounds = YES;
     [self.resendButton setTitle:[VectorL10n retry] forState:UIControlStateNormal];
     self.resendButton.backgroundColor = ThemeService.shared.theme.tintColor;
+    
+#if QUALICHAT
+    [self.resendButton setTitleColor:ThemeService.shared.theme.tintBackgroundColor forState:UIControlStateNormal];
+    [self.resendButton.layer setCornerRadius:self.resendButton.frame.size.height / 2];
+    self.resendButton.tintColor = ThemeService.shared.theme.tintBackgroundColor;
+    UIImage *image2 = [self.resendButton.currentImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [self.resendButton setImage:image2 forState:UIControlStateNormal];
+#endif
     
     UIImage *image = [AssetImages.roomContextMenuDelete.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     [self.deleteButton setImage:image forState:UIControlStateNormal];

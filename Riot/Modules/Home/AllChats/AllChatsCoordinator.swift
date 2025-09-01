@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2022 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -347,9 +348,17 @@ class AllChatsCoordinator: NSObject, SplitViewMasterCoordinatorProtocol {
             })
         }
 
-        subMenuActions.append(UIAction(title: VectorL10n.sideMenuActionFeedback, image: UIImage(systemName: "questionmark.circle")) { [weak self] action in
+        let feedbackAction = UIAction(title: VectorL10n.sideMenuActionFeedback, image: UIImage(systemName: "questionmark.circle")) { [weak self] action in
             self?.showBugReport()
-        })
+        }
+        
+        #if QUALICHAT
+        if QualiChatBuildSettings.enableFeedbackScreen {
+            subMenuActions.append(feedbackAction)
+        }
+        #else
+            subMenuActions.append(feedbackAction)
+        #endif
         
         actions.append(UIMenu(title: "", options: .displayInline, children: subMenuActions))
         actions.append(UIMenu(title: "", options: .displayInline, children: [
@@ -589,12 +598,18 @@ class AllChatsCoordinator: NSObject, SplitViewMasterCoordinatorProtocol {
             MXLog.warning("[AllChatsCoordinator] Unable to sign out due to missing current session.")
             return
         }
+        // MARK: - QualiChat modified
+        _ = session.crypto.backup?.hasKeysToBackup
         
-        let flowPresenter = SignOutFlowPresenter(session: session, presentingViewController: toPresentable())
-        flowPresenter.delegate = self
-        
-        flowPresenter.start(sourceView: avatarMenuButton)
-        self.signOutFlowPresenter = flowPresenter
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) { [weak self] in
+            guard let self = self else { return }
+            
+            let flowPresenter = SignOutFlowPresenter(session: session, presentingViewController: toPresentable())
+            flowPresenter.delegate = self
+            
+            flowPresenter.start(sourceView: avatarMenuButton)
+            self.signOutFlowPresenter = flowPresenter
+        }
     }
     
     // MARK: - Private methods

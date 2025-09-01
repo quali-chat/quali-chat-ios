@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2020 New Vector Ltd
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -62,8 +63,14 @@ final class RoundedButton: CustomRoundedButton, Themable {
             backgroundColor = theme.noticeColor
         }
         
-        self.vc_setBackgroundColor(backgroundColor.withAlphaComponent(Constants.backgroundColorAlpha), for: .normal)
+        #if QUALICHAT
+        self.layer.cornerRadius = QualiChatBuildSettings.cornerRadiusButton
+        self.setTitleColor(theme.tintBackgroundColor, for: .normal)
+        self.vc_setBackgroundColor(theme.tintColor, for: .normal)
+        #else
         self.setTitleColor(backgroundColor, for: .normal)
+        self.vc_setBackgroundColor(backgroundColor.withAlphaComponent(Constants.backgroundColorAlpha), for: .normal)
+        #endif
     }
     
     // MARK: - Themable

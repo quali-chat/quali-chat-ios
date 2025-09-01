@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b2C-jK-KPV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b2C-jK-KPV">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,13 +11,13 @@
         <!--Key Backup Setup Success From Secure Backup View Controller-->
         <scene sceneID="A4c-pi-pNE">
             <objects>
-                <viewController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="b2C-jK-KPV" customClass="KeyBackupSetupSuccessFromSecureBackupViewController" customModule="Riot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="b2C-jK-KPV" customClass="KeyBackupSetupSuccessFromSecureBackupViewController" customModule="Element" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YAN-xg-EgW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5g-F9-L3B">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4X-9Q-mkr">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="505"/>
@@ -50,10 +50,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7aK-CF-d5d">
-                                                        <rect key="frame" x="0.0" y="435" width="375" height="50"/>
+                                                        <rect key="frame" x="16" y="435" width="343" height="50"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxC-gf-8VN">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxC-gf-8VN" customClass="RoundedButton" customModule="Element" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="qB9-Kq-7Jw"/>
                                                                 </constraints>
@@ -62,7 +62,7 @@
                                                                     <color key="titleColor" red="0.47843137250000001" green="0.78823529410000004" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
                                                                 <state key="disabled">
-                                                                    <color key="titleColor" red="0.47843137250000001" green="0.78823529410000004" blue="0.63137254899999995" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="doneButtonAction:" destination="b2C-jK-KPV" eventType="touchUpInside" id="Vs7-qI-yBp"/>
@@ -80,14 +80,14 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="7aK-CF-d5d" firstAttribute="leading" secondItem="o2g-Ga-wwR" secondAttribute="leading" id="1Hy-bc-46Y"/>
+                                                    <constraint firstItem="7aK-CF-d5d" firstAttribute="leading" secondItem="o2g-Ga-wwR" secondAttribute="leading" constant="16" id="1Hy-bc-46Y"/>
                                                     <constraint firstAttribute="width" priority="750" constant="500" id="4a2-Az-ekr"/>
                                                     <constraint firstItem="epg-Qy-eoD" firstAttribute="centerX" secondItem="o2g-Ga-wwR" secondAttribute="centerX" id="K4J-2Y-7bW"/>
                                                     <constraint firstItem="xlp-uc-Mug" firstAttribute="leading" secondItem="o2g-Ga-wwR" secondAttribute="leading" constant="20" id="drb-kN-IRX"/>
                                                     <constraint firstItem="xlp-uc-Mug" firstAttribute="top" secondItem="epg-Qy-eoD" secondAttribute="bottom" constant="35" id="hyp-kS-l81"/>
                                                     <constraint firstAttribute="bottom" secondItem="7aK-CF-d5d" secondAttribute="bottom" constant="20" id="nPL-nn-PpM"/>
                                                     <constraint firstItem="epg-Qy-eoD" firstAttribute="top" secondItem="o2g-Ga-wwR" secondAttribute="top" constant="40" id="p1e-CF-Kln"/>
-                                                    <constraint firstAttribute="trailing" secondItem="7aK-CF-d5d" secondAttribute="trailing" id="wl8-ha-UIh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7aK-CF-d5d" secondAttribute="trailing" constant="16" id="wl8-ha-UIh"/>
                                                     <constraint firstAttribute="trailing" secondItem="xlp-uc-Mug" secondAttribute="trailing" constant="20" id="xIU-IL-ycK"/>
                                                 </constraints>
                                             </view>

@@ -48,7 +48,7 @@
 "auth_phone_placeholder" = "Telefonnummer";
 "auth_repeat_password_placeholder" = "Gjenta passord";
 "auth_repeat_new_password_placeholder" = "Bekreft ditt nye passord";
-"auth_home_server_placeholder" = "URL (f.eks. https://matrix.org)";
+"auth_home_server_placeholder" = "URL (f.eks. https://quali.chat)";
 "auth_identity_server_placeholder" = "URL (f.eks. https://vector.im)";
 "auth_missing_password" = "Manglende passord";
 "auth_missing_email" = "Manglende E-postadresse";
@@ -399,7 +399,7 @@
 "user_verification_session_details_verify_action_current_user" = "Bekreft";
 // String for App Store
 "store_short_description" = "Sikker desentralisert chat/IP-telefoni";
-"store_full_description" = "Element er en ny type melding og samhandlings app som:\n\n1. Setter deg i førersetet for å kontrollere personlig informasjon\n2. Lar deg kommunisere med alle brukere i Matrix-nettverket, i tillegg til brukere i tilknyttede nettverk slik som Slack\n3. Beskytter deg fra annonser, datainnhenting, bakdører og lukkede nettverk. \n4. Beskytter deg gjennom at kommunikasjonen er ende-til-ende-kryptert, og at motparten er verifisert. \n\nElement er veldig annerledes enn andre melding og samhandlingsapper ved at det er en desentralisert løsning og laget som åpen kildekode.\n\nElement lar deg sette opp en egen tjener eller velge en offentlig tjener - slik at du kan beskytte tilgang og eierskap til dine data og samtaler. Det gir deg tilgang tiI et åpent nettverk slik at du ikke er begrenset til å kommunisere kun med Element brukere. Og det er veldig sikkert.\n\nElement gjør dette mulig ved at det opererer i Matrix - standarden for åpen og desentralisert kommunikasjon. \n\nElement setter deg selv i førersetet ved å la deg bestemme hvor dine samtaler skal befinne seg. Fra Element appen kan du velge forskjellige opsjoner/verter:\n\n1. Få en gratis konto på den offentlige matrix.org tjeneren. \n2. Sett opp en egen tjener for din konto på egne maskiner\n3. Registrer deg og opprett en egen tjener og konto på Element Matrix Services platformen.\n\nHvorfor velge Element?\n\nEI DINE EGNE DATA: Du bestemmer hvor dine data og meldinger oppbevares. Du eier og kontrollerer det, ikke et stort MEGACORP som samler dine data og tilbyr de til tredjeparter.\n\nÅPEN KOMMUNIKASJON OG SAMHANDLING: Du kan melde med hvem som helst i Matrix nettverket; uavhengig om de bruker Element eller en annen Matrix app, og uavhengig av om de bruker andre meldingssystemer slik som Slack, IRC eller XMPP.\n\nSUPER-SIKKER: Sann ende-til-ende-kryptering (kun de i som deltar i samtalen kan dekryptere meldinger), and kryss-signering for å sikre at alle enheter i samtalen er verifisert. \n\nKOMPLETT KOMMUNIKASJONSLØSNING: Meldinger, tale og videosamtaler, fildeling, skjermdeling og en hele rekke integrasjoner, bots og widgets. Bygg rom og samfunn, hold kontakt, og få ting gjort.\n\nOVERALT DU ER: Hold deg oppdatert uansett hvor du er, og med en fullt synkronisert meldingshistorikk, på tvers av alle enhetene dine og på web, hos https://element.io/app.";
+"store_full_description" = "quali.chat er en ny type melding og samhandlings app som:\n\n1. Setter deg i førersetet for å kontrollere personlig informasjon\n2. Lar deg kommunisere med alle brukere i quali.chat-nettverket, i tillegg til brukere i tilknyttede nettverk slik som Slack\n3. Beskytter deg fra annonser, datainnhenting, bakdører og lukkede nettverk. \n4. Beskytter deg gjennom at kommunikasjonen er ende-til-ende-kryptert, og at motparten er verifisert. \n\nquali.chat er veldig annerledes enn andre melding og samhandlingsapper ved at det er en desentralisert løsning og laget som åpen kildekode.\n\nquali.chat lar deg sette opp en egen tjener eller velge en offentlig tjener - slik at du kan beskytte tilgang og eierskap til dine data og samtaler. Det gir deg tilgang tiI et åpent nettverk slik at du ikke er begrenset til å kommunisere kun med quali.chat brukere. Og det er veldig sikkert.\n\nquali.chat gjør dette mulig ved at det opererer i quali.chat - standarden for åpen og desentralisert kommunikasjon. \n\nquali.chat setter deg selv i førersetet ved å la deg bestemme hvor dine samtaler skal befinne seg. Fra quali.chat appen kan du velge forskjellige opsjoner/verter:\n\n1. Få en gratis konto på den offentlige quali.chat tjeneren. \n2. Sett opp en egen tjener for din konto på egne maskiner\n3. Registrer deg og opprett en egen tjener og konto på quali.chat platformen.\n\nHvorfor velge quali.chat?\n\nEI DINE EGNE DATA: Du bestemmer hvor dine data og meldinger oppbevares. Du eier og kontrollerer det, ikke et stort MEGACORP som samler dine data og tilbyr de til tredjeparter.\n\nÅPEN KOMMUNIKASJON OG SAMHANDLING: Du kan melde med hvem som helst i quali.chat nettverket; uavhengig om de bruker quali.chat eller en annen quali.chat app, og uavhengig av om de bruker andre meldingssystemer slik som Slack, IRC eller XMPP.\n\nSUPER-SIKKER: Sann ende-til-ende-kryptering (kun de i som deltar i samtalen kan dekryptere meldinger), and kryss-signering for å sikre at alle enheter i samtalen er verifisert. \n\nKOMPLETT KOMMUNIKASJONSLØSNING: Meldinger, tale og videosamtaler, fildeling, skjermdeling og en hele rekke integrasjoner, bots og widgets. Bygg rom og samfunn, hold kontakt, og få ting gjort.\n\nOVERALT DU ER: Hold deg oppdatert uansett hvor du er, og med en fullt synkronisert meldingshistorikk, på tvers av alle enhetene dine og på web, hos https://element.io/app.";
 "title_favourites" = "Favoritter";
 "on" = "På";
 "skip" = "Hopp over";
@@ -483,7 +483,7 @@
 // Group Details
 "group_details_title" = "Samfunnsdetaljer";
 "image_picker_action_library" = "Velg fra biblioteket";
-"directory_server_placeholder" = "matrix.org";
+"directory_server_placeholder" = "quali.chat";
 "do_not_ask_again" = "Ikke spør igjen";
 "room_does_not_exist" = "%@ eksisterer ikke";
 "call_no_stun_server_error_use_fallback_button" = "Prøv å bruk %@";
@@ -647,7 +647,7 @@
 "room_offline_notification" = "Tilkoblingen til serveren har gått tapt.";
 "encrypted_room_message_reply_to_placeholder" = "Send et kryptert svar…";
 "encrypted_room_message_placeholder" = "Send en kryptert melding…";
-"room_do_not_have_permission_to_post" = "Du har ikke tillatelse til å legge ut innlegg i dette rommet";
+"room_do_not_have_permission_to_post" = "You need to have the room token in your wallet to post to this room.";
 "room_message_unable_open_link_error_message" = "Kan ikke åpne lenken.";
 "room_message_reply_to_placeholder" = "Send et svar (ukryptert)…";
 "room_accessiblity_scroll_to_bottom" = "Bla til bunnen";
@@ -681,7 +681,7 @@
 "contacts_address_book_permission_required" = "Tillatelse kreves for å få tilgang til lokale kontakter";
 "contacts_address_book_no_contact" = "Ingen lokale kontakter";
 "contacts_address_book_no_identity_server" = "Ingen identitetsserver konfigurert";
-"contacts_address_book_matrix_users_toggle" = "Kun Matrix brukere";
+"contacts_address_book_matrix_users_toggle" = "Kun quali.chat brukere";
 "directory_search_fail" = "Kunne ikke hente data";
 "directory_search_results" = "%tu resultater funnet for %@";
 "search_people_placeholder" = "Søk etter bruker-ID, navn eller e-post";
@@ -702,7 +702,7 @@
 "room_recents_people_section" = "FOLK";
 "room_recents_favourites_section" = "FAVORITTER";
 "room_creation_error_invite_user_by_email_without_identity_server" = "Ingen identitetsserver er konfigurert, så du kan ikke legge til en deltaker med en e-post.";
-"room_creation_invite_another_user" = "Søk / inviter etter bruker-ID, navn eller e-post";
+"room_creation_invite_another_user" = "Søk / inviter etter bruker-ID eller navn";
 "room_creation_wait_for_creation" = "Det opprettes allerede et rom. Vennligst vent.";
 "room_creation_make_private" = "Gjør privat";
 "room_creation_keep_private" = "Hold deg privat";
@@ -722,7 +722,7 @@
 "auth_add_email_and_phone_warning" = "Registrering med e-post og telefonnummer på en gang støttes ikke ennå før api eksisterer. Bare telefonnummeret blir tatt i betraktning. Du kan legge til e-postmeldingen din i profilen din i innstillingene.";
 "auth_reset_password_success_message" = "Passordet ditt har blitt tilbakestilt.\n\nDu er logget ut av alle økter og vil ikke lenger motta push-varsler. For å aktivere varsler på nytt, logg inn på nytt på hver enhet.";
 "auth_reset_password_error_is_required" = "Ingen identitetsserver er konfigurert: legg til en i serveralternativene for å tilbakestille passordet ditt.";
-"auth_reset_password_error_not_found" = "E-postadressen din ser ikke ut til å være tilknyttet en Matrix-ID på denne hjemmeserveren.";
+"auth_reset_password_error_not_found" = "E-postadressen din ser ikke ut til å være tilknyttet en quali.chat-ID på denne hjemmeserveren.";
 "auth_reset_password_error_unauthorized" = "Kunne ikke bekrefte e-postadressen: sørg for at du har klikket på lenken i e-posten";
 "auth_reset_password_email_validation_message" = "En e-post er sendt til %@. Når du har fulgt lenken den inneholder, klikker du nedenfor.";
 "auth_reset_password_missing_password" = "Det må oppgis et nytt passord.";
@@ -837,7 +837,7 @@
 // MARK: - Favourites
 
 "favourites_empty_view_title" = "Favorittrom og -personer";
-"create_room_placeholder_address" = "#testrom: matrix.org";
+"create_room_placeholder_address" = "#testrom: quali.chat";
 "device_verification_emoji_santa" = "Julenisse";
 "device_verification_security_advice_emoji" = "Sammenlign de unike emojiene og sjekk at de vises i samme rekkefølge.";
 
@@ -927,7 +927,7 @@
 // Manage session
 "manage_session_title" = "Administrer økt";
 "security_settings_user_password_description" = "Bekreft din identitet ved å oppgi ditt passord";
-"security_settings_coming_soon" = "Beklager. Denne handlingen er ikke tilgjengelig på %@ iOS enda. Vennligst benytt en annen Matrix klient for å sette det opp. %@ iOS vil bruke den.";
+"security_settings_coming_soon" = "Beklager. Denne handlingen er ikke tilgjengelig på %@ iOS enda. Vennligst benytt en annen quali.chat klient for å sette det opp. %@ iOS vil bruke den.";
 "security_settings_complete_security_alert_message" = "Du bør fullføre sikkerheten på din nåværende økt først.";
 "security_settings_blacklist_unverified_devices_description" = "Verifiser alle øktene til en bruker for å markere dem som klarert og send meldinger til dem.";
 "identity_server_settings_disconnect_info" = "Kobler du fra din identitetsserver vil det bety at andre brukere ikke kan finne deg, og at du vil ikke kunne invitere andre med e-post og telefonnummer.";
@@ -996,14 +996,14 @@
 
 // Group rooms
 "group_rooms_filter_rooms" = "Filtrer samfunnsrom";
-"group_participants_invite_malformed_id" = "ID-format-feil. Bør være en Matrix ID som '@localpart:domain'";
+"group_participants_invite_malformed_id" = "ID-format-feil. Bør være en quali.chat ID som '@localpart:domain'";
 "group_participants_invite_malformed_id_title" = "Inviteringsfeil";
 "group_participants_invite_another_user" = "Søk/inviter med bruker ID eller navn";
 "group_participants_filter_members" = "Filtrer medlemmer i samfunnet";
 "group_participants_invite_prompt_msg" = "Er du sikker på at du vil invitere %@ til denne gruppen?";
 "group_participants_remove_prompt_msg" = "Er du sikker på at du vil fjerne %@ fra denne gruppen?";
 "receipt_status_read" = "Lest: ";
-"directory_server_all_native_rooms" = "Alle Matrix-rom";
+"directory_server_all_native_rooms" = "Alle quali.chat-rom";
 "directory_server_all_rooms" = "Alle rom på %@ server";
 "homeserver_connection_lost" = "Ingen kontakt med hjemmeserveren.";
 "event_formatter_jitsi_widget_removed_by_you" = "Du fjernet VoIP-konferanse";
@@ -1477,7 +1477,7 @@
 "settings_device_notifications" = "Enhetsvarsler";
 
 
-// MARK: - MatrixKit
+// MARK: - quali.chatKit
 
 
 
@@ -1491,7 +1491,7 @@
 "device_details_delete_prompt_title" = "Autentisering";
 "notice_room_power_level_acting_requirement" = "Minimum tilgangsnivå en bruker må ha før utførelse av handling er:";
 "login_prompt_email_token" = "Vennligst skriv inn valideringstokenet ditt for e-post:";
-"login_server_url_placeholder" = "URL (f.eks. https://matrix.org)";
+"login_server_url_placeholder" = "URL (f.eks. https://quali.chat)";
 
 // Login Screen
 "login_create_account" = "Opprett konto:";
@@ -1499,14 +1499,14 @@
 /*      iOS specific       */
 /* *********************** */
 
-"matrix" = "Matrix";
+"matrix" = "quali.chat";
 "ssl_cert_not_trust" = "Dette kan bety at noen overvåker trafikken din, eller at telefonen ikke stoler på sertifikatet fra den eksterne serveren.";
 "resend" = "Send på nytt";
 "login_identity_server_title" = "URL til identitetsserver:";
 "login_home_server_info" = "Hjemmeserveren lagrer alle samtalene og kontodataene dine";
 "login_home_server_title" = "Hjemmeserver-URL:";
-"login_identity_server_info" = "Matrix tilbyr identitetsservere for å spore hvilke e-postadresser etc. som tilhører hvilke Matrix-IDer. Bare https://matrix.org eksisterer for øyeblikket.";
-"login_user_id_placeholder" = "Matrix-ID (f.eks. @Bob: matrix.org eller bob)";
+"login_identity_server_info" = "quali.chat tilbyr identitetsservere for å spore hvilke e-postadresser etc. som tilhører hvilke quali.chat-IDer. Bare https://quali.chat eksisterer for øyeblikket.";
+"login_user_id_placeholder" = "quali.chat-ID (f.eks. @Bob: quali.chat eller bob)";
 "login_email_info" = "Angi en e-postadresse slik at andre brukere lettere kan finne deg, og samtidig gi deg en måte å tilbakestille passordet ditt senere.";
 "login_display_name_placeholder" = "Visningsnavn (f.eks. Bob Obson)";
 "login_optional_field" = "valgfri";
@@ -1690,7 +1690,7 @@
 "account_error_msisdn_wrong_title" = "Ugyldig telefonnummer";
 "account_error_email_wrong_description" = "Dette ser ikke ut til å være en gyldig e-postadresse";
 "account_error_email_wrong_title" = "Ugyldig e-postadresse";
-"account_error_matrix_session_is_not_opened" = "Matrix-økt er ikke åpnet";
+"account_error_matrix_session_is_not_opened" = "quali.chat-økt er ikke åpnet";
 "account_error_picture_change_failed" = "Endring av bildet feilet";
 "account_error_display_name_change_failed" = "Endring av visningsnavn feilet";
 "account_msisdn_validation_error" = "Kan ikke bekrefte telefonnummeret.";
@@ -1728,9 +1728,9 @@
 "contact_local_contacts" = "Lokale kontakter";
 
 // Contacts
-"contact_mx_users" = "Matrix-brukere";
+"contact_mx_users" = "quali.chat-brukere";
 "attachment_e2e_keys_import" = "Importer...";
-"attachment_e2e_keys_file_prompt" = "Denne filen inneholder krypteringsnøkler eksportert fra en Matrix-klient.\nVil du se filinnholdet eller importere nøklene den inneholder?";
+"attachment_e2e_keys_file_prompt" = "Denne filen inneholder krypteringsnøkler eksportert fra en quali.chat-klient.\nVil du se filinnholdet eller importere nøklene den inneholder?";
 "attachment_multiselection_original" = "Faktisk størrelse";
 "attachment_multiselection_size_prompt" = "Vil du sende bilder som:";
 "attachment_cancel_upload" = "Avbryte opplastingen?";
@@ -1929,7 +1929,7 @@
 "settings_title_config" = "Konfigurasjon";
 
 // contacts list screen 
-"invitation_message" = "Jeg vil gjerne chatte med deg med Matrix. Besøk nettstedet https://matrix.org for å få mer informasjon.";
+"invitation_message" = "Jeg vil gjerne chatte med deg med quali.chat. Besøk nettstedet https://quali.chat for å få mer informasjon.";
 
 // members list Screen 
 
@@ -2008,3 +2008,23 @@
 "ssl_logout_account" = "Logg ut";
 "ssl_expected_existing_expl" = "Sertifikatet er endret fra et tidligere klarert til et som ikke er klarert. Serveren kan ha fornyet sertifikatet. Kontakt serveradministratoren for forventet fingeravtrykk.";
 "ssl_only_accept" = "Godta KUN sertifikatet hvis serveradministratoren har publisert et fingeravtrykk som samsvarer med det over.";
+"choose_your_blockchain" = "Connect your\n Wallet"; // QUALICHAT modified
+"more_integration_blockchain" = "+ more integrations coming soon"; // QUALICHAT modified
+"about_us_settings" = "About quali.chat"; // QUALICHAT modified
+"terms_of_use_settings" = "Terms of Use"; // QUALICHAT modified
+"welcome_empty_description"= "Explore and access exclusive token-gated content and chats. Connect with blockchain users Wallet-to-Wallet."; // QUALICHAT modified
+"welcome_terms" = "By continuing, you agree to quali.chat"; // QUALICHAT modified
+"welcome_terms_title" = "Terms"; // QUALICHAT modified
+"welcome_and" = "and"; // QUALICHAT modified
+"welcome_privacy_title" = "Privacy Policy."; // QUALICHAT modified
+"demo_login_title" = "Demo Login"; // QUALICHAT modified
+"demo_login_description" = "Don't have a demo account?"; // QUALICHAT modified
+"demo_login_btn" = "Login"; // QUALICHAT modified
+"demo_login_placeholder" = "Username"; // QUALICHAT modified
+"onboarding_splash_login_button_title" = "Connect your wallet"; // QualiChat modified
+"onboarding_splash_page_1_title" = "Enter your exclusive token-gated chats"; // MARK: QualiChat modified
+"onboarding_splash_page_1_message" = "All communities of the tokens you own instantly in one chat & collaboration dApp."; // MARK: QualiChat modified
+"onboarding_splash_page_2_title" = "Secure Wallet-to-Wallet Messaging"; // MARK: QualiChat modified
+"onboarding_splash_page_2_message" = "Decentralized, end-to-end encrypted communication for ultimate privacy."; // MARK: QualiChat modified
+"onboarding_splash_page_3_title" = "Name Service identity control"; // MARK: QualiChat modified
+"onboarding_splash_page_3_message" = "If you own a Name Service domain, your display name is automatically set to it."; // MARK: QualiChat modified

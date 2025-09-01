@@ -1,4 +1,5 @@
 /*
+ Copyright 2025 Keypair Establishment
  Copyright 2017 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  
@@ -91,6 +92,7 @@
         [[[self class] nib] instantiateWithOwner:self options:nil];
     }
     
+    contactsDataSource.memberCount = self.memberCount;
     // Finalize table view configuration
     self.contactsTableView.delegate = self;
     self.contactsTableView.dataSource = contactsDataSource; // Note: dataSource may be nil here

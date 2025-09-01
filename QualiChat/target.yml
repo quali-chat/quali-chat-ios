@@ -1,0 +1,110 @@
+name: QualiChat
+
+schemes:
+  QualiChat:
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+    build:
+      targets:
+        QualiChat:
+        - running
+        - testing
+        - profiling
+        - analyzing
+        - archiving
+    profile:
+      config: Release
+    run:
+      config: Debug
+      disableMainThreadChecker: true
+    test:
+      config: Debug
+      disableMainThreadChecker: true
+      targets:
+      - RiotTests
+      gatherCoverageData: true
+      coverageTargets:
+        - QualiChat
+
+targets:
+  QualiChat:
+    type: application
+    platform: iOS
+
+    dependencies:
+    # Disabled due to crypto corruption issues.
+    # https://github.com/element-hq/element-ios/issues/7618
+    # - target: RiotShareExtension
+    # - target: SiriIntents
+    - target: RiotNSE
+    - target: BroadcastUploadExtension
+    - target: DesignKit
+    - target: CommonKit
+    - package: AnalyticsEvents
+    - package: Mapbox
+    - package: OrderedCollections
+    - package: SwiftOGG
+    - package: WysiwygComposer
+    - package: DeviceKit
+    - package: DTCoreText
+    - package: PostHog
+
+    configFiles:
+      Debug: Debug.xcconfig
+      Release: Release.xcconfig
+
+    preBuildScripts:
+    - name: ⚠️ SwiftLint
+      runOnlyWhenInstalling: false
+      shell: /bin/sh
+      script: "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n"
+    - name: 🛠 SwiftGen
+      runOnlyWhenInstalling: false
+      shell: /bin/sh
+      script: "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\" config run --config \"Tools/SwiftGen/swiftgen-config.yml\"\n"
+
+    sources:
+    - path: ../RiotSwiftUI/Modules
+      # Riot will provide it's own LocaleProviderType so exclude.
+      excludes:
+        - "Common/Locale/LocaleProvider.swift"
+        - "**/Test/**"
+        - Common/Theme/ThemeIdentifierExtensions.swift
+    - path: ../Tools
+      excludes:
+        - "Logs"
+        - "Release"
+        - "Templates/*.sh"
+    - path: Config
+    - path: ../Config
+      excludes:
+        - "AppIdentifiers.xcconfig"
+        - "AppVersion.xcconfig"
+    - path: .
+      excludes:
+        - "Modules/Room/EmojiPicker/Data/EmojiMart/EmojiJSONStore.swift"
+        - "Assets/ar.lproj/**" # RTL is broken so languages are disabled for now
+        - "Assets/he.lproj/**"
+        - "Assets/pr.lproj/**" # Unsupported language on iOS
+        - "DesignKit/**"
+        - Extensions/UIFont+Extensions.swift
+    - path: ../Riot
+      excludes:
+        - "Modules/Room/EmojiPicker/Data/EmojiMart/EmojiJSONStore.swift"
+        - "Assets/ar.lproj/**" # RTL is broken so languages are disabled for now
+        - "Assets/he.lproj/**"
+        - "Assets/pr.lproj/**" # Unsupported language on iOS
+        - "Assets/Images.xcassets"
+        - "Assets/SharedImages.xcassets"
+        - "Assets/Base.lproj/LaunchScreen.storyboard"
+        - "target.yml"
+        - "SupportingFiles/Info.plist"
+        - "Managers/Theme/Themes/DarkTheme.swift"
+        - "Managers/Theme/Themes/DefaultTheme.swift"
+        
+    - path: ../RiotShareExtension/Shared
+    - path: ../Riot/Modules/MatrixKit
+      excludes:
+        - "**/*.md" # excludes all files with the .md extension

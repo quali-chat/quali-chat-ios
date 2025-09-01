@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -150,6 +151,15 @@ final class RoomParticipantsInviteCoordinatorBridgePresenter: NSObject {
                 return
             }
             
+            #if QUALICHAT
+            if !canInviteMoreUsers(to: room) {
+                let alert = UIAlertController(title: VectorL10n.spacesInvitePeople, message: VectorL10n.roomInviteMaxUsersReached, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: VectorL10n.ok, style: .default, handler: nil))
+                self.navigationRouter?.present(alert, animated: true)
+                return
+            }
+            #endif
+            
             let coordinator = ContactsPickerCoordinator(session: session,
                                                         room: room,
                                                         initialSearchText: self.currentSearchText,
@@ -162,6 +172,10 @@ final class RoomParticipantsInviteCoordinatorBridgePresenter: NSObject {
             
             self.contactPickerCoordinator = coordinator
         }
+    }
+    
+    private func canInviteMoreUsers(to room: MXRoom) -> Bool {
+        return room.summary.membersCount.members < QualiChatBuildSettings.limitPersonCreateOnlyDirectChat
     }
     
     private func canInvite(to room: MXRoom, completion: @escaping (Bool) -> Void) {

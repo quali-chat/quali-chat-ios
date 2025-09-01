@@ -1,4 +1,5 @@
 //
+// Copyright 2025 Keypair Establishment
 // Copyright 2021 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -52,6 +53,10 @@ class AuthenticationLoginViewModel: AuthenticationLoginViewModelType, Authentica
             Task { await callback?(.continueWithSSO(provider)) }
         case .qrLogin:
             Task { await callback?(.qrLogin) }
+        case .demo: // MARK: QualiChat modified
+            Task { await callback?(.demo) }
+        case .blockchainLogin: // MARK: QualiChat modified
+            Task { await callback?(.blockchainLogin) }
         }
     }
     

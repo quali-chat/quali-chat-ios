@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cb6-oF-e0m">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cb6-oF-e0m">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +11,7 @@
         <!--Key Backup Recover Success View Controller-->
         <scene sceneID="JIv-4y-eqa">
             <objects>
-                <viewController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="cb6-oF-e0m" customClass="KeyBackupRecoverSuccessViewController" customModule="Riot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="cb6-oF-e0m" customClass="KeyBackupRecoverSuccessViewController" customModule="Element" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JOd-8G-rga">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,8 +41,8 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNs-LM-cnm">
                                                         <rect key="frame" x="0.0" y="169" width="375" height="50"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGk-W1-0Q1">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGk-W1-0Q1" customClass="RoundedButton" customModule="Element" customModuleProvider="target">
+                                                                <rect key="frame" x="16" y="0.0" width="343" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="7wB-0p-6tW"/>
                                                                 </constraints>
@@ -63,10 +61,10 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="TGk-W1-0Q1" firstAttribute="leading" secondItem="ZNs-LM-cnm" secondAttribute="leading" id="1Fb-Kk-7Ep"/>
+                                                            <constraint firstItem="TGk-W1-0Q1" firstAttribute="leading" secondItem="ZNs-LM-cnm" secondAttribute="leading" constant="16" id="1Fb-Kk-7Ep"/>
                                                             <constraint firstAttribute="bottom" secondItem="TGk-W1-0Q1" secondAttribute="bottom" id="OE8-C8-osg"/>
                                                             <constraint firstItem="TGk-W1-0Q1" firstAttribute="top" secondItem="ZNs-LM-cnm" secondAttribute="top" id="OP2-bN-fUv"/>
-                                                            <constraint firstAttribute="trailing" secondItem="TGk-W1-0Q1" secondAttribute="trailing" id="Ql7-BF-E2a"/>
+                                                            <constraint firstAttribute="trailing" secondItem="TGk-W1-0Q1" secondAttribute="trailing" constant="16" id="Ql7-BF-E2a"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -104,6 +102,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y3k-2C-Pek"/>
                         <color key="backgroundColor" red="0.94509803920000002" green="0.96078431369999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="cUL-rS-rfi" firstAttribute="leading" secondItem="Y3k-2C-Pek" secondAttribute="leading" id="9ZI-Gm-3DT"/>
@@ -111,7 +110,6 @@
                             <constraint firstItem="Y3k-2C-Pek" firstAttribute="top" secondItem="cUL-rS-rfi" secondAttribute="top" id="ffm-HV-RhA"/>
                             <constraint firstAttribute="bottom" secondItem="cUL-rS-rfi" secondAttribute="bottom" id="rib-a1-j68"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Y3k-2C-Pek"/>
                     </view>
                     <connections>
                         <outlet property="doneButton" destination="TGk-W1-0Q1" id="Mv9-6A-a9q"/>

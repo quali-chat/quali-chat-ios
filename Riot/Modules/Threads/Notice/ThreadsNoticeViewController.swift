@@ -1,4 +1,5 @@
 // 
+// Copyright 2025 Keypair Establishment
 // Copyright 2022 New Vector Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -110,7 +111,12 @@ extension ThreadsNoticeViewController: Themable {
         self.informationLabel.textColor = theme.textPrimaryColor
 
         self.doneButton.vc_setBackgroundColor(theme.tintColor, for: .normal)
+        #if QUALICHAT
+        self.doneButton.setTitleColor(theme.tintBackgroundColor, for: .normal)
+        self.doneButton.layer.cornerRadius = QualiChatBuildSettings.cornerRadiusButton
+        #else
         self.doneButton.setTitleColor(theme.baseTextPrimaryColor, for: .normal)
+        #endif
     }
 
 }
