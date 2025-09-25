@@ -399,8 +399,8 @@
         
         MXStrongifyAndReturnIfNil(self);
         
-        // List user albums which are not empty
-        PHFetchResult *albums = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
+        // From iOS 18, select any subtype albums rather than regular ones to have both normal and smart albums appear, or they won't work at all
+        PHFetchResult *albums = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAny options:nil];
         
         NSMutableArray *updatedUserAlbums = [NSMutableArray array];
         __block PHAssetCollection *cameraRollAlbum, *videoAlbum;
