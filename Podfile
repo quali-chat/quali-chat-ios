@@ -18,7 +18,7 @@ use_frameworks!
 # Warning: our internal tooling depends on the name of this variable name, so be sure not to change it
 # $matrixSDKVersion = '= 0.27.8'
 # $matrixSDKVersion = :local
-$matrixSDKVersion = { :branch => 'v0.27.15'}
+$matrixSDKVersion = { :branch => 'v0.27.17'}
 # $matrixSDKVersion = { :specHash => { git: 'https://git.io/fork123', branch: 'fix' } }
 
 ########################################
