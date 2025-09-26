@@ -187,6 +187,14 @@ end
 post_install do |installer|
   installer.pods_project.targets.each do |target|
 
+    if target.name.include?("libcmark") || target.name.include?("Down")
+      target.build_configurations.each do |config|
+        # This sets a symbol prefix (e.g. mx_) so symbols are _mx_cmark_node_new
+        config.build_settings['OTHER_CFLAGS'] ||= ''
+        config.build_settings['OTHER_CFLAGS'] << ' -DCMARK_SYMBOL_PREFIX=mx_'
+      end
+    end
+
     target.build_configurations.each do |config|
       # Disable bitcode for each pod framework
       # Because the WebRTC pod (included by the JingleCallStack pod) does not support it.
