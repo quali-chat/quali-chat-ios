@@ -400,7 +400,7 @@
         MXStrongifyAndReturnIfNil(self);
         
         // List user albums which are not empty
-        PHFetchResult *albums = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
+        PHFetchResult *albums = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAny options:nil];
         
         NSMutableArray *updatedUserAlbums = [NSMutableArray array];
         __block PHAssetCollection *cameraRollAlbum, *videoAlbum;
