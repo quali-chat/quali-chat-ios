@@ -25,7 +25,7 @@ class QualiChatBuildSettings: NSObject {
     @objc static let enableAddCreateSpaces = false
     @objc static let registerUseCaseScreenEnabled = false
     @objc static let enableCreateOnlyDirectChat = false
-    @objc static let limitPersonCreateOnlyDirectChat = 5
+    @objc static let limitPersonCreateOnlyDirectChat = 21
     @objc static let forceDarkTheme = true
     @objc static let enableVideoAudioCall = true
     @objc static let enableVideoCall = false

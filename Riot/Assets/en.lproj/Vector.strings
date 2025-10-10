@@ -2085,7 +2085,7 @@ Tap the + to start adding people.";
 "room_invite_to_room_option_title" = "To just this room";
 "room_invite_to_room_option_detail" = "They won’t be a part of %@.";
 "room_invite_not_enough_permission" = "You do not have permission to invite people to this room";
-"room_invite_max_users_reached" = "Private rooms are limited to a maximum of 5 users";
+"room_invite_max_users_reached" = "Private rooms are limited to a maximum of 21 users";
 "space_invite_not_enough_permission" = "You do not have permission to invite people to this space";
 
 // MARK: - Spaces
